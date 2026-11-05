@@ -82,8 +82,15 @@ button { font: inherit; }
   transition: color 150ms ease, background-color 150ms ease;
 }
 .top nav a[aria-current] { color: var(--text); background: var(--surface-2); }
+.tools { justify-self: end; display: flex; align-items: center; gap: 8px; }
+.lang { display: flex; padding: 3px; border: 1px solid var(--line); border-radius: 99px; }
+.lang a {
+  padding: 4px 10px; border-radius: 99px; color: var(--muted); font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-decoration: none;
+  transition: color 150ms ease, background-color 150ms ease;
+}
+.lang a[aria-current] { color: var(--text); background: var(--surface-2); }
 .theme-toggle {
-  justify-self: end; display: grid; place-items: center; width: 38px; height: 38px; padding: 0; cursor: pointer;
+  display: grid; place-items: center; width: 38px; height: 38px; padding: 0; cursor: pointer;
   color: var(--text); background: transparent; border: 1px solid var(--line); border-radius: 50%;
   transition: background-color 150ms ease, transform 160ms var(--ease-out);
 }
@@ -92,13 +99,13 @@ button { font: inherit; }
 :root[data-theme="light"] .theme-toggle .sun,
 :root:not([data-theme="light"]) .theme-toggle .moon { display: none; }
 @media (hover: hover) and (pointer: fine) {
-  .top nav a:hover { color: var(--text); }
+  .top nav a:hover, .lang a:hover { color: var(--text); }
   .theme-toggle:hover { background: var(--surface-2); }
 }
 @media (max-width: 720px) {
   .top { grid-template-columns: 1fr auto; grid-template-areas: "logo toggle" "nav nav"; height: auto; row-gap: 6px; padding: 10px 12px 8px 16px; border-radius: 20px; }
   .logo { grid-area: logo; }
-  .theme-toggle { grid-area: toggle; }
+  .tools { grid-area: toggle; }
   .top nav { grid-area: nav; justify-content: center; }
 }
 

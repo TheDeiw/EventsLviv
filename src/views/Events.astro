@@ -1,0 +1,109 @@
+---
+import Base from "../layouts/Base.astro";
+import EventCard from "../components/EventCard.astro";
+import Filters from "../components/Filters.astro";
+import MiniHero from "../components/MiniHero.astro";
+import { content } from "../lib/site";
+import { langOf, t, fill } from "../i18n/ui";
+
+const lang = langOf(Astro);
+const T = t(lang);
+const { events } = content(lang);
+const sorted = [...events].sort((a, b) => a.name.localeCompare(b.name, lang));
+const countTpl = T("events.count");
+---
+
+<Base title={T("events.metaTitle")} description={T("events.metaDesc")} current="events" path="events/">
+  <main>
+    <MiniHero title={T("events.title")} />
+    <div class="browse" id="events">
+      <aside class="side">
+        <button class="filters-toggle" type="button" aria-expanded="false" aria-controls="filters-panel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"></path><circle cx="16" cy="6" r="2"></circle><circle cx="10" cy="12" r="2"></circle><circle cx="18" cy="18" r="2"></circle></svg>
+          {T("events.filters")}
+        </button>
+        <div class="filters-panel" id="filters-panel">
+          <Filters />
+          <button class="reset" type="button" data-reset>{T("events.reset")}</button>
+        </div>
+      </aside>
+
+      <section class="results" aria-label={T("events.listAria")}>
+        <div class="results-head">
+          <p class="count" id="count" data-tpl={countTpl} aria-live="polite">{fill(countTpl, { n: events.length, total: events.length })}</p>
+        </div>
+        <div class="empty" id="empty" hidden>
+          <p>{T("events.empty")}</p>
+          <button type="button" data-reset>{T("events.reset")}</button>
+        </div>
+        <div class="grid" id="grid">
+          {sorted.map((e) => <EventCard event={e} />)}
+        </div>
+      </section>
+    </div>
+  </main>
+</Base>
+
+<script>
+  import { initFilters } from "../scripts/filter";
+
+  const count = document.getElementById("count")!;
+  const empty = document.getElementById("empty")!;
+  const cards = [...document.getElementById("grid")!.children] as HTMLElement[];
+  const reset = initFilters(cards, (shown) => {
+    count.textContent = count.dataset.tpl!.replace("{n}", String(shown)).replace("{total}", String(cards.length));
+    empty.hidden = shown > 0;
+  });
+  for (const b of document.querySelectorAll("[data-reset]")) b.addEventListener("click", reset);
+
+  // on narrow screens the filters fold behind a button
+  const browse = document.querySelector(".browse")!;
+  const toggle = document.querySelector(".filters-toggle")!;
+  toggle.addEventListener("click", () => toggle.setAttribute("aria-expanded", String(browse.classList.toggle("show-filters"))));
+</script>
+
+<style>
+  /* ---------- filters + results ---------- */
+  .browse {
+    display: grid; grid-template-columns: 232px minmax(0, 1fr); gap: 48px;
+    max-width: 1360px; margin: 0 auto; padding: 40px 32px 24px; scroll-margin-top: 96px;
+  }
+  /* the 4px padding keeps focus rings from being clipped by the scroll box */
+  .side { position: sticky; top: 96px; align-self: start; max-height: calc(100vh - 112px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; padding: 4px; margin: -4px; }
+  .filters-toggle { display: none; }
+  .reset {
+    margin-top: 10px; padding: 0; cursor: pointer; font-size: 13px; color: var(--muted);
+    background: none; border: 0; text-decoration: underline; text-underline-offset: 3px;
+  }
+  .results-head { margin-bottom: 20px; }
+  .count { margin: 0; color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+  .results .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; max-width: none; padding: 0; }
+  .empty { padding: 48px 16px; text-align: center; color: var(--muted); border: 1px dashed var(--line); border-radius: var(--r); }
+  .empty p { margin: 0 0 12px; }
+  .empty button {
+    padding: 7px 16px; cursor: pointer; font-size: 14px; color: var(--text);
+    background: transparent; border: 1px solid var(--line); border-radius: 99px;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .reset:hover, .empty button:hover { color: var(--text); }
+  }
+
+  @media (max-width: 1180px) {
+    .results .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 900px) {
+    .browse { grid-template-columns: 1fr; gap: 20px; padding: 32px 16px 16px; }
+    .side { position: static; max-height: none; overflow: visible; }
+    .filters-toggle {
+      display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; cursor: pointer;
+      font-size: 14px; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 99px;
+    }
+    .filters-toggle svg { width: 16px; height: 16px; }
+    .filters-toggle[aria-expanded="true"] { background: var(--surface-2); }
+    .filters-panel { margin-top: 16px; padding: 18px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
+    .browse:not(.show-filters) .filters-panel { display: none; }
+  }
+  @media (max-width: 640px) {
+    .results .grid { grid-template-columns: 1fr; }
+  }
+</style>

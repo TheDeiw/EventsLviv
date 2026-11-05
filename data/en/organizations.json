@@ -1,0 +1,98 @@
+{
+  "tvory": {
+    "name": "TVORY",
+    "description": [
+      "The TVORY! network of youth spaces was founded in 2020 by young people of Lviv and the Development Department of the Lviv City Council.",
+      "TVORY!'s vision is to become an engine of change and development for Lviv thanks to a youth mix of creative spaces, interesting people and new values.",
+      "TVORY!'s mission: we are here and now to create, unite, structure and fill Lviv's youth spaces, as an exemplary alternative way for young people to spend their time.",
+      "We won the title of European Youth Capital 2025 for Lviv. NOT EASY BUT MOVE",
+      "TVORY!'s areas of work: creating youth centers and spaces; conducting research; defining directions of work; structuring the work of centers and spaces; inspiring and giving emotions."
+    ],
+    "links": ["European Youth Capital 2025"],
+    "spaces": ["Molodvizh.Center", "Pixlab", "Lviv Open Lab", "Urban Camp Lviv"]
+  },
+  "it-cluster-lviv": {
+    "description": [
+      "Lviv IT Cluster is a community of Lviv's leading IT companies and universities that have joined forces to develop the tech industry in the city and the region.",
+      "The Lviv IT Cluster's work is to create favorable conditions for doing business by improving the quality of education, developing talent, supporting tech companies in many ways and advocating for the industry's interests."
+    ],
+    "links": ["Lviv IT Cluster – the largest community of IT companies", "Lviv IT Cluster | Lviv", "Instagram (@lviv_it_cluster)"]
+  },
+  "aiesec": {
+    "description": [
+      "AIESEC is one of the world's largest international youth organizations, fully run by young people and active in more than 100 countries. Its global mission is to develop leadership potential by providing practical experience in an intercultural environment.",
+      "At the international level, AIESEC creates a platform for exchanges, offering young people the chance to take part in volunteer projects (the Global Volunteer program) and professional internships (the Global Talent program) in other countries. This experience is aimed at developing cross-cultural understanding, global thinking and the personal qualities future leaders need."
+    ],
+    "links": ["Develop your leadership | AIESEC", "AIESEC in Ukraine | HOME PAGE", "AIESEC Ukraine", "AIESEC in Ukraine 🇺🇦 (@aiesecinukraine)"]
+  },
+  "so-good-company": {
+    "description": [
+      "So Good Company is a Lviv event agency that specializes in organizing mass events, including festivals.",
+      "The company's activity began in 2016 with the first street food festival in Lviv, “Street Food So Good”. This festival is still one of the city's brightest gastronomic celebrations.",
+      "We work to build festival culture in Ukraine and create platforms for the development of small business within festivals: “Lviv Art and Wine Festival”, “Lviv Ice Cream Festival”, “Street Food So Good”, “So Green Fest”."
+    ],
+    "links": ["So Good Company – event agency. Event organization – So Good Company", "So Good Company - event-agency | Lviv", "Instagram (@sogood.company)"]
+  },
+  "osvitoriya": {
+    "name": "Osvitoria",
+    "description": [
+      "Osvitoria is a civil association that has been systematically changing education in Ukraine for more than 10 years. We create national learning platforms, train and support tens of thousands of teachers and shape high-quality educational solutions.",
+      "As a key partner of the state and international organizations, we do everything so that 7 million children affected by the war can return to learning and education reforms do not stop."
+    ],
+    "links": ["Home – Osvitoria", "Osvitoria", "Instagram (@osvitoria_official)"]
+  },
+  "domivka-vryatovanykh-tvaryn": {
+    "name": "Home of Rescued Animals",
+    "description": [
+      "“Domivka Vriatovanykh Tvaryn” (Home of Rescued Animals) is a unique shelter and rehabilitation center that helps wild and exotic animals that have suffered from human cruelty or ended up in trouble.",
+      "For more than six years we have worked every day to rescue animals that suffered because of human negligence or cruelty."
+    ],
+    "links": ["Home of Rescued Animals — animal shelter | Pets for adoption", "Domivka Vriatovanykh Tvaryn | Home Of Rescued Animals | Facebook", "Animal rescue center / shelter / rehabilitation center (@shelter_domivka)"]
+  },
+  "games-gathering": {
+    "description": [
+      "Games Gathering is Ukraine's largest festival for everyone who makes video games. It is like Comic-Con, but not for fans: for the creators themselves, programmers, artists, designers and everyone involved in game development.",
+      "The conference was first held in Kyiv in 2015. Since then it has become the main event for the country's game industry.",
+      "It usually takes place in key cities such as:",
+      "- Kyiv\n- Lviv\n- Odesa\n- Bratislava",
+      "I am sure the conference will expand and take place in other cities (it was once also held in Moldova)"
+    ],
+    "links": ["Home", "Games Gathering | Kyiv", "Games Gathering", "Instagram (@gamesgathering)"]
+  },
+  "iron-cluster": {
+    "description": [
+      "Iron Cluster is an association of Ukrainian companies that create physical products: from robotics and drones to industrial equipment and electronics. Unlike IT clusters that focus on software, Iron Cluster is all about the world of “iron” (hardware).",
+      "IRON unites more than 80 companies and 2,500+ industry specialists. In 2 years we helped scale military technologies, integrated innovative solutions into 22 production chains and launched a voucher support program together with the Lviv City Council. Our catalog includes 100+ innovative developments."
+    ],
+    "links": ["IRON Cluster", "Instagram (@iron_cluster)", "IRON Cluster | Lviv"]
+  },
+  "qaday": {
+    "description": [
+      "QADay is a platform for communication among software testing professionals",
+      "Let's build the Ukrainian testing community together!",
+      "We create events, webinars and conferences and bring together like-minded professionals who make the world a higher-quality place.",
+      "This is a team of enthusiasts formed in 2018, when we realized that Ukraine has a powerful community of testers that needs communication, meetups and exchange of experience.",
+      "We started with small meetups and grew into big conferences across the country. Since then we have become a magnet uniting the software testing community both offline and online."
+    ],
+    "links": ["Quality Assurance Day", "Quality Assurance Day | Lviv", "www.linkedin.com"]
+  },
+  "best-lviv": {
+    "description": [
+      "BEST (Board of European Students of Technology) is an international non-profit, non-political youth organization founded in 1989 in Berlin.",
+      "The BEST Lviv local group was founded in 2002 at Lviv Polytechnic National University.",
+      "Our work is to build connections between students, companies and the university. The Lviv group is one of three LBGs in Ukraine (Kyiv, Lviv, Vinnytsia)"
+    ],
+    "links": ["BEST Lviv", "Instagram (@best_lviv)", "BEST Lviv on TikTok", "BEST Lviv Students"]
+  },
+  "ukrainski-studenty-za-svobodu": {
+    "name": "Ukrainian Students for Liberty",
+    "description": [
+      "The mission of “Ukrainian Students for Liberty” is to unite, educate and mobilize Ukrainian youth who are committed to the ideas of freedom.",
+      "“Ukrainian Students for Liberty” (USL) is an all-Ukrainian civil organization that brings young people together around the ideas of freedom.",
+      "The organization does the following:",
+      "- Education: They teach students how a market economy works, why human rights matter and why the role of the state should be limited. Their flagship project is the Leadership Program.\n- Community building: They create a network of young, active, pro-freedom people across Ukraine who support each other.\n- Promoting change: They advocate for reforms that will make Ukraine a freer and economically more successful country.",
+      "The organization is part of the international Students For Liberty movement."
+    ],
+    "links": ["Civil organization Ukrainian Students for Liberty", "Instagram (@studfreedom)", "Ukrainian Students for Liberty | Kyiv"]
+  }
+}

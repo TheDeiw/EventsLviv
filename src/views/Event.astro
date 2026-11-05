@@ -1,0 +1,98 @@
+---
+import Base from "../layouts/Base.astro";
+import { content, entryLabel, linkLabel, href, url, when, coverAttrs } from "../lib/site";
+import { langOf, t, MON } from "../i18n/ui";
+
+const { id } = Astro.props;
+const lang = langOf(Astro);
+const T = t(lang);
+const { events, orgName, topicById } = content(lang);
+const e = events.find((x) => x.id === id)!;
+---
+
+<Base title={`${e.name} — Events Lviv`} description={e.description[0].slice(0, 160)} path={`events/${e.id}/`}>
+  <article class="event">
+    <a class="back" href={href(lang, "events/")}>{T("ev.back")}</a>
+
+    <div {...coverAttrs(e.cover, e.coverBg)}>
+      <img src={url(e.cover)} alt="" />
+    </div>
+
+    <h1>{e.name}</h1>
+    {e.organizationId && <p class="org">{T("ev.org")}<a href={href(lang, `organizations/${e.organizationId}/`)}>{orgName[e.organizationId]}</a></p>}
+    <div class="tags">
+      {e.topics.map((tid: string) => <span class="tag" style={`--tc:${topicById[tid].color}`}>{topicById[tid].name}</span>)}
+    </div>
+
+    <div class="cols">
+      <div>
+        <h2>{T("ev.desc")}</h2>
+        {e.description.map((p: string) => <p class="text">{p}</p>)}
+        <h2>{T("ev.audience")}</h2>
+        <p class="text">{e.audience}</p>
+        <h2>{T("ev.photos")}</h2>
+        <div class="gallery">
+          {e.gallery.map((g: string) => <a href={url(g)} target="_blank" rel="noopener"><img src={url(g)} alt="" loading="lazy" /></a>)}
+        </div>
+      </div>
+
+      <aside>
+        <section>
+          <h2>{T("ev.when")}</h2>
+          <p class="text">{e.whenText}</p>
+          {(e.yearRound || e.months.length > 0) && (
+            <div class="strip" role="img" aria-label={when(e, lang)}>
+              {MON[lang].map((m, i) => <span class:list={[{ on: e.yearRound || e.months.includes(i + 1) }]}>{m}</span>)}
+            </div>
+          )}
+        </section>
+        <section>
+          <h2>{T("ev.where")}</h2>
+          <p class="text">{e.place}</p>
+        </section>
+        <section>
+          <h2>{T("ev.price")}</h2>
+          <p><span class={`entry ${e.entry}`}>{entryLabel(lang, e.entry)}</span></p>
+          <p class="text">{e.priceText}</p>
+        </section>
+        {e.links.length > 0 && (
+          <section>
+            <h2>{T("ev.links")}</h2>
+            <ul>
+              {e.links.map((l) => (
+                <li><a href={l.url} target="_blank" rel="noopener">{l.title}</a> <small>{linkLabel(lang, l.type)}</small></li>
+              ))}
+            </ul>
+          </section>
+        )}
+      </aside>
+    </div>
+  </article>
+</Base>
+
+<style>
+  .event { max-width: 1040px; margin: 0 auto; padding: 20px 32px 64px; }
+  .cover { aspect-ratio: 21 / 9; border-radius: var(--r); }
+  h1 { margin: 20px 0 4px; font-size: clamp(28px, 4vw, 40px); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; }
+  .org { margin: 0 0 10px; color: var(--muted); }
+  .org a { color: var(--text); text-underline-offset: 3px; }
+  .cols { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 40px; margin-top: 12px; }
+  h2 { margin: 28px 0 8px; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .text { margin: 0 0 12px; white-space: pre-line; }
+  aside { align-self: start; padding: 4px 20px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
+  aside section:first-child h2 { margin-top: 16px; }
+  aside p { margin: 0 0 8px; }
+  ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+  li small { color: var(--muted); }
+  li a { overflow-wrap: anywhere; }
+  .strip { display: grid; grid-template-columns: repeat(6, 1fr); gap: 3px; margin-top: 8px; }
+  .strip span { padding: 3px 0; border-radius: 3px; background: #1c1c20; color: var(--muted); font-size: 11px; text-align: center; }
+  .strip span.on { background: var(--text); color: var(--bg); font-weight: 500; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+  .gallery img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; background: #222; }
+  @media (max-width: 800px) {
+    .event { padding: 16px 16px 48px; }
+    .cols { grid-template-columns: 1fr; gap: 0; }
+    aside { margin-top: 24px; }
+  }
+</style>

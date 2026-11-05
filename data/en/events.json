@@ -1,0 +1,568 @@
+{
+  "molodvizh": {
+    "name": "#Molodvizh",
+    "description": [
+      "“Molodvizh” is an annual all-Ukrainian youth networking platform that has brought together activists, volunteers and thought leaders in Lviv since 2018.",
+      "The event aims to raise important discussions on youth policy and social change and to set a direction for the coming year for young Ukrainians. The festival's story began after Lviv received the title of the first Youth Capital of Ukraine."
+    ],
+    "audience": "Active, socially engaged young people from across Ukraine: students, young professionals, community activists, volunteers and anyone who wants to help bring positive change to the country.",
+    "place": "Locations vary, most often !FESTrepublic.",
+    "whenText": "Annually, on the first Saturday of September.",
+    "priceText": "Free to attend, but advance registration is required.",
+    "links": [
+      "Instagram (@molodvizh)",
+      "Molodvizh"
+    ]
+  },
+  "dyzarium": {
+    "name": "Dysarium",
+    "description": [
+      "“Dysarium” is one of Ukraine's largest annual platforms for inspiring designers, architects and illustrators. The event brings together leading Ukrainian and international specialists who share practical case studies, experience and ideas.",
+      "Dysarium's goal is to create a space for professional growth, networking and a strong charge of creative energy. It is a place where trends are born and the future of Ukrainian design is discussed."
+    ],
+    "audience": "Designers (graphic, interior, web, landscape), architects, illustrators, decorators, brand managers, as well as students of related fields and anyone working in the creative industries.",
+    "place": "Usually held at large venues, most often !FESTrepublic.",
+    "whenText": "Annually. Dates may change, usually spring or autumn.",
+    "priceText": "Paid entry.",
+    "links": [
+      "Dysarium",
+      "Instagram (@dysarium)",
+      "Dysarium🦕"
+    ]
+  },
+  "ol-science-tech-fest": {
+    "description": [
+      "OL Science & Tech Fest is Lviv's biggest popular-science festival, turning complex technologies and scientific concepts into exciting interactive entertainment. The event brings leading technology companies, research institutions, inventors and startups together in one place.",
+      "The festival aims to popularize science and technical education, show the latest advances in robotics, VR, AI and other fields, and inspire children and young people to study the exact sciences."
+    ],
+    "audience": "Families with children, school students, university students, IT professionals, tech enthusiasts, and anyone interested in innovation, science and how the world around us works.",
+    "place": "Usually held at large venues that can fit many interactive zones, for example !FESTrepublic or the main building of Ivan Franko National University.",
+    "whenText": "Annually, most often in spring.",
+    "priceText": "Free to attend.",
+    "links": [
+      "Instagram (@ol.science.tech.fest)",
+      "Science & Tech Fest OL | Lviv"
+    ]
+  },
+  "it-future-fest": {
+    "description": [
+      "IT Future Fest is Ukraine's largest career event for those who dream of working in IT, organized by the Lviv IT Cluster. The festival is a platform where high school students, applicants and university students can talk in person with representatives of more than 40 leading technology companies and universities.",
+      "The event aims to help young people choose a future IT profession, tell them about the most in-demand fields (such as AI, Cybersecurity, Data Science, UI/UX Design) and give practical advice on starting a career and on internship opportunities."
+    ],
+    "audience": "High school students, university applicants, students of technical and non-technical majors, and educators who want to bring new approaches into teaching.",
+    "place": "The event is hybrid: offline in Lviv (the venue may change, but it is most often !FESTrepublic) and with an online broadcast available from anywhere in the world.",
+    "whenText": "Annually, usually in April.",
+    "priceText": "Free to attend, only advance registration is required.",
+    "links": [
+      "IT Future Fest - Lviv IT Cluster"
+    ]
+  },
+  "it-meets": {
+    "description": [
+      "IT Meets is a series of narrowly focused thematic events from the Lviv IT Cluster. Unlike large conferences, each meetup focuses on one specific area and gathers experts to discuss specialized topics (for example, IT Meets Tech, IT Meets Business, IT Meets Marketing).",
+      "The project aims to create a platform for deep professional networking and exchange of experience in a more intimate atmosphere. This lets participants not only gain concentrated knowledge but also find solutions to specific work tasks."
+    ],
+    "audience": "The audience is specialized and depends on the topic of each meetup. Usually these are Middle/Senior IT specialists, team leads, business analysts, marketers and other professionals working in tech.",
+    "place": "Locations change constantly. Most often these are the offices of IT companies that are members of the Cluster, or other modern event spaces in Lviv.",
+    "whenText": "Throughout the year, with no fixed schedule. Announcements appear a few weeks before the event.",
+    "priceText": "Paid entry. Discounts usually apply for representatives of Lviv IT Cluster member companies.",
+    "links": [
+      "IT Meets",
+      "Instagram (@itmeets_ua)"
+    ]
+  },
+  "it-arena": {
+    "description": [
+      "IT Arena is one of the largest and most influential technology conferences in Eastern Europe, organized by the Lviv IT Cluster. The event gathers thousands of participants, including leading experts, company founders, investors and developers from around the world.",
+      "The conference aims to be a platform for discussing global technology trends, business, product management and design. Key elements are talks by world-famous speakers, a large expo area, networking opportunities and the well-known Startup Competition."
+    ],
+    "audience": "IT professionals (Senior level and above), top managers and heads of technology companies (CEO, CTO), product managers, entrepreneurs, startup founders and investors.",
+    "place": "Traditionally held at the Arena Lviv stadium. In recent years the format has been changing: the conference may take place at several venues in central Lviv and have a strong online component.",
+    "whenText": "Annually, in late September or early October.",
+    "priceText": "Paid entry. Ticket prices are high and depend on the type (Executive, Senior, Standard) and the purchase date.",
+    "links": [
+      "IT Arena 2025",
+      "Instagram (@itarena.ua)",
+      "IT Arena | Lviv"
+    ]
+  },
+  "youth-speak-forum": {
+    "description": [
+      "YouthSpeak Forum is a national forum organized by AIESEC in Ukraine that creates a space for dialogue between young people, business, government and the civil sector. The event is a platform where participants discuss the global Sustainable Development Goals (SDGs) in the Ukrainian context, share ideas and develop projects to solve current problems.",
+      "The forum aims to inspire and empower young people, giving them a voice and tools to create positive change in society."
+    ],
+    "audience": "Active young people (students, recent graduates) who want to influence social processes, as well as representatives of companies, government bodies and civil society organizations interested in working with young leaders.",
+    "place": "The forum takes place in different cities of Ukraine (including Lviv), often at leading universities or online, which makes it possible to involve participants from across the country.",
+    "whenText": "Held periodically, usually once or several times a year.",
+    "priceText": "Participation is usually free, but always requires advance registration and selection.",
+    "links": [
+      "AIESEC in Ukraine | Youth Speak Forum 2024"
+    ]
+  },
+  "street-food-so-good": {
+    "description": [
+      "Street Food So Good is a series of seasonal street food festivals by the !FEST holding. The event gathers dozens of the best street food projects from Lviv and Ukraine in one area, turning the space into a huge open-air food court.",
+      "The festival aims to develop street food culture, introduce guests to new gastronomic formats and create an atmospheric place to relax with friends and family. Each festival often has its own unique theme."
+    ],
+    "audience": "A very wide audience: foodies, families with children, young people, tourists and all city residents who want to spend a tasty and interesting weekend.",
+    "place": "The traditional and main location is the !FESTrepublic space.",
+    "whenText": "Several times a year. Festivals usually take place in the warm season: spring, summer and early autumn.",
+    "priceText": "Entry to the area is usually paid (a symbolic amount). Food and drinks are paid for separately at each food truck or stand.",
+    "links": [
+      "Instagram (@street_food_so_good)",
+      "Street Food So Good | Instagram | Linktree"
+    ]
+  },
+  "lviv-art-and-wine-festival": {
+    "description": [
+      "Lviv Art & Wine Festival is an annual event that combines contemporary Ukrainian art and local winemaking in one venue. The festival is a large fair where dozens of Ukrainian wineries present their products, while galleries and artists show their work.",
+      "The event aims to create a unique space for cultural leisure where guests can enjoy wine tastings, get to know the work of Ukrainian artists, listen to live music and attend lectures."
+    ],
+    "audience": "Wine lovers, collectors and art enthusiasts, designers, and anyone looking for a refined, aesthetic weekend.",
+    "place": "Usually held at LEM Station, previously held at !FESTrepublic.",
+    "whenText": "Annually, in late spring or early summer.",
+    "priceText": "Paid entry. The ticket usually includes a branded tasting glass. Wine and food are bought separately.",
+    "links": [
+      "Instagram (@lviv_artandwine_festival)"
+    ]
+  },
+  "lviv-ice-cream-festival": {
+    "description": [
+      "Lviv Ice Cream Festival is an annual sweet celebration that gathers the best ice cream makers and craft dessert producers in one place. The event is a large fair where you can try dozens of flavors, from classic plombir to exotic and experimental varieties (for example beer or cheese ice cream).",
+      "The festival aims to be an ideal place for family leisure: besides tastings, guests can enjoy entertainment, children's zones, contests and a music program."
+    ],
+    "audience": "Families with children, kids of all ages, young people, tourists and every sweet tooth who loves ice cream and wants to have fun.",
+    "place": "The traditional location is the Bohdan Khmelnytsky Park of Culture and Recreation, but it may be held elsewhere. Follow the festival's news.",
+    "whenText": "Annually, usually in late August, just before Ukraine's Independence Day.",
+    "priceText": "Entry to the park is usually free. Ice cream and other attractions are paid for separately.",
+    "links": [
+      "Instagram (@lviv_icecream_festival)"
+    ]
+  },
+  "faine-misto": {
+    "description": [
+      "“Faine Misto” is one of the largest music festivals in Ukraine, presenting itself as the “Territory of Free People”. Although it is now held in Lviv, its name and roots come from the city of Ternopil. The festival is a large open-air event that brings leading Ukrainian and international bands playing rock, alternative and indie music to its stages."
+    ],
+    "audience": "Live music fans, rock and alternative lovers, and anyone who values the atmosphere of freedom and the energy of big open-airs with tent camps.",
+    "place": "In recent years the festival has taken place at !FESTrepublic in Lviv.",
+    "whenText": "Annually, in summer.",
+    "priceText": "Paid entry. The price depends on the ticket type (all-days pass, single day) and the purchase date. Camping tickets are usually bought separately.",
+    "links": [
+      "fainemisto.com.ua",
+      "Instagram (@fainemistofest)"
+    ]
+  },
+  "craft-beer-and-vinyl-music-festival": {
+    "description": [
+      "Craft Beer & Vinyl Festival is an atmospheric event for lovers of good beer and good music. The festival brings together dozens of Ukrainian craft breweries and a stage where DJs play music exclusively from vinyl records.",
+      "The event aims to create a unique space to relax, where you can taste exclusive beers, discover new flavors and enjoy the deep, warm sound of vinyl."
+    ],
+    "audience": "Craft beer lovers (beer geeks), music lovers, vinyl collectors, and anyone looking for a stylish, unhurried atmosphere to relax.",
+    "place": "The traditional location is the !FESTrepublic space.",
+    "whenText": "Held several times a year, usually in the warm months.",
+    "priceText": "Paid entry. Beer and food are bought separately.",
+    "links": [
+      "Craft Beer & Vinyl Music #10 | Lviv, 9-11 May 2025",
+      "Instagram (@craftandvinyl)",
+      "Craft Beer & Vinyl Music Festival | Lviv"
+    ]
+  },
+  "pokolinnya": {
+    "name": "Pokolinnya (Generation)",
+    "description": [
+      "“Pokolinnya” (“Generation”) is a festival of contemporary Ukrainian culture that brings music, lectures, a fair and workshops together in one place. The festival began in Dnipro in 2019 and is now held in Lviv with the aim of uniting patriotic, socially aware young people around shared values.",
+      "At the festival you can expect: a stage with the hits of your youth, live performances by artists whose songs once played from cassettes; DJ sets; interactive locations; games you were once told you “couldn't play for more than 20 minutes”; and photo zones that take you back to your best memories."
+    ],
+    "audience": "Active, patriotic young people, and fans of contemporary Ukrainian music, art and culture.",
+    "place": "The event takes place at !FESTrepublic.",
+    "whenText": "Every year a season opens in summer, during which the festival is held several times.",
+    "priceText": "Paid entry.",
+    "links": [
+      "Pokolinnya festival in Lviv (@pokolinnya.lviv)",
+      "Pokolinnya Fest"
+    ]
+  },
+  "wine-and-cheese-festival": {
+    "name": "Lviv Cheese and Wine Festival",
+    "description": [
+      "The Cheese and Wine Festival is an annual Lviv festival and a large fair of local farm and craft products. The event gathers Ukraine's best winemakers and cheesemakers, who present their products for tasting and sale.",
+      "Besides the fair, the festival program is full of themed attractions: from the traditional “grape pressing” and workshops to a wine post office where you can send a postcard to friends."
+    ],
+    "audience": "Wine and cheese lovers, foodies, tourists, and all city residents who want to discover the flavors of Ukrainian craft products.",
+    "place": "The traditional and unchanging location is the courtyard of the Lviv Palace of Arts (Potocki Palace).",
+    "whenText": "Annually, in autumn, usually in October.",
+    "priceText": "Paid entry. The ticket often includes a tasting glass.",
+    "links": [
+      "Lviv Cheese and Wine Festival",
+      "Cheese and Wine Fest Lviv (@cheese_and_wine_fest_lviv)",
+      "Lviv Cheese and Wine Festival | Lviv"
+    ]
+  },
+  "lviv-ice-chocolate-festival": {
+    "description": [
+      "Lviv Ice & Chocolate Festival (the National Chocolate Festival) is one of Ukraine's best-known and “sweetest” events. The festival is a huge fair where the best Ukrainian producers present their chocolate products. The highlight is the work of professional sculptors who create incredible chocolate and ice sculptures right in front of the audience.",
+      "The festival aims to develop chocolate culture and to create a sweet fairy-tale atmosphere for children and adults."
+    ],
+    "audience": "Families with children, tourists, couples in love and absolutely everyone who adores chocolate and sweets.",
+    "place": "The location may change. Historically the festival was held at the Lviv Palace of Arts, and in recent years at !FESTrepublic.",
+    "whenText": "Annually, most often in the cold season (autumn or winter).",
+    "priceText": "Paid entry.",
+    "links": [
+      "Lviv Ice & Chocolate Festival | Lviv"
+    ]
+  },
+  "coffee-books-vintage-festival": {
+    "description": [
+      "Coffee, Books & Vintage Festival brings together three great loves: good coffee, interesting books and unique vintage finds. The festival combines a large coffee market with national barista championships, a book fair with lectures and author meetings, and a big flea market.",
+      "The event aims to create a cozy space for unhurried leisure, where you can have a cup of coffee, find a rare book, buy vintage clothes or furniture and support charity initiatives."
+    ],
+    "audience": "Coffee lovers, book lovers, vintage enthusiasts, designers and anyone looking for inspiration and a cozy, creative atmosphere.",
+    "place": "The traditional location is the !FESTrepublic space.",
+    "whenText": "Usually held twice a year: in spring (May) and autumn (September).",
+    "priceText": "Paid entry. The ticket often includes a branded cup and drip coffee.",
+    "links": [
+      "Coffee, Books & Vintage #7 – 4–5 October, Lviv",
+      "Instagram (@coffee.books.vintage)",
+      "Coffee, Books & Vintage Festival"
+    ]
+  },
+  "speshl-craft-beer-bbq": {
+    "name": "SPESHL Craft Beer & BBQ Festival",
+    "description": [
+      "SPESHL is a craft beer festival that gathers brewers in Lviv who make truly “special” beer. The festival presents both well-known Ukrainian brands and small local breweries experimenting with flavors and ingredients.",
+      "The format combines tastings of dozens of beer styles with live music and a food court zone."
+    ],
+    "audience": "Craft beer lovers, beer geeks, hipsters, music lovers and anyone looking for an atmospheric time with friends.",
+    "place": "The traditional location is the courtyard of the Lviv Palace of Arts (Potocki Palace).",
+    "whenText": "Annually, in autumn, usually in October.",
+    "priceText": "Paid entry. The ticket price usually includes a tasting glass.",
+    "links": [
+      "CRAFT BEER & BBQ FESTIVAL | 📍LVIV (@special_bf_festival)"
+    ]
+  },
+  "lviv-media-forum": {
+    "description": [
+      "Lviv Media Forum (LMF) is a non-governmental organization and one of the largest media hubs in Eastern Europe, supporting and developing independent media.",
+      "Its annual forum of the same name is the key event for the media community of Ukraine and the region. The conference gathers hundreds of journalists, editors, media managers and international experts to discuss the most pressing challenges: from fighting disinformation and working as media in wartime to financial sustainability and adopting new technologies."
+    ],
+    "audience": "Journalists, editors, media managers, fact-checkers, publishers, communications specialists, foreign correspondents and everyone who works professionally in media and information.",
+    "place": "The event takes place at several venues in Lviv, often at the Dovzhenko Centre. It is also always possible to join online.",
+    "whenText": "Annually, usually in May.",
+    "priceText": "Paid entry. The price depends on the ticket type. Special programs and grants for media professionals are often available.",
+    "links": [
+      "Lviv Media Forum: supporting Ukrainian media",
+      "Lviv Media Forum | Lviv",
+      "Instagram (@lvivmediaforum)"
+    ]
+  },
+  "lviv-urban-forum": {
+    "description": [
+      "Lviv Urban Forum is an international event devoted to urban development, architecture and urbanism. The forum gathers leading Ukrainian and international architects, urbanists, municipal representatives and researchers to discuss the future of cities.",
+      "The key aim of the event is to exchange experience and find solutions for creating a high-quality, sustainable and people-centered urban environment. In recent years there has been a special focus on postwar reconstruction of Ukrainian cities, integrating new planning approaches and preserving architectural heritage."
+    ],
+    "audience": "Architects, urban planners, urbanists, local government representatives, developers, sociologists, and anyone interested in the development of cities and urban spaces.",
+    "place": "Usually held in Lviv at landmark architectural venues that fit the forum's theme (for example, Lem Station).",
+    "whenText": "Annually, usually in late June or early July.",
+    "priceText": "Paid entry. The price depends on the category (student, standard, group) and the ticket purchase date.",
+    "links": [
+      "Lviv Urban Forum",
+      "Lviv Urban Forum",
+      "Instagram (@lvivurbanforum)"
+    ]
+  },
+  "lviv-bookforum": {
+    "description": [
+      "BookForum (formerly the Publishers' Forum) is Ukraine's largest book fair and an international literary festival with a long history, held since 1994. It is the main event for the Ukrainian book industry, gathering writers, publishers, translators and thousands of readers.",
+      "Besides the large book fair, the festival program includes hundreds of events: new book presentations, discussions of pressing social topics, author meetings, poetry readings and professional events for publishers."
+    ],
+    "audience": "Readers, writers, publishers, literary agents, translators, critics, illustrators, librarians and everyone who loves books and intellectual discussion.",
+    "place": "Historically the main venue was the Lviv Palace of Arts. In recent years the festival has been held in a hybrid format, using many venues in central Lviv and running a strong online program.",
+    "whenText": "Annually, usually in autumn (September or October).",
+    "priceText": "Entry to the fair and most events is paid. You can usually buy either a pass for all days or tickets for individual events.",
+    "links": [
+      "Bookforum",
+      "Literary festival (@bookforumlviv)",
+      "Publishers' Forum"
+    ]
+  },
+  "lviv-invest-forum": {
+    "description": [
+      "Lviv Invest Forum (formerly Lviv International Economic Forum) is one of the largest and most important investment events in Western Ukraine. The forum is a strategic platform where government officials, Ukrainian and international business, investors and financial organizations discuss economic development, the investment climate and key projects of the region.",
+      "The event aims to present the investment potential of Lviv and the region, attract foreign direct investment and promote dialogue between business and government to create favorable conditions for doing business."
+    ],
+    "audience": "Large Ukrainian and international investors, representatives of investment and venture funds, diplomats, heads of government and local authorities, owners and top managers of large businesses.",
+    "place": "Emily Resort.",
+    "whenText": "Usually held annually, in autumn.",
+    "priceText": "Paid entry and quite expensive. Advance registration is mandatory.",
+    "links": [
+      "LIF — Lviv Invest Forum",
+      "Instagram (@lviv_invest_forum)"
+    ]
+  },
+  "vchyteli-maibutnoho": {
+    "name": "Teachers of the Future",
+    "description": [
+      "“Teachers of the Future” is an annual education forum organized by the civil association “Osvitoria”. It is one of the largest platforms in Ukraine for discussing the future of school education, innovation in teaching and the development of the teaching profession.",
+      "The forum aims to inspire Ukrainian educators, give them new tools and ideas, and bring together teachers, principals, reformers and parents to build a modern Ukrainian school.",
+      "The program has more than 100 events over 2 days: panel discussions, presentations, lectures, workshops, interactive formats, informal communication, networking and plenty of surprises for participants."
+    ],
+    "audience": "Teachers and school principals, education managers, reformers, government representatives, engaged parents and everyone involved in building modern Ukrainian education.",
+    "place": "Usually held in Lviv at large modern venues that can host thousands of participants, for example !FESTrepublic or the Sheptytsky Center of UCU.",
+    "whenText": "Annually, most often in summer.",
+    "priceText": "Paid entry. The price depends on the ticket purchase date.",
+    "links": [
+      "“Teachers of the Future” education fest – Osvitoria"
+    ]
+  },
+  "bazar-dobra": {
+    "name": "Bazar Dobra (Bazaar of Kindness)",
+    "description": [
+      "“Bazar Dobra” is a charity fair organized by the “Home of Rescued Animals” shelter (Domivka Vriatovanykh Tvaryn). At the event, visitors can buy a wide variety of goods, from clothes and books to decor and vintage finds. All items for sale are donated by caring people.",
+      "The main goal is to raise funds for the care and treatment of the shelter's residents. It is a great chance to combine pleasant shopping, eco-friendly consumption and helping animals."
+    ],
+    "audience": "Everyone who wants to support the shelter, vintage treasure hunters, fans of eco-friendly consumption, friends and supporters of the shelter.",
+    "place": "Usually held on the shelter's own grounds (24 Oleksy Dovbusha St.), so guests can immediately see who they are helping.",
+    "whenText": "Held periodically throughout the year. Follow their official pages for exact dates.",
+    "priceText": "Free entry or a voluntary donation. All proceeds from the sale of items go to the needs of the animals.",
+    "links": [
+      "Festival (@bazar_dobra_)"
+    ]
+  },
+  "wiz-art-film-festival": {
+    "description": [
+      "Wiz-Art is the Lviv International Short Film Festival, one of the most prominent events in Ukrainian cinema. The festival is a platform for presenting and developing short film, bringing both young and experienced filmmakers from around the world to Lviv.",
+      "Besides competition and non-competition screenings, the program is full of educational events: masterclasses, workshops and meetings with directors."
+    ],
+    "audience": "Filmmakers, directors, producers, film critics, film school students and all fans of auteur and independent cinema.",
+    "place": "Festival events take place at several venues, usually cinemas and art centers in Lviv.",
+    "whenText": "Annually. Dates may change, so follow the announcements.",
+    "priceText": "Paid entry. You can buy either a pass for the whole festival or tickets for individual screenings.",
+    "links": [
+      "WIZ-ART #16",
+      "Wiz-Art Film Festival (@wizart_festival)",
+      "WIZ-ART"
+    ]
+  },
+  "sunday-bazaarr": {
+    "description": [
+      "Sunday BazaarR is a recurring fair that gathers Ukrainian brands, designers and craft producers in one place. The event is a platform for supporting local business, where you can find unique goods: from clothes and accessories to home decor and handmade gifts."
+    ],
+    "audience": "Fans of Ukrainian brands, people looking for unique gifts, and anyone who values handmade work and wants to support local producers.",
+    "place": "Locations may change. Most often the fair is held at the Lviv Palace of Arts (17 Kopernyka St.) and at LEM Station.",
+    "whenText": "Held periodically throughout the year, usually on weekends. Follow the official pages for announcements of specific dates.",
+    "priceText": "Entry is usually paid, but conditions may change. It is best to check the price in the announcement of each event.",
+    "links": [
+      "Sunday BazaarR (@sundaybazaarr)",
+      "Sunday BazaarR"
+    ]
+  },
+  "lviv-pet-fest": {
+    "description": [
+      "Lviv Pet Fest is a large festival devoted to pets and everything related to them. The event brings together pet owners, pet industry representatives, vets, groomers, dog handlers and charity organizations in one area.",
+      "The event aims to unite the community of pet-friendly people, introduce them to new pet products, hold lectures on care and health, and find homes for animals from shelters. Charity is an important part, including fundraising to help stray animals."
+    ],
+    "audience": "Pet owners, families planning to get a pet, pet business representatives, volunteers and everyone who loves animals.",
+    "place": "The event takes place at !FESTrepublic.",
+    "whenText": "The festival was first held in June 2024 and is planned as an annual event.",
+    "priceText": "Paid entry.",
+    "links": [
+      "PetFest pet festival | Lviv Pet Fest",
+      "Instagram (@lvivpetfest)"
+    ]
+  },
+  "khvostyk-fest": {
+    "name": "Khvostyk Fest",
+    "description": [
+      "“Khvostyk Fest” is a large festival about love for animals that brings together responsible owners, businesses and animal welfare organizations.",
+      "The main activities: a large market of pet goods, a lecture program by vets and dog handlers, grooming and training zones, a food court and photo zones."
+    ],
+    "audience": "Responsible pet owners, people dreaming of a pet, pet business representatives and everyone who wants to spend time in an animal-friendly atmosphere.",
+    "place": "The event takes place in the Park of Culture.",
+    "whenText": "2025 is the first year of this fest, but most likely it will be held once a year.",
+    "priceText": "Paid entry. The price depends on the ticket.",
+    "links": [
+      "Khvostyk Fest | 2–3 August, Lviv.",
+      "Khvostyk Fest (@hvostykfest)"
+    ]
+  },
+  "king-kross-fest": {
+    "name": "King Cross Fest",
+    "description": [
+      "“King Cross Fest” is a large charity festival organized by the King Cross Leopolis shopping mall, often timed to the mall's birthday. The event is a big show that combines entertainment and fundraising for important needs (for example, supporting the Armed Forces of Ukraine).",
+      "The program usually includes a large fair, workshops, performances by well-known Ukrainian artists and entertainment zones for children.",
+      "Besides this event, King Cross Leopolis also organizes many other events, so follow their pages."
+    ],
+    "audience": "A very wide audience: mall visitors, families with children, young people and everyone who wants to take part in charity and have fun.",
+    "place": "At the King Cross Leopolis shopping and entertainment center (30 Stryiska St., Sokilnyky village).",
+    "whenText": "Usually held in autumn (for example, in September), but it is worth following the announcements.",
+    "priceText": "Free entry. Funds are raised through activities at the fair, donations and participation in workshops.",
+    "links": [
+      "King Cross Leopolis",
+      "King Cross Leopolis mall | Sokilnyky",
+      "King Cross Leopolis mall (@kingcrossleopolis)"
+    ]
+  },
+  "dice-con": {
+    "description": [
+      "DiceCon is Lviv's largest board game festival. Besides the big festivals held several times a year, the organizers also run regular small game nights and themed tournaments. The core of the events is a huge game library with hundreds of games, a publishers' fair and beginner zones with experienced game masters.",
+      "They run at least three different types of events:",
+      "- The big DiceCon festival (the flagship event)\nThis is their main and biggest event, held several times a year. Here you will find: a giant game library, a fair, tournaments, a festive atmosphere, a cosplay show and much more.\n- Regular (cozy) game nights\nThis is the heart of their community. These events happen much more often (sometimes weekly) and are smaller in scale.\n- Themed and specialized events\nFrom time to time they organize something unique, for example: a board game night, tournament days, new release presentations."
+    ],
+    "audience": "Experienced players, newcomers just discovering the world of board games, families with children, groups of friends and everyone looking for interesting and intellectual leisure.",
+    "place": "Locations often change depending on the format. Big festivals take place at the Lviv Palace of Arts or at !FESTrepublic. Small game nights can be held in anti-cafés, pubs, schools and other creative spaces.",
+    "whenText": "Big festivals take place several times a year (for example, winter and summer). Smaller game nights happen much more often, sometimes weekly.",
+    "priceText": "Paid entry. You buy a ticket that gives access to the game library for the whole event.",
+    "links": [
+      "DICE CON 2025, 29–31 August, Lviv, Lviv Palace of Arts, 17 Kopernyka St.",
+      "Dice Con",
+      "Instagram (@dice.con)",
+      "Dice Con | Lviv"
+    ]
+  },
+  "games-gathering-lviv": {
+    "description": [
+      "Games Gathering is Ukraine's largest game developers conference, and its Lviv edition brings together professionals and enthusiasts of the game dev industry. The event is a platform for sharing experience through talks and workshops by experts from Ukrainian and international studios.",
+      "At the conferences you can see things like:",
+      "- New games fair: Young teams bring their not-yet-released games, and you can play them. It is their chance to get noticed and find a publisher.\n- Talks by pros: Well-known developers from big companies (for example, the creators of S.T.A.L.K.E.R. or Metro) share their experience and explain how to make great games.\n- A place to meet people: It is an ideal opportunity to find a job at a dream game studio or simply chat with people who are passionate about the same thing."
+    ],
+    "audience": "Game developers, game designers, 2D/3D artists, animators, sound engineers, publishers, as well as students of related fields and anyone who wants to start a career in game dev.",
+    "place": "Premier Hotel Dnister",
+    "whenText": "Usually annually, at different times of year",
+    "priceText": "Paid entry. The price depends on the ticket type (for example, Standard, Premium) and the time of purchase.",
+    "links": [
+      "Home"
+    ]
+  },
+  "iron-demo": {
+    "description": [
+      "Iron Demo (or Demo Day) is an annual event of the IRON cluster where those who shape the future of the front line meet: manufacturers, military personnel, investors, startups.",
+      "IRON DEMO is a chance to show a product to those who make decisions and invest in defense technology.",
+      "Demonstrate solutions in action, get feedback and open the way to contracts and partnerships."
+    ],
+    "audience": "Investors, venture fund representatives, business angels, heads of manufacturing companies, engineers, hardware developers, as well as media representatives covering technology and innovation.",
+    "place": "Locations may change, but usually these are modern innovation centers or event spaces in Lviv that fit the technological theme of the event.",
+    "whenText": "Held annually. Follow the cluster's official pages for announcements.",
+    "priceText": "The participation format may vary. For participating startups it is usually free (after selection); visiting investors may need to register or buy a ticket.",
+    "links": [
+      "IRON DEMO 2025"
+    ]
+  },
+  "lviv-direction-qaday": {
+    "description": [
+      "Lviv Direction QADay is a narrowly specialized technical conference for software quality assurance (QA) professionals. The event is part of the QADay conference series held in different cities of Ukraine and gathers leading experts in the field.",
+      "The event aims to create a platform for sharing experience and discussing new tools, testing approaches and trends in Quality Assurance."
+    ],
+    "audience": "QA engineers (manual and automation), testers, QA leads and managers, and all specialists involved in testing and quality assurance of IT products.",
+    "place": "The format may change. Events have been held both offline in Lviv and online. When offline, they take place in the offices of various IT companies.",
+    "whenText": "Held several times a year. Follow the official website for announcements of specific dates.",
+    "priceText": "Paid entry. The price changes depending on the purchase date.",
+    "links": [
+      "Events"
+    ]
+  },
+  "forum-451e": {
+    "description": [
+      "Forum 451°E is an annual Lviv e-government forum organized by the IT Department of the Lviv City Council. The name refers to Ray Bradbury's novel “Fahrenheit 451”, symbolizing the importance of free access to information.",
+      "The event is a platform for dialogue between government, business and the public about digitalizing public services and introducing innovation into city management. The theme changes every year, focusing on the most relevant issues: from open data and cybersecurity to the development of artificial intelligence in the public sector."
+    ],
+    "audience": "Representatives of government bodies, IT specialists working in e-government, community activists, businesses building solutions for the state, and students of related fields.",
+    "place": "Locations change, often innovation spaces such as LvivTech.City (LTC.BNKR) or the Jam Factory Art Center.",
+    "whenText": "Annually, usually in autumn or early winter.",
+    "priceText": "Participation is usually free but requires advance registration, as places are limited.",
+    "links": [
+      "Instagram (@forum451e)",
+      "Forum 451E"
+    ]
+  },
+  "silicon-drinkabout-lviv": {
+    "description": [
+      "Informal meetups for those who want more real conversation and less small talk.",
+      "Yes, we have IT people, but this is networking for everyone, regardless of profession.",
+      "The event is part of the global Silicon Drinkabout movement held every Friday in many cities around the world. The format offers a relaxed atmosphere for meeting people, exchanging ideas, finding like-minded people and unwinding after the work week."
+    ],
+    "audience": "IT specialists, startup founders, designers, marketers, project managers, recruiters and everyone who works in tech or is interested in it.",
+    "place": "Locations constantly change. Usually these are pubs, bars and restaurants in central Lviv (lately it is often held at Teddy Restaurant).",
+    "whenText": "Monthly, on the last Friday.",
+    "priceText": "Free entry, sometimes the organizers suggest making a donation to the Armed Forces of Ukraine. Participants pay for their own drinks and food.",
+    "links": [
+      "Silicon Drinkabout Lviv"
+    ]
+  },
+  "hacktoberfest": {
+    "description": [
+      "Hacktoberfest is an annual global event by DigitalOcean held throughout October and devoted to supporting and developing open-source projects. It is not a festival in the classic sense but rather a month-long marathon.",
+      "The idea is to encourage people to contribute to open source. Participants have to make a certain number of useful contributions (pull requests) to public repositories on GitHub/GitLab. For completing the task they receive a reward, traditionally a branded T-shirt or the chance to plant a tree."
+    ],
+    "audience": "Developers of any level (from beginners to seniors), students, technical writers, designers: everyone who wants to try contributing to the global IT community. It is a great entry point into the world of open source.",
+    "place": "In Lviv it was held offline every year (except 2024). The most likely venue is UCU or the office and coworking space of an IT company; in general the event takes place online all over the world.",
+    "whenText": "Annually, throughout October.",
+    "priceText": "Participation is completely free.",
+    "links": [
+      "Hacktoberfest 2025"
+    ]
+  },
+  "best-hackath0n": {
+    "description": [
+      "BEST::Hackathon is a 24-hour programming competition organized by the student organization BEST Lviv. During the event, teams of students work on developing a software or hardware solution for a specific problem (case) provided by partner IT companies.",
+      "The hackathon aims to give students the chance to apply their theoretical knowledge in practice, work in a team under time pressure and present their project to experts from the IT industry."
+    ],
+    "audience": "Students of technical and related fields: programmers, QA engineers, UI/UX designers, analysts, and all young enthusiasts interested in technology.",
+    "place": "Usually held at Lviv Polytechnic National University or in the offices of partner companies (it has always been one of the SoftServe offices).",
+    "whenText": "Annually. Dates are announced on the organization's official pages.",
+    "priceText": "Free to participate, but requires advance registration and selection."
+  },
+  "inzhenernyi-yarmarok-karyery": {
+    "name": "Engineering Career Fair",
+    "description": [
+      "The Engineering Career Fair is one of the oldest and best-known events by BEST Lviv, and for more than 15 years it has been a bridge between talented students and leading employers. It is a career event where students can talk in person with representatives of dozens of engineering and IT companies."
+    ],
+    "audience": "Students and graduates of technical, engineering and IT fields looking for an internship or a job.",
+    "place": "The traditional location is Building 4 of Lviv Polytechnic National University.",
+    "whenText": "Held annually, usually in autumn.",
+    "priceText": "Free entry for visitors."
+  },
+  "best-engineering-competition": {
+    "description": [
+      "BEST Engineering Competition (BEC) is an engineering contest organized by BEST Lviv in which teams of students solve real technical tasks.",
+      "The competition aims to give students the chance to show creativity, engineering thinking and teamwork skills. Winners of the local round earn the right to represent Lviv at the national and international levels of EBEC (European BEST Engineering Competition)."
+    ],
+    "audience": "Students of any field who are interested in engineering, design and solving analytical tasks and want to test themselves.",
+    "place": "Usually held at Lviv Polytechnic National University.",
+    "whenText": "Annually, most often in autumn.",
+    "priceText": "Free for students, but requires advance registration and selection."
+  },
+  "capture-the-flag": {
+    "description": [
+      "Capture The Flag (CTF) is a cybersecurity competition held in the format of solving practical tasks. Participants form teams to solve puzzles in web security, cryptography, reverse engineering and other areas. The ultimate goal of each task is to find a “flag”, a unique string of text."
+    ],
+    "audience": "“Ethical” hackers, cybersecurity specialists (from beginners to professionals), system administrators, developers and students interested in information security.",
+    "place": "Often held at Lviv Polytechnic National University, in the offices of IT companies or entirely online.",
+    "whenText": "Held periodically throughout the year by different organizers. There is no fixed annual date, so follow the announcements.",
+    "priceText": "Participation is usually free but requires advance registration."
+  },
+  "best-company-insight": {
+    "description": [
+      "BEST Company Insight is a series of student tours to the offices of leading engineering and IT companies. It is a unique chance to see from the inside how a company works, what its corporate culture is like and what technologies it uses.",
+      "The event aims to narrow the gap between studying and real work, letting students talk to employees, ask HR specialists questions and learn about internship opportunities."
+    ],
+    "audience": "Students of technical and related fields who want to learn more about their future workplace and see with their own eyes how technology company offices work.",
+    "place": "Directly in the offices of BEST Lviv's partner companies in Lviv.",
+    "whenText": "Held periodically during the academic year (once every 1–2 years).",
+    "priceText": "Free to participate. Because places are limited, registration and selection are mandatory."
+  },
+  "leadership-program": {
+    "name": "Leadership Program",
+    "description": [
+      "The Leadership Program is the flagship educational program of the civil organization “Ukrainian Students for Liberty”.",
+      "The Program aims to unite and engage students who want to develop their leadership qualities and build a free Ukraine of the future.",
+      "In short: 5 intense days of various activities, lectures and practical sessions. It is also the only event through which you can join this organization. More details are on their website."
+    ],
+    "audience": "Active students and young people interested in economics and political philosophy, who want to understand the ideas of classical liberalism and libertarianism in depth and are looking for a community of like-minded people.",
+    "place": "Medzhybizh Castle in the Khmelnytskyi region.",
+    "whenText": "Every summer.",
+    "priceText": "Participation in the program is free, but candidates go through a competitive selection (usually by filling out a form and an interview).",
+    "links": [
+      "Leadership Program by Ukrainian Students for Liberty"
+    ]
+  }
+}

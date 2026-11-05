@@ -1,25 +1,30 @@
 ---
-import { events, organizations, topics } from "../lib/site";
+import { content } from "../lib/site";
+import { langOf, t } from "../i18n/ui";
 
-const ENTRY_CHIPS = [["", "Будь-який"], ["free", "Безкоштовно"], ["paid", "Платно"]];
-const WHEN_CHIPS = [["", "Весь рік"], ["spring", "Весна"], ["summer", "Літо"], ["autumn", "Осінь"], ["winter", "Зима"]];
+const lang = langOf(Astro);
+const T = t(lang);
+const { events, organizations, topics } = content(lang);
+
+const ENTRY_CHIPS = [["", T("f.any")], ["free", T("f.free")], ["paid", T("f.paid")]];
+const WHEN_CHIPS = [["", T("f.year")], ["spring", T("f.spring")], ["summer", T("f.summer")], ["autumn", T("f.autumn")], ["winter", T("f.winter")]];
 const orgs = organizations
   .map((o) => ({ id: o.id, name: o.name, n: events.filter((e) => e.organizationId === o.id).length }))
   .filter((o) => o.n > 0)
-  .sort((a, b) => a.name.localeCompare(b.name, "uk"));
+  .sort((a, b) => a.name.localeCompare(b.name, lang));
 const inTopic = (id: string) => events.filter((e) => e.topics.includes(id)).length;
 ---
 
 <div class="filters">
   <label class="search">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
-    <input type="search" placeholder="Пошук" aria-label="Пошук за назвою або організатором" autocomplete="off" />
+    <input type="search" placeholder={T("f.search")} aria-label={T("f.searchAria")} autocomplete="off" />
   </label>
 
   <div class="group" role="group" aria-labelledby="f-topic">
-    <h3 id="f-topic">Тематика</h3>
+    <h3 id="f-topic">{T("f.topic")}</h3>
     <button class="opt" data-filter="topic" data-value="" aria-pressed="true">
-      <span class="dot" style="--tc:var(--muted)"></span>Усі<span class="n">{events.length}</span>
+      <span class="dot" style="--tc:var(--muted)"></span>{T("f.all")}<span class="n">{events.length}</span>
     </button>
     {topics.map((t) => (
       <button class="opt" data-filter="topic" data-value={t.id} aria-pressed="false">
@@ -29,10 +34,10 @@ const inTopic = (id: string) => events.filter((e) => e.topics.includes(id)).leng
   </div>
 
   <div class="group">
-    <h3 id="f-org"><label for="org-select">Організатор</label></h3>
+    <h3 id="f-org"><label for="org-select">{T("f.org")}</label></h3>
     <div class="select">
       <select id="org-select" data-filter-org>
-        <option value="">Усі організації</option>
+        <option value="">{T("f.allOrgs")}</option>
         {orgs.map((o) => <option value={o.id}>{o.name} ({o.n})</option>)}
       </select>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
@@ -40,14 +45,14 @@ const inTopic = (id: string) => events.filter((e) => e.topics.includes(id)).leng
   </div>
 
   <div class="group" role="group" aria-labelledby="f-entry">
-    <h3 id="f-entry">Вхід</h3>
+    <h3 id="f-entry">{T("f.entry")}</h3>
     <div class="chips">
       {ENTRY_CHIPS.map(([v, name], i) => <button class="chip" data-filter="entry" data-value={v} aria-pressed={String(i === 0)}>{name}</button>)}
     </div>
   </div>
 
   <div class="group" role="group" aria-labelledby="f-when">
-    <h3 id="f-when">Коли</h3>
+    <h3 id="f-when">{T("f.when")}</h3>
     <div class="chips">
       {WHEN_CHIPS.map(([v, name], i) => <button class="chip" data-filter="when" data-value={v} aria-pressed={String(i === 0)}>{name}</button>)}
     </div>
