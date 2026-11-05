@@ -1,0 +1,78 @@
+---
+import Base from "../../layouts/Base.astro";
+import EventCard from "../../components/EventCard.astro";
+import { organizations, eventsOf, LINK, url, coverAttrs } from "../../lib/site";
+
+export function getStaticPaths() {
+  return organizations.map((o) => ({ params: { id: o.id }, props: { o } }));
+}
+
+const { o } = Astro.props;
+const events = eventsOf(o.id).sort((a, b) => a.name.localeCompare(b.name, "uk"));
+const spaces: { name: string; logo: string }[] = "spaces" in o ? (o.spaces as { name: string; logo: string }[]) : [];
+---
+
+<Base title={`${o.name} — Events Lviv`} description={o.description[0].slice(0, 160)} current="organizations">
+  <div class="org">
+    <a class="back" href={url("organizations/")}>← Усі організації</a>
+
+    <div class="head">
+      <div {...coverAttrs(o.logo)}>
+        <img src={url(o.logo)} alt="" />
+      </div>
+      <div>
+        <h1>{o.name}</h1>
+        {o.description.map((p: string) => <p class="text">{p}</p>)}
+        {o.links.length > 0 && (
+          <ul class="links">
+            {o.links.map((l: { title: string; url: string; type: string }) => (
+              <li><a href={l.url} target="_blank" rel="noopener">{l.title}</a> <small>{LINK[l.type]}</small></li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </div>
+
+    {spaces.length > 0 && (
+      <section>
+        <h2>Простори</h2>
+        <ul class="spaces">
+          {spaces.map((s) => (
+            <li>
+              <div {...coverAttrs(s.logo)}><img src={url(s.logo)} alt="" loading="lazy" /></div>
+              <span>{s.name}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <h2>Події ({events.length})</h2>
+  </div>
+  <main class="grid" id="grid">
+    {events.map((e) => <EventCard event={e} />)}
+  </main>
+</Base>
+
+<style>
+  .org { max-width: 1280px; margin: 0 auto; padding: 20px 32px 0; }
+  .head { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 32px; align-items: start; }
+  .cover { border-radius: var(--r); }
+  h1 { margin: 0 0 12px; font-size: clamp(28px, 4vw, 40px); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; }
+  h2 { margin: 36px 0 12px; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .text { margin: 0 0 12px; max-width: 70ch; white-space: pre-line; }
+  .links, .spaces { margin: 16px 0 0; padding: 0; list-style: none; }
+  .links { display: grid; gap: 8px; }
+  .links small { color: var(--muted); }
+  .links a { overflow-wrap: anywhere; }
+  .spaces { margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+  .spaces .cover { aspect-ratio: 1; }
+  .spaces span { display: block; margin-top: 6px; font-size: 13px; }
+  @media (max-width: 800px) {
+    .head { grid-template-columns: 1fr; gap: 20px; }
+  }
+  /* same breakpoint as the .grid padding, so the heading lines up with the cards */
+  @media (max-width: 600px) {
+    .org { padding: 16px 16px 0; }
+  }
+</style>

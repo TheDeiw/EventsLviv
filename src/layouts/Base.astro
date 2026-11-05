@@ -1,0 +1,91 @@
+---
+import "@fontsource-variable/geologica/wght.css";
+import "../styles/global.css";
+import { url } from "../lib/site";
+
+const { title, description = "Щорічні події у Львові: фестивалі, форуми, конференції та ініціативи.", current = "events" } = Astro.props;
+const NAV = [
+  { href: "", label: "Головна", id: "home" },
+  { href: "events/", label: "Події", id: "events" },
+  { href: "organizations/", label: "Організації", id: "organizations" },
+];
+---
+
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href={url("favicon.svg")} />
+    <script is:inline>
+      // Runs before paint so the page never flashes the wrong theme; a saved choice beats the system setting.
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+      } catch {}
+    </script>
+  </head>
+  <body id="top">
+    <header class="top">
+      <a class="logo" href={url("")}><span class="spires" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>Events Lviv</a>
+      <nav aria-label="Основна навігація">
+        {NAV.map((n) => <a href={url(n.href)} aria-current={current === n.id ? "page" : undefined}>{n.label}</a>)}
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Світла тема" aria-pressed="false">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"></path>
+        </svg>
+      </button>
+    </header>
+
+    <slot />
+
+    <footer class="foot">
+      <div class="foot-stripe" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="foot-inner">
+        <div>
+          <a class="logo" href={url("")}><span class="spires" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>Events Lviv</a>
+          <p>Щорічні фестивалі, форуми й конференції Львова в одному місці. Волонтерський проєкт.</p>
+        </div>
+        <nav aria-label="Розділи сайту">
+          <h2>Розділи</h2>
+          <ul>{NAV.map((n) => <li><a href={url(n.href)}>{n.label}</a></li>)}</ul>
+        </nav>
+        <div>
+          <h2>Знаєте подію, якої тут немає?</h2>
+          <p>Напишіть автору, і її додадуть до списку.</p>
+          <a class="foot-cta" href="https://www.instagram.com/the_deiw_/" target="_blank" rel="noopener">Написати в Instagram</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© {new Date().getFullYear()} TheDeiw</span>
+        <a href="#top">Нагору ↑</a>
+      </div>
+    </footer>
+
+    <script>
+      const root = document.documentElement;
+      const toggle = document.querySelector<HTMLButtonElement>(".theme-toggle")!;
+      const sync = () => toggle.setAttribute("aria-pressed", String(root.dataset.theme === "light"));
+      sync();
+      toggle.addEventListener("click", () => {
+        const apply = () => {
+          root.dataset.theme = root.dataset.theme === "light" ? "dark" : "light";
+          try {
+            localStorage.setItem("theme", root.dataset.theme);
+          } catch {}
+          sync();
+        };
+        // a cross-fade instead of an abrupt light/dark flash, where the browser can do it
+        if (document.startViewTransition && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.startViewTransition(apply);
+        else apply();
+      });
+    </script>
+  </body>
+</html>

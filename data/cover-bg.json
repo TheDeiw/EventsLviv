@@ -1,0 +1,177 @@
+{
+ "images/bazar-dobra/cover.webp": {
+  "mat": "#f8f3e7"
+ },
+ "images/best-company-insight/cover.webp": {
+  "mat": "#efece6",
+  "logo": true
+ },
+ "images/best-engineering-competition/cover.svg": {
+  "mat": "#1c1c20",
+  "logo": true
+ },
+ "images/best-hackath0n/cover.webp": {
+  "mat": "#1c1c20",
+  "logo": true
+ },
+ "images/capture-the-flag/cover.svg": {
+  "mat": "#1c1c20",
+  "logo": true
+ },
+ "images/coffee-books-vintage-festival/cover.webp": {
+  "mat": null
+ },
+ "images/craft-beer-and-vinyl-music-festival/cover.webp": {
+  "mat": "#ffffff"
+ },
+ "images/dice-con/cover.webp": {
+  "mat": "#f9f9f9"
+ },
+ "images/dyzarium/cover.webp": {
+  "mat": null
+ },
+ "images/faine-misto/cover.webp": {
+  "mat": null
+ },
+ "images/forum-451e/cover.webp": {
+  "mat": null
+ },
+ "images/games-gathering-lviv/cover.webp": {
+  "mat": "#1d1e26"
+ },
+ "images/hacktoberfest/cover.webp": {
+  "mat": "#1f2045"
+ },
+ "images/inzhenernyi-yarmarok-karyery/cover.webp": {
+  "mat": "#1c1c20",
+  "logo": true
+ },
+ "images/iron-demo/cover.webp": {
+  "mat": "#060c0a"
+ },
+ "images/it-arena/cover.webp": {
+  "mat": null
+ },
+ "images/it-future-fest/cover.webp": {
+  "mat": null
+ },
+ "images/it-meets/cover.webp": {
+  "mat": null
+ },
+ "images/khvostyk-fest/cover.webp": {
+  "mat": "#f4f0ed"
+ },
+ "images/king-kross-fest/cover.webp": {
+  "mat": null
+ },
+ "images/leadership-program/cover.webp": {
+  "mat": "#fad409"
+ },
+ "images/lviv-art-and-wine-festival/cover.webp": {
+  "mat": null
+ },
+ "images/lviv-bookforum/cover.webp": {
+  "mat": null
+ },
+ "images/lviv-direction-qaday/cover.webp": {
+  "mat": "#65529b"
+ },
+ "images/lviv-ice-chocolate-festival/cover.webp": {
+  "mat": "#f0e8e6"
+ },
+ "images/lviv-ice-cream-festival/cover.webp": {
+  "mat": null
+ },
+ "images/lviv-invest-forum/cover.webp": {
+  "mat": "#151515"
+ },
+ "images/lviv-media-forum/cover.webp": {
+  "mat": "#000000"
+ },
+ "images/lviv-pet-fest/cover.webp": {
+  "mat": "#81b7f1"
+ },
+ "images/lviv-urban-forum/cover.svg": {
+  "mat": "#efece6",
+  "logo": true
+ },
+ "images/molodvizh/cover.webp": {
+  "mat": "#0157ff"
+ },
+ "images/ol-science-tech-fest/cover.webp": {
+  "mat": null
+ },
+ "images/organizations/aiesec.webp": {
+  "mat": "#027ef6"
+ },
+ "images/organizations/best-lviv.webp": {
+  "mat": "#101213"
+ },
+ "images/organizations/domivka-vryatovanykh-tvaryn.webp": {
+  "mat": "#ffffff"
+ },
+ "images/organizations/games-gathering.webp": {
+  "mat": "#221b17"
+ },
+ "images/organizations/iron-cluster.webp": {
+  "mat": "#f3f3f3"
+ },
+ "images/organizations/it-cluster-lviv.webp": {
+  "mat": null
+ },
+ "images/organizations/osvitoriya.webp": {
+  "mat": "#1c1c20",
+  "logo": true
+ },
+ "images/organizations/qaday.webp": {
+  "mat": "#ffffff"
+ },
+ "images/organizations/so-good-company.webp": {
+  "mat": "#ffffff"
+ },
+ "images/organizations/tvory-1.webp": {
+  "mat": "#373be4"
+ },
+ "images/organizations/tvory-2.webp": {
+  "mat": null
+ },
+ "images/organizations/tvory-3.webp": {
+  "mat": "#ffffff"
+ },
+ "images/organizations/tvory-4.webp": {
+  "mat": "#feffc6"
+ },
+ "images/organizations/tvory.webp": {
+  "mat": "#ffffff"
+ },
+ "images/organizations/ukrainski-studenty-za-svobodu.webp": {
+  "mat": "#fdd525"
+ },
+ "images/pokolinnya/cover.webp": {
+  "mat": null
+ },
+ "images/silicon-drinkabout-lviv/cover.webp": {
+  "mat": null
+ },
+ "images/speshl-craft-beer-bbq/cover.webp": {
+  "mat": "#fedc06"
+ },
+ "images/street-food-so-good/cover.webp": {
+  "mat": "#ffffff"
+ },
+ "images/sunday-bazaarr/cover.webp": {
+  "mat": "#f7530b"
+ },
+ "images/vchyteli-maibutnoho/cover.webp": {
+  "mat": "#f8af16"
+ },
+ "images/wine-and-cheese-festival/cover.webp": {
+  "mat": "#024241"
+ },
+ "images/wiz-art-film-festival/cover.webp": {
+  "mat": "#ffffff"
+ },
+ "images/youth-speak-forum/cover.webp": {
+  "mat": null
+ }
+}

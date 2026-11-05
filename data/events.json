@@ -1,0 +1,1620 @@
+[
+  {
+    "id": "molodvizh",
+    "name": "#Молодвіж",
+    "organizationId": "tvory",
+    "topics": [
+      "youth"
+    ],
+    "description": [
+      "\"Молодвіж\" — це щорічна всеукраїнська платформа для мережування молоді, що з 2018 року збирає у Львові активістів, волонтерів та лідерів думок.",
+      "Мета заходу — піднімати важливі дискусії у сфері молодіжної політики, суспільних змін та створювати вектор руху на наступний рік для молодих українців. Історія фестивалю почалася після здобуття Львовом титулу першої молодіжної столиці України."
+    ],
+    "audience": "Активна та свідома молодь з усієї України: студенти, молоді професіонали, громадські активісти, волонтери та всі, хто прагне долучитися до створення позитивних змін у країні.",
+    "place": "Локації можуть варіюватись, зачасту !FESTrepublic.",
+    "whenText": "Щорічно, перша субота вересня.",
+    "months": [
+      9
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Участь безкоштовна, але потребує попередньої реєстрації",
+    "links": [
+      {
+        "title": "Instagram (@molodvizh)",
+        "url": "https://www.instagram.com/molodvizh/",
+        "type": "instagram"
+      },
+      {
+        "title": "Молодвіж",
+        "url": "https://www.facebook.com/molodvizh",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/molodvizh/cover.webp",
+    "gallery": [
+      "images/molodvizh/1.webp",
+      "images/molodvizh/2.webp",
+      "images/molodvizh/3.webp"
+    ]
+  },
+  {
+    "id": "dyzarium",
+    "name": "Дизаріум",
+    "organizationId": "tvory",
+    "topics": [
+      "culture"
+    ],
+    "description": [
+      "\"Дизаріум\" — це одна з найбільших в Україні щорічних платформ для натхнення дизайнерів, архітекторів та ілюстраторів. Захід збирає провідних українських та закордонних спеціалістів, які діляться практичними кейсами, досвідом та ідеями.",
+      "Мета \"Дизаріуму\" — створювати простір для професійного розвитку, нетворкінгу та отримання потужного заряду творчої енергії. Це місце, де народжуються тренди та обговорюється майбутнє українського дизайну."
+    ],
+    "audience": "Дизайнери (графічні, інтер'єрні, веб, ландшафтні), архітектори, ілюстратори, декоратори, бренд-менеджери, а також студенти профільних спеціальностей та всі, хто працює у креативних індустріях.",
+    "place": "Зазвичай проходить на великих майданчиках, найчастіше це !FESTrepublic.",
+    "whenText": "Щорічно. Дати можуть змінюватись, зазвичай це весна або осінь.",
+    "months": [
+      3,
+      4,
+      5,
+      9,
+      10,
+      11
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Участь платна.",
+    "links": [
+      {
+        "title": "Dysarium",
+        "url": "https://www.dysarium.com/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@dysarium)",
+        "url": "https://www.instagram.com/dysarium/",
+        "type": "instagram"
+      },
+      {
+        "title": "Дизаріум🦕",
+        "url": "https://t.me/dysarium",
+        "type": "telegram"
+      }
+    ],
+    "cover": "images/dyzarium/cover.webp",
+    "gallery": [
+      "images/dyzarium/1.webp",
+      "images/dyzarium/2.webp",
+      "images/dyzarium/3.webp"
+    ]
+  },
+  {
+    "id": "ol-science-tech-fest",
+    "name": "OL Science & Tech Fest",
+    "organizationId": "tvory",
+    "topics": [
+      "education",
+      "it"
+    ],
+    "description": [
+      "OL Science & Tech Fest — це найбільший науково-популярний фестиваль у Львові, що перетворює складні технології та наукові концепції на захоплюючі інтерактивні розваги. Подія збирає на одному майданчику провідні технологічні компанії, наукові установи, винахідників та стартапи.",
+      "Мета фестивалю — популяризувати науку та технічну освіту, показати останні досягнення в робототехніці, VR, AI та інших сферах, а також надихнути дітей та молодь на вивчення точних наук."
+    ],
+    "audience": "Сім'ї з дітьми, школярі, студенти, IT-спеціалісти, техно-ентузіасти, а також усі, хто цікавиться інноваціями, наукою та тим, як влаштований світ навколо.",
+    "place": "Зазвичай проходить на великих локаціях, що можуть вмістити багато інтерактивних зон, наприклад, !FESTrepublic або Головний корпус Університету ім. Івана Франка.",
+    "whenText": "Щорічно, найчастіше весна.",
+    "months": [
+      3,
+      4,
+      5
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Участь безкоштовна.",
+    "links": [
+      {
+        "title": "Instagram (@ol.science.tech.fest)",
+        "url": "https://www.instagram.com/ol.science.tech.fest/",
+        "type": "instagram"
+      },
+      {
+        "title": "Science & Tech Fest OL | Lviv",
+        "url": "https://www.facebook.com/scienceandtechfest",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/ol-science-tech-fest/cover.webp",
+    "gallery": [
+      "images/ol-science-tech-fest/1.webp",
+      "images/ol-science-tech-fest/2.webp",
+      "images/ol-science-tech-fest/3.webp"
+    ]
+  },
+  {
+    "id": "it-future-fest",
+    "name": "IT Future Fest",
+    "organizationId": "it-cluster-lviv",
+    "topics": [
+      "it",
+      "education"
+    ],
+    "description": [
+      "IT Future Fest — це наймасштабніший кар'єрний захід в Україні для тих, хто мріє про роботу в IT, організований Львівським ІТ Кластером. Фестиваль є платформою, де старшокласники, абітурієнти та студенти можуть наживо поспілкуватися з представниками понад 40 провідних технологічних компаній та університетів.",
+      "Мета заходу — допомогти молоді визначитися з майбутньою професією в ІТ, розповісти про найзатребуваніші напрями (такі як AI, Cybersecurity, Data Science, UI/UX Design) та дати практичні поради щодо старту кар'єри та можливостей стажування."
+    ],
+    "audience": "Учні старших класів, абітурієнти, студенти технічних та нетехнічних спеціальностей, а також освітяни, які прагнуть інтегрувати нові підходи у навчання.",
+    "place": "Подія проходить у гібридному форматі: офлайн у Львові (локація може змінюватися, але зачасту це !FESTrepublic) та з онлайн-трансляцією, доступною з будь-якої точки світу.",
+    "whenText": "Щорічно, зазвичай у квітні.",
+    "months": [
+      4
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Участь у фестивалі є безкоштовною, потрібна лише попередня реєстрація.",
+    "links": [
+      {
+        "title": "IT Future Fest - Lviv IT Cluster",
+        "url": "https://itcluster.lviv.ua/projects/it-future-fest/",
+        "type": "site"
+      }
+    ],
+    "cover": "images/it-future-fest/cover.webp",
+    "gallery": [
+      "images/it-future-fest/1.webp",
+      "images/it-future-fest/2.webp",
+      "images/it-future-fest/3.webp"
+    ]
+  },
+  {
+    "id": "it-meets",
+    "name": "IT Meets",
+    "organizationId": "it-cluster-lviv",
+    "topics": [
+      "it"
+    ],
+    "description": [
+      "IT meets — це серія вузькоспеціалізованих тематичних подій від Львівського ІТ Кластера. На відміну від великих конференцій, кожна зустріч фокусується на конкретному напрямі, збираючи експертів для обговорення специфічних тем (наприклад, IT meets Tech, IT meets Business, IT meets Marketing).",
+      "Мета проєкту — створити платформу для глибокого професійного нетворкінгу та обміну досвідом у більш камерній атмосфері. Це дозволяє учасникам не лише отримати концентровані знання, а й знайти рішення для конкретних робочих завдань."
+    ],
+    "audience": "Цільова аудиторія вузькоспеціалізована і залежить від теми конкретної зустрічі. Зазвичай це ІТ-спеціалісти рівня Middle/Senior, керівники команд, бізнес-аналітики, маркетологи та інші професіонали, що працюють у технологічній сфері.",
+    "place": "Локації постійно змінюються. Найчастіше це офіси IT-компаній, що є учасниками Кластера, або інші сучасні івент-простори Львова.",
+    "whenText": "Протягом року, без чіткої періодичності. Анонси з’являються за декілька тижнів до самої події.",
+    "months": [],
+    "yearRound": true,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Участь платна. Для представників компаній-учасниць Львівського ІТ Кластера зазвичай діють знижки.",
+    "links": [
+      {
+        "title": "IT Meets",
+        "url": "https://itcluster.lviv.ua/projects/it-meets/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@itmeets_ua)",
+        "url": "https://www.instagram.com/itmeets_ua/",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/it-meets/cover.webp",
+    "gallery": [
+      "images/it-meets/1.webp",
+      "images/it-meets/2.webp",
+      "images/it-meets/3.webp"
+    ]
+  },
+  {
+    "id": "it-arena",
+    "name": "IT Arena",
+    "organizationId": "it-cluster-lviv",
+    "topics": [
+      "it",
+      "forums"
+    ],
+    "description": [
+      "IT Arena — це одна з найбільших та найвпливовіших технологічних конференцій у Східній Європі, організована Львівським ІТ Кластером. Подія збирає тисячі учасників, включаючи провідних експертів, засновників компаній, інвесторів та розробників з усього світу.",
+      "Мета конференції — створити платформу для обговорення глобальних технологічних трендів, бізнесу, продуктового менеджменту та дизайну. Ключовими елементами є виступи всесвітньо відомих спікерів, масштабна експо-зона, можливості для нетворкінгу та знаменитий конкурс стартапів Startup Competition."
+    ],
+    "audience": "IT-професіонали (Senior-рівня та вище), топ-менеджери та керівники технологічних компаній (CEO, CTO), продакт-менеджери, підприємці, засновники стартапів та інвестори.",
+    "place": "Традиційно проходила на стадіоні \"Арена Львів\". В останні роки формат змінюється, конференція може відбуватися на кількох локаціях у центрі Львова та мати потужний онлайн-компонент.",
+    "whenText": "Щорічно, наприкінці вересня або на початку жовтня.",
+    "months": [
+      9,
+      10
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Участь платна. Вартість квитків висока і залежить від типу (Executive, Senior, Standard) та дати придбання.",
+    "links": [
+      {
+        "title": "IT Arena 2025",
+        "url": "https://itarena.ua/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@itarena.ua)",
+        "url": "https://www.instagram.com/itarena.ua/",
+        "type": "instagram"
+      },
+      {
+        "title": "ІТ Arena | Lviv",
+        "url": "https://www.facebook.com/itarena.ua/",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/it-arena/cover.webp",
+    "gallery": [
+      "images/it-arena/1.webp",
+      "images/it-arena/2.webp",
+      "images/it-arena/3.webp"
+    ]
+  },
+  {
+    "id": "youth-speak-forum",
+    "name": "Youth Speak Forum",
+    "organizationId": "aiesec",
+    "topics": [
+      "youth",
+      "forums"
+    ],
+    "description": [
+      "YouthSpeak Forum — це національний форум, організований AIESEC в Україні, що створює простір для діалогу між молоддю, бізнесом, державою та громадським сектором. Захід є платформою, де учасники обговорюють глобальні цілі сталого розвитку (SDGs) в українському контексті, діляться ідеями та розробляють проєкти для вирішення актуальних проблем.",
+      "Мета форуму — надихнути та розширити можливості молоді, дати їй голос та інструменти для створення позитивних змін у суспільстві."
+    ],
+    "audience": "Активна молодь (студенти, нещодавні випускники), що прагне впливати на суспільні процеси, а також представники компаній, державних установ та громадських організацій, зацікавлені у співпраці з молодими лідерами.",
+    "place": "Форум проходить у різних містах України (зокрема у Львові), часто на базі провідних університетів або в онлайн-форматі, що дозволяє залучити учасників з усієї країни.",
+    "whenText": "Проводиться періодично, зазвичай один або декілька разів на рік.",
+    "months": [],
+    "yearRound": true,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Участь зазвичай є безкоштовною, але завжди вимагає попередньої реєстрації та відбору.",
+    "links": [
+      {
+        "title": "AIESEC в Україні | Youth Speak Forum 2024",
+        "url": "https://aiesec.ua/youth-speak-forum",
+        "type": "site"
+      }
+    ],
+    "cover": "images/youth-speak-forum/cover.webp",
+    "gallery": [
+      "images/youth-speak-forum/1.webp",
+      "images/youth-speak-forum/2.webp",
+      "images/youth-speak-forum/3.webp"
+    ]
+  },
+  {
+    "id": "street-food-so-good",
+    "name": "Street Food So Good",
+    "organizationId": "so-good-company",
+    "topics": [
+      "food"
+    ],
+    "description": [
+      "Street Food So Good — це серія сезонних фестивалів вуличної їжі від холдингу !FEST. Подія збирає на одній території десятки найкращих стрітфуд-проєктів Львова та України, перетворюючи простір на величезний фуд-корт просто неба.",
+      "Мета фестивалю — розвивати культуру споживання вуличної їжі, знайомити гостей з новими гастрономічними форматами та створювати атмосферне місце для відпочинку з друзями та сім'єю. Кожен фестиваль часто має свою унікальну тему."
+    ],
+    "audience": "Дуже широка аудиторія: фуді, сім'ї з дітьми, молодь, туристи та всі мешканці міста, які хочуть смачно та цікаво провести вихідні.",
+    "place": "Традиційною та головною локацією є простір !FESTrepublic.",
+    "whenText": "Декілька разів на рік. Зазвичай фестивалі проходять у теплу пору року: навесні, влітку та ранньої осені.",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Вхід на територію зазвичай платний (символічна сума). Їжа та напої оплачуються окремо біля кожного фуд-траку чи точки.",
+    "links": [
+      {
+        "title": "Instagram (@street_food_so_good)",
+        "url": "https://www.instagram.com/street_food_so_good/",
+        "type": "instagram"
+      },
+      {
+        "title": "Street Food So Good | Instagram | Linktree",
+        "url": "https://linktr.ee/streetfoodsogood",
+        "type": "site"
+      }
+    ],
+    "cover": "images/street-food-so-good/cover.webp",
+    "gallery": [
+      "images/street-food-so-good/1.webp",
+      "images/street-food-so-good/2.webp",
+      "images/street-food-so-good/3.webp"
+    ]
+  },
+  {
+    "id": "lviv-art-and-wine-festival",
+    "name": "Lviv Art And Wine Festival",
+    "organizationId": "so-good-company",
+    "topics": [
+      "food",
+      "culture"
+    ],
+    "description": [
+      "Lviv Art & Wine Festival — це щорічна подія, що поєднує на одному майданчику сучасне українське мистецтво та локальне виноробство. Фестиваль є великим ярмарком, де десятки українських виноробень представляють свою продукцію, а галереї та митці — свої роботи.",
+      "Мета заходу — створити унікальний простір для культурного відпочинку, де гості можуть одночасно насолоджуватися дегустаціями вина, знайомитися з творчістю українських художників, слухати живу музику та відвідувати лекції."
+    ],
+    "audience": "Поціновувачі вина, колекціонери та любителі мистецтва, дизайнери, а також усі, хто шукає вишуканий та естетичний відпочинок на вихідних.",
+    "place": "Зазвичай проходить на території LEM Station, раніше проходив на !FESTrepublic.",
+    "whenText": "Щорічно, наприкінці весни або на початку літа.",
+    "months": [
+      5,
+      6
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Вхід платний. Зазвичай у вартість квитка входить фірмовий келих для дегустацій. Вино та їжа купуються окремо.",
+    "links": [
+      {
+        "title": "Instagram (@lviv_artandwine_festival)",
+        "url": "https://www.instagram.com/lviv_artandwine_festival/",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/lviv-art-and-wine-festival/cover.webp",
+    "gallery": [
+      "images/lviv-art-and-wine-festival/1.webp",
+      "images/lviv-art-and-wine-festival/2.webp",
+      "images/lviv-art-and-wine-festival/3.webp"
+    ]
+  },
+  {
+    "id": "lviv-ice-cream-festival",
+    "name": "Lviv Ice Cream Festival",
+    "organizationId": "so-good-company",
+    "topics": [
+      "food"
+    ],
+    "description": [
+      "Lviv Ice Cream Festival (Фестиваль морозива) — це щорічне солодке свято, що збирає на одній локації найкращих виробників морозива та крафтових десертів. Подія є великим ярмарком, де можна спробувати десятки смаків: від класичного пломбіру до екзотичних та експериментальних сортів (наприклад, пивного чи сирного морозива).",
+      "Мета фестивалю — створити ідеальне місце для сімейного відпочинку, де крім дегустацій, на гостей чекають розваги, дитячі зони, конкурси та музична програма."
+    ],
+    "audience": "Сім'ї з дітьми, діти будь-якого віку, молодь, туристи та всі ласуни, які обожнюють морозиво та хочуть весело провести час.",
+    "place": "Традиційною локацією є Парк культури та відпочинку ім. Богдана Хмельницького, але може бути й інакша локація. Слідкуйте за новинами фестивалю.",
+    "whenText": "Щорічно, зазвичай наприкінці серпня, напередодні Дня Незалежності України.",
+    "months": [
+      8
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Вхід на територію парку зазвичай вільний. Морозиво та інші розваги оплачуються окремо.",
+    "links": [
+      {
+        "title": "Instagram (@lviv_icecream_festival)",
+        "url": "https://www.instagram.com/lviv_icecream_festival/",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/lviv-ice-cream-festival/cover.webp",
+    "gallery": [
+      "images/lviv-ice-cream-festival/1.webp",
+      "images/lviv-ice-cream-festival/2.webp"
+    ]
+  },
+  {
+    "id": "faine-misto",
+    "name": "Faine Misto",
+    "organizationId": null,
+    "topics": [
+      "culture"
+    ],
+    "description": [
+      "\"Файне Місто\" — це один з найбільших музичних фестивалів в Україні, що позиціонує себе як \"Територія Вільних Людей\". Попри те, що зараз він проходить у Львові, своєю назвою та корінням він завдячує місту Тернопіль. Фестиваль є масштабним open-air заходом, що збирає на своїх сценах провідні українські та закордонні гурти, які грають рок, альтернативну та інді-музику."
+    ],
+    "audience": "Шанувальники живої музики, любителі року та альтернативи, а також усі, хто цінує атмосферу свободи та драйву великих оупен-ейрів з наметовими містечками.",
+    "place": "Останніми роками фестиваль проходить на території !FESTrepublic у Львові.",
+    "whenText": "Щорічно, влітку.",
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Участь платна. Вартість залежить від типу квитка (абонемент на всі дні, одноденний) та дати придбання. Квитки на кемпінг зазвичай купуються окремо.",
+    "links": [
+      {
+        "title": "fainemisto.com.ua",
+        "url": "https://fainemisto.com.ua/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@fainemistofest)",
+        "url": "https://www.instagram.com/fainemistofest/",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/faine-misto/cover.webp",
+    "gallery": [
+      "images/faine-misto/1.webp",
+      "images/faine-misto/2.webp",
+      "images/faine-misto/3.webp"
+    ]
+  },
+  {
+    "id": "craft-beer-and-vinyl-music-festival",
+    "name": "Craft Beer and Vinyl Music Festival",
+    "organizationId": null,
+    "topics": [
+      "food",
+      "culture"
+    ],
+    "description": [
+      "Craft Beer & Vinyl Festival — це атмосферна подія для поціновувачів якісного пива та хорошої музики. Фестиваль поєднує на одному майданчику десятки українських крафтових пивоварень та сцену, де діджеї грають музику виключно з вінілових платівок.",
+      "Мета заходу — створити унікальний простір для відпочинку, де можна скуштувати ексклюзивні сорти пива, відкрити для себе нові смаки та насолодитися глибоким, \"ламповим\" звучанням вінілу."
+    ],
+    "audience": "Поціновувачі крафтового пива (біґіки), меломани, колекціонери вінілу, а також усі, хто шукає стильну та неспішну атмосферу для відпочинку.",
+    "place": "Традиційною локацією є простір !FESTrepublic.",
+    "whenText": "Проводиться декілька разів на рік, зазвичай у теплі місяці.",
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Вхід платний. Пиво та їжа купуються окремо.",
+    "links": [
+      {
+        "title": "Craft Beer & Vinyl Music #10 | Львів, 9-11 травня 2025 року",
+        "url": "https://craftandvinyl.fest.lviv.ua/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@craftandvinyl)",
+        "url": "https://www.instagram.com/craftandvinyl/",
+        "type": "instagram"
+      },
+      {
+        "title": "Craft Beer & Vinyl Music Festival | Lviv",
+        "url": "https://www.facebook.com/CraftAndVinyl/",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/craft-beer-and-vinyl-music-festival/cover.webp",
+    "gallery": [
+      "images/craft-beer-and-vinyl-music-festival/1.webp",
+      "images/craft-beer-and-vinyl-music-festival/2.webp",
+      "images/craft-beer-and-vinyl-music-festival/3.webp"
+    ]
+  },
+  {
+    "id": "pokolinnya",
+    "name": "Покоління",
+    "organizationId": null,
+    "topics": [
+      "culture",
+      "youth"
+    ],
+    "description": [
+      "\"Покоління\" — це фестиваль сучасної української культури, що об'єднує на одному майданчику музику, лекції, ярмарок та майстер-класи. Свою історію фестиваль розпочав у Дніпрі 2019 року, а тепер проводиться у Львові з метою згуртувати патріотичну та свідому молодь навколо спільних цінностей.",
+      "На фестивалі можна буде побачити таке: сцена з хітами юності, живі виступи артистів, які, звучали з касet; dj-сети; інтерактивні локації; ігри, в які колись «не можна було довше 20 хвилин»; фотозони, які переносять у найкращі спогади."
+    ],
+    "audience": "Активна, патріотично налаштована молодь, поціновувачі сучасної української музики, мистецтва та культури.",
+    "place": "Подія проходить на території !FESTrepublic.",
+    "whenText": "Кожного року літом відкривається сезон, протягом якого фест проходить декілька разів.",
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Участь платна.",
+    "links": [
+      {
+        "title": "Фестиваль Покоління у Львові (@pokolinnya.lviv)",
+        "url": "https://www.instagram.com/pokolinnya.lviv/",
+        "type": "instagram"
+      },
+      {
+        "title": "Pokolinnya Fest",
+        "url": "https://www.facebook.com/profile.php?id=61558675683895",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/pokolinnya/cover.webp",
+    "gallery": [
+      "images/pokolinnya/1.webp",
+      "images/pokolinnya/2.webp",
+      "images/pokolinnya/3.webp"
+    ]
+  },
+  {
+    "id": "wine-and-cheese-festival",
+    "name": "Свято вина і сиру у Львові",
+    "organizationId": null,
+    "topics": [
+      "food"
+    ],
+    "description": [
+      "Свято Сиру і Вина — це щорічний львівський фестиваль, що є великим ярмарком локальних фермерських та крафтових продуктів. Подія збирає найкращих виноробів та сироварів України, які представляють свою продукцію для дегустації та продажу.",
+      "Окрім ярмарку, програма фестивалю насичена тематичними атракціями: від традиційної \"давильні винограду\" та майстер-класів до винної пошти, де можна відправити листівку друзям."
+    ],
+    "audience": "Поціновувачі вина та сиру, фуді, туристи, а також усі мешканці міста, які хочуть відкрити для себе смаки українських крафтових продуктів.",
+    "place": "Традиційною та незмінною локацією є подвір'я Львівського палацу мистецтв (Палац Потоцьких).",
+    "whenText": "Щорічно, восени, зазвичай у жовтні.",
+    "months": [
+      10
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Вхід платний. Часто у вартість квитка входить келих для дегустацій.",
+    "links": [
+      {
+        "title": "Lviv Cheese and Wine Festival/Свято Сиру і Вина у Львові",
+        "url": "https://cheeseandwine.lviv.ua/",
+        "type": "site"
+      },
+      {
+        "title": "Cheese and Wine Fest Lviv (@cheese_and_wine_fest_lviv)",
+        "url": "https://www.instagram.com/cheese_and_wine_fest_lviv/",
+        "type": "instagram"
+      },
+      {
+        "title": "Lviv Cheese and Wine Festival/Свято Сиру і Вина у Львові | Lviv",
+        "url": "https://www.facebook.com/CheeseWineFestLviv/",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/wine-and-cheese-festival/cover.webp",
+    "gallery": [
+      "images/wine-and-cheese-festival/1.webp",
+      "images/wine-and-cheese-festival/2.webp",
+      "images/wine-and-cheese-festival/3.webp"
+    ]
+  },
+  {
+    "id": "lviv-ice-chocolate-festival",
+    "name": "Lviv Ice & Chocolate Festival",
+    "organizationId": null,
+    "topics": [
+      "food"
+    ],
+    "description": [
+      "Lviv Ice & Chocolate Festival (Національне Свято Шоколаду) — це одна з найвідоміших та \"найсолодших\" подій України. Фестиваль є величезним ярмарком, де найкращі українські виробники представляють свою шоколадну продукцію. Родзинкою заходу є робота професійних скульпторів, які на очах у публіки створюють неймовірні скульптури з шоколаду та льоду.",
+      "Мета фестивалю — розвивати шоколадну культуру та створити атмосферу солодкої казки для дітей та дорослих."
+    ],
+    "audience": "Сім'ї з дітьми, туристи, закохані пари та абсолютно всі, хто обожнює шоколад та солодощі.",
+    "place": "Локація може змінюватись. Історично фестиваль проходив у Львівському палаці мистецтв, останніми роками — на території !FESTrepublic.",
+    "whenText": "Щорічно, найчастіше в холодну пору року (осінь або зима).",
+    "months": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Вхід платний.",
+    "links": [
+      {
+        "title": "Свято Шоколаду та Морозива у Львові/Lviv Ice & Chocolate Festival | Lviv",
+        "url": "https://www.facebook.com/LvivIceChocoFestival",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/lviv-ice-chocolate-festival/cover.webp",
+    "gallery": [
+      "images/lviv-ice-chocolate-festival/1.webp",
+      "images/lviv-ice-chocolate-festival/2.webp",
+      "images/lviv-ice-chocolate-festival/3.webp"
+    ]
+  },
+  {
+    "id": "coffee-books-vintage-festival",
+    "name": "Coffee, Books & Vintage Festival",
+    "organizationId": null,
+    "topics": [
+      "food",
+      "culture"
+    ],
+    "description": [
+      "Coffee, Books & Vintage Festival — це подія, що об'єднує три великі любові: добру каву, цікаві книги та унікальні вінтажні знахідки. Фестиваль поєднує в собі великий кавовий маркет з національними чемпіонатами бариста, книжковий ярмарок з лекціями та зустрічами з авторами, а також великий блошиний ринок.",
+      "Мета заходу — створити затишний простір для неспішного відпочинку, де можна випити філіжанку кави, знайти рідкісну книгу, придбати вінтажний одяг чи меблі та підтримати благодійні ініціативи."
+    ],
+    "audience": "Кавомани, книголюби, поціновувачі вінтажу, дизайнери та всі, хто шукає натхнення та затишної, творчої атмосфери.",
+    "place": "Традиційною локацією є простір !FESTrepublic.",
+    "whenText": "Зазвичай проходить двічі на рік: навесні (в травні) та восени (у вересні).",
+    "months": [
+      5,
+      9
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Вхід платний. Часто у вартість квитка входить фірмова чашка та дріп-кава.",
+    "links": [
+      {
+        "title": "Coffee, Books & Vintage #7 – 4-5 жовтня, Львів",
+        "url": "https://coffee.fest.lviv.ua/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@coffee.books.vintage)",
+        "url": "https://www.instagram.com/coffee.books.vintage/",
+        "type": "instagram"
+      },
+      {
+        "title": "Coffee, Books & Vintage Festival",
+        "url": "https://www.facebook.com/coffee.books.vintage/",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/coffee-books-vintage-festival/cover.webp",
+    "gallery": [
+      "images/coffee-books-vintage-festival/1.webp",
+      "images/coffee-books-vintage-festival/2.webp",
+      "images/coffee-books-vintage-festival/3.webp"
+    ]
+  },
+  {
+    "id": "speshl-craft-beer-bbq",
+    "name": "СПЕШЛ Фестиваль крафтового пива та BBQ",
+    "organizationId": null,
+    "topics": [
+      "food"
+    ],
+    "description": [
+      "СПЕШЛ — це крафтовий пивний фестиваль, який збирає у Львові пивоварів, що варять справді \"спеціальне\" пиво. На фестивалі представлені як відомі українські бренди, так і невеликі локальні броварні, що експериментують зі смаками та інгредієнтами.",
+      "Формат заходу поєднує дегустацію десятків сортів пива з живою музикою та зоною фуд-корту."
+    ],
+    "audience": "Поціновувачі крафтового пива, біґіки, хіпстери, меломани та всі, хто шукає атмосферний відпочинок з друзями.",
+    "place": "Традиційною локацією є подвір'я Львівського палацу мистецтв (Палац Потоцьких).",
+    "whenText": "Щорічно, восени, зазвичай у жовтні.",
+    "months": [
+      10
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Вхід платний. Ціна квитка зазвичай включає дегустаційний келих.",
+    "links": [
+      {
+        "title": "ФЕСТИВАЛЬ КРАФТОВОГО ПИВА ТА BBQ| 📍ЛЬВІВ (@special_bf_festival)",
+        "url": "https://www.instagram.com/special_bf_festival/",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/speshl-craft-beer-bbq/cover.webp",
+    "gallery": [
+      "images/speshl-craft-beer-bbq/1.webp",
+      "images/speshl-craft-beer-bbq/2.webp",
+      "images/speshl-craft-beer-bbq/3.webp"
+    ]
+  },
+  {
+    "id": "lviv-media-forum",
+    "name": "Lviv Media Forum",
+    "organizationId": null,
+    "topics": [
+      "forums"
+    ],
+    "description": [
+      "Lviv Media Forum (LMF) — це громадська організація, що є одним з найбільших медійних хабів у Східній Європі та займається підтримкою і розвитком незалежних медіа.",
+      "Їхній однойменний щорічний форум — це ключова подія для медіаспільноти України та регіону. Конференція збирає сотні журналістів, редакторів, медіаменеджерів та міжнародних експертів для обговорення найгостріших викликів: від боротьби з дезінформацією та роботи медіа в умовах війни до фінансової стійкості та впровадження нових технологій."
+    ],
+    "audience": "Журналісти, редактори, медіаменеджери, фактчекери, видавці, комунікаційники, іноземні кореспонденти, а також усі, хто професійно працює у сфері медіа та інформації.",
+    "place": "Подія проходить на кількох локаціях у Львові, часто в Центрі Довженка. Також завжди є можливість долучитися онлайн.",
+    "whenText": "Щорічно, зазвичай у травні.",
+    "months": [
+      5
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Участь платна. Вартість залежить від типу квитка. Часто діють спеціальні програми та гранти для медійників.",
+    "links": [
+      {
+        "title": "Львівський медіафорум: підтримка українських медіа",
+        "url": "https://lvivmediaforum.com/",
+        "type": "site"
+      },
+      {
+        "title": "Lviv Media Forum | Lviv",
+        "url": "https://www.facebook.com/LvivMediaforum",
+        "type": "facebook"
+      },
+      {
+        "title": "Instagram (@lvivmediaforum)",
+        "url": "https://www.instagram.com/lvivmediaforum",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/lviv-media-forum/cover.webp",
+    "gallery": [
+      "images/lviv-media-forum/1.webp",
+      "images/lviv-media-forum/2.webp",
+      "images/lviv-media-forum/3.webp"
+    ]
+  },
+  {
+    "id": "lviv-urban-forum",
+    "name": "Lviv Urban Forum",
+    "organizationId": null,
+    "topics": [
+      "forums"
+    ],
+    "description": [
+      "Lviv Urban Forum — це міжнародна подія, присвячена питанням міського розвитку, архітектури та урбаністики. Форум збирає провідних українських та світових архітекторів, урбаністів, представників муніципалітетів та дослідників для обговорення майбутнього міст.",
+      "Ключова мета заходу — обмін досвідом та пошук рішень для створення якісного, сталого та людиноцентричного міського середовища. Останніми роками особливий фокус робиться на темах повоєнної відбудови українських міст, інтеграції нових підходів до планування та збереження архітектурної спадщини."
+    ],
+    "audience": "Архітектори, міські планувальники, урбаністи, представники органів місцевого самоврядування, девелопери, соціологи, а також усі, хто цікавиться розвитком міст та міських просторів.",
+    "place": "Зазвичай проходить у Львові на знакових архітектурних локаціях, що відповідають темі форуму (наприклад, Lem Station).",
+    "whenText": "Щорічно, зазвичай наприкінці червня або на початку липня.",
+    "months": [
+      6,
+      7
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Участь платна. Ціна залежить від категорії (студент, звичайний, груповий) та дати придбання квитка.",
+    "links": [
+      {
+        "title": "Lviv Urban Forum",
+        "url": "https://www.lvivurbanforum.org/",
+        "type": "site"
+      },
+      {
+        "title": "Lviv Urban Forum",
+        "url": "https://www.facebook.com/lvivurbanforum",
+        "type": "facebook"
+      },
+      {
+        "title": "Instagram (@lvivurbanforum)",
+        "url": "https://www.instagram.com/lvivurbanforum/",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/lviv-urban-forum/cover.svg",
+    "gallery": [
+      "images/lviv-urban-forum/1.webp",
+      "images/lviv-urban-forum/2.webp",
+      "images/lviv-urban-forum/3.webp"
+    ]
+  },
+  {
+    "id": "lviv-bookforum",
+    "name": "Lviv BookForum",
+    "organizationId": null,
+    "topics": [
+      "culture"
+    ],
+    "description": [
+      "BookForum (раніше Форум Видавців) — це найбільший в Україні книжковий ярмарок та міжнародний літературний фестиваль з багаторічною історією, що проводиться з 1994 року. Це головна подія для української книжкової індустрії, що збирає письменників, видавців, перекладачів та тисячі читачів.",
+      "Окрім масштабного книжкового ярмарку, програма фестивалю включає сотні подій: презентації новинок, дискусії на гострі соціальні теми, зустрічі з авторами, поетичні читання та професійні заходи для видавців."
+    ],
+    "audience": "Читачі, письменники, видавці, literary agents, перекладачі, критики, ілюстратори, бібліотекарі та всі, хто любить книги та інтелектуальні дискусії.",
+    "place": "Історично головною локацією був Львівський палац мистецтв. В останні роки фестиваль проходить у гібридному форматі, використовуючи численні локації в центрі Львова та маючи потужну онлайн-програму.",
+    "whenText": "Щорічно, зазвичай восени (у вересні або жовтні).",
+    "months": [
+      9,
+      10
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Вхід на ярмарок та більшість подій платний. Зазвичай можна придбати як абонемент на всі дні, так і квитки на окремі заходи.",
+    "links": [
+      {
+        "title": "Bookforum",
+        "url": "https://bookforum.ua/",
+        "type": "site"
+      },
+      {
+        "title": "Літературний фестиваль (@bookforumlviv)",
+        "url": "https://www.instagram.com/bookforumlviv/",
+        "type": "instagram"
+      },
+      {
+        "title": "Форум Видавців",
+        "url": "https://www.facebook.com/lviv.bookforum/",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/lviv-bookforum/cover.webp",
+    "gallery": [
+      "images/lviv-bookforum/1.webp",
+      "images/lviv-bookforum/2.webp",
+      "images/lviv-bookforum/3.webp"
+    ]
+  },
+  {
+    "id": "lviv-invest-forum",
+    "name": "Lviv Invest Forum",
+    "organizationId": null,
+    "topics": [
+      "forums"
+    ],
+    "description": [
+      "Lviv Invest Forum (раніше відомий як Lviv International Economic Forum) — це одна з наймасштабніших та найважливіших інвестиційних подій Західної України. Форум є стратегічною платформою, де представники влади, українського та міжнародного бізнесу, інвестори та фінансові організації обговорюють економічний розвиток, інвестиційний клімат та ключові проєкти регіону.",
+      "Мета заходу — презентувати інвестиційний потенціал Львова та області, залучити прямі іноземні інвестиції, а також сприяти діалогу між бізнесом та владою для створення сприятливих умов ведення бізнесу."
+    ],
+    "audience": "Великі українські та міжнародні інвестори, представники інвестиційних та венчурних фондів, дипломати, керівники органів державної влади та місцевого самоврядування, власники та топ-менеджери великого бізнесу.",
+    "place": "Emily Resort.",
+    "whenText": "Зазвичай проходить щорічно, восени.",
+    "months": [
+      9,
+      10,
+      11
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Участь платна та доволі високовартісна. Потребує обов'язкової попередньої реєстрації.",
+    "links": [
+      {
+        "title": "LIF — Lviv Invest Forum",
+        "url": "https://lviv-invest.com/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@lviv_invest_forum)",
+        "url": "https://www.instagram.com/lviv_invest_forum/",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/lviv-invest-forum/cover.webp",
+    "gallery": [
+      "images/lviv-invest-forum/1.webp",
+      "images/lviv-invest-forum/2.webp",
+      "images/lviv-invest-forum/3.webp"
+    ]
+  },
+  {
+    "id": "vchyteli-maibutnoho",
+    "name": "Вчителі майбутнього",
+    "organizationId": "osvitoriya",
+    "topics": [
+      "education",
+      "forums"
+    ],
+    "description": [
+      "\"Вчителі Майбутнього\" — це щорічний освітній форум, організований громадською спілкою «Освіторія». Подія є однією з найбільших платформ в Україні для обговорення майбутнього шкільної освіти, інновацій у навчанні та розвитку вчительської професії.",
+      "Мета форуму — надихнути українських освітян, надати їм нові інструменти та ідеї, а також об'єднати вчителів, директорів, реформаторів та батьків для створення сучасної української школи.",
+      "У програмі понад 100 подій протягом 2-х днів: панельні дискусії, презентації, лекції, майстерки, інтерактивні формати, неформальне спілкування, нетворкінг і безліч сюрпризів для учасників."
+    ],
+    "audience": "Вчителі та директори шкіл, освітні менеджери, реформатори, представники державних органів, свідомі батьки та всі, хто причетний до створення сучасної української освіти.",
+    "place": "Зазвичай проходить у Львові на великих сучасних локаціях, здатних вмістити тисячі учасників, наприклад, !FESTrepublic або Центр Шептицького УКУ.",
+    "whenText": "Щорічно, найчастіше влітку.",
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Участь платна. Вартість залежить від дати придбання квитка.",
+    "links": [
+      {
+        "title": "Освітній фест «Вчителі майбутнього» – Освіторія",
+        "url": "https://fest.osvitoria.org/",
+        "type": "site"
+      }
+    ],
+    "cover": "images/vchyteli-maibutnoho/cover.webp",
+    "gallery": [
+      "images/vchyteli-maibutnoho/1.webp",
+      "images/vchyteli-maibutnoho/2.webp",
+      "images/vchyteli-maibutnoho/3.webp"
+    ]
+  },
+  {
+    "id": "bazar-dobra",
+    "name": "Базар Добра",
+    "organizationId": "domivka-vryatovanykh-tvaryn",
+    "topics": [
+      "charity"
+    ],
+    "description": [
+      "\"Базар Добра\" — це благодійний ярмарок, організований \"Домівкою Врятованих Тварин\". Під час заходу відвідувачі можуть придбати різноманітні товари: від одягу та книг до декору та вінтажних знахідок. Усі речі для продажу надані небайдужими людьми.",
+      "Головна мета — зібрати кошти на утримання та лікування мешканців \"Домівки\". Це чудова можливість поєднати приємний шопінг, еко-споживання та допомогу тваринам."
+    ],
+    "audience": "Всі, хто хоче підтримати притулок, шукачі вінтажних скарбів, любителі екологічного споживання, друзі та прихильники \"Домівки\".",
+    "place": "Зазвичай проходить на території самої \"Домівки\" (вул. Олекси Довбуша, 24), що дозволяє гостям одразу побачити, кому вони допомагають.",
+    "whenText": "Проводиться періодично протягом року. За точними датами варто слідкувати на їхніх офіційних сторінках.",
+    "months": [],
+    "yearRound": true,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Вхід вільний або вільний донат. Усі кошти, виручені з продажу речей, йдуть на потреби тварин.",
+    "links": [
+      {
+        "title": "Фестиваль (@bazar_dobra_)",
+        "url": "https://www.instagram.com/bazar_dobra_/",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/bazar-dobra/cover.webp",
+    "gallery": [
+      "images/bazar-dobra/1.webp",
+      "images/bazar-dobra/2.webp",
+      "images/bazar-dobra/3.webp"
+    ]
+  },
+  {
+    "id": "wiz-art-film-festival",
+    "name": "Wiz-Art Film Festival",
+    "organizationId": null,
+    "topics": [
+      "culture"
+    ],
+    "description": [
+      "Wiz-Art — це Львівський міжнародний фестиваль короткометражних фільмів, одна з найпомітніших подій у світі українського кіно. Фестиваль є платформою для презентації та розвитку короткого метру, що збирає у Львові як молодих, так і досвідчених кінематографістів з усього світу.",
+      "Окрім конкурсних та позаконкурсних показів, програма насичена освітніми заходами: майстер-класами, воркшопами та зустрічами з режисерами."
+    ],
+    "audience": "Кінематографісти, режисери, продюсери, кінокритики, студенти кіношкіл та всі поціновувачі авторського та незалежного кіно.",
+    "place": "Події фестивалю проходять на кількох локаціях, зазвичай у кінотеатрах та арт-центрах Львова.",
+    "whenText": "Щорічно. Дати можуть змінюватись, тому варто слідкувати за анонсами.",
+    "months": [],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Вхід платний. Можна придбати як абонемент на весь фестиваль, так і квитки на окремі кінопокази.",
+    "links": [
+      {
+        "title": "WIZ-ART #16",
+        "url": "https://wiz-art.ua/festival/",
+        "type": "site"
+      },
+      {
+        "title": "Wiz-Art Film Festival (@wizart_festival)",
+        "url": "https://www.instagram.com/wizart_festival/",
+        "type": "instagram"
+      },
+      {
+        "title": "WIZ-ART",
+        "url": "https://www.facebook.com/wizartfestival",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/wiz-art-film-festival/cover.webp",
+    "gallery": [
+      "images/wiz-art-film-festival/1.webp",
+      "images/wiz-art-film-festival/2.webp",
+      "images/wiz-art-film-festival/3.webp"
+    ]
+  },
+  {
+    "id": "sunday-bazaarr",
+    "name": "Sunday Bazaarr",
+    "organizationId": null,
+    "topics": [
+      "culture"
+    ],
+    "description": [
+      "Sunday BazaarR — це періодичний ярмарок, що збирає на одному майданчику українські бренди, дизайнерів та крафтових виробників. Подія є платформою для підтримки локального бізнесу, де можна знайти унікальні товари: від одягу та аксесуарів до декору для дому та подарунків ручної роботи."
+    ],
+    "audience": "Поціновувачі українських брендів, шукачі унікальних подарунків, а також усі, хто цінує ручну роботу та хоче підтримати локальних виробників.",
+    "place": "Локації можуть змінюватись. Найчастіше ярмарок проходить у Львівському палаці мистецтв (вул. Коперника, 17), а також на території LEM Station.",
+    "whenText": "Проводиться періодично протягом року, зазвичай на вихідних. За анонсами конкретних дат слід стежити на офіційних сторінках.",
+    "months": [],
+    "yearRound": true,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Вхід зазвичай платний, але умови можуть змінюватись. Вартість краще уточнювати в анонсах конкретної події.",
+    "links": [
+      {
+        "title": "Sunday BazaarR (@sundaybazaarr)",
+        "url": "https://www.instagram.com/sundaybazaarr/",
+        "type": "instagram"
+      },
+      {
+        "title": "Sunday BazaarR",
+        "url": "https://www.facebook.com/sundaybazzaarr/",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/sunday-bazaarr/cover.webp",
+    "gallery": [
+      "images/sunday-bazaarr/1.webp",
+      "images/sunday-bazaarr/2.webp",
+      "images/sunday-bazaarr/3.webp"
+    ]
+  },
+  {
+    "id": "lviv-pet-fest",
+    "name": "Lviv Pet Fest",
+    "organizationId": null,
+    "topics": [
+      "charity"
+    ],
+    "description": [
+      "Lviv Pet Fest — це великий фестиваль, присвячений домашнім улюбленцям та всьому, що з ними пов'язано. Подія збирає на одній території власників тварин, представників зооіндустрії, ветеринарів, грумерів, кінологів та благодійні організації.",
+      "Мета заходу — об'єднати спільноту \"пет-френдлі\" людей, познайомити їх з новинками на ринку зоотоварів, провести лекції про догляд та здоров'я, а також знайти дім для тварин з притулків. Важливою частиною є благодійність, зокрема збір коштів для допомоги безпритульним тваринам."
+    ],
+    "audience": "Власники домашніх тварин, сім'ї, що планують завести улюбленця, представники зообізнесу, волонтери та всі, хто любить тварин.",
+    "place": "Подія проходить на території !FESTrepublic.",
+    "whenText": "Вперше фестиваль відбувся у червні 2024 року та планується як щорічний.",
+    "months": [
+      6
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Вхід платний.",
+    "links": [
+      {
+        "title": "Фестиваль домашніх улюбленців PetFest | Lviv Pet Fest",
+        "url": "https://www.lvivpetfest.com/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@lvivpetfest)",
+        "url": "https://www.instagram.com/lvivpetfest/",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/lviv-pet-fest/cover.webp",
+    "gallery": [
+      "images/lviv-pet-fest/1.webp",
+      "images/lviv-pet-fest/2.avif"
+    ]
+  },
+  {
+    "id": "khvostyk-fest",
+    "name": "Хвостик Фест",
+    "organizationId": null,
+    "topics": [
+      "charity"
+    ],
+    "description": [
+      "\"Хвостик Фест\" — це великий фестиваль про любов до тварин, що об'єднує відповідальних власників, бізнеси та зоозахисні організації.",
+      "Головні активності заходу: великий маркет з товарами для улюбленців, лекторій від ветеринарів та кінологів, зона грумінгу, тренувань, фудкорт та фотозони."
+    ],
+    "audience": "Відповідальні власники тварин, люди, що мріють про домашнього улюбленця, представники зообізнесу та всі, хто хоче провести час у дружній до тварин атмосфері.",
+    "place": "Подія проходить на території Парку культури.",
+    "whenText": "Поки 2025 є першим роком проведення цього фесту, але скоріше за все це буде раз на рік.",
+    "months": [],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Вхід платний. Ціна залежить від квитка.",
+    "links": [
+      {
+        "title": "Хвостик Фест | 2 - 3 серпня, Львів.",
+        "url": "https://hvostykfest.com/",
+        "type": "site"
+      },
+      {
+        "title": "Хвостик Фест (@hvostykfest)",
+        "url": "https://www.instagram.com/hvostykfest/",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/khvostyk-fest/cover.webp",
+    "gallery": [
+      "images/khvostyk-fest/1.webp",
+      "images/khvostyk-fest/2.webp",
+      "images/khvostyk-fest/3.webp"
+    ]
+  },
+  {
+    "id": "king-kross-fest",
+    "name": "Кінг Кросс Фест",
+    "organizationId": null,
+    "topics": [
+      "charity"
+    ],
+    "description": [
+      "\"Кінг Кросс Фест\" — це великий благодійний фестиваль, який організовує торговий центр King Cross Leopolis, часто приурочений до святкування дня народження ТРЦ. Подія є масштабним дійством, що поєднує розваги та збір коштів на важливі потреби (наприклад, на підтримку ЗСУ).",
+      "Програма заходу зазвичай включає великий ярмарок, майстер-класи, виступи відомих українських артистів та розважальні зони для дітей.",
+      "Крім цієї події King Cross Leopolis також створює багато інших подій, слідкуйте за їхніми сторінками"
+    ],
+    "audience": "Дуже широка аудиторія: відвідувачі торгового центру, сім'ї з дітьми, молодь та всі, хто хоче долучитися до благодійності та весело провести час.",
+    "place": "На території торгово-розважального центру King Cross Leopolis (с. Сокільники, вул. Стрийська, 30).",
+    "whenText": "Зазвичай проходить восени (наприклад, у вересні), але варто слідкувати за анонсами.",
+    "months": [
+      9,
+      10,
+      11
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Вхід вільний. Збір коштів відбувається через активності на ярмарку, пожертви та участь у майстер-класах.",
+    "links": [
+      {
+        "title": "King Cross Leopolis",
+        "url": "https://www.kingcross.com.ua/",
+        "type": "site"
+      },
+      {
+        "title": "ТРЦ King Cross Leopolis | Sokilnyky",
+        "url": "https://www.facebook.com/KingCrossLeopolis.Lviv?locale=uk_UA",
+        "type": "facebook"
+      },
+      {
+        "title": "ТРЦ King Cross Leopolis (@kingcrossleopolis)",
+        "url": "https://www.instagram.com/kingcrossleopolis/",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/king-kross-fest/cover.webp",
+    "gallery": [
+      "images/king-kross-fest/1.webp",
+      "images/king-kross-fest/2.webp",
+      "images/king-kross-fest/3.webp"
+    ]
+  },
+  {
+    "id": "dice-con",
+    "name": "DICE CON",
+    "organizationId": null,
+    "topics": [
+      "culture"
+    ],
+    "description": [
+      "DiceCon — це найбільший у Львові фестиваль настільних ігор. Окрім великих фестивалів, що проходять кілька разів на рік, організатори також проводять регулярні камерні ігротеки та тематичні турніри. Основою подій є величезна ігротека з сотнями ігор, ярмарок від видавництв та зони для новачків з досвідченими гейм-майстрами.",
+      "Вони проводять щонайменше три різні типи івентів:",
+      "- Великий фестиваль DiceCon (флагманська подія)\nЦе їхній головний і наймасштабніший захід, що проходить кілька разів на рік. Саме тут ви знайдете: гігантську ігротеку, ярмарок, турніри, атмосферу свята, косплей шоу і багато іншого.\n- Регулярні (лампові) ігротеки\nЦе серце їхньої спільноти. Такі події проходять набагато частіше (іноді щотижня) і є меншими за масштабом.\n- Тематичні та спеціалізовані івенти\nЧас від часу вони організовують щось унікальне, наприклад: ніч настільних ігор, турнірні дні, презентації новинок."
+    ],
+    "audience": "Досвідчені гравці, новачки, які тільки знайомляться зі світом настілок, сім'ї з дітьми, компанії друзів та всі, хто шукає цікаве та інтелектуальне дозвілля.",
+    "place": "Локації часто змінюються залежно від формату. Великі фестивалі проходять у Львівському палаці мистецтв або на !FESTrepublic. Камерні ігротеки можуть відбуватися в антикафе, пабах, школах та інших креативних просторах.",
+    "whenText": "Великі фестивалі проходять декілька разів на рік (наприклад, зимовий та літній). Менші ігротеки відбуваються значно частіше, іноді щотижня.",
+    "months": [],
+    "yearRound": true,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Вхід платний. Купується квиток, що дає доступ до ігротеки на весь час події.",
+    "links": [
+      {
+        "title": "DICE CON 2025, 29 серпня - 31 серпня, Львів, Львівський Палац Мистецтв, вул. Копепрника 17",
+        "url": "https://www.dicecon.fun/",
+        "type": "site"
+      },
+      {
+        "title": "Dice Con",
+        "url": "https://t.me/diceconfest",
+        "type": "telegram"
+      },
+      {
+        "title": "Instagram (@dice.con)",
+        "url": "https://www.instagram.com/dice.con/",
+        "type": "instagram"
+      },
+      {
+        "title": "Dice Con | Lviv",
+        "url": "https://www.facebook.com/diceconfest",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/dice-con/cover.webp",
+    "gallery": [
+      "images/dice-con/1.webp",
+      "images/dice-con/2.webp",
+      "images/dice-con/3.webp"
+    ]
+  },
+  {
+    "id": "games-gathering-lviv",
+    "name": "Games Gathering Lviv",
+    "organizationId": "games-gathering",
+    "topics": [
+      "it",
+      "culture"
+    ],
+    "description": [
+      "Games Gathering — це найбільша в Україні конференція розробників ігор, львівська едиція якої збирає професіоналів та ентузіастів геймдев-індустрії. Захід є платформою для обміну досвідом через лекції та воркшопи від експертів українських та міжнародних студій.",
+      "На конференціях можна побачити таке:",
+      "- Ярмарок нових ігор: Молоді команди привозять свої ще не випущені ігри, і в них можна пограти. Це їхній шанс \"засвітитися\" і знайти видавця.\n- Лекції від профі: Відомі розробники з великих компаній (наприклад, творці S.T.A.L.K.E.R. чи Metro) діляться досвідом і розповідають, як створювати круті ігри.\n- Місце для знайомств: Це ідеальна можливість знайти роботу в ігровій студії мрії або просто поспілкуватися з тими, хто горить тією ж справою."
+    ],
+    "audience": "Розробники ігор, гейм-дизайнери, 2D/3D художники, аніматори, звукорежисери, видавці, а також студенти профільних напрямків та всі, хто прагне почати кар'єру в геймдеві.",
+    "place": "Premier Hotel Dnister",
+    "whenText": "Зазвичай щорічно, у різну пору",
+    "months": [],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Участь платна. Вартість залежить від типу квитка (наприклад, Standard, Premium) та моменту купівлі.",
+    "links": [
+      {
+        "title": "Home",
+        "url": "https://www.ggconference.com/",
+        "type": "site"
+      }
+    ],
+    "cover": "images/games-gathering-lviv/cover.webp",
+    "gallery": [
+      "images/games-gathering-lviv/1.webp",
+      "images/games-gathering-lviv/2.webp",
+      "images/games-gathering-lviv/3.webp"
+    ]
+  },
+  {
+    "id": "iron-demo",
+    "name": "Iron DEMO",
+    "organizationId": "iron-cluster",
+    "topics": [
+      "it"
+    ],
+    "description": [
+      "Iron Demo (або Demo Day) — Щорічна подія кластера IRON, де зустрічаються ті, хто визначає майбутнє на фронті – виробники, військові, інвестори, стартапи",
+      "IRON DEMO — можливість показати продукт тим, хто ухвалює рішення та інвестує в оборонні технології.",
+      "Демонструйте рішення в дії, отримуйте фідбек і відкривайте шлях до контрактів та партнерств"
+    ],
+    "audience": "Інвестори, представники венчурних фондів, бізнес-ангели, керівники виробничих підприємств, інженери, hardware-розробники, а також представники ЗМІ, що висвітлюють теми технологій та інновацій.",
+    "place": "Локації можуть змінюватись, але зазвичай це сучасні інноваційні центри або івент-простори у Львові, що відповідають технологічній тематиці заходу.",
+    "whenText": "Проводиться щорічно. За анонсами потрібно слідкувати на офіційних сторінках кластера.",
+    "months": [],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "mixed",
+    "priceText": "Формат участі може різнитися. Для стартапів-учасників це зазвичай безкоштовно (після відбору), для відвідувачів-інвесторів може бути потрібна реєстрація або купівля квитка.",
+    "links": [
+      {
+        "title": "IRON DEMO 2025",
+        "url": "https://ironcluster.org/iron-demo",
+        "type": "site"
+      }
+    ],
+    "cover": "images/iron-demo/cover.webp",
+    "gallery": [
+      "images/iron-demo/1.avif",
+      "images/iron-demo/2.avif",
+      "images/iron-demo/3.avif"
+    ]
+  },
+  {
+    "id": "lviv-direction-qaday",
+    "name": "Lviv Direction QADay",
+    "organizationId": "qaday",
+    "topics": [
+      "it"
+    ],
+    "description": [
+      "Lviv Direction QADay — це вузькоспеціалізована технічна конференція для фахівців із забезпечення якості програмного забезпечення (QA). Подія є частиною серії конференцій QADay, що проходять у різних містах України та збирають провідних експертів галузі.",
+      "Мета заходу — створити платформу для обміну досвідом, обговорення нових інструментів, підходів до тестування та трендів у сфері Quality Assurance."
+    ],
+    "audience": "QA-інженери (Manual та Automation), тестувальники, QA-ліди та менеджери, а також усі спеціалісти, залучені до процесів тестування та забезпечення якості IT-продуктів.",
+    "place": "Формат заходу може змінюватись. Події проходили як офлайн у Львові, так і в онлайн-форматі. Якщо офлайн, то різних офісах ІТ компаній.",
+    "whenText": "Проводиться декілька разів на рік. За анонсами конкретних дат слід стежити на офіційному сайті.",
+    "months": [],
+    "yearRound": true,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Участь платна. Вартість змінюється від дати придбання.",
+    "links": [
+      {
+        "title": "Події",
+        "url": "https://qaday.org/events/",
+        "type": "site"
+      }
+    ],
+    "cover": "images/lviv-direction-qaday/cover.webp",
+    "gallery": [
+      "images/lviv-direction-qaday/1.webp",
+      "images/lviv-direction-qaday/2.webp",
+      "images/lviv-direction-qaday/3.webp"
+    ]
+  },
+  {
+    "id": "forum-451e",
+    "name": "Forum 451°E",
+    "organizationId": null,
+    "topics": [
+      "it",
+      "forums"
+    ],
+    "description": [
+      "Forum 451°E — це щорічний львівський форум з електронного урядування, організований Управлінням ІТ Львівської міської ради. Назва є відсилкою до роману Рея Бредбері \"451° за Фаренгейтом\", що символізує важливість вільного доступу до інформації.",
+      "Подія є платформою для діалогу між владою, бізнесом та громадськістю щодо цифровізації державних послуг та впровадження інновацій у міське управління. Тематика щороку змінюється, фокусуючись на найактуальніших питаннях: від відкритих даних та кібербезпеки до розвитку штучного інтелекту в державному секторі."
+    ],
+    "audience": "Представники державних органів влади, ІТ-спеціалісти, що працюють у сфері e-government, громадські активісти, представники бізнесу, що створюють рішення для держави, та студенти відповідних спеціальностей.",
+    "place": "Локації змінюються, часто це інноваційні простори, такі як LvivTech.City (LTC.BNKR) або Jam Factory Art Center.",
+    "whenText": "Щорічно, зазвичай восени або на початку зими.",
+    "months": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Зазвичай участь безкоштовна, але вимагає попередньої реєстрації, оскільки кількість місць обмежена.",
+    "links": [
+      {
+        "title": "Instagram (@forum451e)",
+        "url": "https://www.instagram.com/forum451e/",
+        "type": "instagram"
+      },
+      {
+        "title": "Forum 451Е",
+        "url": "https://www.facebook.com/forum451e/",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/forum-451e/cover.webp",
+    "gallery": [
+      "images/forum-451e/1.webp",
+      "images/forum-451e/2.webp"
+    ]
+  },
+  {
+    "id": "silicon-drinkabout-lviv",
+    "name": "Silicon Drinkabout Lviv",
+    "organizationId": null,
+    "topics": [
+      "it"
+    ],
+    "description": [
+      "Це неформальні зустрічі для тих, хто хоче більше живого спілкування й менше small talk’у.",
+      "Так, у нас є айтішники, але це нетворкінг для всіх, незалежно від професії.",
+      "Подія є частиною глобального руху Silicon Drinkabout, що проходить щоп'ятниці у багатьох містах світу. Формат передбачає невимушену атмосферу для знайомств, обміну ідеями, пошуку однодумців та відпочинку після робочого тижня."
+    ],
+    "audience": "ІТ-спеціалісти, стартапери, дизайнери, маркетологи, менеджери проєктів, рекрутери та всі, хто працює в технологічній сфері або цікавиться нею.",
+    "place": "Локації постійно змінюються. Зазвичай це паби, бари та ресторани в центрі Львова (останнім часом часто проходить у Teddy Restaurant).",
+    "whenText": "Щомісяця, в останню п’ятницю.",
+    "months": [],
+    "yearRound": true,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Вхід безкоштовний, іноді організатори пропонують зробити донат на ЗСУ. Учасники самі оплачують свої напої та їжу.",
+    "links": [
+      {
+        "title": "Silicon Drinkabout Lviv",
+        "url": "https://www.facebook.com/SiliconDrinkaboutLviv/",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/silicon-drinkabout-lviv/cover.webp",
+    "gallery": [
+      "images/silicon-drinkabout-lviv/1.webp",
+      "images/silicon-drinkabout-lviv/2.webp",
+      "images/silicon-drinkabout-lviv/3.webp"
+    ]
+  },
+  {
+    "id": "hacktoberfest",
+    "name": "Hacktoberfest",
+    "organizationId": null,
+    "topics": [
+      "it"
+    ],
+    "description": [
+      "Hacktoberfest — це щорічна глобальна подія від компанії DigitalOcean, що проходить протягом усього жовтня і присвячена підтримці та розвитку проєктів з відкритим кодом (open-source). Це не фестиваль у класичному розумінні, а радше місячний марафон.",
+      "Суть полягає в тому, щоб заохотити людей робити внески в open-source. Учасники мають зробити певну кількість корисних внесків (pull requests) у публічні репозиторії на GitHub/GitLab. За успішне виконання завдання вони отримують винагороду — традиційно це була фірмова футболка або можливість посадити дерево."
+    ],
+    "audience": "Розробники будь-якого рівня (від новачків до сеньйорів), студенти, технічні письменники, дизайнери — всі, хто хоче спробувати зробити свій внесок у світову IT-спільноту. Це чудова точка входу у світ open-source.",
+    "place": "У Львові проходив щорічно офлайн (крім 2024 року). Наймовірніша локація — УКУ або офіс та коворкінг ІТ компаній, а взагалі подія проходить онлайн по всьому світу.",
+    "whenText": "Щорічно, протягом всього жовтня.",
+    "months": [
+      10
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Участь абсолютно безкоштовна.",
+    "links": [
+      {
+        "title": "Hacktoberfest 2025",
+        "url": "https://hacktoberfest.com/",
+        "type": "site"
+      }
+    ],
+    "cover": "images/hacktoberfest/cover.webp",
+    "gallery": [
+      "images/hacktoberfest/1.webp",
+      "images/hacktoberfest/2.webp",
+      "images/hacktoberfest/3.webp"
+    ]
+  },
+  {
+    "id": "best-hackath0n",
+    "name": "BEST::HACKath0n",
+    "organizationId": "best-lviv",
+    "topics": [
+      "it",
+      "education"
+    ],
+    "description": [
+      "BEST::Hackathon — це 24-годинне змагання з програмування, організоване студентською організацією BEST Lviv. Під час заходу команди студентів працюють над розробкою програмного або апаратного рішення для конкретної проблеми (кейсу), наданої партнерськими IT-компаніями.",
+      "Мета хакатону — дати студентам можливість застосувати свої теоретичні знання на практиці, попрацювати в команді в умовах обмеженого часу та презентувати свій проєкт експертам з ІТ-індустрії."
+    ],
+    "audience": "Студенти технічних та дотичних спеціальностей: програмісти, QA-інженери, UI/UX дизайнери, аналітики, а також усі молоді ентузіасти, що цікавляться технологіями.",
+    "place": "Зазвичай проходить на базі Національного університету «Львівська політехніка» або в офісах компаній-партнерів (завжди був один з офісів Sofserve).",
+    "whenText": "Щорічно. Дати анонсуються на офіційних сторінках організації.",
+    "months": [],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Участь безкоштовна, але потребує попередньої реєстрації та відбору.",
+    "links": [],
+    "cover": "images/best-hackath0n/cover.webp",
+    "gallery": [
+      "images/best-hackath0n/1.webp",
+      "images/best-hackath0n/2.webp",
+      "images/best-hackath0n/3.webp"
+    ]
+  },
+  {
+    "id": "inzhenernyi-yarmarok-karyery",
+    "name": "Інженерний Ярмарок Кар’єри",
+    "organizationId": "best-lviv",
+    "topics": [
+      "education"
+    ],
+    "description": [
+      "Інженерний ярмарок кар'єри — це одна з найдавніших та найвідоміших подій від BEST Lviv, що вже понад 15 років є мостом між талановитими студентами та провідними роботодавцями. Це кар'єрний захід, де студенти можуть наживо поспілкуватися з представниками десятків інженерних та IT-компаній."
+    ],
+    "audience": "Студенти та випускники технічних, інженерних та ІТ-спеціальностей, які перебувають у пошуках стажування або роботи.",
+    "place": "Традиційною локацією є четвертий корпус Національного університету «Львівська політехніка».",
+    "whenText": "Проходить щорічно, зазвичай восени.",
+    "months": [
+      9,
+      10,
+      11
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Вхід для відвідувачів вільний.",
+    "links": [],
+    "cover": "images/inzhenernyi-yarmarok-karyery/cover.webp",
+    "gallery": [
+      "images/inzhenernyi-yarmarok-karyery/1.webp",
+      "images/inzhenernyi-yarmarok-karyery/2.webp",
+      "images/inzhenernyi-yarmarok-karyery/3.webp"
+    ]
+  },
+  {
+    "id": "best-engineering-competition",
+    "name": "BEST Engineering Competition",
+    "organizationId": "best-lviv",
+    "topics": [
+      "education"
+    ],
+    "description": [
+      "BEST Engineering Competition (BEC) — це інженерні змагання, організовані BEST Lviv, де команди студентів вирішують реальні технічні завдання.",
+      "Мета змагань — дати студентам можливість проявити креативність, інженерну думку та навички командної роботи. Переможці локального етапу отримують право представляти Львів на всеукраїнському та міжнародному рівнях змагань EBEC (European BEST Engineering Competition)."
+    ],
+    "audience": "Студенти будь-яких спеціальностей, які цікавляться інженерією, конструюванням, вирішенням аналітичних завдань та прагнуть випробувати свої сили.",
+    "place": "Зазвичай проходить на базі Національного університету «Львівська політехніка».",
+    "whenText": "Щорічно, найчастіше восени.",
+    "months": [
+      9,
+      10,
+      11
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Участь для студентів є безкоштовною, але вимагає попередньої реєстрації та відбору.",
+    "links": [],
+    "cover": "images/best-engineering-competition/cover.svg",
+    "gallery": [
+      "images/best-engineering-competition/1.webp",
+      "images/best-engineering-competition/2.webp",
+      "images/best-engineering-competition/3.webp"
+    ]
+  },
+  {
+    "id": "capture-the-flag",
+    "name": "Capture The Flag",
+    "organizationId": "best-lviv",
+    "topics": [
+      "it",
+      "education"
+    ],
+    "description": [
+      "Capture The Flag (CTF) — це змагання з кібербезпеки, що проводяться у форматі вирішення практичних завдань. Учасники об'єднуються в команди, щоб розв'язувати головоломки з веббезпеки, криптографії, реверс-інжинірингу та інших сфер. Кінцевою метою кожного завдання є знаходження \"прапора\" (flag) — унікального рядка тексту."
+    ],
+    "audience": "\"Етичні\" хакери, спеціалісти з кібербезпеки (від початківців до професіоналів), системні адміністратори, розробники та студенти, що цікавляться інформаційною безпекою.",
+    "place": "Часто проходять на базі Національного університету «Львівська політехніка», в офісах IT-компаній або повністю в онлайн-форматі.",
+    "whenText": "Проводяться періодично протягом року різними організаторами. Чіткої щорічної дати немає, за анонсами потрібно слідкувати.",
+    "months": [],
+    "yearRound": true,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Участь зазвичай безкоштовна, але потребує попередньої реєстрації.",
+    "links": [],
+    "cover": "images/capture-the-flag/cover.svg",
+    "gallery": [
+      "images/capture-the-flag/1.webp",
+      "images/capture-the-flag/2.webp",
+      "images/capture-the-flag/3.webp"
+    ]
+  },
+  {
+    "id": "best-company-insight",
+    "name": "BEST Company Insight",
+    "organizationId": "best-lviv",
+    "topics": [
+      "education"
+    ],
+    "description": [
+      "BEST Company Insight — це серія екскурсій для студентів в офіси провідних інженерних та ІТ-компаній. Це унікальна можливість побачити \"зсередини\", як працює компанія, якою є її корпоративна культура та які технології вона використовує.",
+      "Мета заходу — скоротити розрив між навчанням та реальною роботою, дозволивши студентам поспілкуватися з працівниками, поставити запитання HR-спеціалістам та дізнатися про можливості для стажування."
+    ],
+    "audience": "Студенти технічних та дотичних спеціальностей, які хочуть більше дізнатися про майбутнє місце роботи та побачити на власні очі, як влаштовані офіси технологічних компаній.",
+    "place": "Безпосередньо в офісах компаній-партнерів BEST Lviv у Львові.",
+    "whenText": "Проводиться періодично протягом навчального року (один раз на 1-2 роки).",
+    "months": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Участь безкоштовна. Через обмежену кількість місць реєстрація та відбір є обов'язковими.",
+    "links": [],
+    "cover": "images/best-company-insight/cover.webp",
+    "gallery": [
+      "images/best-company-insight/1.webp",
+      "images/best-company-insight/2.webp",
+      "images/best-company-insight/3.webp"
+    ]
+  },
+  {
+    "id": "leadership-program",
+    "name": "Програма Лідерства",
+    "organizationId": "ukrainski-studenty-za-svobodu",
+    "topics": [
+      "education",
+      "youth"
+    ],
+    "description": [
+      "Програма Лідерства — це флагманська освітня програма від громадської організації \"Українські Студенти за Свободу\".",
+      "Мета Програми — сприяти об’єднанню та залученню до дій студентів, що хочуть розвивати свої лідерські якості та будувати вільну Україну майбутнього.",
+      "Якшо коротко: 5 насичених днів різних активностей, лекцій та практичних занять. Також це єдина подія для цієї організації, завдяки якій можна до них потрапити. Більше всіх деталей на їхньому сайті."
+    ],
+    "audience": "Активні студенти та молодь, які цікавляться економікою, політичною філософією, прагнуть глибоко розібратися в ідеях класичного лібералізму та лібертаріанства і шукають спільноту однодумців.",
+    "place": "Меджибізький замок, що на Хмельниччині..",
+    "whenText": "Щороку влітку.",
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Участь у програмі є безкоштовною, проте кандидати проходять конкурсний відбір (зазвичай через заповнення анкети та співбесіду).",
+    "links": [
+      {
+        "title": "Програма Лідерства від УСС",
+        "url": "https://studfreedom.org/programa-liderstva/",
+        "type": "site"
+      }
+    ],
+    "cover": "images/leadership-program/cover.webp",
+    "gallery": [
+      "images/leadership-program/1.webp",
+      "images/leadership-program/2.webp",
+      "images/leadership-program/3.webp"
+    ]
+  }
+]

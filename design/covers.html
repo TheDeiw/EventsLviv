@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="uk" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Обкладинки: варіанти</title>
+<style>
+  :root { --bg:#000; --text:#ececee; --muted:#9a9aa2; --line:#2b2b30; --surface:#121214; --neutral:#1c1c20; --tile-light:#efece6; --tile-dark:#1c1c20; color-scheme: dark; }
+  :root[data-theme="light"] { --bg:#f5f3ee; --text:#17171a; --muted:#5d5c63; --line:#e0dcd3; --surface:#fff; --neutral:#e4e0d8; color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:400 15px/1.5 system-ui, "Segoe UI", sans-serif; }
+  .bar { position:sticky; top:0; z-index:5; display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; padding:12px 24px; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+  .bar h1 { margin:0 8px 0 0; font-size:16px; }
+  .seg { display:flex; gap:4px; padding:3px; border:1px solid var(--line); border-radius:99px; }
+  .seg button { padding:6px 14px; font:inherit; font-size:13px; color:var(--muted); background:none; border:0; border-radius:99px; cursor:pointer; }
+  .seg button[aria-pressed="true"] { color:var(--bg); background:var(--text); font-weight:600; }
+  .desc { max-width:1100px; margin:20px auto 8px; padding:0 24px; color:var(--muted); }
+  .desc b { color:var(--text); }
+  .grid { max-width:1200px; margin:0 auto; padding:16px 24px 64px; display:grid; grid-template-columns:repeat(auto-fill, minmax(240px, 1fr)); gap:20px; }
+  body[data-mode="c"] .grid { display:block; columns:4 230px; column-gap:20px; }
+  body[data-mode="c"] .it { break-inside:avoid; margin-bottom:20px; }
+  .it { margin:0; background:var(--surface); border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .frame { position:relative; overflow:hidden; }
+  .frame img { position:absolute; inset:0; display:block; width:100%; height:100%; object-fit:contain; }
+  figcaption { padding:10px 14px 12px; font-size:13px; font-weight:600; line-height:1.3; }
+  figcaption small { display:block; margin-top:2px; font-weight:400; color:var(--muted); font-size:11.5px; }
+
+  /* ----- now: whole image over a blurred copy ----- */
+  body[data-mode="now"] .frame { aspect-ratio:16/10; background:#1d1d21; }
+  body[data-mode="now"] .frame::before { content:""; position:absolute; inset:-24px; background:var(--img) center/cover; filter:blur(22px) brightness(.4); }
+
+  /* ----- a: one neutral matte for everything ----- */
+  body[data-mode="a"] .frame { aspect-ratio:16/9; background:var(--neutral); }
+  body[data-mode="a"] .logo img { padding:10%; }
+
+  /* ----- b: matte taken from the image itself; logos on a light or dark tile ----- */
+  body[data-mode="b"] .frame { aspect-ratio:16/9; background:var(--mat); box-shadow:inset 0 0 0 1px rgb(127 127 127 / .16); }
+  body[data-mode="b"] .logo img { padding:10%; }
+
+  /* ----- c: natural proportions, masonry ----- */
+  body[data-mode="c"] .frame { aspect-ratio:var(--ar); background:var(--mat); }
+  body[data-mode="c"] .logo img { padding:8%; }
+  .note { display:none; } body[data-mode="now"] .n-now, body[data-mode="a"] .n-a, body[data-mode="b"] .n-b, body[data-mode="c"] .n-c { display:block; }
+</style>
+</head>
+<body data-mode="b">
+<div class="bar">
+  <h1>Обкладинки подій</h1>
+  <div class="seg" id="mode" role="group" aria-label="Варіант">
+    <button data-v="now">Зараз (блюр)</button>
+    <button data-v="a">A · Однотонне</button>
+    <button data-v="b" aria-pressed="true">B · Колір із картинки</button>
+    <button data-v="c">C · Природна пропорція</button>
+  </div>
+  <div class="seg" id="set" role="group" aria-label="Набір"><button data-v="hard" aria-pressed="true">Складні випадки</button><button data-v="all">Усі 52</button></div>
+  <div class="seg" id="theme" role="group" aria-label="Тема"><button data-v="dark" aria-pressed="true">Темна</button><button data-v="light">Світла</button></div>
+</div>
+<div class="desc">
+  <p class="note n-now"><b>Зараз.</b> Картинка вписана повністю поверх розмитої темної копії самої себе. Нічого не обрізає, але розмиття забирає увагу, а прозорі логотипи стоять на темному тлі, тому темні майже не видно.</p>
+  <p class="note n-a"><b>A · Однотонне паспарту.</b> Картинка вписана повністю в рамку 16:9, поля завжди одного нейтрального кольору. Найпростіше, але темні логотипи зникають, а широкі банери виглядають як смужка в рамці.</p>
+  <p class="note n-b"><b>B · Паспарту з кольору картинки (рекомендація).</b> Поля беруться з кольору країв самої картинки, тож плакат і банер продовжуються без шва. Якщо краї строкаті (фото), поля нейтральні. Прозорі логотипи стоять на світлій або темній плитці залежно від яскравості логотипа.</p>
+  <p class="note n-c"><b>C · Природна пропорція.</b> Як Pinterest: кожна картка має висоту своєї картинки, нічого не обрізається і не додається. Сітка стає рваною, а квиткові картки втрачають однакову висоту.</p>
+</div>
+<div class="grid" id="grid"></div>
+<script>
+const DATA = [ { "kind": "event", "id": "molodvizh", "name": "#Молодвіж", "path": "images/molodvizh/cover.webp", "w": 960, "h": 958, "ratio": 1, "transp": 0, "spread": 0, "edge": "#0157ff", "lum": 117 }, { "kind": "event", "id": "dyzarium", "name": "Дизаріум", "path": "images/dyzarium/cover.webp", "w": 842, "h": 429, "ratio": 1.96, "transp": 0, "spread": 72, "edge": "#477c6a", "lum": 101 }, { "kind": "event", "id": "ol-science-tech-fest", "name": "OL Science & Tech Fest", "path": "images/ol-science-tech-fest/cover.webp", "w": 960, "h": 240, "ratio": 4, "transp": 0, "spread": 44, "edge": "#d99cae", "lum": 161 }, { "kind": "event", "id": "it-future-fest", "name": "IT Future Fest", "path": "images/it-future-fest/cover.webp", "w": 1200, "h": 667, "ratio": 1.8, "transp": 0, "spread": 54, "edge": "#d2ccd6", "lum": 190 }, { "kind": "event", "id": "it-meets", "name": "IT Meets", "path": "images/it-meets/cover.webp", "w": 1170, "h": 550, "ratio": 2.13, "transp": 0, "spread": 68, "edge": "#6a5a75", "lum": 95 }, { "kind": "event", "id": "it-arena", "name": "IT Arena", "path": "images/it-arena/cover.webp", "w": 1200, "h": 630, "ratio": 1.9, "transp": 0, "spread": 43, "edge": "#0b422d", "lum": 89 }, { "kind": "event", "id": "youth-speak-forum", "name": "Youth Speak Forum", "path": "images/youth-speak-forum/cover.webp", "w": 1200, "h": 630, "ratio": 1.9, "transp": 0, "spread": 41, "edge": "#ae5380", "lum": 121 }, { "kind": "event", "id": "street-food-so-good", "name": "Street Food So Good", "path": "images/street-food-so-good/cover.webp", "w": 730, "h": 378, "ratio": 1.93, "transp": 0, "spread": 0, "edge": "#ffffff", "lum": 239 }, { "kind": "event", "id": "lviv-art-and-wine-festival", "name": "Lviv Art And Wine Festival", "path": "images/lviv-art-and-wine-festival/cover.webp", "w": 1000, "h": 572, "ratio": 1.75, "transp": 0, "spread": 34, "edge": "#f0ded1", "lum": 197 }, { "kind": "event", "id": "lviv-ice-cream-festival", "name": "Lviv Ice Cream Festival", "path": "images/lviv-ice-cream-festival/cover.webp", "w": 1200, "h": 442, "ratio": 2.71, "transp": 0, "spread": 35, "edge": "#ecd49d", "lum": 198 }, { "kind": "event", "id": "faine-misto", "name": "Faine Misto", "path": "images/faine-misto/cover.webp", "w": 1200, "h": 675, "ratio": 1.78, "transp": 0, "spread": 34, "edge": "#5c481c", "lum": 128 }, { "kind": "event", "id": "craft-beer-and-vinyl-music-festival", "name": "Craft Beer and Vinyl Music Festival", "path": "images/craft-beer-and-vinyl-music-festival/cover.webp", "w": 1200, "h": 397, "ratio": 3.02, "transp": 0, "spread": 0, "edge": "#ffffff", "lum": 241 }, { "kind": "event", "id": "pokolinnya", "name": "Покоління", "path": "images/pokolinnya/cover.webp", "w": 1200, "h": 444, "ratio": 2.7, "transp": 0, "spread": 32, "edge": "#7c3af2", "lum": 108 }, { "kind": "event", "id": "wine-and-cheese-festival", "name": "Свято вина і сиру у Львові", "path": "images/wine-and-cheese-festival/cover.webp", "w": 1200, "h": 724, "ratio": 1.66, "transp": 0, "spread": 3, "edge": "#024241", "lum": 81 }, { "kind": "event", "id": "lviv-ice-chocolate-festival", "name": "Lviv Ice & Chocolate Festival", "path": "images/lviv-ice-chocolate-festival/cover.webp", "w": 1200, "h": 645, "ratio": 1.86, "transp": 0, "spread": 1, "edge": "#f0e8e6", "lum": 215 }, { "kind": "event", "id": "coffee-books-vintage-festival", "name": "Coffee, Books & Vintage Festival", "path": "images/coffee-books-vintage-festival/cover.webp", "w": 1200, "h": 468, "ratio": 2.56, "transp": 0, "spread": 32, "edge": "#135061", "lum": 112 }, { "kind": "event", "id": "speshl-craft-beer-bbq", "name": "СПЕШЛ Фестиваль крафтового пива та BBQ", "path": "images/speshl-craft-beer-bbq/cover.webp", "w": 800, "h": 431, "ratio": 1.86, "transp": 0, "spread": 5, "edge": "#fedc06", "lum": 177 }, { "kind": "event", "id": "lviv-media-forum", "name": "Lviv Media Forum", "path": "images/lviv-media-forum/cover.webp", "w": 1200, "h": 630, "ratio": 1.9, "transp": 0, "spread": 0, "edge": "#000000", "lum": 11 }, { "kind": "event", "id": "lviv-urban-forum", "name": "Lviv Urban Forum", "path": "images/lviv-urban-forum/cover.svg", "w": 509, "h": 429, "ratio": 1.19, "transp": 0.4, "spread": 0, "edge": "#12156f", "lum": 43 }, { "kind": "event", "id": "lviv-bookforum", "name": "Lviv BookForum", "path": "images/lviv-bookforum/cover.webp", "w": 1200, "h": 675, "ratio": 1.78, "transp": 0, "spread": 74, "edge": "#c69650", "lum": 155 }, { "kind": "event", "id": "lviv-invest-forum", "name": "Lviv Invest Forum", "path": "images/lviv-invest-forum/cover.webp", "w": 1200, "h": 630, "ratio": 1.9, "transp": 0, "spread": 0, "edge": "#151515", "lum": 43 }, { "kind": "event", "id": "vchyteli-maibutnoho", "name": "Вчителі майбутнього", "path": "images/vchyteli-maibutnoho/cover.webp", "w": 720, "h": 298, "ratio": 2.42, "transp": 0, "spread": 9, "edge": "#f8af16", "lum": 186 }, { "kind": "event", "id": "bazar-dobra", "name": "Базар Добра", "path": "images/bazar-dobra/cover.webp", "w": 960, "h": 477, "ratio": 2.01, "transp": 0, "spread": 0, "edge": "#f8f3e7", "lum": 211 }, { "kind": "event", "id": "wiz-art-film-festival", "name": "Wiz-Art Film Festival", "path": "images/wiz-art-film-festival/cover.webp", "w": 1036, "h": 618, "ratio": 1.68, "transp": 0, "spread": 0, "edge": "#ffffff", "lum": 226 }, { "kind": "event", "id": "sunday-bazaarr", "name": "Sunday Bazaarr", "path": "images/sunday-bazaarr/cover.webp", "w": 1200, "h": 467, "ratio": 2.57, "transp": 0, "spread": 25, "edge": "#f7530b", "lum": 118 }, { "kind": "event", "id": "lviv-pet-fest", "name": "Lviv Pet Fest", "path": "images/lviv-pet-fest/cover.webp", "w": 1200, "h": 336, "ratio": 3.57, "transp": 0, "spread": 24, "edge": "#81b7f1", "lum": 184 }, { "kind": "event", "id": "khvostyk-fest", "name": "Хвостик Фест", "path": "images/khvostyk-fest/cover.webp", "w": 1022, "h": 245, "ratio": 4.17, "transp": 0, "spread": 0, "edge": "#f4f0ed", "lum": 232 }, { "kind": "event", "id": "king-kross-fest", "name": "Кінг Кросс Фест", "path": "images/king-kross-fest/cover.webp", "w": 960, "h": 421, "ratio": 2.28, "transp": 0, "spread": 80, "edge": "#dcdcde", "lum": 202 }, { "kind": "event", "id": "dice-con", "name": "DICE CON", "path": "images/dice-con/cover.webp", "w": 1200, "h": 577, "ratio": 2.08, "transp": 0, "spread": 17, "edge": "#f9f9f9", "lum": 202 }, { "kind": "event", "id": "games-gathering-lviv", "name": "Games Gathering Lviv", "path": "images/games-gathering-lviv/cover.webp", "w": 1200, "h": 825, "ratio": 1.45, "transp": 0, "spread": 21, "edge": "#1d1e26", "lum": 54 }, { "kind": "event", "id": "iron-demo", "name": "Iron DEMO", "path": "images/iron-demo/cover.webp", "w": 1200, "h": 630, "ratio": 1.9, "transp": 0, "spread": 5, "edge": "#060c0a", "lum": 21 }, { "kind": "event", "id": "lviv-direction-qaday", "name": "Lviv Direction QADay", "path": "images/lviv-direction-qaday/cover.webp", "w": 1105, "h": 630, "ratio": 1.75, "transp": 0, "spread": 9, "edge": "#65529b", "lum": 103 }, { "kind": "event", "id": "forum-451e", "name": "Forum 451°E", "path": "images/forum-451e/cover.webp", "w": 1080, "h": 488, "ratio": 2.21, "transp": 0, "spread": 62, "edge": "#2a122f", "lum": 74 }, { "kind": "event", "id": "silicon-drinkabout-lviv", "name": "Silicon Drinkabout Lviv", "path": "images/silicon-drinkabout-lviv/cover.webp", "w": 960, "h": 320, "ratio": 3, "transp": 0, "spread": 79, "edge": "#bfcbc4", "lum": 195 }, { "kind": "event", "id": "hacktoberfest", "name": "Hacktoberfest", "path": "images/hacktoberfest/cover.webp", "w": 1200, "h": 630, "ratio": 1.9, "transp": 0, "spread": 2, "edge": "#1f2045", "lum": 43 }, { "kind": "event", "id": "best-hackath0n", "name": "BEST::HACKath0n", "path": "images/best-hackath0n/cover.webp", "w": 384, "h": 459, "ratio": 0.84, "transp": 0.53, "spread": 0, "edge": "#000000", "lum": 134 }, { "kind": "event", "id": "inzhenernyi-yarmarok-karyery", "name": "Інженерний Ярмарок Кар’єри", "path": "images/inzhenernyi-yarmarok-karyery/cover.webp", "w": 384, "h": 561, "ratio": 0.68, "transp": 0.79, "spread": 27, "edge": "#68b8de", "lum": 150 }, { "kind": "event", "id": "best-engineering-competition", "name": "BEST Engineering Competition", "path": "images/best-engineering-competition/cover.svg", "w": 142, "h": 63, "ratio": 2.25, "transp": 0.87, "spread": 42, "edge": "#ecb35e", "lum": 185 }, { "kind": "event", "id": "capture-the-flag", "name": "Capture The Flag", "path": "images/capture-the-flag/cover.svg", "w": 125, "h": 67, "ratio": 1.87, "transp": 0.79, "spread": 82, "edge": "#ed6068", "lum": 119 }, { "kind": "event", "id": "best-company-insight", "name": "BEST Company Insight", "path": "images/best-company-insight/cover.webp", "w": 530, "h": 192, "ratio": 2.76, "transp": 0.71, "spread": 0, "edge": "#000000", "lum": 67 }, { "kind": "event", "id": "leadership-program", "name": "Програма Лідерства", "path": "images/leadership-program/cover.webp", "w": 833, "h": 435, "ratio": 1.91, "transp": 0, "spread": 24, "edge": "#fad409", "lum": 196 }, { "kind": "org", "id": "tvory", "name": "ТВОРИ", "path": "images/organizations/tvory.webp", "w": 1080, "h": 1080, "ratio": 1, "transp": 0, "spread": 3, "edge": "#ffffff", "lum": 246 }, { "kind": "org", "id": "it-cluster-lviv", "name": "It Cluster Lviv", "path": "images/organizations/it-cluster-lviv.webp", "w": 1200, "h": 630, "ratio": 1.9, "transp": 0, "spread": 33, "edge": "#203460", "lum": 50 }, { "kind": "org", "id": "aiesec", "name": "AIESEC", "path": "images/organizations/aiesec.webp", "w": 1200, "h": 600, "ratio": 2, "transp": 0, "spread": 0, "edge": "#027ef6", "lum": 113 }, { "kind": "org", "id": "so-good-company", "name": "So Good Company", "path": "images/organizations/so-good-company.webp", "w": 1200, "h": 605, "ratio": 1.98, "transp": 0, "spread": 0, "edge": "#ffffff", "lum": 207 }, { "kind": "org", "id": "osvitoriya", "name": "Освіторія", "path": "images/organizations/osvitoriya.webp", "w": 863, "h": 800, "ratio": 1.08, "transp": 0.63, "spread": 20, "edge": "#596e5e", "lum": 132 }, { "kind": "org", "id": "domivka-vryatovanykh-tvaryn", "name": "Домівка Врятованих Тварин", "path": "images/organizations/domivka-vryatovanykh-tvaryn.webp", "w": 700, "h": 700, "ratio": 1, "transp": 0, "spread": 0, "edge": "#ffffff", "lum": 228 }, { "kind": "org", "id": "games-gathering", "name": "Games Gathering", "path": "images/organizations/games-gathering.webp", "w": 656, "h": 263, "ratio": 2.49, "transp": 0, "spread": 18, "edge": "#221b17", "lum": 70 }, { "kind": "org", "id": "iron-cluster", "name": "Iron Cluster", "path": "images/organizations/iron-cluster.webp", "w": 400, "h": 400, "ratio": 1, "transp": 0, "spread": 1, "edge": "#f3f3f3", "lum": 191 }, { "kind": "org", "id": "qaday", "name": "QADay", "path": "images/organizations/qaday.webp", "w": 512, "h": 512, "ratio": 1, "transp": 0, "spread": 0, "edge": "#ffffff", "lum": 219 }, { "kind": "org", "id": "best-lviv", "name": "BEST Lviv", "path": "images/organizations/best-lviv.webp", "w": 225, "h": 225, "ratio": 1, "transp": 0, "spread": 0, "edge": "#101213", "lum": 33 }, { "kind": "org", "id": "ukrainski-studenty-za-svobodu", "name": "Українські Студенти за Свободу", "path": "images/organizations/ukrainski-studenty-za-svobodu.webp", "w": 1200, "h": 1200, "ratio": 1, "transp": 0, "spread": 0, "edge": "#fdd525", "lum": 198 } ];
+const NEUTRAL = { dark: "#1c1c20", light: "#e4e0d8" };
+const grid = document.getElementById("grid");
+let set = "hard";
+const pick = () => {
+  if (set === "all") return DATA;
+  const t = DATA.filter((d) => d.transp > 0.15);
+  const rest = DATA.filter((d) => d.transp <= 0.15);
+  const byR = [...rest].sort((a, b) => b.ratio - a.ratio);
+  const banners = byR.slice(0, 3);
+  const portrait = [...rest].sort((a, b) => a.ratio - b.ratio).slice(0, 2);
+  const squares = rest.filter((d) => d.ratio > 0.85 && d.ratio < 1.15).slice(0, 3);
+  const busy = rest.filter((d) => d.spread >= 25 && d.ratio > 1.5 && d.ratio < 2.2).slice(0, 2);
+  const flat = rest.filter((d) => d.spread < 25 && d.ratio > 1.7 && d.ratio < 2.4).slice(0, 2);
+  const seen = new Set();
+  return [...t, ...banners, ...portrait, ...squares, ...busy, ...flat].filter((d) => !seen.has(d.path) && seen.add(d.path));
+};
+const render = () => {
+  const dark = document.documentElement.dataset.theme === "dark";
+  grid.innerHTML = pick().map((d) => {
+    const logo = d.transp > 0.15;
+    // matte rule: transparent -> tile by brightness; flat edges -> edge colour; busy edges -> neutral
+    const tile = d.lum < 100 ? "#efece6" : "#1c1c20";
+    const mat = logo ? tile : d.spread < 25 ? d.edge : NEUTRAL[dark ? "dark" : "light"];
+    const how = logo ? (d.lum < 100 ? "прозорий, світла плитка" : "прозорий, темна плитка") : d.spread < 25 ? "колір країв" : "строкаті краї, нейтральне поле";
+    const ar = Math.min(Math.max(d.ratio, 0.8), 3).toFixed(2);
+    return `<figure class="it ${logo ? "logo" : ""}" style="--mat:${mat};--tile:${tile};--ar:${ar};--img:url('../public/${d.path}')">
+      <div class="frame"><img src="../public/${d.path}" alt="" loading="lazy"></div>
+      <figcaption>${d.name}<small>${d.w}×${d.h} · ${d.ratio} · ${how}</small></figcaption></figure>`;
+  }).join("");
+};
+const seg = (id, fn) => document.getElementById(id).addEventListener("click", (e) => {
+  const b = e.target.closest("button"); if (!b) return;
+  for (const x of b.parentElement.children) x.setAttribute("aria-pressed", String(x === b));
+  fn(b.dataset.v);
+});
+seg("mode", (v) => { document.body.dataset.mode = v; });
+seg("set", (v) => { set = v; render(); });
+seg("theme", (v) => { document.documentElement.dataset.theme = v; render(); });
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+node_modules
+dist
+.astro
+.claude/
+# originals live in design/source/
+/Events-Telegram.png
+/Lviv Event Banner.png

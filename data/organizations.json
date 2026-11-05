@@ -1,0 +1,325 @@
+[
+  {
+    "id": "tvory",
+    "name": "ТВОРИ",
+    "description": [
+      "Мережа молодіжних просторів ТВОРИ! заснована у 2020 році молоддю Львова та Департаментом розвитку Львівської міської ради.",
+      "Візія ТВОРИ! — стати двигуном змін та розвитку Львова завдяки молодіжній солянці креативних просторів, цікавих людей та нових цінностей.",
+      "Місія ТВОРИ! — ми тут і зараз заради створення, об’єднання, структуризації та наповнення молодіжних просторів Львова як зразкової альтернативи проведення часу молоді.",
+      "Здобули для Львова статус Молодіжна столиця Європи 2025 NOT EASY BUT MOVE",
+      "Напрямки руху ТВОРИ! — створювати молодіжні центри та простори; проводити дослідження; визначати вектори роботи; структурувати роботу центрів та просторів; надихати та дарувати емоції."
+    ],
+    "links": [
+      {
+        "title": "Молодіжна столиця Європи 2025",
+        "url": "https://www.instagram.com/lviveyc2025/",
+        "type": "instagram"
+      }
+    ],
+    "logo": "images/organizations/tvory.webp",
+    "spaces": [
+      {
+        "name": "Молодвіж.Центр",
+        "logo": "images/organizations/tvory-1.webp"
+      },
+      {
+        "name": "Pixlab",
+        "logo": "images/organizations/tvory-2.webp"
+      },
+      {
+        "name": "Lviv Open Lab",
+        "logo": "images/organizations/tvory-3.webp"
+      },
+      {
+        "name": "Urban Camp Lviv",
+        "logo": "images/organizations/tvory-4.webp"
+      }
+    ]
+  },
+  {
+    "id": "it-cluster-lviv",
+    "name": "It Cluster Lviv",
+    "description": [
+      "Львівський IT Кластер — це спільнота провідних IT-компаній та університетів Львова, які об'єдналися, щоб розвивати технологічну галузь у місті та регіоні.",
+      "Діяльність Львівського ІТ Кластера полягає у створенні сприятливих умов для ведення бізнесу через покращення якості освіти, розвиток талантів, різносторонню підтримку техкомпаній та адвокацію інтересів індустрії"
+    ],
+    "links": [
+      {
+        "title": "Львівський ІТ Кластер - Найбільша спільнота ІТ-компаній",
+        "url": "https://itcluster.lviv.ua/",
+        "type": "site"
+      },
+      {
+        "title": "Lviv IT Cluster | Lviv",
+        "url": "https://www.facebook.com/itclusterlviv",
+        "type": "facebook"
+      },
+      {
+        "title": "Instagram (@lviv_it_cluster)",
+        "url": "https://www.instagram.com/lviv_it_cluster/",
+        "type": "instagram"
+      }
+    ],
+    "logo": "images/organizations/it-cluster-lviv.webp"
+  },
+  {
+    "id": "aiesec",
+    "name": "AIESEC",
+    "description": [
+      "AIESEC – це одна з найбільших у світі міжнародних молодіжних організацій, що повністю керована молоддю та діє у більш ніж 100 країнах. Її глобальна місія полягає у розвитку лідерського потенціалу через надання практичного досвіду в міжкультурному середовищі.",
+      "На міжнародному рівні AIESEC створює платформу для обмінів, пропонуючи молодим людям можливість взяти участь у волонтерських проєктах (програма Global Volunteer) та професійних стажуваннях (програма Global Talent) в інших країнах. Цей досвід спрямований на розвиток крос-культурного розуміння, глобального мислення та особистісних якостей, необхідних майбутнім лідерам."
+    ],
+    "links": [
+      {
+        "title": "Develop your leadership | AIESEC",
+        "url": "https://aiesec.org/",
+        "type": "site"
+      },
+      {
+        "title": "AIESEC в Україні | HOME PAGE",
+        "url": "https://aiesec.ua/",
+        "type": "site"
+      },
+      {
+        "title": "AIESEC Ukraine",
+        "url": "https://www.facebook.com/AIESECinUkraine",
+        "type": "facebook"
+      },
+      {
+        "title": "AIESEC в Україні 🇺🇦 (@aiesecinukraine)",
+        "url": "https://www.instagram.com/aiesecinukraine",
+        "type": "instagram"
+      }
+    ],
+    "logo": "images/organizations/aiesec.webp"
+  },
+  {
+    "id": "so-good-company",
+    "name": "So Good Company",
+    "description": [
+      "So Good Company — це львівська івент-агенція, що спеціалізується на організації масових заходів, зокрема фестивалів.",
+      "Діяльність компанії розпочалася у 2016 році з організації першого у Львові фестивалю вуличної їжі \"Street Food So Good\". Цей фестиваль і досі є одним із найяскравіших гастрономічних свят міста",
+      "Ми докладаємо зусиль для формування фестивальної культури в Україні та створюємо платформи для розвитку малого підприємництва у рамках фестивалів : “Lviv Art and Wine Festival”, “Lviv Ice Cream Festival”, “Street Food So Good”, “So Green Fest”."
+    ],
+    "links": [
+      {
+        "title": "So Good Company - Івент-агенція. Організація подій - So Good Company",
+        "url": "https://sogood.org.ua/",
+        "type": "site"
+      },
+      {
+        "title": "So Good Company - event-agency | Lviv",
+        "url": "https://www.facebook.com/sogoodcompanyevent",
+        "type": "facebook"
+      },
+      {
+        "title": "Instagram (@sogood.company)",
+        "url": "https://www.instagram.com/sogood.company/",
+        "type": "instagram"
+      }
+    ],
+    "logo": "images/organizations/so-good-company.webp"
+  },
+  {
+    "id": "osvitoriya",
+    "name": "Освіторія",
+    "description": [
+      "Освіторія – це громадська спілка, яка вже понад 10 років системно змінює освіту в Україні. Ми створюємо національні навчальні платформи, навчаємо і підтримуємо десятки тисяч вчителів та формуємо якісні освітні рішення.",
+      "Як ключовий партнер держави та міжнародних організацій, ми робимо все, щоб 7 мільйонів дітей, які постраждали від війни, змогли повернутися до навчання, а освітні реформи не зупинялися."
+    ],
+    "links": [
+      {
+        "title": "Головна - Освіторія",
+        "url": "https://osvitoria.org/",
+        "type": "site"
+      },
+      {
+        "title": "Освіторія",
+        "url": "https://www.facebook.com/osvitoria.media/",
+        "type": "facebook"
+      },
+      {
+        "title": "Instagram (@osvitoria_official)",
+        "url": "https://www.instagram.com/osvitoria_official/",
+        "type": "instagram"
+      }
+    ],
+    "logo": "images/organizations/osvitoriya.webp"
+  },
+  {
+    "id": "domivka-vryatovanykh-tvaryn",
+    "name": "Домівка Врятованих Тварин",
+    "description": [
+      "\"Домівка Врятованих Тварин\" — це унікальний притулок та реабілітаційний центр, що надає допомогу диким та екзотичним тваринам, які постраждали від людської жорстокості або опинились у біді.",
+      "Уже більше шести років ми щодня працюємо над порятунком тварин, що постраждали через людське недбальство чи жорстокість."
+    ],
+    "links": [
+      {
+        "title": "Домівка Врятованих Тварин — Шелтер для Тварин | Домашні Тварини на Усиновлення",
+        "url": "https://www.domivka.org.ua/",
+        "type": "site"
+      },
+      {
+        "title": "Домівка Врятованих Тварин | Home Of Rescued Animals | Facebook",
+        "url": "https://www.facebook.com/groups/461999330624925/",
+        "type": "facebook"
+      },
+      {
+        "title": "Центр порятунку тварин / притулок /реабілітаційний центр (@shelter_domivka)",
+        "url": "https://www.instagram.com/shelter_domivka/",
+        "type": "instagram"
+      }
+    ],
+    "logo": "images/organizations/domivka-vryatovanykh-tvaryn.webp"
+  },
+  {
+    "id": "games-gathering",
+    "name": "Games Gathering",
+    "description": [
+      "Games Gathering — це найбільший в Україні фестиваль для всіх, хто створює відеоігри. Це як Comic-Con, але не для фанатів, а для самих творців: програмістів, художників, дизайнерів та всіх, хто причетний до розробки ігор.",
+      "Вперше конференція пройшла в Києві у 2015 році. Відтоді вона стала головною подією для ігрової індустрії в країні.",
+      "Зазвичай у таких ключових містах:",
+      "- Київ\n- Львів\n- Одеса\n- Братислава",
+      "Певен, що конференція буде розширюватись та відбуватись у інших містах (один раз також була у Молдові)"
+    ],
+    "links": [
+      {
+        "title": "Home",
+        "url": "https://www.ggconference.com/",
+        "type": "site"
+      },
+      {
+        "title": "Games Gathering | Kyiv",
+        "url": "https://www.facebook.com/GamesGathering",
+        "type": "facebook"
+      },
+      {
+        "title": "Games Gathering",
+        "url": "https://t.me/gamesgatheringconference",
+        "type": "telegram"
+      },
+      {
+        "title": "Instagram (@gamesgathering)",
+        "url": "https://www.instagram.com/gamesgathering/",
+        "type": "instagram"
+      }
+    ],
+    "logo": "images/organizations/games-gathering.webp"
+  },
+  {
+    "id": "iron-cluster",
+    "name": "Iron Cluster",
+    "description": [
+      "Iron Cluster – це об'єднання українських компаній, які створюють фізичні продукти: від робототехніки та дронів до промислового обладнання та електроніки. На відміну від IT-кластерів, що фокусуються на програмному забезпеченні, Iron Cluster опікується світом «заліза» (hardware).",
+      "IRON об’єднує понад 80 компаній і 2500+ фахівців галузі. За 2 роки ми сприяли масштабуванню військових технологій, інтегрували інноваційні рішення у 22 виробничих ланцюгів, запустили ваучерну програму підтримки спільно з Львівською міською радою. Наш каталог налічує 100+ інноваційних розробок."
+    ],
+    "links": [
+      {
+        "title": "IRON Cluster",
+        "url": "https://ironcluster.org/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@iron_cluster)",
+        "url": "https://www.instagram.com/iron_cluster/",
+        "type": "instagram"
+      },
+      {
+        "title": "IRON Cluster | Lviv",
+        "url": "https://www.facebook.com/ironcluster/",
+        "type": "facebook"
+      }
+    ],
+    "logo": "images/organizations/iron-cluster.webp"
+  },
+  {
+    "id": "qaday",
+    "name": "QADay",
+    "description": [
+      "QADay – платформа для спілкування професіоналів у сфері тестування ПЗ",
+      "Створюємо українську спільноту тестування разом!",
+      "Творимо події, вебінари та конференції та збираємо професіоналів-однодумців, які роблять світ якіснішим.",
+      "Це команда ентузіастів сформована у 2018 році, коли ми зрозуміли, що в Україні є потужна спільнота тестувальників, яка потребує спілкування, зустрічей та обміну досвідом.",
+      "Ми почали із маленьких мітапів та виросли до великих конференцій по всій країні.  Відтоді ми стали магнітом, що об’єднує спільноту тестувальників ПЗ як офлайн, так і онлайн."
+    ],
+    "links": [
+      {
+        "title": "Quality Assurance Day",
+        "url": "https://qaday.org/",
+        "type": "site"
+      },
+      {
+        "title": "Quality Assurance Day | Lviv",
+        "url": "https://www.facebook.com/qaday.org/",
+        "type": "facebook"
+      },
+      {
+        "title": "www.linkedin.com",
+        "url": "https://www.linkedin.com/company/qaday/",
+        "type": "linkedin"
+      }
+    ],
+    "logo": "images/organizations/qaday.webp"
+  },
+  {
+    "id": "best-lviv",
+    "name": "BEST Lviv",
+    "description": [
+      "BEST (Board of European Students of Technology) – міжнародна неприбуткова, неполітична, молодіжна громадська організація, яка була створена 1989 року в Берліні.",
+      "Осередок BEST Lviv було створено у 2002 році при Національному університеті “Львівська політехніка”.",
+      "Наша діяльність полягає у налагодженні зв'язків між Студентами, Компаніями та Університетом. Львівський осередок є одним з трьох LBG в Україні (Київ, Львів, Вінниця)"
+    ],
+    "links": [
+      {
+        "title": "BEST Lviv",
+        "url": "https://best-lviv.org.ua/en",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@best_lviv)",
+        "url": "https://www.instagram.com/best_lviv",
+        "type": "instagram"
+      },
+      {
+        "title": "BEST Lviv on TikTok",
+        "url": "https://www.tiktok.com/@best__lviv?_t=8pY6lfMTdkk&_r=1",
+        "type": "site"
+      },
+      {
+        "title": "BEST Lviv Students",
+        "url": "https://t.me/bestlviv",
+        "type": "telegram"
+      }
+    ],
+    "logo": "images/organizations/best-lviv.webp"
+  },
+  {
+    "id": "ukrainski-studenty-za-svobodu",
+    "name": "Українські Студенти за Свободу",
+    "description": [
+      "Місією «Українських Студентів за Свободу» є об’єднання, навчання та мобілізація української молоді, яка прихильна ідеям свободи.",
+      "\"Українські Студенти за Свободу\" (УСС) — це всеукраїнська громадська організація, що об'єднує молодь навколо ідей свободи.",
+      "Організація займається:",
+      "- Навчання: Розповідають студентам про те, як працює ринкова економіка, чому важливі права людини та обмежена роль держави. Їхній флагманський проєкт — Програма Лідерства.\n- Будування спільноту: Створюють мережу молодих, активних та про-свободівських людей по всій Україні, які підтримують одне одного.\n- Просування змін: Виступають за реформи, що зроблять Україну більш вільною та економічно успішною країною.",
+      "Організація є частиною міжнародного руху Students For Liberty."
+    ],
+    "links": [
+      {
+        "title": "Громадська організація Українські Студенти за Свободу",
+        "url": "https://studfreedom.org/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@studfreedom)",
+        "url": "https://www.instagram.com/studfreedom/",
+        "type": "instagram"
+      },
+      {
+        "title": "Українські Студенти за Свободу | Kyiv",
+        "url": "https://www.facebook.com/studfreedom/",
+        "type": "facebook"
+      }
+    ],
+    "logo": "images/organizations/ukrainski-studenty-za-svobodu.webp"
+  }
+]

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="uk" data-t="a">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events Lviv — напрямки дизайну</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+:root[data-t=a]{--bg:#000;--surface:#121214;--text:#e6e6e6;--muted:#9a9a9f;--line:#2b2b30;--hf:Inter,sans-serif;--r:14px}
+:root[data-t=b]{--bg:#f4efe6;--surface:#f4efe6;--text:#1b1a17;--muted:#6d675c;--line:#cfc6b4;--hf:'Playfair Display',serif;--r:0}
+:root[data-t=c]{--bg:#fff;--surface:#fff;--text:#111;--muted:#555;--line:#e4e4e4;--hf:Unbounded,sans-serif;--r:24px}
+body{margin:0;background:var(--bg);color:var(--text);font:400 15px/1.5 Inter,system-ui,sans-serif}
+.pick{position:sticky;top:0;z-index:5;display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:8px 16px;background:#111;color:#aaa;font-size:13px}
+.pick button{font:inherit;color:#ddd;background:none;border:1px solid #444;border-radius:99px;padding:3px 12px;cursor:pointer}
+.pick button.on{background:#fff;color:#111;border-color:#fff}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:16px 32px;border-bottom:1px solid var(--line)}
+.logo{display:flex;align-items:flex-end;gap:10px;font:800 20px var(--hf)}
+.spires{display:flex;align-items:flex-end;gap:2px}
+.spires i{width:5px;border-radius:1px}
+.spires i:nth-child(1){height:16px;background:#34a853}.spires i:nth-child(2){height:22px;background:#e5484d}.spires i:nth-child(3){height:26px;background:#f29b30}.spires i:nth-child(4){height:20px;background:#3b8fe0}.spires i:nth-child(5){height:17px;background:#a855c7}
+nav{display:flex;gap:24px;color:var(--muted);font-size:14px}
+nav .a{color:var(--text);border-bottom:2px solid var(--text);padding-bottom:2px}
+.hero{text-align:center;padding:36px 16px 24px}
+.hero img{display:none;width:100%;max-height:210px;object-fit:cover;margin:-36px 0 8px}
+h1{margin:0;font:800 clamp(36px,6vw,58px)/1.05 var(--hf);letter-spacing:-.02em}
+.sub{margin:10px 0 0;color:var(--muted)}
+:root[data-t=a] .hero img{display:block}
+:root[data-t=a] h1{color:#b3b3b3}
+:root[data-t=a] .sub{letter-spacing:.28em;font-size:15px;color:#9a9a9f}
+:root[data-t=b] h1{font-weight:700;letter-spacing:0}
+:root[data-t=b] .sub{font:italic 500 19px 'Playfair Display',serif}
+:root[data-t=b] .hero{border-bottom:3px double var(--text);margin:0 32px}
+:root[data-t=c] h1{font-weight:700;font-size:clamp(30px,5vw,48px)}
+.stripe{display:none;height:8px}
+.stripe i{flex:1}
+.stripe i:nth-child(1){background:#34a853}.stripe i:nth-child(2){background:#e5484d}.stripe i:nth-child(3){background:#f29b30}.stripe i:nth-child(4){background:#3b8fe0}.stripe i:nth-child(5){background:#a855c7}
+:root[data-t=c] .stripe{display:flex}
+.filters{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;padding:24px 16px 8px}
+.count{text-align:center;color:var(--muted);font-size:13px;margin:0 0 20px}
+.chip{font:inherit;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border:1px solid var(--line);border-radius:99px;background:transparent;color:var(--text)}
+.chip::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--tc,var(--text))}
+.chip.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+:root[data-t=b] .chip{border-radius:0;border-color:var(--text)}
+:root[data-t=b] .chip::before{border-radius:0}
+:root[data-t=c] .chip{border:0;background:color-mix(in srgb,var(--tc,#ddd) 40%,#fff);color:#111;font-weight:500}
+:root[data-t=c] .chip::before{display:none}
+:root[data-t=c] .chip.on{background:#111;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;padding:0 32px 56px;max-width:1280px;margin:0 auto}
+.card{position:relative;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.ph{position:relative;aspect-ratio:16/10;overflow:hidden;background:#222;border-radius:var(--r) var(--r) 0 0}
+.ph::before{content:"";position:absolute;inset:-24px;background:var(--img) center/cover;filter:blur(22px) brightness(.4)}
+.ph img{position:relative;width:100%;height:100%;object-fit:contain;display:block}
+.now{position:absolute;z-index:1;left:10px;top:10px;padding:2px 10px;border-radius:99px;background:#34a853;color:#fff;font-size:12px;font-weight:500}
+.body{flex:1;display:flex;flex-direction:column;gap:6px;padding:14px 16px 16px}
+h3{margin:0;font:700 18px/1.25 var(--hf)}
+.org{color:var(--muted);font-size:13px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:2px 0 6px}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)}
+.tag::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--tc)}
+.meta{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px}
+.entry{font-size:12px;font-weight:500;padding:2px 10px;border-radius:99px;border:1px dashed var(--muted);color:var(--text);white-space:nowrap}
+.entry.free{border-color:#34a853;color:#5fd17c}
+:root[data-t=a] .body{position:relative;border-top:2px dashed var(--line)}
+:root[data-t=a] .body::before,:root[data-t=a] .body::after{content:"";position:absolute;top:-9px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:1px solid var(--line)}
+:root[data-t=a] .body::before{left:-9px;clip-path:inset(0 0 0 50%)}
+:root[data-t=a] .body::after{right:-9px;clip-path:inset(0 50% 0 0)}
+:root[data-t=b] .card{border:0;border-top:3px solid var(--text);background:transparent}
+:root[data-t=b] .body{padding:12px 0 8px}
+:root[data-t=b] .ph{filter:sepia(.18) saturate(.9)}
+:root[data-t=b] h3{font-size:21px}
+:root[data-t=b] .entry{border-radius:0;border-style:solid;border-color:var(--text)}
+:root[data-t=b] .entry.free{color:#1f6b35;border-color:#1f6b35}
+:root[data-t=b] .now{border-radius:0;background:var(--text);color:var(--bg)}
+:root[data-t=c] .card{border:0;padding:10px;background:color-mix(in srgb,var(--tc) 45%,#fff)}
+:root[data-t=c] .ph{border-radius:16px}
+:root[data-t=c] .body{padding:12px 6px 6px}
+:root[data-t=c] h3{font-size:16px}
+:root[data-t=c] .org,:root[data-t=c] .tag{color:#222}
+:root[data-t=c] .entry{background:#111;color:#fff;border:0}
+:root[data-t=c] .entry.free{background:#fff;color:#111}
+:root[data-t=c] .now{background:#fff;color:#111}
+footer{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--text)}
+</style>
+</head>
+<body>
+<div class="pick">
+  <span>Напрямок дизайну:</span>
+  <button data-t="a">A · Нічний Львів</button>
+  <button data-t="b">B · Папір і чорнило</button>
+  <button data-t="c">C · Фестивальні кольори</button>
+</div>
+<header class="top">
+  <div class="logo"><span class="spires"><i></i><i></i><i></i><i></i><i></i></span>Events Lviv</div>
+  <nav><span class="a">Події</span><span>Організації</span><span>Календар</span><span>Про проєкт</span></nav>
+</header>
+<div class="stripe"><i></i><i></i><i></i><i></i><i></i></div>
+<section class="hero">
+  <img src="../Lviv%20Event%20Banner.png" alt="">
+  <h1>Events Lviv</h1>
+  <p class="sub">Щорічні події у Львові</p>
+</section>
+<div class="filters" id="filters"></div>
+<p class="count" id="count"></p>
+<main class="grid" id="grid"></main>
+<footer><span>Знаєте подію, якої тут немає?</span><a href="#">Додати подію</a></footer>
+<script>
+const COL={it:'#3b8fe0',food:'#f29b30',education:'#34a853',forums:'#a855c7',charity:'#e5484d',culture:'#e0529c',youth:'#e9c53b'};
+const MON=['січ','лют','бер','кві','тра','чер','лип','сер','вер','жов','лис','гру'];
+const ENTRY={free:'Безкоштовно',paid:'Платно',mixed:'Залежить'};
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function when(e){
+  if(e.yearRound)return'протягом року';
+  if(!e.months.length)return'дата уточнюється';
+  const s=new Set(e.months),out=[];
+  for(let m=1;m<=12;m++){
+    if(s.has(m)&&!s.has((m+10)%12+1)){let n=m;while(s.has(n%12+1))n=n%12+1;out.push(n===m?MON[m-1]:MON[m-1]+'–'+MON[n-1]);}
+  }
+  return out.join(', ');
+}
+Promise.all(['events','organizations','topics'].map(n=>fetch(`../data/${n}.json`).then(r=>r.json()))).then(([ev,og,tp])=>{
+  const org=Object.fromEntries(og.map(o=>[o.id,o.name])),tname=Object.fromEntries(tp.map(t=>[t.id,t.name])),now=new Date().getMonth()+1;
+  ev.sort((a,b)=>b.months.includes(now)-a.months.includes(now)||a.name.localeCompare(b.name));
+  let sel=null;
+  const card=e=>`<article class="card" style="--tc:${COL[e.topics[0]]}">
+    <div class="ph" style="--img:url('../public/${e.cover}')"><img loading="lazy" src="../public/${e.cover}" alt="">${e.months.includes(now)?'<span class="now">Зараз</span>':''}</div>
+    <div class="body"><h3>${esc(e.name)}</h3><div class="org">${e.organizationId?esc(org[e.organizationId]):'&nbsp;'}</div>
+    <div class="tags">${e.topics.map(t=>`<span class="tag" style="--tc:${COL[t]}">${esc(tname[t])}</span>`).join('')}</div>
+    <div class="meta"><span>${when(e)}</span><span class="entry ${e.entry}">${ENTRY[e.entry]}</span></div></div></article>`;
+  const draw=()=>{
+    const list=ev.filter(e=>!sel||e.topics.includes(sel));
+    document.getElementById('grid').innerHTML=list.map(card).join('');
+    document.getElementById('count').textContent=`${list.length} з ${ev.length} подій`;
+    document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',(c.dataset.id||null)===sel));
+  };
+  document.getElementById('filters').innerHTML=`<button class="chip" style="--tc:var(--text)">Усі</button>`+tp.map(t=>`<button class="chip" data-id="${t.id}" style="--tc:${COL[t.id]}">${esc(t.name)}</button>`).join('');
+  document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{sel=c.dataset.id||null;draw()});
+  draw();
+});
+const set=t=>{
+  document.documentElement.dataset.t=t;
+  document.querySelectorAll('.pick button').forEach(b=>b.classList.toggle('on',b.dataset.t===t));
+  history.replaceState(null,'','#'+t);
+};
+document.querySelectorAll('.pick button').forEach(b=>b.onclick=()=>set(b.dataset.t));
+const fromHash=()=>set(['a','b','c'].includes(location.hash.slice(1))?location.hash.slice(1):'a');
+addEventListener('hashchange',fromHash);
+fromHash();
+</script>
+</body>
+</html>

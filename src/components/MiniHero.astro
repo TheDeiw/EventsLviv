@@ -1,0 +1,62 @@
+---
+import { url } from "../lib/site";
+
+const { title } = Astro.props;
+// a short banner for inner pages: the logo, the page name and a few ribbons at the edges
+const RIBBONS = [
+  { src: "ribbon-purple.webp", w: 1000, h: 270, cls: "purple left" },
+  { src: "ribbon-green.webp", w: 1000, h: 392, cls: "green left" },
+  { src: "ribbon-blue.webp", w: 1000, h: 431, cls: "blue right" },
+  { src: "ribbon-red.webp", w: 1000, h: 488, cls: "red right" },
+];
+---
+
+<section class="mini" aria-label={title}>
+  <div class="stage" aria-hidden="true">
+    {RIBBONS.map((r, i) => (
+      <div class={`ribbon ${r.cls}`} style={`--delay:${80 + i * 60}ms`}>
+        <img src={url(`hero/${r.src}`)} width={r.w} height={r.h} alt="" />
+      </div>
+    ))}
+  </div>
+  <div class="copy">
+    <img class="disc" src={url("hero/disc.webp")} width="792" height="900" alt="" aria-hidden="true" />
+    <h1>{title}</h1>
+  </div>
+</section>
+
+<style>
+  /* at most ~20% of the screen height, so the list stays the main thing */
+  .mini { position: relative; overflow: clip; isolation: isolate; display: grid; place-items: center; height: clamp(132px, 20vh, 200px); }
+  .stage { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+  .ribbon { position: absolute; width: clamp(150px, 20vw, 300px); }
+  .ribbon img { display: block; width: 100%; height: auto; }
+  .purple { left: -4%; top: 4%; }
+  .purple img { rotate: -12deg; }
+  .green { left: 9%; bottom: -4%; width: clamp(130px, 16vw, 260px); }
+  .green img { rotate: 14deg; }
+  .blue { right: -4%; top: 6%; }
+  .blue img { rotate: 12deg; }
+  .red { right: 9%; bottom: -4%; width: clamp(130px, 17vw, 270px); }
+  .red img { rotate: -10deg; }
+
+  .copy { display: flex; align-items: center; gap: clamp(14px, 2vw, 28px); }
+  .disc { display: block; width: auto; height: clamp(84px, 13vh, 128px); }
+  h1 { margin: 0; font-size: clamp(34px, 5.4vw, 64px); font-weight: 800; line-height: 1; letter-spacing: -0.04em; color: var(--hero-title); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .ribbon img { animation: slide 800ms var(--ease-out) var(--delay) both; }
+    .left img { --from: -40px; }
+    .right img { --from: 40px; }
+    .copy { animation: rise 600ms var(--ease-out) both; }
+  }
+  @keyframes slide { from { opacity: 0; transform: translateX(var(--from)); } }
+  @keyframes rise { from { opacity: 0; transform: translateY(8px); } }
+
+  @media (max-width: 720px) {
+    .green, .red { display: none; }
+    .ribbon { width: 46vw; }
+    .purple { left: -14%; }
+    .blue { right: -14%; }
+  }
+</style>
