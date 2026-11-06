@@ -77,7 +77,7 @@ npm run dev
   "id": "molodvizh",                  // стає адресою /events/molodvizh/
   "name": "#Молодвіж",
   "organizationId": "tvory",          // id з organizations.json, або без поля
-  "topics": ["youth"],                // it, food, education, forums, charity, culture, youth
+  "topics": ["community"],                // tech, business, career, education, culture, music, food, markets, community, family
   "description": ["Абзац опису…"],
   "audience": "Для кого",
   "place": "Де проходить",

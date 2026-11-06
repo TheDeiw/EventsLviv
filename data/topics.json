@@ -1,37 +1,52 @@
 [
   {
-    "id": "it",
-    "name": "ІТ та технології",
+    "id": "tech",
+    "name": "Технології",
     "color": "#3b8fe0"
   },
   {
-    "id": "food",
-    "name": "Їжа та напої",
-    "color": "#f29b30"
+    "id": "business",
+    "name": "Бізнес",
+    "color": "#6366f1"
   },
   {
-    "id": "education",
-    "name": "Освіта і кар'єра",
+    "id": "career",
+    "name": "Кар'єра",
     "color": "#34a853"
   },
   {
-    "id": "forums",
-    "name": "Форуми та конференції",
-    "color": "#a855c7"
-  },
-  {
-    "id": "charity",
-    "name": "Тварини і благодійність",
-    "color": "#e5484d"
+    "id": "education",
+    "name": "Освіта",
+    "color": "#e9c53b"
   },
   {
     "id": "culture",
-    "name": "Культура та дозвілля",
+    "name": "Культура",
     "color": "#e0529c"
   },
   {
-    "id": "youth",
-    "name": "Молодь і спільноти",
-    "color": "#e9c53b"
+    "id": "music",
+    "name": "Музика",
+    "color": "#a855c7"
+  },
+  {
+    "id": "food",
+    "name": "Їжа",
+    "color": "#f29b30"
+  },
+  {
+    "id": "markets",
+    "name": "Ярмарки",
+    "color": "#b08968"
+  },
+  {
+    "id": "community",
+    "name": "Спільнота",
+    "color": "#e5484d"
+  },
+  {
+    "id": "family",
+    "name": "Сім'я",
+    "color": "#14b8a6"
   }
 ]

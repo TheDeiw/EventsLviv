@@ -332,5 +332,44 @@
       }
     ],
     "logo": "images/organizations/ukrainski-studenty-za-svobodu.webp"
+  },
+  {
+    "id": "gdg-lviv",
+    "name": "GDG Lviv",
+    "type": "it",
+    "description": [
+      "GDG Lviv — львівська спільнота Google Developer Group, частина світової мережі незалежних спільнот розробників, які працюють із технологіями Google: Android, Flutter, Web, Cloud та AI.",
+      "Спільнота проводить мітапи, доповіді й воркшопи. Раніше вона організовувала у Львові GDG DevFest Ukraine — одну з найбільших в Україні конференцій про технології Google, а зараз головний формат — серія мобільних мітапів Stairs."
+    ],
+    "links": [
+      {
+        "title": "GDG Lviv",
+        "url": "https://gdg.community.dev/gdg-lviv/",
+        "type": "site"
+      },
+      {
+        "title": "GDG Lviv на Meetup",
+        "url": "https://www.meetup.com/gdg-lviv/",
+        "type": "site"
+      }
+    ],
+    "logo": "images/organizations/gdg-lviv.webp"
+  },
+  {
+    "id": "dataart",
+    "name": "DataArt",
+    "type": "it",
+    "description": [
+      "DataArt — міжнародна компанія з розробки програмного забезпечення, яка працює в Україні з 2007 року й має центр розробки у Львові.",
+      "Компанія багато вкладає в освіту айтівців: проводить безкоштовний IT Camp для студентів і джунів, міжнародну олімпіаду з програмування Proggy-Buggy та інші навчальні програми."
+    ],
+    "links": [
+      {
+        "title": "DataArt",
+        "url": "https://www.dataart.com/",
+        "type": "site"
+      }
+    ],
+    "logo": "images/organizations/dataart.webp"
   }
 ]

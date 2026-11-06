@@ -14,6 +14,9 @@
   "mat": "#1c1c20",
   "logo": true
  },
+ "images/bestsellerfest/cover.webp": {
+  "mat": "#483f77"
+ },
  "images/capture-the-flag/cover.svg": {
   "mat": "#1c1c20",
   "logo": true
@@ -23,6 +26,9 @@
  },
  "images/craft-beer-and-vinyl-music-festival/cover.webp": {
   "mat": "#ffffff"
+ },
+ "images/dataart-it-camp/cover.webp": {
+  "mat": null
  },
  "images/dice-con/cover.webp": {
   "mat": "#f9f9f9"
@@ -38,6 +44,9 @@
  },
  "images/games-gathering-lviv/cover.webp": {
   "mat": "#1d1e26"
+ },
+ "images/gdg-stairs/cover.webp": {
+  "mat": "#002b95"
  },
  "images/hacktoberfest/cover.webp": {
   "mat": "#1f2045"
@@ -71,6 +80,9 @@
   "mat": null
  },
  "images/lviv-bookforum/cover.webp": {
+  "mat": null
+ },
+ "images/lviv-design-day/cover.webp": {
   "mat": null
  },
  "images/lviv-direction-qaday/cover.webp": {
@@ -107,11 +119,19 @@
  "images/organizations/best-lviv.webp": {
   "mat": "#101213"
  },
+ "images/organizations/dataart.webp": {
+  "mat": "#efece6",
+  "logo": true
+ },
  "images/organizations/domivka-vryatovanykh-tvaryn.webp": {
   "mat": "#ffffff"
  },
  "images/organizations/games-gathering.webp": {
   "mat": "#221b17"
+ },
+ "images/organizations/gdg-lviv.webp": {
+  "mat": "#1c1c20",
+  "logo": true
  },
  "images/organizations/iron-cluster.webp": {
   "mat": "#f3f3f3"
@@ -150,6 +170,12 @@
  "images/pokolinnya/cover.webp": {
   "mat": null
  },
+ "images/proggy-buggy/cover.webp": {
+  "mat": "#7757a7"
+ },
+ "images/re-farm/cover.webp": {
+  "mat": null
+ },
  "images/silicon-drinkabout-lviv/cover.webp": {
   "mat": null
  },
@@ -173,5 +199,8 @@
  },
  "images/youth-speak-forum/cover.webp": {
   "mat": null
+ },
+ "images/zemlya-poetiv/cover.webp": {
+  "mat": "#2e4e85"
  }
 }

@@ -1,9 +1,12 @@
 {
-  "it": "IT & technology",
-  "food": "Food & drink",
-  "education": "Education & careers",
-  "forums": "Forums & conferences",
-  "charity": "Animals & charity",
-  "culture": "Culture & leisure",
-  "youth": "Youth & communities"
+  "tech": "Tech",
+  "business": "Business",
+  "career": "Career",
+  "education": "Education",
+  "culture": "Culture",
+  "music": "Music",
+  "food": "Food",
+  "markets": "Markets",
+  "community": "Community",
+  "family": "Family"
 }

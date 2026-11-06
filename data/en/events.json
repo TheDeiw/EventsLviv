@@ -564,5 +564,87 @@
     "links": [
       "Leadership Program by Ukrainian Students for Liberty"
     ]
+  },
+  "gdg-stairs": {
+    "name": "Stairs",
+    "description": [
+      "Stairs is GDG Lviv's series of meetups about mobile development. Every meetup is a new “step”: developers share real experience with Android, Flutter and other mobile technologies, and there is time to talk after the talks.",
+      "The series started in November 2024 and has run five times since then at different IT companies and spaces in Lviv."
+    ],
+    "audience": "Mobile developers (Android, Flutter, iOS), students and anyone interested in mobile development.",
+    "place": "Offices of IT companies and creative spaces in Lviv, for example Pixlab, Sigma Software, Futura Hub, Genesis.",
+    "whenText": "Several times a year, mostly in spring and autumn.",
+    "priceText": "Usually free, registration required.",
+    "links": [
+      "Stairs on the GDG Lviv page",
+      "GDG Lviv on Meetup"
+    ]
+  },
+  "re-farm": {
+    "description": [
+      "Re:farm is Ukraine's largest conference for agricultural specialists, bringing farm managers, agronomists, engineers and other agri professionals from across the country to Lviv every year.",
+      "The program runs in several themed streams with talks by practitioners and industry partners, and the event is also a big networking place for farmers."
+    ],
+    "audience": "Farm owners and managers, agronomists, livestock specialists, engineers, agribusiness representatives and anyone working in agriculture.",
+    "place": "!FESTrepublic.",
+    "whenText": "Annually, in February.",
+    "priceText": "Paid entry."
+  },
+  "lviv-design-day": {
+    "description": [
+      "Lviv Design Day is Lviv's design day that brings together leading architecture, interior and product design professionals from across Ukraine. It was started by the Central Park Design studio in 2021.",
+      "The program includes talks by speakers, presentations of projects by young designers and architects, the Design Expo exhibition of interior novelties and a party at the end of the day."
+    ],
+    "audience": "Designers, architects, furniture and materials manufacturers, and clients looking for a designer or architect.",
+    "place": "Venues change: the Arena Lviv conference hall in 2021, Emily Event Hall at Emily Resort in 2023.",
+    "whenText": "Annually, in autumn (September–October).",
+    "priceText": "Paid entry, with several ticket categories.",
+    "links": [
+      "Lviv Design Day on Lviv.travel"
+    ]
+  },
+  "zemlya-poetiv": {
+    "name": "Land of Poets (Zemlia Poetiv)",
+    "description": [
+      "Land of Poets (Zemlia Poetiv) is an international poetry festival in Lviv, the largest in Ukraine. Its motto never changes: “Poets create the nation”. Its founder and program director is the poet Mariana Savka.",
+      "Over two days the festival offers 50–70 events at four literary venues named after Shevchenko, Franko, Lesia Ukrainka and Stus: readings, discussions, music and poetry programs and meetings with Ukrainian and international poets. In 2025 it welcomed more than 5,000 guests, and charity collections raised over 400,000 UAH for the army."
+    ],
+    "audience": "Poetry and literature lovers, readers, writers, students and everyone who cares about the Ukrainian word.",
+    "place": "!FESTrepublic.",
+    "whenText": "Annually, in early November (since 2024).",
+    "priceText": "Entry by ticket."
+  },
+  "bestsellerfest": {
+    "description": [
+      "BestsellerFest is a festival of bestselling books in Lviv, founded by the writer and publisher Mariana Savka (Old Lion Publishing House). It was first held in August 2025.",
+      "The program has more than 120 events over three days: new book presentations, discussions, meetings and signings with the most popular Ukrainian authors, and a book fair. Part of the proceeds goes to the army: 700,000 UAH was raised in 2025."
+    ],
+    "audience": "Readers and book lovers, families with children, writers, publishers and everyone who follows new books.",
+    "place": "!FESTrepublic.",
+    "whenText": "Annually, in August (since 2025).",
+    "priceText": "Entry is mostly paid: in 2025 the first day was free, then a ticket cost 300 UAH, and children under 12 entered free."
+  },
+  "proggy-buggy": {
+    "description": [
+      "Proggy-Buggy is DataArt's international programming contest: you have 42 minutes to solve 13 algorithmic problems that the company's engineers come up with every year.",
+      "The contest is held online, and you can also take part together with others at DataArt centers and partner hubs. There are Beginners, Professionals and Superheroes categories; everyone gets a certificate, winners get prizes, and past years' problems are available for practice."
+    ],
+    "audience": "Students, high school students, developers of any level and anyone who enjoys algorithmic problems.",
+    "place": "Online, plus DataArt offices and partner hubs, including in Lviv.",
+    "whenText": "Annually, usually in May–June; some years in autumn.",
+    "priceText": "Free to participate, registration required."
+  },
+  "dataart-it-camp": {
+    "description": [
+      "IT Camp is DataArt's free program for students, juniors and anyone building a career in IT: about two weeks of webinars and hands-on workshops with the company's experts.",
+      "Webinars are recorded, while workshops are live with practical tasks. Some previous sessions had offline workshops in Lviv. According to DataArt, last year's IT Camp drew more than 4,000 participants, and 18 program graduates got jobs at the company."
+    ],
+    "audience": "Students, juniors, career switchers and anyone who wants to build skills to start in IT.",
+    "place": "Online; some sessions had offline workshops in Lviv.",
+    "whenText": "Several times a year: winter, summer and autumn sessions.",
+    "priceText": "Free, registration on the DataArt learning platform required.",
+    "links": [
+      "IT Camp 2026 on DOU"
+    ]
   }
 }
