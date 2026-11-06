@@ -60,4 +60,14 @@ const groups = TYPES.map((type) => ({ type, label: T(`orgType.${type}` as Key), 
   .body { flex: 1; display: flex; flex-direction: column; gap: 6px; padding: 14px 16px 16px; }
   .desc { margin: 0; color: var(--muted); font-size: 13px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
   .count { margin: auto 0 0; padding-top: 6px; font-size: 13px; }
+  .card:active { background: var(--surface-2); }
+  /* phones: logo on the left, text on the right, so the list is a third as long */
+  @media (max-width: 600px) {
+    .group .grid { gap: 12px; }
+    .card { flex-direction: row; }
+    .cover { flex: none; width: 34%; aspect-ratio: auto; min-height: 112px; border-radius: var(--r) 0 0 var(--r); }
+    .body { min-width: 0; padding: 12px 14px; }
+    h3 { font-size: 17px; }
+    .desc { -webkit-line-clamp: 2; }
+  }
 </style>

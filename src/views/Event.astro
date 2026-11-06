@@ -85,6 +85,7 @@ const e = events.find((x) => x.id === id)!;
   @media (max-width: 800px) {
     .event { padding: 16px 16px 48px; }
     .cols { grid-template-columns: 1fr; gap: 0; }
-    aside { margin-top: 24px; }
+    /* phones: when, where, how much and the links come right under the title, the long read after */
+    aside { order: -1; margin-top: 12px; }
   }
 </style>

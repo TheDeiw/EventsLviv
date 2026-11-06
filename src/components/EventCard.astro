@@ -103,6 +103,24 @@ const titleId = `t-${e.id}`;
   }
   .go :global(svg) { width: 16px; height: 16px; stroke-width: 2; transition: transform 200ms var(--ease-out); }
   .card:active { transform: scale(0.985); }
+  /* phones: a sideways ticket, cover on the left, perforation running down, no description, so a screen holds ~4 events */
+  @media (max-width: 640px) {
+    .link { flex-direction: row; }
+    .cover { flex: none; width: 34%; aspect-ratio: auto; border-radius: calc(var(--r) - 1px) 0 0 calc(var(--r) - 1px); }
+    .body { min-width: 0; gap: 6px; padding: 12px 12px 12px 14px; border-top: 0; border-left: 2px dashed var(--edge); }
+    .body::before { top: -9px; left: -9px; clip-path: inset(50% 0 0 0); }
+    .body::after { top: auto; right: auto; bottom: -9px; left: -9px; clip-path: inset(0 0 50% 0); }
+    h3 { font-size: 17px; }
+    .tags { margin-top: 0; }
+    .desc { display: none; }
+    .bottom { padding-top: 2px; gap: 8px; }
+    .facts { display: flex; flex-wrap: wrap; gap: 4px 12px; }
+    .facts .org { flex-basis: 100%; }
+    .facts li { gap: 6px; font-size: 13px; }
+    .facts :global(svg) { width: 15px; height: 15px; }
+    .go { width: 30px; height: 30px; }
+    .go :global(svg) { width: 14px; height: 14px; }
+  }
   @media (hover: hover) and (pointer: fine) {
     .card:hover { --edge: color-mix(in srgb, var(--tc) 55%, var(--line)); background: color-mix(in srgb, var(--tc) 9%, var(--surface)); }
     .card:hover .cover img { transform: scale(1.03); }

@@ -83,6 +83,14 @@ const inTopic = (id: string) => events.filter((e) => e.topics.includes(id)).leng
   .chip[aria-pressed="true"] { background: var(--text); color: var(--bg); border-color: var(--text); }
   /* tighter rows on desktop so the sticky sidebar fits a laptop screen without its own scrollbar */
   @media (min-width: 901px) { .opt { padding-block: 4px; } }
+  .opt:active { background: var(--surface-2); }
+  .chip:active { border-color: var(--muted); }
+  /* fingers need bigger targets; 16px in the select stops iOS from zooming the page when it opens */
+  @media (pointer: coarse) {
+    .opt { min-height: 44px; font-size: 15px; }
+    .chip { min-height: 40px; padding-inline: 14px; font-size: 14px; }
+    select { height: 46px; font-size: 16px; }
+  }
   @media (hover: hover) and (pointer: fine) {
     .opt:not([aria-pressed="true"]):hover { color: var(--text); background: color-mix(in srgb, var(--surface-2) 55%, transparent); }
     .chip:not([aria-pressed="true"]):hover, select:hover { border-color: var(--muted); }

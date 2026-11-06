@@ -5,7 +5,7 @@ import Filters from "../components/Filters.astro";
 import MiniHero from "../components/MiniHero.astro";
 import Icon from "../components/Icon.astro";
 import { content } from "../lib/site";
-import { langOf, t, fill } from "../i18n/ui";
+import { langOf, t, fill, eventsWord } from "../i18n/ui";
 
 const lang = langOf(Astro);
 const T = t(lang);
@@ -19,9 +19,10 @@ const countTpl = T("events.count");
     <MiniHero title={T("events.title")} />
     <div class="browse" id="events">
       <aside class="side">
-        <button class="filters-toggle" type="button" aria-expanded="false" aria-controls="filters-panel">
+        <button class="filters-toggle" type="button" aria-haspopup="dialog" aria-controls="filters-sheet">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"></path><circle cx="16" cy="6" r="2"></circle><circle cx="10" cy="12" r="2"></circle><circle cx="18" cy="18" r="2"></circle></svg>
           {T("events.filters")}
+          <span class="badge" hidden></span>
         </button>
         <div class="filters-panel" id="filters-panel">
           <Filters />
@@ -50,22 +51,46 @@ const countTpl = T("events.count");
         </div>
       </section>
     </div>
+
+    {/* phones: the same filter panel moves in here (see the script) and opens as a sheet from the bottom */}
+    <dialog class="sheet" id="filters-sheet" aria-labelledby="sheet-title">
+      <div class="sheet-head">
+        <span class="grip" aria-hidden="true"></span>
+        <h2 id="sheet-title">{T("events.filters")}</h2>
+        <button class="sheet-close" type="button" aria-label={T("events.closeFilters")}><Icon name="close" /></button>
+      </div>
+      <div class="sheet-body"></div>
+      <div class="sheet-foot">
+        <button class="sheet-reset" type="button" data-reset>{T("events.resetShort")}</button>
+        <button class="sheet-show" type="button" data-tpl={T("events.show")}>{fill(T("events.show"), { n: events.length, w: eventsWord(events.length, lang) })}</button>
+      </div>
+    </dialog>
   </main>
 </Base>
 
 <script>
   import { initFilters } from "../scripts/filter";
+  import { eventsWord, fill, type Lang } from "../i18n/ui";
 
   const count = document.getElementById("count")!;
   const empty = document.getElementById("empty")!;
   const cards = [...document.getElementById("grid")!.children] as HTMLElement[];
   const search = document.getElementById("search") as HTMLInputElement;
   const clear = document.querySelector<HTMLButtonElement>(".searchbar .clear")!;
+  const lang = document.documentElement.lang as Lang;
+  const showBtn = document.querySelector<HTMLButtonElement>(".sheet-show")!;
+  const badge = document.querySelector<HTMLElement>(".filters-toggle .badge")!;
+  const orgSelect = document.querySelector<HTMLSelectElement>("[data-filter-org]")!;
   const reset = initFilters(
     cards,
     (shown) => {
       count.textContent = count.dataset.tpl!.replace("{n}", String(shown)).replace("{total}", String(cards.length));
       empty.hidden = shown > 0;
+      showBtn.textContent = fill(showBtn.dataset.tpl!, { n: shown, w: eventsWord(shown, lang) });
+      // how many filter groups are narrowed down, shown on the phone's "Filters" button
+      const active = document.querySelectorAll('.filters [aria-pressed="true"]:not([data-value=""])').length + (orgSelect.value ? 1 : 0);
+      badge.textContent = String(active);
+      badge.hidden = !active;
     },
     search,
   );
@@ -98,10 +123,42 @@ const countTpl = T("events.count");
       syncClear();
     });
 
-  // on narrow screens the filters fold behind a button
-  const browse = document.querySelector(".browse")!;
-  const toggle = document.querySelector(".filters-toggle")!;
-  toggle.addEventListener("click", () => toggle.setAttribute("aria-expanded", String(browse.classList.toggle("show-filters"))));
+  // on narrow screens the filter panel lives in a bottom sheet; on wide ones it goes back to the sidebar
+  const sheet = document.getElementById("filters-sheet") as HTMLDialogElement;
+  const panel = document.getElementById("filters-panel")!;
+  const side = document.querySelector(".side")!;
+  const phone = matchMedia("(max-width: 900px)");
+  const place = () => {
+    if (!phone.matches && sheet.open) sheet.close();
+    (phone.matches ? sheet.querySelector(".sheet-body")! : side).append(panel);
+  };
+  place();
+  phone.addEventListener("change", place);
+  document.querySelector(".filters-toggle")!.addEventListener("click", () => sheet.showModal());
+  sheet.querySelector(".sheet-close")!.addEventListener("click", () => sheet.close());
+  showBtn.addEventListener("click", () => sheet.close());
+  // a tap on the dimmed page above the sheet closes it
+  sheet.addEventListener("click", (e) => e.target === sheet && sheet.close());
+
+  // drag the sheet down by its top bar to close it
+  const head = sheet.querySelector<HTMLElement>(".sheet-head")!;
+  let startY: number | null = null;
+  const release = (close: boolean) => {
+    startY = null;
+    sheet.style.transition = sheet.style.transform = "";
+    if (close) sheet.close();
+  };
+  head.addEventListener("pointerdown", (e) => {
+    if ((e.target as Element).closest("button")) return;
+    startY = e.clientY;
+    head.setPointerCapture(e.pointerId);
+    sheet.style.transition = "none";
+  });
+  head.addEventListener("pointermove", (e) => {
+    if (startY !== null) sheet.style.transform = `translateY(${Math.max(0, e.clientY - startY)}px)`;
+  });
+  head.addEventListener("pointerup", (e) => startY !== null && release(e.clientY - startY > 80));
+  head.addEventListener("pointercancel", () => startY !== null && release(false));
 </script>
 
 <style>
@@ -161,16 +218,65 @@ const countTpl = T("events.count");
   @media (max-width: 900px) {
     .browse { grid-template-columns: 1fr; grid-template-areas: "find" "side" "results"; gap: 16px; padding: 32px 16px 16px; }
     .side { position: static; max-height: none; overflow: visible; }
+    /* until the script moves it into the sheet, the panel stays out of the page */
+    .side .filters-panel { display: none; }
     .filters-toggle {
-      display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; cursor: pointer;
-      font-size: 14px; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 99px;
+      display: inline-flex; align-items: center; gap: 8px; height: 42px; padding: 0 16px; cursor: pointer;
+      font-size: 15px; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 99px;
+      transition: background-color 150ms ease, transform 160ms var(--ease-out);
     }
+    .filters-toggle:active { transform: scale(0.97); background: var(--surface-2); }
     .filters-toggle svg { width: 16px; height: 16px; }
-    .filters-toggle[aria-expanded="true"] { background: var(--surface-2); }
-    .filters-panel { margin-top: 16px; padding: 18px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
-    .browse:not(.show-filters) .filters-panel { display: none; }
+    .badge {
+      display: inline-grid; place-items: center; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 99px;
+      font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--bg); background: var(--text);
+    }
   }
+
+  /* ---------- bottom sheet (phones) ---------- */
+  /* layout lives on the closed state too, so the sheet keeps its place while it animates out */
+  .sheet {
+    position: fixed; inset: auto 0 0; display: none; flex-direction: column;
+    width: 100%; max-width: 640px; max-height: 88dvh; margin: 0 auto; padding: 0; overflow: hidden;
+    color: var(--text); background: var(--surface); border: 1px solid var(--line); border-bottom: 0; border-radius: 22px 22px 0 0;
+  }
+  .sheet[open] { display: flex; }
+  .sheet::backdrop { background: rgb(0 0 0 / 0.55); }
+  :global(html:has(.sheet[open])) { overflow: hidden; }
+  .sheet-head { position: relative; display: grid; grid-template-columns: 44px 1fr 44px; align-items: center; padding: 14px 10px 6px; touch-action: none; cursor: grab; }
+  .grip { position: absolute; top: 7px; left: 50%; width: 36px; height: 4px; translate: -50% 0; border-radius: 2px; background: var(--field-line); }
+  .sheet-head h2 { grid-column: 2; margin: 0; font-size: 16px; font-weight: 600; text-align: center; }
+  .sheet-close {
+    display: grid; place-items: center; width: 40px; height: 40px; padding: 0; cursor: pointer;
+    color: var(--muted); background: none; border: 0; border-radius: 50%;
+  }
+  .sheet-close:active { background: var(--surface-2); }
+  .sheet-close :global(.icon) { width: 20px; height: 20px; }
+  .sheet-body { flex: 1; min-height: 0; padding: 4px 16px 16px; overflow-y: auto; overscroll-behavior: contain; }
+  .sheet .reset { display: none; } /* the footer has its own */
+  .sheet-foot { display: flex; gap: 10px; padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--line); }
+  .sheet-foot button {
+    height: 48px; padding: 0 20px; cursor: pointer; font-size: 15px; font-weight: 500; border-radius: 99px;
+    transition: transform 160ms var(--ease-out);
+  }
+  .sheet-foot button:active { transform: scale(0.97); }
+  .sheet-reset { color: var(--text); background: transparent; border: 1px solid var(--line); }
+  .sheet-show { flex: 1; color: var(--bg); background: var(--text); border: 1px solid var(--text); }
+  /* slides up on open and back down on close where the browser can animate a dialog's exit; otherwise it simply appears */
+  @media (prefers-reduced-motion: no-preference) {
+    .sheet, .sheet::backdrop { transition: transform 300ms var(--ease-out), opacity 300ms ease, overlay 300ms allow-discrete, display 300ms allow-discrete; }
+    .sheet:not([open]) { transform: translateY(100%); }
+    .sheet:not([open])::backdrop { opacity: 0; }
+    @starting-style {
+      .sheet[open] { transform: translateY(100%); }
+      .sheet[open]::backdrop { opacity: 0; }
+    }
+  }
+
   @media (max-width: 640px) {
-    .results .grid { grid-template-columns: 1fr; }
+    .results .grid { grid-template-columns: 1fr; gap: 12px; }
+    /* 16px keeps iOS from zooming into the field; the right padding only has to fit the clear button here */
+    .searchbar > :global(.icon) { left: 15px; }
+    .searchbar input { height: 50px; padding: 0 48px 0 44px; font-size: 16px; }
   }
 </style>

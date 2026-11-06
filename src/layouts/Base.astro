@@ -27,12 +27,15 @@ const NAV = [
     {Astro.site && LOCALES.map((l) => <link rel="alternate" hreflang={l} href={new URL(href(l, path), Astro.site).href} />)}
     {Astro.site && <link rel="alternate" hreflang="x-default" href={new URL(href("uk", path), Astro.site).href} />}
     <link rel="icon" type="image/svg+xml" href={url("favicon.svg")} />
+    {/* the phone's status bar takes this colour; it follows the site theme, not only the system one */}
+    <meta name="theme-color" content="#0b0b0e" />
     <script is:inline>
       // Runs before paint so the page never flashes the wrong theme; a saved choice beats the system setting.
       try {
         document.documentElement.dataset.theme =
           localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
       } catch {}
+      if (document.documentElement.dataset.theme === "light") document.querySelector('meta[name="theme-color"]').content = "#f5f3ee";
     </script>
   </head>
   <body id="top">
@@ -92,6 +95,7 @@ const NAV = [
       toggle.addEventListener("click", () => {
         const apply = () => {
           root.dataset.theme = root.dataset.theme === "light" ? "dark" : "light";
+          document.querySelector<HTMLMetaElement>('meta[name="theme-color"]')!.content = root.dataset.theme === "light" ? "#f5f3ee" : "#0b0b0e";
           try {
             localStorage.setItem("theme", root.dataset.theme);
           } catch {}
@@ -101,6 +105,21 @@ const NAV = [
         if (document.startViewTransition && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.startViewTransition(apply);
         else apply();
       });
+
+      // phones: the header gets out of the way while reading down and comes back on the first scroll up (CSS only moves it under 720px)
+      const header = document.querySelector<HTMLElement>(".top")!;
+      let lastY = scrollY;
+      addEventListener(
+        "scroll",
+        () => {
+          const y = scrollY;
+          if (Math.abs(y - lastY) < 6) return;
+          header.classList.toggle("away", y > lastY && y > 160);
+          lastY = y;
+        },
+        { passive: true },
+      );
+      header.addEventListener("focusin", () => header.classList.remove("away"));
     </script>
   </body>
 </html>
