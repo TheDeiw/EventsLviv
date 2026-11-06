@@ -1,0 +1,152 @@
+---
+import Icon from "./Icon.astro";
+import { url } from "../lib/site";
+import { langOf, t, fill } from "../i18n/ui";
+
+const { photos, title } = Astro.props as { photos: string[]; title: string };
+const lang = langOf(Astro);
+const T = t(lang);
+const n = photos.length;
+---
+
+{n > 0 && (
+  <div class="gallery" data-gallery data-count={n}>
+    {/* thumbnails are plain links to the full photo, so the gallery still works without JavaScript */}
+    <ul class="thumbs">
+      {photos.map((p, i) => (
+        <li>
+          <a href={url(p)} data-index={i} aria-label={fill(T("gal.open"), { n: i + 1, total: n })}>
+            <img src={url(p)} alt="" loading="lazy" decoding="async" />
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <dialog class="viewer" aria-label={title}>
+      <div class="stage"><img alt="" draggable="false" /></div>
+      {n > 1 && <p class="counter" aria-live="polite"></p>}
+      <button class="btn close" type="button" aria-label={T("gal.close")}><Icon name="close" /></button>
+      {n > 1 && <button class="btn nav prev" type="button" aria-label={T("gal.prev")}><Icon name="prev" /></button>}
+      {n > 1 && <button class="btn nav next" type="button" aria-label={T("gal.next")}><Icon name="next" /></button>}
+    </dialog>
+  </div>
+)}
+
+<script>
+  const calm = matchMedia("(prefers-reduced-motion: reduce)");
+
+  for (const root of document.querySelectorAll<HTMLElement>("[data-gallery]")) {
+    const links = [...root.querySelectorAll<HTMLAnchorElement>(".thumbs a")];
+    const dialog = root.querySelector<HTMLDialogElement>(".viewer")!;
+    const stage = dialog.querySelector<HTMLElement>(".stage")!;
+    const img = stage.querySelector("img")!;
+    const counter = dialog.querySelector(".counter");
+    const urls = links.map((a) => a.href);
+    let index = 0;
+    let opener: HTMLElement | null = null;
+    if (typeof dialog.showModal !== "function") continue; // very old browser: the links just open the photo
+
+    const show = (i: number, dir = 0) => {
+      index = (i + urls.length) % urls.length;
+      img.src = urls[index];
+      if (counter) counter.textContent = `${index + 1} / ${urls.length}`;
+      // the photos next to this one start loading now, so flicking through feels instant
+      for (const j of [index + 1, index - 1]) new Image().src = urls[(j + urls.length) % urls.length];
+      if (dir) img.animate([{ opacity: 0, transform: calm.matches ? "none" : `translateX(${dir * 24}px)` }, { opacity: 1, transform: "none" }], { duration: 200, easing: "cubic-bezier(0.23, 1, 0.32, 1)" });
+    };
+
+    links.forEach((a, i) =>
+      a.addEventListener("click", (e) => {
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return; // keep "open in new tab"
+        e.preventDefault();
+        opener = a;
+        show(i);
+        dialog.showModal();
+      }),
+    );
+    dialog.addEventListener("close", () => opener?.focus());
+    dialog.querySelector(".close")!.addEventListener("click", () => dialog.close());
+    dialog.querySelector(".prev")?.addEventListener("click", () => show(index - 1, -1));
+    dialog.querySelector(".next")?.addEventListener("click", () => show(index + 1, 1));
+    dialog.addEventListener("keydown", (e) => {
+      if (urls.length < 2) return;
+      if (e.key === "ArrowLeft") show(index - 1, -1);
+      if (e.key === "ArrowRight") show(index + 1, 1);
+    });
+
+    // swipe left/right on touch screens; a tap on the empty area around the photo closes the viewer
+    let startX = 0;
+    let moved = false;
+    stage.addEventListener("pointerdown", (e) => ((startX = e.clientX), (moved = false)));
+    stage.addEventListener("pointerup", (e) => {
+      const dx = e.clientX - startX;
+      if (Math.abs(dx) > 48 && urls.length > 1) {
+        moved = true;
+        show(index + (dx < 0 ? 1 : -1), dx < 0 ? 1 : -1);
+      }
+    });
+    stage.addEventListener("click", (e) => {
+      if (!moved && e.target === stage) dialog.close();
+    });
+  }
+</script>
+
+<style>
+  .thumbs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; }
+  [data-count="1"] .thumbs { grid-template-columns: 1fr; }
+  [data-count="2"] .thumbs,
+  [data-count="4"] .thumbs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .thumbs a { display: block; overflow: hidden; border-radius: 12px; background: var(--surface-2); }
+  .thumbs img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform 300ms var(--ease-out); }
+  .thumbs a:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+
+  /* the viewer is always dark: photos read best on black, whatever the site theme */
+  .viewer {
+    width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0;
+    color: #fff; background: rgb(8 8 10 / 0.95); overflow: hidden;
+  }
+  .viewer::backdrop { background: transparent; }
+  :global(html:has(.viewer[open])) { overflow: hidden; }
+  .stage { position: absolute; inset: 64px 84px; display: grid; place-items: center; touch-action: pan-y; }
+  .stage img { display: block; max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; user-select: none; }
+  .counter { position: absolute; top: 22px; left: 50%; translate: -50% 0; margin: 0; font-size: 14px; color: rgb(255 255 255 / 0.72); font-variant-numeric: tabular-nums; }
+  .btn {
+    position: absolute; display: grid; place-items: center; width: 46px; height: 46px; padding: 0; cursor: pointer;
+    color: #fff; background: rgb(255 255 255 / 0.1); border: 0; border-radius: 50%;
+    transition: background-color 150ms ease, transform 160ms var(--ease-out);
+  }
+  .btn :global(svg) { width: 22px; height: 22px; stroke-width: 2; }
+  .btn:active { transform: scale(0.94); }
+  .btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+  .close { top: 12px; right: 12px; }
+  .nav { top: 50%; translate: 0 -50%; }
+  .prev { left: 16px; }
+  .next { right: 16px; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .viewer[open] { animation: fade-in 180ms ease-out; }
+    .viewer[open] .stage img { animation: photo-in 240ms var(--ease-out); }
+  }
+  @keyframes fade-in { from { opacity: 0; } }
+  @keyframes photo-in { from { opacity: 0; transform: scale(0.96); } }
+
+  @media (hover: hover) and (pointer: fine) {
+    .thumbs a:hover img { transform: scale(1.03); }
+    .btn:hover { background: rgb(255 255 255 / 0.2); }
+  }
+  @media (max-width: 640px) {
+    .thumbs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    [data-count="1"] .thumbs { grid-template-columns: 1fr; }
+    /* an odd number of photos: the first one takes the full row so the grid has no hole */
+    [data-count="3"] li:first-child,
+    [data-count="5"] li:first-child { grid-column: span 2; }
+    .stage { inset: 60px 8px 84px; }
+    .nav { top: auto; bottom: 20px; translate: none; }
+    .prev { left: calc(50% - 58px); }
+    .next { right: calc(50% - 58px); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .thumbs img, .btn { transition: none; }
+    .btn:active { transform: none; }
+  }
+</style>

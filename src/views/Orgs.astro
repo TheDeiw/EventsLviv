@@ -2,36 +2,43 @@
 import Base from "../layouts/Base.astro";
 import MiniHero from "../components/MiniHero.astro";
 import { content, href, url, coverAttrs } from "../lib/site";
-import { langOf, t, fill, eventsWord } from "../i18n/ui";
+import { langOf, t, eventsWord, type Key } from "../i18n/ui";
 
 const lang = langOf(Astro);
 const T = t(lang);
 const { organizations, eventsOf } = content(lang);
 const sorted = [...organizations].sort((a, b) => a.name.localeCompare(b.name, lang));
+// groups in this order; an organization with no known "type" in organizations.json stops the build instead of vanishing
+const TYPES = ["ngo", "organizer", "it"];
+for (const o of organizations) if (!TYPES.includes(o.type)) throw new Error(`organizations.json: "${o.id}" needs "type": ${TYPES.join(" | ")}`);
+const groups = TYPES.map((type) => ({ type, label: T(`orgType.${type}` as Key), list: sorted.filter((o) => o.type === type) })).filter((g) => g.list.length);
 ---
 
 <Base title={T("orgs.metaTitle")} description={T("orgs.metaDesc")} current="organizations" path="organizations/">
   <MiniHero title={T("orgs.title")} />
-  <div class="pagehead">
-    <p>{fill(T("orgs.count"), { n: organizations.length })}</p>
-  </div>
-
-  <main class="grid">
-    {sorted.map((o) => {
-      const n = eventsOf(o.id).length;
-      return (
-        <article class="card">
-          <div {...coverAttrs(o.logo)}>
-            <img src={url(o.logo)} alt="" loading="lazy" />
-          </div>
-          <div class="body">
-            <h2><a href={href(lang, `organizations/${o.id}/`)}>{o.name}</a></h2>
-            <p class="desc">{o.description[0]}</p>
-            <p class="count">{n} {eventsWord(n, lang)}</p>
-          </div>
-        </article>
-      );
-    })}
+  <main class="groups">
+    {groups.map((g) => (
+      <section class="group" aria-labelledby={`g-${g.type}`}>
+        <h2 class="group-title" id={`g-${g.type}`}>{g.label}</h2>
+        <div class="grid">
+          {g.list.map((o) => {
+            const n = eventsOf(o.id).length;
+            return (
+              <article class="card">
+                <div {...coverAttrs(o.logo)}>
+                  <img src={url(o.logo)} alt="" loading="lazy" />
+                </div>
+                <div class="body">
+                  <h3><a href={href(lang, `organizations/${o.id}/`)}>{o.name}</a></h3>
+                  <p class="desc">{o.description[0]}</p>
+                  <p class="count">{n} {eventsWord(n, lang)}</p>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+    ))}
   </main>
 </Base>
 
@@ -39,9 +46,17 @@ const sorted = [...organizations].sort((a, b) => a.name.localeCompare(b.name, la
   .card { position: relative; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
   .cover { border-radius: var(--r) var(--r) 0 0; }
   /* the whole card is the click target */
-  h2 a::after { content: ""; position: absolute; inset: 0; border-radius: var(--r); }
-  h2 { margin: 0; font-size: 18px; font-weight: 700; line-height: 1.25; }
-  h2 a { text-decoration: none; }
+  h3 a::after { content: ""; position: absolute; inset: 0; border-radius: var(--r); }
+  h3 { margin: 0; font-size: 18px; font-weight: 700; line-height: 1.25; }
+  h3 a { text-decoration: none; }
+  .groups { padding-top: 32px; }
+  .group { max-width: 1280px; margin: 0 auto; padding: 0 32px 40px; }
+  .group .grid { max-width: none; padding: 0; }
+  .group-title { margin: 0 0 14px; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  @media (max-width: 600px) {
+    .groups { padding-top: 20px; }
+    .group { padding: 0 16px 32px; }
+  }
   .body { flex: 1; display: flex; flex-direction: column; gap: 6px; padding: 14px 16px 16px; }
   .desc { margin: 0; color: var(--muted); font-size: 13px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
   .count { margin: auto 0 0; padding-top: 6px; font-size: 13px; }

@@ -5,7 +5,7 @@ import { langOf, t } from "../i18n/ui";
 
 const lang = langOf(Astro);
 const T = t(lang);
-const { events, organizations, topics } = content(lang);
+const { topics } = content(lang);
 
 // depth: d1 drifts slowest on scroll, d3 fastest; side decides which way it slides in
 const RIBBONS = [
@@ -16,8 +16,9 @@ const RIBBONS = [
   { src: "ribbon-red.webp", w: 1000, h: 488, cls: "r-red d3 right" },
 ];
 const STATS = [
-  { n: events.length, label: T("stat.events"), c: "var(--spire-1)" },
-  { n: organizations.length, label: T("stat.orgs"), c: "var(--spire-4)" },
+  // rounded on purpose: the list is growing, so the home page promises "50+" rather than an exact count
+  { n: "50+", label: T("stat.events"), c: "var(--spire-1)" },
+  { n: "15+", label: T("stat.orgs"), c: "var(--spire-4)" },
   { n: topics.length, label: T("stat.topics"), c: "var(--spire-5)" },
 ];
 const NOT = [T("not.1"), T("not.2"), T("not.3"), T("not.4"), T("not.5")];
@@ -53,15 +54,15 @@ const ME = [
     </section>
 
     <div class="about" id="about">
-      <section class="intro" aria-labelledby="about-title">
-        <p class="eyebrow" id="about-title">{T("about.eyebrow")}</p>
+      <section class="intro" aria-label={T("about.eyebrow")}>
+        <div class="deco deco-red" aria-hidden="true"><img src={url("hero/ribbon-red.webp")} width="1000" height="488" alt="" loading="lazy" /></div>
         <p class="lead">{T("about.lead")}</p>
         <ul class="stats">
           {STATS.map((s) => <li style={`--c:${s.c}`}><b>{s.n}</b><span>{s.label}</span></li>)}
         </ul>
       </section>
 
-      <div class="duo">
+      <div class="panels">
         <section class="panel" style="--c:var(--spire-4)">
           <span class="ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
@@ -76,9 +77,6 @@ const ME = [
           <h2>{T("panel2.title")}</h2>
           <p>{T("panel2.text")}</p>
         </section>
-      </div>
-
-      <div class="split">
         <section class="panel nots" style="--c:var(--spire-2)">
           <span class="ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m4.9 4.9 14.2 14.2"></path></svg>
@@ -97,6 +95,7 @@ const ME = [
       </div>
 
       <section class="author" aria-labelledby="author-title">
+        <div class="deco deco-green" aria-hidden="true"><img src={url("hero/ribbon-green.webp")} width="1000" height="392" alt="" loading="lazy" /></div>
         <img src={url("images/about/author.webp")} alt="" width="140" height="134" loading="lazy" />
         <div>
           <p class="eyebrow">{T("author.eyebrow")}</p>
@@ -122,7 +121,7 @@ const ME = [
 <style>
   /* ---------- hero ---------- */
   .hero {
-    position: relative; overflow: clip; isolation: isolate;
+    position: relative; overflow-x: clip; isolation: isolate;
     display: grid; place-items: center;
     min-height: min(calc(100svh - 76px), 880px); padding: 40px 16px 72px;
   }
@@ -133,7 +132,7 @@ const ME = [
   .r-purple img { rotate: -12deg; }
   .r-green { left: -9%; top: 44%; width: clamp(240px, 30vw, 480px); }
   .r-green img { rotate: 16deg; }
-  .r-yellow { left: 9%; bottom: -12%; width: clamp(120px, 12vw, 200px); }
+  .r-yellow { left: 9%; bottom: 2%; width: clamp(120px, 12vw, 200px); }
   .r-yellow img { rotate: -16deg; }
   .r-blue { right: -6%; top: 7%; width: clamp(240px, 30vw, 480px); }
   .r-blue img { rotate: 12deg; }
@@ -195,7 +194,7 @@ const ME = [
     .r-purple { left: -18%; top: -2%; width: 62vw; }
     .r-blue { right: -20%; top: 2%; width: 58vw; }
     .r-green { display: none; }
-    .r-yellow { left: -2%; bottom: -6%; width: 26vw; }
+    .r-yellow { left: -2%; bottom: 2%; width: 26vw; }
     .r-red { right: -24%; bottom: 0; width: 66vw; }
     .kinds { display: none; }
   }
@@ -205,7 +204,7 @@ const ME = [
     .cta.ghost:hover { opacity: 1; border-color: var(--muted); }
   }
   /* ---------- about ---------- */
-  .about { display: grid; gap: 64px; max-width: 1100px; margin: 0 auto; padding: 24px 32px 24px; scroll-margin-top: 96px; }
+  .about { display: grid; gap: 64px; max-width: 1280px; margin: 0 auto; padding: 24px 32px 24px; scroll-margin-top: 96px; position: relative; z-index: 1; }
   .eyebrow { margin: 0 0 14px; color: var(--muted); font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; }
   h2 { margin: 0 0 10px; font-size: 22px; font-weight: 700; line-height: 1.25; letter-spacing: -0.02em; text-wrap: balance; }
   .lead { margin: 0; max-width: 36em; font-size: clamp(20px, 2.5vw, 28px); font-weight: 500; line-height: 1.4; letter-spacing: -0.015em; text-wrap: pretty; }
@@ -214,8 +213,25 @@ const ME = [
   .stats b { display: block; font-size: 44px; font-weight: 800; line-height: 1; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
   .stats span { display: block; margin-top: 8px; color: var(--muted); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
 
-  .duo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-  .split { display: grid; grid-template-columns: 1.1fr 1fr; gap: 20px; }
+  /* four panels, two per row, every row as tall as the tallest panel */
+  .panels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: 20px; }
+  /* extra ribbons sit in the empty space beside short content, behind it, and only where there is room */
+  .intro, .author { position: relative; isolation: isolate; }
+  .deco { position: absolute; z-index: -1; pointer-events: none; }
+  .deco img { display: block; width: 100%; height: auto; }
+  .deco-red { right: -1%; bottom: -44px; width: clamp(220px, 22vw, 320px); }
+  .deco-red img { rotate: -8deg; }
+  .deco-green { right: 0; top: 50%; translate: 0 -50%; width: clamp(240px, 24vw, 360px); }
+  .deco-green img { rotate: 10deg; }
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .deco { animation: drift linear both; animation-timeline: view(); animation-range: cover; }
+    }
+  }
+  @keyframes drift { from { transform: translateY(28px); } to { transform: translateY(-28px); } }
+  @media (max-width: 1100px) {
+    .deco { display: none; }
+  }
   .panel { padding: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
   .panel p { margin: 0; color: var(--muted); text-wrap: pretty; }
   .ico {
@@ -252,7 +268,7 @@ const ME = [
   }
   @media (max-width: 900px) {
     .about { gap: 48px; padding: 16px 16px 8px; }
-    .duo, .split { grid-template-columns: 1fr; }
+    .panels { grid-template-columns: 1fr; grid-auto-rows: auto; }
     .panel { padding: 22px; }
     .author { grid-template-columns: 1fr; gap: 20px; }
     .author img { width: 110px; }

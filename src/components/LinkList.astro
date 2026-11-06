@@ -1,0 +1,57 @@
+---
+import Icon from "./Icon.astro";
+import { linkLabel } from "../lib/site";
+import { langOf } from "../i18n/ui";
+
+const { links } = Astro.props as { links: { title: string; url: string; type: string }[] };
+const lang = langOf(Astro);
+// brand colours tint the logo bubble and the hover state; anything unknown is a plain website
+const BRAND: Record<string, { icon: string; color: string }> = {
+  instagram: { icon: "instagram", color: "#e4405f" },
+  facebook: { icon: "facebook", color: "#0866ff" },
+  telegram: { icon: "telegram", color: "#26a5e4" },
+  linkedin: { icon: "linkedin", color: "#0a66c2" },
+  youtube: { icon: "youtube", color: "#ff0000" },
+};
+---
+
+<ul class="links">
+  {links.map((l) => {
+    const b = BRAND[l.type] ?? { icon: "globe", color: "var(--text)" };
+    return (
+      <li>
+        <a class="chip" href={l.url} target="_blank" rel="noopener" style={`--brand:${b.color}`}>
+          <span class="logo"><Icon name={b.icon} /></span>
+          <span class="label">
+            <span class="title">{l.title}</span>
+            <small>{linkLabel(lang, l.type)}</small>
+          </span>
+        </a>
+      </li>
+    );
+  })}
+</ul>
+
+<style>
+  .links { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .chip {
+    display: flex; align-items: center; gap: 12px; height: 100%; padding: 9px 14px 9px 9px; text-decoration: none;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    transition: background-color 150ms ease, border-color 150ms ease, transform 160ms var(--ease-out);
+  }
+  .chip:active { transform: scale(0.98); }
+  .logo {
+    flex: none; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%;
+    color: var(--brand); background: color-mix(in srgb, var(--brand) 14%, transparent);
+  }
+  .logo :global(svg) { width: 18px; height: 18px; }
+  .label { display: grid; min-width: 0; }
+  .title { font-size: 14px; font-weight: 500; line-height: 1.3; overflow-wrap: anywhere; }
+  small { color: var(--muted); font-size: 12px; }
+  @media (hover: hover) and (pointer: fine) {
+    .chip:hover { background: color-mix(in srgb, var(--brand) 8%, var(--surface)); border-color: color-mix(in srgb, var(--brand) 45%, var(--line)); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .chip:active { transform: none; }
+  }
+</style>

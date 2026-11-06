@@ -2,14 +2,16 @@
 :root,
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --bg: #000;
-  --surface: #121214;
-  --surface-2: #1d1d21;
-  --text: #ececee;
-  --muted: #9a9aa2;
-  --line: #2b2b30;
-  --free: #5fd17c;
-  --now: #34a853;
+  /* off-black and off-white: pure white on pure black glares (17.8:1); these keep 15.5:1 text, 7.7:1 muted */
+  --bg: #0b0b0e;
+  --surface: #141417;
+  --surface-2: #1e1e23;
+  --text: #e4e4e7;
+  --muted: #a1a1aa;
+  --line: #2a2a31;
+  /* borders of inputs and selects must reach 3:1 against what is around them (WCAG 1.4.11) */
+  --field-line: #6b6b74;
+  --glow: rgb(255 255 255 / 0.05);
   --hero-title: #b3b3b3;
   --header-bg: rgb(22 22 26 / 0.72);
   --header-shadow: 0 8px 28px rgb(0 0 0 / 0.45);
@@ -23,8 +25,8 @@
   --text: #17171a;
   --muted: #5d5c63;
   --line: #e0dcd3;
-  --free: #1d7a3a;
-  --now: #2a8a45;
+  --field-line: #8a857b;
+  --glow: rgb(255 255 255 / 0.7);
   --hero-title: #26262b;
   --header-bg: rgb(255 255 255 / 0.74);
   --header-shadow: 0 8px 28px rgb(40 30 10 / 0.12);
@@ -45,6 +47,7 @@
 body {
   margin: 0;
   background: var(--bg);
+  overflow-x: clip; /* decorative ribbons may poke past the screen edge without causing sideways scroll */
   color: var(--text);
   font: 400 16px/1.55 "Geologica Variable", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -125,11 +128,9 @@ button { font: inherit; }
 .tags { display: flex; gap: 6px 12px; flex-wrap: wrap; }
 .tag { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
 .tag::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--tc); }
-.entry {
-  font-size: 12px; font-weight: 500; padding: 2px 10px; border-radius: 99px; white-space: nowrap;
-  border: 1px dashed var(--muted); color: var(--text);
-}
-.entry.free { border-color: var(--now); color: var(--free); }
+
+/* background glow, on trial: toggled by the `glow` class on <html> until a variant is chosen */
+html.glow body { background: radial-gradient(120% 70% at 50% -10%, var(--glow), transparent 60%) no-repeat, var(--bg); }
 
 /* ---------- footer ---------- */
 .foot { margin-top: 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }

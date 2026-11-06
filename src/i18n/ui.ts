@@ -67,8 +67,9 @@ const uk = {
   "events.reset": "Скинути фільтри",
   "events.empty": "За цими фільтрами нічого не знайшлося.",
   "events.listAria": "Список подій",
+  "events.search": "Пошук подій чи організаторів",
+  "events.clear": "Очистити пошук",
 
-  "f.search": "Пошук",
   "f.searchAria": "Пошук за назвою або організатором",
   "f.topic": "Тематика",
   "f.all": "Усі",
@@ -104,14 +105,20 @@ const uk = {
   "ev.where": "Де",
   "ev.price": "Скільки",
   "ev.links": "Посилання",
+  "gal.open": "Відкрити фото {n} з {total}",
+  "gal.close": "Закрити",
+  "gal.prev": "Попереднє фото",
+  "gal.next": "Наступне фото",
 
   "orgs.title": "Організації",
   "orgs.metaTitle": "Організації — Events Lviv",
   "orgs.metaDesc": "Організації, які проводять щорічні події у Львові, та їхні події.",
-  "orgs.count": "{n} організацій, які проводять події у Львові",
+  "orgType.ngo": "Громадські організації",
+  "orgType.organizer": "Організатори подій",
+  "orgType.it": "IT-спільноти",
   "orgs.back": "← Усі організації",
   "org.spaces": "Простори",
-  "org.events": "Події ({n})",
+  "org.events": "Події",
 };
 
 const en: Record<keyof typeof uk, string> = {
@@ -174,8 +181,9 @@ const en: Record<keyof typeof uk, string> = {
   "events.reset": "Reset filters",
   "events.empty": "Nothing found for these filters.",
   "events.listAria": "List of events",
+  "events.search": "Search events or organizers",
+  "events.clear": "Clear search",
 
-  "f.search": "Search",
   "f.searchAria": "Search by name or organizer",
   "f.topic": "Topic",
   "f.all": "All",
@@ -211,14 +219,20 @@ const en: Record<keyof typeof uk, string> = {
   "ev.where": "Where",
   "ev.price": "Price",
   "ev.links": "Links",
+  "gal.open": "Open photo {n} of {total}",
+  "gal.close": "Close",
+  "gal.prev": "Previous photo",
+  "gal.next": "Next photo",
 
   "orgs.title": "Organizations",
   "orgs.metaTitle": "Organizations — Events Lviv",
   "orgs.metaDesc": "Organizations that run annual events in Lviv, and their events.",
-  "orgs.count": "{n} organizations that run events in Lviv",
+  "orgType.ngo": "Civil society organizations",
+  "orgType.organizer": "Event organizers",
+  "orgType.it": "IT communities",
   "orgs.back": "← All organizations",
   "org.spaces": "Spaces",
-  "org.events": "Events ({n})",
+  "org.events": "Events",
 };
 
 const ui = { uk, en };

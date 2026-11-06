@@ -1,10 +1,9 @@
 const SEASONS: Record<string, number[]> = { spring: [3, 4, 5], summer: [6, 7, 8], autumn: [9, 10, 11], winter: [12, 1, 2] };
 
 // Wires the Filters component to the cards; the groups combine with AND, `after` gets the number of cards left visible.
-// Returns a function that resets everything.
-export function initFilters(cards: HTMLElement[], after: (shown: number) => void) {
+// `search` is the text field (it lives above the cards, outside the filter panel). Returns a function that resets everything.
+export function initFilters(cards: HTMLElement[], after: (shown: number) => void, search: HTMLInputElement) {
   const root = document.querySelector<HTMLElement>(".filters")!;
-  const search = root.querySelector<HTMLInputElement>("input")!;
   const org = root.querySelector<HTMLSelectElement>("select")!;
   const state: Record<string, string> = { topic: "", entry: "", when: "" };
 

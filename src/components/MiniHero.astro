@@ -26,18 +26,18 @@ const RIBBONS = [
 </section>
 
 <style>
-  /* at most ~20% of the screen height, so the list stays the main thing */
-  .mini { position: relative; overflow: clip; isolation: isolate; display: grid; place-items: center; height: clamp(132px, 20vh, 200px); }
+  /* at most ~20% of the screen height, so the list stays the main thing; ribbons stay inside it, nothing is cut by its edges */
+  .mini { position: relative; overflow-x: clip; isolation: isolate; display: grid; place-items: center; height: clamp(132px, 20vh, 200px); }
   .stage { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
   .ribbon { position: absolute; width: clamp(150px, 20vw, 300px); }
   .ribbon img { display: block; width: 100%; height: auto; }
   .purple { left: -4%; top: 4%; }
   .purple img { rotate: -12deg; }
-  .green { left: 9%; bottom: -4%; width: clamp(130px, 16vw, 260px); }
+  .green { left: 9%; bottom: 8%; width: clamp(130px, 16vw, 260px); }
   .green img { rotate: 14deg; }
   .blue { right: -4%; top: 6%; }
   .blue img { rotate: 12deg; }
-  .red { right: 9%; bottom: -4%; width: clamp(130px, 17vw, 270px); }
+  .red { right: 9%; bottom: 8%; width: clamp(130px, 17vw, 270px); }
   .red img { rotate: -10deg; }
 
   .copy { display: flex; align-items: center; gap: clamp(14px, 2vw, 28px); }
