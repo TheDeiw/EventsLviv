@@ -22,7 +22,8 @@ const NAV = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    {/* hreflang needs absolute URLs, so it appears once `site` is set in astro.config.mjs */}
+    {/* canonical and hreflang need absolute URLs, so they come from `site` in astro.config.mjs */}
+    {Astro.site && <link rel="canonical" href={new URL(href(lang, path), Astro.site).href} />}
     {Astro.site && LOCALES.map((l) => <link rel="alternate" hreflang={l} href={new URL(href(l, path), Astro.site).href} />)}
     {Astro.site && <link rel="alternate" hreflang="x-default" href={new URL(href("uk", path), Astro.site).href} />}
     <link rel="icon" type="image/svg+xml" href={url("favicon.svg")} />
