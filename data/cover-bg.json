@@ -39,6 +39,9 @@
  "images/faine-misto/cover.webp": {
   "mat": null
  },
+ "images/festyval-pampukha-i-hlintveinu/cover.webp": {
+  "mat": null
+ },
  "images/forum-451e/cover.webp": {
   "mat": null
  },
@@ -73,6 +76,9 @@
  "images/king-kross-fest/cover.webp": {
   "mat": null
  },
+ "images/kontrasty/cover.webp": {
+  "mat": null
+ },
  "images/leadership-program/cover.webp": {
   "mat": "#fad409"
  },
@@ -88,6 +94,12 @@
  "images/lviv-direction-qaday/cover.webp": {
   "mat": "#65529b"
  },
+ "images/lviv-fashion-week/cover.webp": {
+  "mat": "#dff7fe"
+ },
+ "images/lviv-half-marathon/cover.webp": {
+  "mat": null
+ },
  "images/lviv-ice-chocolate-festival/cover.webp": {
   "mat": "#f0e8e6"
  },
@@ -96,6 +108,9 @@
  },
  "images/lviv-invest-forum/cover.webp": {
   "mat": "#151515"
+ },
+ "images/lviv-jazz-days/cover.webp": {
+  "mat": null
  },
  "images/lviv-media-forum/cover.webp": {
   "mat": "#000000"
@@ -106,6 +121,9 @@
  "images/lviv-urban-forum/cover.svg": {
   "mat": "#efece6",
   "logo": true
+ },
+ "images/lvivskyi-yarmarok-smaku/cover.webp": {
+  "mat": null
  },
  "images/molodvizh/cover.webp": {
   "mat": "#0157ff"
@@ -138,6 +156,10 @@
  },
  "images/organizations/it-cluster-lviv.webp": {
   "mat": null
+ },
+ "images/organizations/lviv-philharmonic.webp": {
+  "mat": "#efece6",
+  "logo": true
  },
  "images/organizations/osvitoriya.webp": {
   "mat": "#1c1c20",
@@ -176,6 +198,9 @@
  "images/re-farm/cover.webp": {
   "mat": null
  },
+ "images/rizdvianyi-yarmarok/cover.webp": {
+  "mat": null
+ },
  "images/silicon-drinkabout-lviv/cover.webp": {
   "mat": null
  },
@@ -191,6 +216,9 @@
  "images/vchyteli-maibutnoho/cover.webp": {
   "mat": "#f8af16"
  },
+ "images/virtuozy/cover.webp": {
+  "mat": "#1e1511"
+ },
  "images/wine-and-cheese-festival/cover.webp": {
   "mat": "#024241"
  },
@@ -202,5 +230,8 @@
  },
  "images/zemlya-poetiv/cover.webp": {
   "mat": "#2e4e85"
+ },
+ "images/zolotyi-lev/cover.webp": {
+  "mat": null
  }
 }

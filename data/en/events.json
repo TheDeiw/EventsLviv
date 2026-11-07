@@ -646,5 +646,114 @@
     "links": [
       "IT Camp 2026 on DOU"
     ]
+  },
+  "lviv-jazz-days": {
+    "description": [
+      "Lviv Jazz Days is an annual international jazz festival run by VINIL concert agency since 2018. It was started for International Jazz Day, so every year it takes place in the second half of April and ends on April 30.",
+      "The program covers jazz from classic Dixieland to contemporary experimental and original projects: well-known Ukrainian bands, young musicians, and students and teachers of the Lviv Music Academy perform. Besides concerts there are educational events and jam sessions. In 2026 the festival became a charity event and all events were free."
+    ],
+    "audience": "Jazz lovers, music fans, musicians and music students, and anyone who wants to discover jazz.",
+    "place": "Lviv Officers' House, Lviv National Philharmonic and other concert venues in the city.",
+    "whenText": "Annually, in the second half of April, ending on International Jazz Day, April 30.",
+    "priceText": "In 2026 all events were free: the festival was held as a charity event."
+  },
+  "virtuozy": {
+    "name": "Virtuosos (Virtuozy)",
+    "description": [
+      "Virtuosos (Virtuozy) is an international classical music festival, one of the oldest and largest in Ukraine. It has always been organized by the Myroslav Skoryk Lviv National Philharmonic; the 43rd festival took place in 2024.",
+      "For two to three weeks the Philharmonic hosts symphonic, chamber and choral programs with Ukrainian and international orchestras, conductors and soloists. Every year the festival prepares world premieres, including works by contemporary Ukrainian composers."
+    ],
+    "audience": "Classical music lovers, music fans, music students and anyone who wants to hear a live orchestra.",
+    "place": "Myroslav Skoryk Lviv National Philharmonic.",
+    "whenText": "Annually, from mid-May to early June.",
+    "priceText": "Entry by ticket, sold at the Philharmonic box office.",
+    "links": [
+      "Lviv National Philharmonic"
+    ]
+  },
+  "kontrasty": {
+    "name": "Contrasts (Kontrasty)",
+    "description": [
+      "Contrasts (Kontrasty) is an international festival of contemporary academic music that the Lviv National Philharmonic has held every year since 1995. Its artistic director is the composer Bohdan Sehin.",
+      "Every edition has its own theme: in 2025, opening its fourth decade, the festival explored the “Simulacrum”. The program combines new works by Ukrainian and international composers with classical pieces, and besides concerts at the Philharmonic there are discussions and events at other art spaces in the city."
+    ],
+    "audience": "Contemporary music lovers, composers and musicians, students and anyone curious about new sounds in academic music.",
+    "place": "Lviv National Philharmonic and other art spaces in Lviv, such as the Dzyga art center.",
+    "whenText": "Annually, from late September to early October.",
+    "priceText": "Concerts are ticketed at the Philharmonic box office; some events, such as discussions, are free with registration.",
+    "links": [
+      "Lviv National Philharmonic"
+    ]
+  },
+  "zolotyi-lev": {
+    "name": "Golden Lion (Zolotyi Lev)",
+    "description": [
+      "Golden Lion (Zolotyi Lev) is an international theatre festival held in Lviv since 1989. It started as a showcase of Ukraine's non-state theatres, and its founder is Lviv's Voskresinnia Theatre.",
+      "Every autumn the festival brings theatres from across the country and abroad to Lviv. In 2025, under the motto “Classics. Experiment. Resilience”, it showed 21 performances, with theatres from Kharkiv, Kherson, Mykolaiv, Chernihiv, Cherkasy, Vinnytsia, Lutsk and Kyiv, as well as Lviv companies."
+    ],
+    "audience": "Theatre lovers, drama students, actors and directors, and anyone who wants to see the best Ukrainian theatre in one city.",
+    "place": "Voskresinnia Theatre (5 Hryhorenka Square) and other stages in Lviv.",
+    "whenText": "Annually, in late September or early October.",
+    "priceText": "Entry by ticket; in 2025 military personnel attended for free.",
+    "links": [
+      "Voskresinnia Theatre"
+    ]
+  },
+  "lviv-fashion-week": {
+    "description": [
+      "Lviv Fashion Week is Lviv's fashion week, held twice a year, in spring and autumn. Ukrainian designers present new collections there, and brands, experts and media come together for professional dialogue.",
+      "Besides the runway shows, the program includes open talks on trends, brand development and the market, run in partnership with the West Ukrainian Fashion Industry Cluster and Fashion Park Lviv. The fashion week works as a charity event: access to shows and lectures is by donation, and the money goes to support the military."
+    ],
+    "audience": "Designers, fashion brands, fashion students, photographers, media and anyone interested in Ukrainian fashion.",
+    "place": "Barvy Event Hall (18 Melnyka St) and partner venues in the city.",
+    "whenText": "Twice a year: in May and in October.",
+    "priceText": "Access to shows and lectures by charitable donation (“invitation by donation”).",
+    "links": [
+      "Lviv Fashion Week"
+    ]
+  },
+  "rizdvianyi-yarmarok": {
+    "name": "Christmas Fair",
+    "description": [
+      "The Christmas Fair is a traditional winter fair in the very center of Lviv, on Rynok Square by the City Hall. It sells mulled wine, sweets, pampukhy doughnuts, holiday decorations and gifts, and for two weeks the square becomes the main place for Christmas walks.",
+      "After the full-scale war began, the fair was not held for several years. It returned to Rynok Square in December 2025 in a smaller format: 20 stalls on the north side of the square were open daily from 11:00 to 22:00, from December 22 to January 4."
+    ],
+    "audience": "Families with children, locals and tourists, and anyone who wants to feel the city's Christmas atmosphere.",
+    "place": "Rynok Square.",
+    "whenText": "Annually, from late December to early January (December 22 – January 4 in 2025/26).",
+    "priceText": "Free entry."
+  },
+  "festyval-pampukha-i-hlintveinu": {
+    "name": "Pampukh and Mulled Wine Festival",
+    "description": [
+      "The Pampukh and Mulled Wine Festival is a Christmas food festival in Lviv. It grew out of the long-running Pampukh Festival, which set a Ukrainian record for the most pampukhy (Ukrainian doughnuts) baked at one event, and got its new name and format in 2025.",
+      "Guests try different pampukhy, mulled wines and traditional Ukrainian dishes, listen to carols and evening concerts, join workshops, and the main cultural event is a contest of vertep nativity troupes. The festival has a charity goal: in 2025 it raised money for the neonatal intensive care unit of Lviv's OKHMATDYT children's hospital."
+    ],
+    "audience": "Families with children, people with a sweet tooth, locals and visitors who want to celebrate Christmas together.",
+    "place": "Lviv Palace of Arts (17 Kopernyka St).",
+    "whenText": "Annually, in late December, during the Christmas days (December 25–28 in 2025).",
+    "priceText": "Entry by ticket; those who bought tickets in advance got a mug or a glass as a gift."
+  },
+  "lvivskyi-yarmarok-smaku": {
+    "name": "Lviv Taste Fair",
+    "description": [
+      "The Lviv Taste Fair is a food fair that brings together Ukrainian producers, farmers, experts and food lovers every May. It is supported by Switzerland through the Swiss-Ukrainian QFTP program, which develops Ukraine's organic and dairy sectors.",
+      "In 2026 the fair took place for the fourth time: 53 producers from 14 regions, including organic farms, artisanal cheesemakers, veteran-run businesses and relocated companies. More than 6,000 guests tasted cheeses, meat delicacies, teas, jams, wines and sweets, joined food workshops, and there was a play area for children."
+    ],
+    "audience": "Lovers of artisanal and organic food, families with children, and HoReCa and retail professionals looking for new suppliers.",
+    "place": "Lviv Palace of Arts (17 Kopernyka St).",
+    "whenText": "Annually, in May (May 24 in 2026).",
+    "priceText": "Free entry."
+  },
+  "lviv-half-marathon": {
+    "name": "Lviv Half Marathon",
+    "description": [
+      "The Lviv Half Marathon is a big charity running event held every spring in the streets of central Lviv. It is organized by NewRun; in 2025 it was run together with Nova Post and drew more than 5,000 participants from across Ukraine.",
+      "In 2025 runners could choose 21 km, 10 km, 5 km or the 1 km “Support Run”, which patients of the UNBROKEN rehabilitation center also joined. Registration fees go to charity: in 2025, together with donations, 2.2 million UAH was raised for rehabilitation at UNBROKEN, and in 2026 runners raised 430,000 UAH for UNBROKEN Games veterans."
+    ],
+    "audience": "Runners of any level, from beginners to professionals, families with children, and anyone who wants to cheer the runners and support the fundraiser.",
+    "place": "Streets of central Lviv; some streets are closed during the race.",
+    "whenText": "Annually, in spring, usually in May.",
+    "priceText": "Participation requires an entry fee that depends on the distance and goes to charity; cheering is free."
   }
 }

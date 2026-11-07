@@ -160,5 +160,15 @@
       "DataArt is an international software development company that has been working in Ukraine since 2007 and has a development center in Lviv.",
       "The company invests heavily in IT education: it runs the free IT Camp for students and juniors, the international Proggy-Buggy programming contest and other learning programs."
     ]
+  },
+  "lviv-philharmonic": {
+    "name": "Lviv National Philharmonic",
+    "description": [
+      "The Myroslav Skoryk Lviv National Philharmonic is one of Ukraine's leading concert institutions, with its own academic symphony orchestra.",
+      "Every year the Philharmonic organizes two international festivals: Virtuosos, with classical music, in spring and Contrasts, with contemporary academic music, in autumn."
+    ],
+    "links": [
+      "Lviv National Philharmonic"
+    ]
   }
 }
