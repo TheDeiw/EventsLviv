@@ -1,9 +1,11 @@
 ---
 import Icon from "./Icon.astro";
-import { linkLabel } from "../lib/site";
+import { linkLabel, url } from "../lib/site";
 import { langOf } from "../i18n/ui";
 
-const { links } = Astro.props as { links: { title: string; url: string; type: string }[] };
+// note: a line about the link, shown instead of its type; logo: a mask in public/images/calendar/;
+// mono: no brand colours (the Calendar page, where the marks are drawn in the text colour)
+const { links, mono } = Astro.props as { links: { title: string; url: string; type: string; note?: string; logo?: string }[]; mono?: boolean };
 const lang = langOf(Astro);
 // brand colours tint the logo bubble and the hover state; anything unknown is a plain website
 const BRAND: Record<string, { icon: string; color: string }> = {
@@ -15,16 +17,18 @@ const BRAND: Record<string, { icon: string; color: string }> = {
 };
 ---
 
-<ul class="links">
+<ul class:list={["links", { notes: links.some((l) => l.note) }]}>
   {links.map((l) => {
     const b = BRAND[l.type] ?? { icon: "globe", color: "var(--text)" };
     return (
       <li>
-        <a class="chip" href={l.url} target="_blank" rel="noopener" style={`--brand:${b.color}`}>
-          <span class="logo"><Icon name={b.icon} /></span>
+        <a class="chip" href={l.url} target="_blank" rel="noopener" style={`--brand:${mono ? "var(--text)" : b.color}`}>
+          <span class="logo">
+            {l.logo ? <span class="mark" style={`--src:url(${url(`images/calendar/${l.logo}.png`)})`} /> : <Icon name={b.icon} />}
+          </span>
           <span class="label">
             <span class="title">{l.title}</span>
-            <small>{linkLabel(lang, l.type)}</small>
+            <small>{l.note ?? linkLabel(lang, l.type)}</small>
           </span>
         </a>
       </li>
@@ -45,9 +49,16 @@ const BRAND: Record<string, { icon: string; color: string }> = {
     color: var(--brand); background: color-mix(in srgb, var(--brand) 14%, transparent);
   }
   .logo :global(svg) { width: 18px; height: 18px; }
+  .mark { width: 20px; height: 20px; background: currentColor; mask: var(--src) center / contain no-repeat; }
   .label { display: grid; min-width: 0; }
   .title { font-size: 14px; font-weight: 500; line-height: 1.3; overflow-wrap: anywhere; }
   small { color: var(--muted); font-size: 12px; }
+  /* with a sentence under each title: wider cards, logo on top of the text */
+  .notes { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+  .notes .chip { align-items: flex-start; padding: 14px 16px 14px 14px; }
+  .notes .logo { width: 40px; height: 40px; }
+  .notes .title { font-size: 15px; }
+  .notes small { margin-top: 3px; font-size: 13px; line-height: 1.45; text-wrap: pretty; }
   @media (hover: hover) and (pointer: fine) {
     .chip:hover { background: color-mix(in srgb, var(--brand) 8%, var(--surface)); border-color: color-mix(in srgb, var(--brand) 45%, var(--line)); }
   }

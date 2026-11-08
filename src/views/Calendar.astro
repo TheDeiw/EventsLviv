@@ -8,35 +8,37 @@ const lang = langOf(Astro);
 const T = t(lang);
 const en = lang === "en";
 // where to look up dates and tickets; the titles are brand names, only a few differ by language
+// logo: public/images/calendar/<logo>.png, a one-colour mask cut from the service's favicon (the mark is what differs from its background)
+const L = (title: string, url: string, logo: string, uk: string, enNote: string, type = "site") => ({ title, url, type, logo, note: en ? enNote : uk });
 const SECTIONS = [
   {
     title: T("cal.general"),
     links: [
-      { title: "Lviv.travel", url: "https://lviv.travel/ua/events", type: "site" },
-      { title: "LvivGo", url: "https://lvivgo.com.ua", type: "site" },
-      { title: "Allevents", url: "https://allevents.in/lviv-ua", type: "site" },
-      { title: "Karabas", url: "https://lviv.karabas.com", type: "site" },
-      { title: "Kontramarka", url: "https://lviv.kontramarka.ua/uk", type: "site" },
-      { title: "Concert.ua", url: "https://concert.ua/uk/catalog/lviv/all-categories", type: "site" },
-      { title: "LEM Station", url: "https://lemstation.com/event-platform/", type: "site" },
+      L("Lviv.travel", "https://lviv.travel/ua/events", "lviv-travel", "Офіційний туристичний портал Львова: фестивалі, концерти, виставки й міські свята.", "Lviv's official tourism portal: festivals, concerts, exhibitions and city holidays."),
+      L("LvivGo", "https://lvivgo.com.ua", "lvivgo", "Афіша на сьогодні, вихідні й місяць наперед, з датами, цінами й квитками.", "Listings for today, the weekend and the month ahead, with dates, prices and tickets."),
+      L("Allevents", "https://allevents.in/lviv-ua", "allevents", "Міжнародний агрегатор, що збирає анонси з багатьох джерел, зокрема з Facebook.", "An international aggregator that gathers listings from many sources, Facebook included."),
+      L("Karabas", "https://lviv.karabas.com", "karabas", "Квитковий сервіс: концерти, театр, стендап і фестивалі.", "Ticket service for concerts, theatre, stand-up and festivals."),
+      L("Kontramarka", "https://lviv.kontramarka.ua/uk", "kontramarka", "Квитковий сервіс з афішею Львова: куди піти сьогодні й на вихідних.", "Ticket service with a Lviv listing: where to go today and at the weekend."),
+      L("Concert.ua", "https://concert.ua/uk/catalog/lviv/all-categories", "concert-ua", "Один з найбільших квиткових сервісів України: концерти, вистави й фестивалі у Львові.", "One of Ukraine's largest ticket services: concerts, shows and festivals in Lviv."),
+      L("LEM Station", "https://lemstation.com/event-platform/", "lem-station", "Івент-простір на 500 м², де проходять конференції, виставки та інші заходи.", "A 500 m² event venue that hosts conferences, exhibitions and more."),
     ],
   },
   {
     title: T("cal.it"),
     links: [
-      { title: en ? "DOU: IT events in Lviv" : "DOU: IT-події у Львові", url: "https://dou.ua/calendar/city/Lviv/", type: "site" },
-      { title: "Lviv IT Cluster", url: "https://itcluster.lviv.ua/podiyi/", type: "site" },
+      L(en ? "DOU: IT events in Lviv" : "DOU: IT-події у Львові", "https://dou.ua/calendar/city/Lviv/", "dou", "Календар найбільшої спільноти українських розробників: мітапи, конференції, воркшопи.", "The calendar of Ukraine's largest developer community: meetups, conferences, workshops."),
+      L("Lviv IT Cluster", "https://itcluster.lviv.ua/podiyi/", "it-cluster", "Події IT-кластера, серед них IT Arena, та новини галузі.", "Events from the city's IT cluster, IT Arena among them, plus industry news."),
     ],
   },
   {
     title: T("cal.uni"),
-    links: [{ title: en ? "Lviv Polytechnic" : "Львівська політехніка", url: "https://lpnu.ua/events", type: "site" }],
+    links: [L(en ? "Lviv Polytechnic" : "Львівська політехніка", "https://lpnu.ua/events", "lpnu", "Що незабаром відбудеться в університеті: лекції, конференції, дні відкритих дверей.", "What's coming up at the university: lectures, conferences, open days.")],
   },
   {
     title: T("cal.telegram"),
     links: [
-      { title: en ? "Tvory: Easy Lviv" : "Твори ізі Львів", url: "https://t.me/easyLviv", type: "telegram" },
-      { title: "!FESTrepublic", url: "https://t.me/FESTrepublic", type: "telegram" },
+      L(en ? "Tvory: Easy Lviv" : "Твори ізі Львів", "https://t.me/easyLviv", "", "Канал для молоді: події, волонтерство, освітні програми й нові знайомства.", "A channel for young people: events, volunteering, education programmes and new people to meet.", "telegram"),
+      L("!FESTrepublic", "https://t.me/FESTrepublic", "", "Анонси фестивалів !FESTrepublic, знижки, промокоди та історії з-за лаштунків.", "!FESTrepublic festival news, discounts, promo codes and backstage stories.", "telegram"),
     ],
   },
 ];
@@ -49,7 +51,7 @@ const SECTIONS = [
     {SECTIONS.map((s) => (
       <section>
         <h2>{s.title}</h2>
-        <LinkList links={s.links} />
+        <LinkList links={s.links} mono />
       </section>
     ))}
   </main>
