@@ -1468,36 +1468,6 @@
     ]
   },
   {
-    "id": "inzhenernyi-yarmarok-karyery",
-    "name": "Інженерний Ярмарок Кар’єри",
-    "organizationId": "best-lviv",
-    "topics": [
-      "career"
-    ],
-    "description": [
-      "Інженерний ярмарок кар'єри — це одна з найдавніших та найвідоміших подій від BEST Lviv, що вже понад 15 років є мостом між талановитими студентами та провідними роботодавцями. Це кар'єрний захід, де студенти можуть наживо поспілкуватися з представниками десятків інженерних та IT-компаній."
-    ],
-    "audience": "Студенти та випускники технічних, інженерних та ІТ-спеціальностей, які перебувають у пошуках стажування або роботи.",
-    "place": "Традиційною локацією є четвертий корпус Національного університету «Львівська політехніка».",
-    "whenText": "Проходить щорічно, зазвичай восени.",
-    "months": [
-      9,
-      10,
-      11
-    ],
-    "yearRound": false,
-    "nextDate": null,
-    "entry": "free",
-    "priceText": "Вхід для відвідувачів вільний.",
-    "links": [],
-    "cover": "images/inzhenernyi-yarmarok-karyery/cover.webp",
-    "gallery": [
-      "images/inzhenernyi-yarmarok-karyery/1.webp",
-      "images/inzhenernyi-yarmarok-karyery/2.webp",
-      "images/inzhenernyi-yarmarok-karyery/3.webp"
-    ]
-  },
-  {
     "id": "best-engineering-competition",
     "name": "BEST Engineering Competition",
     "organizationId": "best-lviv",
@@ -1553,43 +1523,6 @@
       "images/capture-the-flag/1.webp",
       "images/capture-the-flag/2.webp",
       "images/capture-the-flag/3.webp"
-    ]
-  },
-  {
-    "id": "best-company-insight",
-    "name": "BEST Company Insight",
-    "organizationId": "best-lviv",
-    "topics": [
-      "career"
-    ],
-    "description": [
-      "BEST Company Insight — це серія екскурсій для студентів в офіси провідних інженерних та ІТ-компаній. Це унікальна можливість побачити \"зсередини\", як працює компанія, якою є її корпоративна культура та які технології вона використовує.",
-      "Мета заходу — скоротити розрив між навчанням та реальною роботою, дозволивши студентам поспілкуватися з працівниками, поставити запитання HR-спеціалістам та дізнатися про можливості для стажування."
-    ],
-    "audience": "Студенти технічних та дотичних спеціальностей, які хочуть більше дізнатися про майбутнє місце роботи та побачити на власні очі, як влаштовані офіси технологічних компаній.",
-    "place": "Безпосередньо в офісах компаній-партнерів BEST Lviv у Львові.",
-    "whenText": "Проводиться періодично протягом навчального року (один раз на 1-2 роки).",
-    "months": [
-      9,
-      10,
-      11,
-      12,
-      1,
-      2,
-      3,
-      4,
-      5
-    ],
-    "yearRound": false,
-    "nextDate": null,
-    "entry": "free",
-    "priceText": "Участь безкоштовна. Через обмежену кількість місць реєстрація та відбір є обов'язковими.",
-    "links": [],
-    "cover": "images/best-company-insight/cover.webp",
-    "gallery": [
-      "images/best-company-insight/1.webp",
-      "images/best-company-insight/2.webp",
-      "images/best-company-insight/3.webp"
     ]
   },
   {

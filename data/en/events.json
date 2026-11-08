@@ -511,16 +511,6 @@
     "whenText": "Annually. Dates are announced on the organization's official pages.",
     "priceText": "Free to participate, but requires advance registration and selection."
   },
-  "inzhenernyi-yarmarok-karyery": {
-    "name": "Engineering Career Fair",
-    "description": [
-      "The Engineering Career Fair is one of the oldest and best-known events by BEST Lviv, and for more than 15 years it has been a bridge between talented students and leading employers. It is a career event where students can talk in person with representatives of dozens of engineering and IT companies."
-    ],
-    "audience": "Students and graduates of technical, engineering and IT fields looking for an internship or a job.",
-    "place": "The traditional location is Building 4 of Lviv Polytechnic National University.",
-    "whenText": "Held annually, usually in autumn.",
-    "priceText": "Free entry for visitors."
-  },
   "best-engineering-competition": {
     "description": [
       "BEST Engineering Competition (BEC) is an engineering contest organized by BEST Lviv in which teams of students solve real technical tasks.",
@@ -539,16 +529,6 @@
     "place": "Often held at Lviv Polytechnic National University, in the offices of IT companies or entirely online.",
     "whenText": "Held periodically throughout the year by different organizers. There is no fixed annual date, so follow the announcements.",
     "priceText": "Participation is usually free but requires advance registration."
-  },
-  "best-company-insight": {
-    "description": [
-      "BEST Company Insight is a series of student tours to the offices of leading engineering and IT companies. It is a unique chance to see from the inside how a company works, what its corporate culture is like and what technologies it uses.",
-      "The event aims to narrow the gap between studying and real work, letting students talk to employees, ask HR specialists questions and learn about internship opportunities."
-    ],
-    "audience": "Students of technical and related fields who want to learn more about their future workplace and see with their own eyes how technology company offices work.",
-    "place": "Directly in the offices of BEST Lviv's partner companies in Lviv.",
-    "whenText": "Held periodically during the academic year (once every 1–2 years).",
-    "priceText": "Free to participate. Because places are limited, registration and selection are mandatory."
   },
   "leadership-program": {
     "name": "Leadership Program",

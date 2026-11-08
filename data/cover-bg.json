@@ -2,10 +2,6 @@
  "images/bazar-dobra/cover.webp": {
   "mat": "#f8f3e7"
  },
- "images/best-company-insight/cover.webp": {
-  "mat": "#efece6",
-  "logo": true
- },
  "images/best-engineering-competition/cover.svg": {
   "mat": "#1c1c20",
   "logo": true
@@ -53,10 +49,6 @@
  },
  "images/hacktoberfest/cover.webp": {
   "mat": "#1f2045"
- },
- "images/inzhenernyi-yarmarok-karyery/cover.webp": {
-  "mat": "#1c1c20",
-  "logo": true
  },
  "images/iron-demo/cover.webp": {
   "mat": "#060c0a"
