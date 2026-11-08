@@ -1,0 +1,67 @@
+---
+import Base from "../layouts/Base.astro";
+import MiniHero from "../components/MiniHero.astro";
+import LinkList from "../components/LinkList.astro";
+import { langOf, t } from "../i18n/ui";
+
+const lang = langOf(Astro);
+const T = t(lang);
+const en = lang === "en";
+// where to look up dates and tickets; the titles are brand names, only a few differ by language
+const SECTIONS = [
+  {
+    title: T("cal.general"),
+    links: [
+      { title: "Lviv.travel", url: "https://lviv.travel/ua/events", type: "site" },
+      { title: "LvivGo", url: "https://lvivgo.com.ua", type: "site" },
+      { title: "Allevents", url: "https://allevents.in/lviv-ua", type: "site" },
+      { title: "Karabas", url: "https://lviv.karabas.com", type: "site" },
+      { title: "Kontramarka", url: "https://lviv.kontramarka.ua/uk", type: "site" },
+      { title: "Concert.ua", url: "https://concert.ua/uk/catalog/lviv/all-categories", type: "site" },
+      { title: "LEM Station", url: "https://lemstation.com/event-platform/", type: "site" },
+    ],
+  },
+  {
+    title: T("cal.it"),
+    links: [
+      { title: en ? "DOU: IT events in Lviv" : "DOU: IT-події у Львові", url: "https://dou.ua/calendar/city/Lviv/", type: "site" },
+      { title: "Lviv IT Cluster", url: "https://itcluster.lviv.ua/podiyi/", type: "site" },
+    ],
+  },
+  {
+    title: T("cal.uni"),
+    links: [{ title: en ? "Lviv Polytechnic" : "Львівська політехніка", url: "https://lpnu.ua/events", type: "site" }],
+  },
+  {
+    title: T("cal.telegram"),
+    links: [
+      { title: en ? "Tvory: Easy Lviv" : "Твори ізі Львів", url: "https://t.me/easyLviv", type: "telegram" },
+      { title: "!FESTrepublic", url: "https://t.me/FESTrepublic", type: "telegram" },
+    ],
+  },
+];
+---
+
+<Base title={T("cal.metaTitle")} description={T("cal.metaDesc")} current="calendar" path="calendar/">
+  <MiniHero title={T("cal.title")} />
+  <main class="cal">
+    <p class="lead">{T("cal.lead")}</p>
+    {SECTIONS.map((s) => (
+      <section>
+        <h2>{s.title}</h2>
+        <LinkList links={s.links} />
+      </section>
+    ))}
+  </main>
+</Base>
+
+<style>
+  .cal { max-width: 1000px; margin: 0 auto; padding: 32px 32px 64px; }
+  .lead { margin: 0 0 8px; font-size: 18px; line-height: 1.6; text-wrap: pretty; }
+  h2 { margin: 36px 0 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  @media (max-width: 600px) {
+    .cal { padding: 20px 16px 48px; }
+    .lead { font-size: 16px; }
+    h2 { margin-top: 28px; }
+  }
+</style>

@@ -48,7 +48,6 @@ const ME = [
         <p class="kinds">{T("hero.kinds")}</p>
         <div class="actions">
           <a class="cta" href={href(lang, "events/")}>{T("hero.cta")}</a>
-          <a class="cta ghost" href="#about">{T("hero.about")}</a>
         </div>
       </div>
     </section>
@@ -151,7 +150,6 @@ const ME = [
     background: var(--text); color: var(--bg); border: 1px solid var(--text);
     transition: transform 160ms var(--ease-out), opacity 150ms ease, border-color 150ms ease;
   }
-  .cta.ghost { background: transparent; color: var(--text); border-color: var(--line); }
   .cta:active { transform: scale(0.97); }
 
   @media (prefers-reduced-motion: no-preference) {
@@ -201,7 +199,6 @@ const ME = [
 
   @media (hover: hover) and (pointer: fine) {
     .cta:hover { opacity: 0.88; }
-    .cta.ghost:hover { opacity: 1; border-color: var(--muted); }
   }
   /* ---------- about ---------- */
   .about { display: grid; gap: 64px; max-width: 1280px; margin: 0 auto; padding: 24px 32px 24px; scroll-margin-top: 96px; position: relative; z-index: 1; }

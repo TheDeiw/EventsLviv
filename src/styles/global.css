@@ -110,14 +110,26 @@ button { font: inherit; }
   .top nav a:hover, .lang a:hover { color: var(--text); }
   .theme-toggle:hover { background: var(--surface-2); }
 }
+/* phones: one row. The logo shrinks to its spires and stands in for "Home", the language switch shows only the other language */
 @media (max-width: 720px) {
-  .top { grid-template-columns: 1fr auto; grid-template-areas: "logo toggle" "nav nav"; height: auto; row-gap: 6px; padding: 10px 12px 8px 16px; border-radius: 20px; }
-  .logo { grid-area: logo; }
-  .tools { grid-area: toggle; }
-  .top nav { grid-area: nav; justify-content: center; }
-  /* the two-row header slides away while scrolling down and returns on the first scroll up (Base.astro) */
+  .top { grid-template-columns: auto minmax(0, 1fr) auto; gap: 4px; height: 54px; margin: 8px 8px 0; padding: 0 7px 0 11px; border-radius: 18px; }
+  .top .logo-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .top .main-nav { justify-content: safe center; gap: 0; overflow-x: auto; scrollbar-width: none; }
+  .top .main-nav::-webkit-scrollbar { display: none; }
+  .top .main-nav .to-home { display: none; }
+  .top .main-nav a { padding: 6px 7px; font-size: 13px; white-space: nowrap; }
+  .tools { gap: 4px; }
+  .top .lang { padding: 0; border: 0; }
+  .top .lang a[aria-current] { display: none; }
+  .top .lang a { display: grid; place-items: center; width: 34px; height: 34px; padding: 0; color: var(--text); border: 1px solid var(--line); border-radius: 50%; }
+  .theme-toggle { width: 34px; height: 34px; }
+  /* the header slides away while scrolling down and returns on the first scroll up (Base.astro) */
   .top { transition: transform 280ms var(--ease-out); }
   .top.away { transform: translateY(calc(-100% - 48px)); }
+}
+/* small phones: tighter still; below ~350px the links scroll sideways inside the bar */
+@media (max-width: 380px) {
+  .top .main-nav a { padding: 6px 5px; font-size: 12.5px; }
 }
 @media (max-width: 720px) and (prefers-reduced-motion: reduce) {
   .top { transition: none; }

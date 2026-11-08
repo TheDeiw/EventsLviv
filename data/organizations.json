@@ -388,5 +388,64 @@
       }
     ],
     "logo": "images/organizations/lviv-philharmonic.webp"
+  },
+  {
+    "id": "festrepublic",
+    "name": "!FESTrepublic",
+    "type": "organizer",
+    "description": [
+      "!FESTrepublic — креативний простір холдингу емоцій !FEST на території колишнього заводу, одразу за парком Знесіння й поруч із Замковою горою, за 20 хвилин пішки від площі Ринок.",
+      "Тут відбуваються фестивалі, вечірки й тематичні події, виступають діджеї з усього світу та українські гурти. Команда !FEST сама організовує тут Coffee, Books & Vintage Festival і Craft Beer & Vinyl Festival."
+    ],
+    "links": [
+      {
+        "title": "!FESTrepublic",
+        "url": "https://www.fest.lviv.ua/uk/projects/festrepublic",
+        "type": "site"
+      },
+      {
+        "title": "!FESTrepublic",
+        "url": "https://www.instagram.com/festrepublic/",
+        "type": "instagram"
+      },
+      {
+        "title": "!FESTrepublic",
+        "url": "https://www.facebook.com/FESTrepublic",
+        "type": "facebook"
+      }
+    ],
+    "logo": "images/organizations/festrepublic.webp"
+  },
+  {
+    "id": "faine-events",
+    "name": "Faine Events",
+    "type": "organizer",
+    "description": [
+      "Faine Events — концертна агенція, яку 2013 року заснували Володимир Пасяка та Ростислав Плахцінський. Її першою подією став фестиваль «Файне Місто», а до 2022 року агенція називалася Ping Pong Concert Agency.",
+      "Щороку агенція проводить понад сотню концертів і фестивалів з українськими та іноземними артистами — від Бумбокса й Жадана і Собак до Powerwolf та The Rasmus."
+    ],
+    "links": [
+      {
+        "title": "Faine Events",
+        "url": "https://faine.events/",
+        "type": "site"
+      },
+      {
+        "title": "Faine Events",
+        "url": "https://www.instagram.com/faineevents",
+        "type": "instagram"
+      },
+      {
+        "title": "Faine Events",
+        "url": "https://www.facebook.com/faineevents/",
+        "type": "facebook"
+      },
+      {
+        "title": "Faine Events",
+        "url": "https://t.me/faineevents",
+        "type": "telegram"
+      }
+    ],
+    "logo": "images/organizations/faine-events.webp"
   }
 ]

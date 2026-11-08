@@ -12,6 +12,7 @@ const NAV = [
   { to: "", label: T("nav.home"), id: "home" },
   { to: "events/", label: T("nav.events"), id: "events" },
   { to: "organizations/", label: T("nav.orgs"), id: "organizations" },
+  { to: "calendar/", label: T("nav.calendar"), id: "calendar" },
 ];
 ---
 
@@ -40,9 +41,9 @@ const NAV = [
   </head>
   <body id="top">
     <header class="top">
-      <a class="logo" href={href(lang)}><span class="spires" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>Events Lviv</a>
-      <nav aria-label={T("nav.aria")}>
-        {NAV.map((n) => <a href={href(lang, n.to)} aria-current={current === n.id ? "page" : undefined}>{n.label}</a>)}
+      <a class="logo" href={href(lang)}><span class="spires" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span class="logo-text">Events Lviv</span></a>
+      <nav class="main-nav" aria-label={T("nav.aria")}>
+        {NAV.map((n) => <a class={`to-${n.id}`} href={href(lang, n.to)} aria-current={current === n.id ? "page" : undefined}>{n.label}</a>)}
       </nav>
       <div class="tools">
         <nav class="lang" aria-label={T("lang.aria")}>
@@ -120,6 +121,8 @@ const NAV = [
         { passive: true },
       );
       header.addEventListener("focusin", () => header.classList.remove("away"));
+      // on the narrowest phones the links can scroll sideways; keep the current page's link in view
+      header.querySelector(".main-nav [aria-current]")?.scrollIntoView({ block: "nearest", inline: "nearest" });
     </script>
   </body>
 </html>

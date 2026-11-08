@@ -4,7 +4,7 @@ import { LOCALES, type Lang } from "../i18n/ui";
 
 // One <url> per page per language; each lists every language version of itself (hreflang), as Google expects.
 const uk = content("uk");
-const PAGES = ["", "events/", "organizations/", ...uk.events.map((e) => `events/${e.id}/`), ...uk.organizations.map((o) => `organizations/${o.id}/`)];
+const PAGES = ["", "events/", "organizations/", "calendar/", ...uk.events.map((e) => `events/${e.id}/`), ...uk.organizations.map((o) => `organizations/${o.id}/`)];
 
 export const GET: APIRoute = ({ site }) => {
   const abs = (lang: Lang, p: string) => new URL(href(lang, p), site).href;

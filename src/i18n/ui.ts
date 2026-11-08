@@ -11,6 +11,7 @@ const uk = {
   "nav.home": "Головна",
   "nav.events": "Події",
   "nav.orgs": "Організації",
+  "nav.calendar": "Календар",
   "nav.aria": "Основна навігація",
   "theme.toggle": "Світла тема",
   "lang.aria": "Мова",
@@ -29,7 +30,6 @@ const uk = {
   "hero.sub": "Щорічні події у Львові",
   "hero.kinds": "Фестивалі · Конференції · Форуми · Ініціативи",
   "hero.cta": "Переглянути події",
-  "hero.about": "Про проєкт",
   "about.eyebrow": "Про проєкт",
   "about.lead":
     "Всім привіт. Вітаю у списку львівських подій. Список був створений для людей, які бажають дізнатись більше про те, що відбувається у Львові протягом року. Мета — поширити інформацію про різні ініціативи та показати, що Львів — це місто ініціатив, розвитку та майбутнього.",
@@ -122,12 +122,23 @@ const uk = {
   "orgs.back": "← Усі організації",
   "org.spaces": "Простори",
   "org.events": "Події",
+
+  "cal.title": "Календар",
+  "cal.metaTitle": "Календар — Events Lviv",
+  "cal.metaDesc": "Де шукати дати й квитки на найближчі події у Львові: афіші, IT-календарі, університетські події та телеграм-канали.",
+  "cal.lead":
+    "Events Lviv — ознайомчий сайт: він допомагає дізнатися, які круті щорічні події бувають у Львові. Точних дат, програм і квитків на найближчі події тут немає, а знайти їх можна на афішах і в каналах нижче.",
+  "cal.general": "Загальні події",
+  "cal.it": "IT-події",
+  "cal.uni": "Університетські події",
+  "cal.telegram": "Телеграм-канали",
 };
 
 const en: Record<keyof typeof uk, string> = {
   "nav.home": "Home",
   "nav.events": "Events",
   "nav.orgs": "Organizations",
+  "nav.calendar": "Calendar",
   "nav.aria": "Main navigation",
   "theme.toggle": "Light theme",
   "lang.aria": "Language",
@@ -146,7 +157,6 @@ const en: Record<keyof typeof uk, string> = {
   "hero.sub": "Annual events in Lviv",
   "hero.kinds": "Festivals · Conferences · Forums · Initiatives",
   "hero.cta": "Browse events",
-  "hero.about": "About the project",
   "about.eyebrow": "About the project",
   "about.lead":
     "Hello everyone, and welcome to the list of Lviv events. It was created for people who want to learn more about what happens in Lviv throughout the year. The goal is to spread the word about different initiatives and to show that Lviv is a city of initiative, growth and future.",
@@ -239,6 +249,16 @@ const en: Record<keyof typeof uk, string> = {
   "orgs.back": "← All organizations",
   "org.spaces": "Spaces",
   "org.events": "Events",
+
+  "cal.title": "Calendar",
+  "cal.metaTitle": "Calendar — Events Lviv",
+  "cal.metaDesc": "Where to find dates and tickets for upcoming events in Lviv: listings, IT calendars, university events and Telegram channels.",
+  "cal.lead":
+    "Events Lviv is an introductory site: it helps you discover the great annual events that happen in Lviv. It has no exact dates, programs or tickets for upcoming events; you can find those in the listings and channels below.",
+  "cal.general": "General events",
+  "cal.it": "IT events",
+  "cal.uni": "University events",
+  "cal.telegram": "Telegram channels",
 };
 
 const ui = { uk, en };

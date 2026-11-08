@@ -170,5 +170,17 @@
     "links": [
       "Lviv National Philharmonic"
     ]
+  },
+  "festrepublic": {
+    "description": [
+      "!FESTrepublic is a creative space of the !FEST “holding of emotions” in a former factory just past Znesinnia Park, next to Castle Hill and a 20-minute walk from Rynok Square.",
+      "It hosts festivals, parties and themed events, with DJs from around the world and Ukrainian bands. The !FEST team runs the Coffee, Books & Vintage Festival and the Craft Beer & Vinyl Festival here."
+    ]
+  },
+  "faine-events": {
+    "description": [
+      "Faine Events is a concert agency founded in 2013 by Volodymyr Pasiaka and Rostyslav Plakhtsinskyi. Its first event was the Faine Misto festival, and until 2022 the agency was called Ping Pong Concert Agency.",
+      "Every year the agency runs more than a hundred concerts and festivals with Ukrainian and international artists, from Boombox and Zhadan i Sobaky to Powerwolf and The Rasmus."
+    ]
   }
 }

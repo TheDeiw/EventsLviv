@@ -95,9 +95,6 @@
  "images/lviv-ice-chocolate-festival/cover.webp": {
   "mat": "#f0e8e6"
  },
- "images/lviv-ice-cream-festival/cover.webp": {
-  "mat": null
- },
  "images/lviv-invest-forum/cover.webp": {
   "mat": "#151515"
  },
@@ -135,6 +132,12 @@
  },
  "images/organizations/domivka-vryatovanykh-tvaryn.webp": {
   "mat": "#ffffff"
+ },
+ "images/organizations/faine-events.webp": {
+  "mat": "#010101"
+ },
+ "images/organizations/festrepublic.webp": {
+  "mat": "#e8e8e8"
  },
  "images/organizations/games-gathering.webp": {
   "mat": "#221b17"

@@ -1,0 +1,29 @@
+# Once a week: re-read the titles of dated links ("IT Arena 2025", "#7 – 4-5 жовтня") from their pages
+# and commit any change to main, which Vercel then deploys. Can also be started by hand from the Actions tab.
+name: Refresh link titles
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays, 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/refresh-link-titles.mjs
+      - name: Commit changed titles
+        run: |
+          git diff --quiet -- data && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "Refresh link titles"
+          git push

@@ -19,6 +19,7 @@ const titleId = `t-${e.id}`;
 <article
   class="card"
   style={`--tc:${topicById[e.topics[0]].color}`}
+  data-id={e.id}
   data-topics={e.topics.join(",")}
   data-months={e.months.join(",")}
   data-yr={e.yearRound ? "1" : undefined}

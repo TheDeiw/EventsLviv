@@ -49,6 +49,31 @@ const countTpl = T("events.count");
         <div class="grid" id="grid">
           {sorted.map((e) => <EventCard event={e} />)}
         </div>
+        {/* runs before the first paint, so the cards never jump: the current season first, then the next ones in order;
+            year-round events get a random spot that is the same all season and changes when the season does */}
+        <script is:inline>
+          (() => {
+            const now = new Date();
+            const m = now.getMonth() + 1;
+            const start = [12, 3, 6, 9][Math.floor((m % 12) / 3)]; // first month of this season
+            const seed = `${m === 12 ? now.getFullYear() + 1 : now.getFullYear()}-${start}`;
+            const rand = (s) => {
+              let h = 2166136261;
+              for (let i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 16777619);
+              h = Math.imul(h ^ (h >>> 15), 2246822507);
+              return ((h ^ (h >>> 13)) >>> 0) / 2 ** 32;
+            };
+            const key = (c) => {
+              if (c.dataset.yr) return rand(seed + c.dataset.id) * 12;
+              const months = c.dataset.months ? c.dataset.months.split(",").map(Number) : [];
+              return months.length ? Math.min(...months.map((x) => (x - start + 12) % 12)) : 99; // no known month: last
+            };
+            const grid = document.getElementById("grid");
+            const cards = [...grid.children].map((c) => [key(c), c]);
+            cards.sort((a, b) => a[0] - b[0]); // stable, so events of the same month stay alphabetical
+            grid.append(...cards.map(([, c]) => c));
+          })();
+        </script>
       </section>
     </div>
 

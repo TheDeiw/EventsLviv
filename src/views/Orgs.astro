@@ -6,11 +6,13 @@ import { langOf, t, eventsWord, type Key } from "../i18n/ui";
 
 const lang = langOf(Astro);
 const T = t(lang);
-const { organizations, eventsOf } = content(lang);
+const { organizations, eventsOf, topicById } = content(lang);
 const sorted = [...organizations].sort((a, b) => a.name.localeCompare(b.name, lang));
 // groups in this order; an organization with no known "type" in organizations.json stops the build instead of vanishing
 const TYPES = ["ngo", "organizer", "it"];
 for (const o of organizations) if (!TYPES.includes(o.type)) throw new Error(`organizations.json: "${o.id}" needs "type": ${TYPES.join(" | ")}`);
+// each group borrows a topic colour for its hover tint, like event cards do
+const TINT: Record<string, string> = { ngo: topicById.community.color, organizer: topicById.food.color, it: topicById.tech.color };
 const groups = TYPES.map((type) => ({ type, label: T(`orgType.${type}` as Key), list: sorted.filter((o) => o.type === type) })).filter((g) => g.list.length);
 ---
 
@@ -24,7 +26,7 @@ const groups = TYPES.map((type) => ({ type, label: T(`orgType.${type}` as Key), 
           {g.list.map((o) => {
             const n = eventsOf(o.id).length;
             return (
-              <article class="card">
+              <article class="card" style={`--tc:${TINT[o.type]}`}>
                 <div {...coverAttrs(o.logo)}>
                   <img src={url(o.logo)} alt="" loading="lazy" />
                 </div>
@@ -43,8 +45,12 @@ const groups = TYPES.map((type) => ({ type, label: T(`orgType.${type}` as Key), 
 </Base>
 
 <style>
-  .card { position: relative; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
+  .card {
+    position: relative; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r);
+    transition: background-color 200ms ease, border-color 200ms ease;
+  }
   .cover { border-radius: var(--r) var(--r) 0 0; }
+  .cover img { transition: transform 300ms var(--ease-out); }
   /* the whole card is the click target */
   h3 a::after { content: ""; position: absolute; inset: 0; border-radius: var(--r); }
   h3 { margin: 0; font-size: 18px; font-weight: 700; line-height: 1.25; }
@@ -61,6 +67,13 @@ const groups = TYPES.map((type) => ({ type, label: T(`orgType.${type}` as Key), 
   .desc { margin: 0; color: var(--muted); font-size: 13px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
   .count { margin: auto 0 0; padding-top: 6px; font-size: 13px; }
   .card:active { background: var(--surface-2); }
+  @media (hover: hover) and (pointer: fine) {
+    .card:hover { border-color: color-mix(in srgb, var(--tc) 55%, var(--line)); background: color-mix(in srgb, var(--tc) 9%, var(--surface)); }
+    .card:hover .cover img { transform: scale(1.03); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .card:hover .cover img { transform: none; }
+  }
   /* phones: logo on the left, text on the right, so the list is a third as long */
   @media (max-width: 600px) {
     .group .grid { gap: 12px; }

@@ -234,7 +234,7 @@
     "priceText": "Участь платна. Вартість квитків висока і залежить від типу (Executive, Senior, Standard) та дати придбання.",
     "links": [
       {
-        "title": "IT Arena 2025",
+        "title": "IT Arena 2026",
         "url": "https://itarena.ua/",
         "type": "site"
       },
@@ -278,7 +278,7 @@
     "priceText": "Участь зазвичай є безкоштовною, але завжди вимагає попередньої реєстрації та відбору.",
     "links": [
       {
-        "title": "AIESEC в Україні | Youth Speak Forum 2024",
+        "title": "AIESEC в Україні | Youth Speak Forum 2025",
         "url": "https://aiesec.ua/youth-speak-forum",
         "type": "site"
       }
@@ -374,44 +374,9 @@
     ]
   },
   {
-    "id": "lviv-ice-cream-festival",
-    "name": "Lviv Ice Cream Festival",
-    "organizationId": "so-good-company",
-    "topics": [
-      "food",
-      "family"
-    ],
-    "description": [
-      "Lviv Ice Cream Festival (Фестиваль морозива) — це щорічне солодке свято, що збирає на одній локації найкращих виробників морозива та крафтових десертів. Подія є великим ярмарком, де можна спробувати десятки смаків: від класичного пломбіру до екзотичних та експериментальних сортів (наприклад, пивного чи сирного морозива).",
-      "Мета фестивалю — створити ідеальне місце для сімейного відпочинку, де крім дегустацій, на гостей чекають розваги, дитячі зони, конкурси та музична програма."
-    ],
-    "audience": "Сім'ї з дітьми, діти будь-якого віку, молодь, туристи та всі ласуни, які обожнюють морозиво та хочуть весело провести час.",
-    "place": "Традиційною локацією є Парк культури та відпочинку ім. Богдана Хмельницького, але може бути й інакша локація. Слідкуйте за новинами фестивалю.",
-    "whenText": "Щорічно, зазвичай наприкінці серпня, напередодні Дня Незалежності України.",
-    "months": [
-      8
-    ],
-    "yearRound": false,
-    "nextDate": null,
-    "entry": "free",
-    "priceText": "Вхід на територію парку зазвичай вільний. Морозиво та інші розваги оплачуються окремо.",
-    "links": [
-      {
-        "title": "Instagram (@lviv_icecream_festival)",
-        "url": "https://www.instagram.com/lviv_icecream_festival/",
-        "type": "instagram"
-      }
-    ],
-    "cover": "images/lviv-ice-cream-festival/cover.webp",
-    "gallery": [
-      "images/lviv-ice-cream-festival/1.webp",
-      "images/lviv-ice-cream-festival/2.webp"
-    ]
-  },
-  {
     "id": "faine-misto",
     "name": "Faine Misto",
-    "organizationId": null,
+    "organizationId": "faine-events",
     "topics": [
       "music"
     ],
@@ -452,7 +417,7 @@
   {
     "id": "craft-beer-and-vinyl-music-festival",
     "name": "Craft Beer and Vinyl Music Festival",
-    "organizationId": null,
+    "organizationId": "festrepublic",
     "topics": [
       "food",
       "music"
@@ -478,7 +443,7 @@
     "priceText": "Вхід платний. Пиво та їжа купуються окремо.",
     "links": [
       {
-        "title": "Craft Beer & Vinyl Music #10 | Львів, 9-11 травня 2025 року",
+        "title": "Craft Beer & Vinyl Music Festival #14 | 14-16 травня 2027 р., Львів",
         "url": "https://craftandvinyl.fest.lviv.ua/",
         "type": "site"
       },
@@ -632,7 +597,7 @@
   {
     "id": "coffee-books-vintage-festival",
     "name": "Coffee, Books & Vintage Festival",
-    "organizationId": null,
+    "organizationId": "festrepublic",
     "topics": [
       "markets",
       "food",
@@ -655,7 +620,7 @@
     "priceText": "Вхід платний. Часто у вартість квитка входить фірмова чашка та дріп-кава.",
     "links": [
       {
-        "title": "Coffee, Books & Vintage #7 – 4-5 жовтня, Львів",
+        "title": "Coffee, Books & Vintage #10 – 17-18 квітня 2027 р., Львів",
         "url": "https://coffee.fest.lviv.ua/",
         "type": "site"
       },
@@ -985,7 +950,7 @@
     "priceText": "Вхід платний. Можна придбати як абонемент на весь фестиваль, так і квитки на окремі кінопокази.",
     "links": [
       {
-        "title": "WIZ-ART #16",
+        "title": "Львівський міжнародний кінофестиваль Wiz-Art",
         "url": "https://wiz-art.ua/festival/",
         "type": "site"
       },
@@ -1106,7 +1071,7 @@
     "priceText": "Вхід платний. Ціна залежить від квитка.",
     "links": [
       {
-        "title": "Хвостик Фест | 2 - 3 серпня, Львів.",
+        "title": "Хвостик Фест 2026 - фестиваль собак у Львові | 18-19 липня, Парк культури",
         "url": "https://hvostykfest.com/",
         "type": "site"
       },
@@ -1195,7 +1160,7 @@
     "priceText": "Вхід платний. Купується квиток, що дає доступ до ігротеки на весь час події.",
     "links": [
       {
-        "title": "DICE CON 2025, 29 серпня - 31 серпня, Львів, Львівський Палац Мистецтв, вул. Копепрника 17",
+        "title": "Дайс Кон 2026",
         "url": "https://www.dicecon.fun/",
         "type": "site"
       },
@@ -1427,7 +1392,7 @@
     "priceText": "Участь абсолютно безкоштовна.",
     "links": [
       {
-        "title": "Hacktoberfest 2025",
+        "title": "Hacktoberfest 2026 | AI belongs to everyone",
         "url": "https://hacktoberfest.com/",
         "type": "site"
       }
@@ -1774,7 +1739,7 @@
     "priceText": "Безкоштовно, потрібна реєстрація на навчальній платформі DataArt.",
     "links": [
       {
-        "title": "IT Camp 2026 на DOU",
+        "title": "IT Camp 2026: Build Your Edge, 2 листопада",
         "url": "https://dou.ua/calendar/58536/",
         "type": "site"
       }
