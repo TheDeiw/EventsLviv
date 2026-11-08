@@ -2,8 +2,8 @@
 import Base from "../layouts/Base.astro";
 import EventCard from "../components/EventCard.astro";
 import LinkList from "../components/LinkList.astro";
-import { content, href, url, coverAttrs } from "../lib/site";
-import { langOf, t } from "../i18n/ui";
+import { content, href, url, coverAttrs, clip, crumbs } from "../lib/site";
+import { langOf, t, fill } from "../i18n/ui";
 
 const { id } = Astro.props;
 const lang = langOf(Astro);
@@ -12,15 +12,29 @@ const { organizations, eventsOf } = content(lang);
 const o = organizations.find((x) => x.id === id)!;
 const events = eventsOf(o.id).sort((a, b) => a.name.localeCompare(b.name, lang));
 const spaces = o.spaces ?? [];
+const abs = (p: string) => (Astro.site ? new URL(p, Astro.site).href : p);
+// what search engines read about the organization: its site, logo and profiles elsewhere
+const site = o.links.find((l) => l.type === "site");
+const ld = [
+  {
+    "@type": "Organization",
+    name: o.name,
+    description: o.description[0],
+    logo: abs(url(o.logo)),
+    ...(site && { url: site.url }),
+    sameAs: o.links.filter((l) => l !== site).map((l) => l.url),
+  },
+  crumbs(Astro.site, [[T("nav.home"), href(lang)], [T("nav.orgs"), href(lang, "organizations/")], [o.name, href(lang, `organizations/${o.id}/`)]]),
+];
 ---
 
-<Base title={`${o.name} — Events Lviv`} description={o.description[0].slice(0, 160)} current="organizations" path={`organizations/${o.id}/`}>
+<Base title={fill(T("org.metaTitle"), { name: o.name })} description={clip(o.description[0])} current="organizations" path={`organizations/${o.id}/`} image={`og/org-${o.id}.jpg`} jsonld={ld}>
   <div class="org">
     <a class="back" href={href(lang, "organizations/")}>{T("orgs.back")}</a>
 
     <div class="head">
       <div {...coverAttrs(o.logo)}>
-        <img src={url(o.logo)} alt="" />
+        <img src={url(o.logo)} alt={fill(T("logo.alt"), { name: o.name })} />
       </div>
       <div>
         <h1>{o.name}</h1>

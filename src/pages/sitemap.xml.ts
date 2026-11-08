@@ -1,10 +1,10 @@
 import type { APIRoute } from "astro";
-import { content, href } from "../lib/site";
+import { content, href, SEASONS } from "../lib/site";
 import { LOCALES, type Lang } from "../i18n/ui";
 
 // One <url> per page per language; each lists every language version of itself (hreflang), as Google expects.
 const uk = content("uk");
-const PAGES = ["", "events/", "organizations/", "calendar/", ...uk.events.map((e) => `events/${e.id}/`), ...uk.organizations.map((o) => `organizations/${o.id}/`)];
+const PAGES = ["", "events/", "organizations/", "calendar/", ...uk.events.map((e) => `events/${e.id}/`), ...uk.organizations.map((o) => `organizations/${o.id}/`), ...uk.topics.map((x) => `topics/${x.id}/`), ...Object.keys(SEASONS).map((s) => `seasons/${s}/`)];
 
 export const GET: APIRoute = ({ site }) => {
   const abs = (lang: Lang, p: string) => new URL(href(lang, p), site).href;

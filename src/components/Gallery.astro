@@ -16,7 +16,7 @@ const n = photos.length;
       {photos.map((p, i) => (
         <li>
           <a href={url(p)} data-index={i} aria-label={fill(T("gal.open"), { n: i + 1, total: n })}>
-            <img src={url(p)} alt="" loading="lazy" decoding="async" />
+            <img src={url(p)} alt={fill(T("photo.alt"), { name: title, n: i + 1 })} loading="lazy" decoding="async" />
           </a>
         </li>
       ))}

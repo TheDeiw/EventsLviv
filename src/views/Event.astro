@@ -3,28 +3,32 @@ import Base from "../layouts/Base.astro";
 import Icon from "../components/Icon.astro";
 import Gallery from "../components/Gallery.astro";
 import LinkList from "../components/LinkList.astro";
-import { content, href, url, when, coverAttrs } from "../lib/site";
-import { langOf, t, MON } from "../i18n/ui";
+import { content, href, url, when, coverAttrs, clip, crumbs } from "../lib/site";
+import { langOf, t, fill, MON, MONTH } from "../i18n/ui";
 
 const { id } = Astro.props;
 const lang = langOf(Astro);
 const T = t(lang);
 const { events, orgName, topicById } = content(lang);
 const e = events.find((x) => x.id === id)!;
+// "IT Arena у Львові — вересень–жовтень | Events Lviv": the way people search, name + city + when
+const whenPart = e.yearRound || e.months.length ? ` — ${when(e, lang, MONTH[lang])}` : "";
+const title = /львів|lviv/i.test(e.name) ? `${e.name}${whenPart} | Events Lviv` : fill(T("ev.metaTitle"), { name: e.name, when: whenPart });
+const ld = crumbs(Astro.site, [[T("nav.home"), href(lang)], [T("nav.events"), href(lang, "events/")], [e.name, href(lang, `events/${e.id}/`)]]);
 ---
 
-<Base title={`${e.name} — Events Lviv`} description={e.description[0].slice(0, 160)} path={`events/${e.id}/`}>
+<Base title={title} description={clip(e.description[0])} path={`events/${e.id}/`} image={`og/event-${e.id}.jpg`} jsonld={ld}>
   <article class="event">
     <a class="back" href={href(lang, "events/")}>{T("ev.back")}</a>
 
     <div {...coverAttrs(e.cover, e.coverBg)}>
-      <img src={url(e.cover)} alt="" />
+      <img src={url(e.cover)} alt={e.name} />
     </div>
 
     <h1>{e.name}</h1>
     {e.organizationId && <p class="org">{T("ev.org")}<a href={href(lang, `organizations/${e.organizationId}/`)}>{orgName[e.organizationId]}</a></p>}
     <div class="tags">
-      {e.topics.map((tid: string) => <span class="tag" style={`--tc:${topicById[tid].color}`}>{topicById[tid].name}</span>)}
+      {e.topics.map((tid: string) => <a class="tag" href={href(lang, `topics/${tid}/`)} style={`--tc:${topicById[tid].color}`}>{topicById[tid].name}</a>)}
     </div>
 
     <div class="cols">
@@ -72,6 +76,9 @@ const e = events.find((x) => x.id === id)!;
   h1 { margin: 20px 0 4px; font-size: clamp(28px, 4vw, 40px); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; }
   .org { margin: 0 0 10px; color: var(--muted); }
   .org a { color: var(--text); text-underline-offset: 3px; }
+  /* topic tags lead to that topic's page */
+  a.tag { text-decoration: none; transition: color 150ms ease; }
+  @media (hover: hover) and (pointer: fine) { a.tag:hover { color: var(--text); } }
   .cols { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 40px; margin-top: 12px; }
   h2 { display: flex; align-items: center; gap: 8px; margin: 28px 0 10px; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
   h2 :global(svg) { flex: none; width: 16px; height: 16px; }

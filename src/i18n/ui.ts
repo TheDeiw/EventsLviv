@@ -60,7 +60,7 @@ const uk = {
     "Цей проєкт почався з моєї ініціативи, але я вірю, що кращим він стане лише завдяки вам. Найкращим способом буде зв’язатись через Instagram.",
 
   "events.title": "Події",
-  "events.metaTitle": "Події — Events Lviv",
+  "events.metaTitle": "Щорічні події у Львові: фестивалі, форуми, конференції | Events Lviv",
   "events.metaDesc": "Усі щорічні події Львова: фільтри за темою, організатором, входом і порою року.",
   "events.count": "{n} з {total} подій",
   "events.filters": "Фільтри",
@@ -114,7 +114,7 @@ const uk = {
   "gal.next": "Наступне фото",
 
   "orgs.title": "Організації",
-  "orgs.metaTitle": "Організації — Events Lviv",
+  "orgs.metaTitle": "Організатори щорічних подій у Львові | Events Lviv",
   "orgs.metaDesc": "Організації, які проводять щорічні події у Львові, та їхні події.",
   "orgType.ngo": "Громадські організації",
   "orgType.organizer": "Організатори подій",
@@ -124,7 +124,7 @@ const uk = {
   "org.events": "Події",
 
   "cal.title": "Календар",
-  "cal.metaTitle": "Календар — Events Lviv",
+  "cal.metaTitle": "Афіші та календарі подій Львова | Events Lviv",
   "cal.metaDesc": "Де шукати дати й квитки на найближчі події у Львові: афіші, IT-календарі, університетські події та телеграм-канали.",
   "cal.lead":
     "Events Lviv — ознайомчий сайт: він допомагає дізнатися, які круті щорічні події бувають у Львові. Точних дат, програм і квитків на найближчі події тут немає, а знайти їх можна на афішах і в каналах нижче.",
@@ -132,6 +132,42 @@ const uk = {
   "cal.it": "IT-події",
   "cal.uni": "Університетські події",
   "cal.telegram": "Телеграм-канали",
+
+  // search and sharing: page titles, image alt text, topic and season pages, 404
+  "ev.metaTitle": "{name} у Львові{when} | Events Lviv",
+  "org.metaTitle": "{name}: події у Львові | Events Lviv",
+  "logo.alt": "Логотип {name}",
+  "photo.alt": "{name}, фото {n}",
+  "land.browse": "Добірки",
+  "land.byTopic": "За темою",
+  "land.bySeason": "За порою року",
+  "land.topicTitle": "{topic}: щорічні події у Львові",
+  "land.topicMeta": "{topic}: щорічні події у Львові | Events Lviv",
+  "land.among": "Серед них: {names}.",
+  "land.seasonal": "Саме в цю пору",
+  "land.yearRound": "Протягом року",
+  "topic.tech": "Технологічні конференції, хакатони, IT-мітапи та змагання, які Львів приймає щороку.",
+  "topic.business": "Форуми, бізнес-конференції та галузеві зустрічі для підприємців, менеджерів і всіх, хто будує свою справу.",
+  "topic.career": "Кар'єрні фестивалі, хакатони й інженерні змагання, де студенти та молоді фахівці знайомляться з роботодавцями.",
+  "topic.education": "Освітні форуми, програми й змагання для школярів, студентів, учителів і всіх, хто хоче вчитися.",
+  "topic.culture": "Книжкові, кіно-, мистецькі й музичні фестивалі, які щороку збирають у Львові глядачів і читачів.",
+  "topic.music": "Музичні фестивалі та концертні цикли: від джазу й класики до вуличних опен-ейрів.",
+  "topic.food": "Гастрономічні фестивалі та ярмарки: вино й сир, крафтове пиво, вулична їжа, шоколад і пампухи.",
+  "topic.markets": "Ярмарки, базари й маркети: вінтаж, книги, речі місцевих брендів і різдвяні смаколики.",
+  "topic.community": "Події, що збирають спільноту: молодіжні форуми, благодійні базари, фестивалі для тварин і забіги.",
+  "topic.family": "Події, куди можна прийти з дітьми або з собакою: науковий фестиваль, свята для тварин, ярмарки.",
+  "season.winter": "Взимку",
+  "season.spring": "Навесні",
+  "season.summer": "Влітку",
+  "season.autumn": "Восени",
+  "season.winter.title": "Події у Львові взимку",
+  "season.spring.title": "Події у Львові навесні",
+  "season.summer.title": "Події у Львові влітку",
+  "season.autumn.title": "Події у Львові восени",
+  "season.winter.intro": "Грудень, січень і лютий: різдвяний ярмарок, фестивалі шоколаду та глінтвейну і зимові IT-події.",
+  "season.spring.intro": "Березень, квітень і травень: місто відкриває сезон фестивалів, форумів і забігів.",
+  "season.summer.intro": "Червень, липень і серпень: опен-ейри, вулична їжа, літні освітні програми й класична музика.",
+  "season.autumn.intro": "Вересень, жовтень і листопад: найнасиченіша пора, коли проходять IT Arena, BookForum, гастрофестивалі й театральний «Золотий лев».",
 };
 
 const en: Record<keyof typeof uk, string> = {
@@ -187,7 +223,7 @@ const en: Record<keyof typeof uk, string> = {
     "This project started with my initiative, but I believe it will only get better thanks to you. The best way to reach me is through Instagram.",
 
   "events.title": "Events",
-  "events.metaTitle": "Events — Events Lviv",
+  "events.metaTitle": "Annual events in Lviv: festivals, forums, conferences | Events Lviv",
   "events.metaDesc": "All annual events in Lviv: filter by topic, organizer, entry and season.",
   "events.count": "{n} of {total} events",
   "events.filters": "Filters",
@@ -241,7 +277,7 @@ const en: Record<keyof typeof uk, string> = {
   "gal.next": "Next photo",
 
   "orgs.title": "Organizations",
-  "orgs.metaTitle": "Organizations — Events Lviv",
+  "orgs.metaTitle": "Organizers of annual events in Lviv | Events Lviv",
   "orgs.metaDesc": "Organizations that run annual events in Lviv, and their events.",
   "orgType.ngo": "Civil society organizations",
   "orgType.organizer": "Event organizers",
@@ -251,7 +287,7 @@ const en: Record<keyof typeof uk, string> = {
   "org.events": "Events",
 
   "cal.title": "Calendar",
-  "cal.metaTitle": "Calendar — Events Lviv",
+  "cal.metaTitle": "Lviv event listings and calendars | Events Lviv",
   "cal.metaDesc": "Where to find dates and tickets for upcoming events in Lviv: listings, IT calendars, university events and Telegram channels.",
   "cal.lead":
     "Events Lviv is an introductory site: it helps you discover the great annual events that happen in Lviv. It has no exact dates, programs or tickets for upcoming events; you can find those in the listings and channels below.",
@@ -259,6 +295,41 @@ const en: Record<keyof typeof uk, string> = {
   "cal.it": "IT events",
   "cal.uni": "University events",
   "cal.telegram": "Telegram channels",
+
+  "ev.metaTitle": "{name} in Lviv{when} | Events Lviv",
+  "org.metaTitle": "{name}: events in Lviv | Events Lviv",
+  "logo.alt": "{name} logo",
+  "photo.alt": "{name}, photo {n}",
+  "land.browse": "Browse",
+  "land.byTopic": "By topic",
+  "land.bySeason": "By season",
+  "land.topicTitle": "{topic}: annual events in Lviv",
+  "land.topicMeta": "{topic}: annual events in Lviv | Events Lviv",
+  "land.among": "Among them: {names}.",
+  "land.seasonal": "This season",
+  "land.yearRound": "Year-round",
+  "topic.tech": "Tech conferences, hackathons, IT meetups and competitions that Lviv hosts every year.",
+  "topic.business": "Forums, business conferences and industry meetups for founders, managers and anyone building a business.",
+  "topic.career": "Career fests, hackathons and engineering contests where students and young professionals meet employers.",
+  "topic.education": "Education forums, programmes and contests for pupils, students, teachers and anyone who wants to learn.",
+  "topic.culture": "Book, film, art and music festivals that draw audiences and readers to Lviv every year.",
+  "topic.music": "Music festivals and concert series, from jazz and classical to street open-airs.",
+  "topic.food": "Food festivals and fairs: wine and cheese, craft beer, street food, chocolate and doughnuts.",
+  "topic.markets": "Fairs, bazaars and markets: vintage, books, local brands and Christmas treats.",
+  "topic.community": "Events that bring people together: youth forums, charity bazaars, pet festivals and races.",
+  "topic.family": "Events to bring the kids or the dog to: a science festival, pet days, fairs.",
+  "season.winter": "Winter",
+  "season.spring": "Spring",
+  "season.summer": "Summer",
+  "season.autumn": "Autumn",
+  "season.winter.title": "Events in Lviv in winter",
+  "season.spring.title": "Events in Lviv in spring",
+  "season.summer.title": "Events in Lviv in summer",
+  "season.autumn.title": "Events in Lviv in autumn",
+  "season.winter.intro": "December to February: the Christmas fair, chocolate and mulled wine festivals, and winter IT events.",
+  "season.spring.intro": "March to May: the city opens its season of festivals, forums and races.",
+  "season.summer.intro": "June to August: open-airs, street food, summer education programmes and classical music.",
+  "season.autumn.intro": "September to November: the busiest time, with IT Arena, BookForum, food fests and the Golden Lion theatre festival.",
 };
 
 const ui = { uk, en };
@@ -267,6 +338,10 @@ export const t = (lang: Lang) => (key: Key): string => ui[lang][key] ?? uk[key];
 // "{n} з {total} подій" + { n: 3, total: 41 }
 export const fill = (s: string, v: Record<string, string | number>) => s.replace(/\{(\w+)\}/g, (_, k) => String(v[k]));
 
+export const MONTH: Record<Lang, string[]> = {
+  uk: ["січень", "лютий", "березень", "квітень", "травень", "червень", "липень", "серпень", "вересень", "жовтень", "листопад", "грудень"],
+  en: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+};
 export const MON: Record<Lang, string[]> = {
   uk: ["січ", "лют", "бер", "кві", "тра", "чер", "лип", "сер", "вер", "жов", "лис", "гру"],
   en: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],

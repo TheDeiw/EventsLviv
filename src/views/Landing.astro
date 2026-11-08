@@ -1,0 +1,61 @@
+---
+import Base from "../layouts/Base.astro";
+import MiniHero from "../components/MiniHero.astro";
+import EventCard from "../components/EventCard.astro";
+import Browse from "../components/Browse.astro";
+import { content, href, clip, crumbs, inSeason, type Season } from "../lib/site";
+import { langOf, t, fill, type Key } from "../i18n/ui";
+
+// A page per topic (topics/music/) and per season (seasons/summer/): the same events as the filters on the events page,
+// but at an address search engines can find for "music festivals in Lviv" or "Lviv in summer".
+const { kind, id } = Astro.props as { kind: "topic" | "season"; id: string };
+const lang = langOf(Astro);
+const T = t(lang);
+const { events, topicById } = content(lang);
+const byName = (a: { name: string }, b: { name: string }) => a.name.localeCompare(b.name, lang);
+const path = `${kind === "topic" ? "topics" : "seasons"}/${id}/`;
+
+let heading: string, metaTitle: string, intro: string;
+let groups: { title?: string; events: typeof events }[];
+if (kind === "topic") {
+  const topic = topicById[id].name;
+  const list = events.filter((e) => e.topics.includes(id)).sort(byName);
+  heading = fill(T("land.topicTitle"), { topic });
+  metaTitle = fill(T("land.topicMeta"), { topic });
+  intro = `${T(`topic.${id}` as Key)} ${fill(T("land.among"), { names: list.slice(0, 4).map((e) => e.name).join(", ") })}`;
+  groups = [{ events: list }];
+} else {
+  heading = T(`season.${id}.title` as Key);
+  metaTitle = `${heading} | Events Lviv`;
+  intro = T(`season.${id}.intro` as Key);
+  groups = [
+    { title: T("land.seasonal"), events: events.filter((e) => inSeason(e, id as Season)).sort(byName) },
+    { title: T("land.yearRound"), events: events.filter((e) => e.yearRound).sort(byName) },
+  ];
+}
+const ld = crumbs(Astro.site, [[T("nav.home"), href(lang)], [T("nav.events"), href(lang, "events/")], [heading, href(lang, path)]]);
+---
+
+<Base title={metaTitle} description={clip(intro)} path={path} image={`og/${kind}-${id}.jpg`} jsonld={ld}>
+  <MiniHero title={heading} />
+  <main>
+    <p class="lead">{intro}</p>
+    {groups.map((g) => (
+      <section>
+        {g.title && <h2>{g.title}</h2>}
+        <div class="grid">{g.events.map((e) => <EventCard event={e} />)}</div>
+      </section>
+    ))}
+  </main>
+  <Browse current={path} />
+</Base>
+
+<style>
+  .lead { max-width: 1280px; margin: 0 auto; padding: 32px 32px 24px; font-size: 18px; line-height: 1.6; text-wrap: pretty; }
+  .lead { max-width: calc(70ch + 64px); margin-left: max(0px, calc((100% - 1280px) / 2)); }
+  h2 { max-width: 1280px; margin: 8px auto 14px; padding: 0 32px; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  @media (max-width: 600px) {
+    .lead { padding: 20px 16px 16px; font-size: 16px; }
+    h2 { padding: 0 16px; }
+  }
+</style>

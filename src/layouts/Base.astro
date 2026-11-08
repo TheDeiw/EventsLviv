@@ -7,7 +7,13 @@ import { LOCALES, langOf, t } from "../i18n/ui";
 const lang = langOf(Astro);
 const T = t(lang);
 // `path` is this page's address without the language prefix, so the switcher can link to the same page in the other language
-const { title, description = T("meta.description"), current = "events", path = "" } = Astro.props;
+// image: the share preview (an og/*.jpg made at build time, see src/pages/og/); jsonld: structured data for search engines;
+// noindex: pages that must not show up in search (404)
+const { title, description = T("meta.description"), current = "events", path = "", image = "og/site.jpg", jsonld = [], noindex = false } = Astro.props;
+const abs = (p: string) => (Astro.site ? new URL(p, Astro.site).href : p);
+const pageUrl = abs(href(lang, path));
+// every page says what site it belongs to; pages add their own items (breadcrumbs, organization)
+const ld = { "@context": "https://schema.org", "@graph": [{ "@type": "WebSite", name: "Events Lviv", url: abs(href(lang)), inLanguage: lang }, ...[jsonld].flat()] };
 const NAV = [
   { to: "", label: T("nav.home"), id: "home" },
   { to: "events/", label: T("nav.events"), id: "events" },
@@ -23,10 +29,27 @@ const NAV = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    {/* canonical and hreflang need absolute URLs, so they come from `site` in astro.config.mjs */}
-    {Astro.site && <link rel="canonical" href={new URL(href(lang, path), Astro.site).href} />}
-    {Astro.site && LOCALES.map((l) => <link rel="alternate" hreflang={l} href={new URL(href(l, path), Astro.site).href} />)}
-    {Astro.site && <link rel="alternate" hreflang="x-default" href={new URL(href("uk", path), Astro.site).href} />}
+    {/* canonical, hreflang and share tags need absolute URLs, so they come from `site` in astro.config.mjs */}
+    {noindex ? <meta name="robots" content="noindex" /> : (
+      <>
+        <link rel="canonical" href={pageUrl} />
+        {LOCALES.map((l) => <link rel="alternate" hreflang={l} href={abs(href(l, path))} />)}
+        <link rel="alternate" hreflang="x-default" href={abs(href("uk", path))} />
+      </>
+    )}
+    {/* the preview card in Telegram, Facebook, Viber, X and the like */}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Events Lviv" />
+    <meta property="og:title" content={title.replace(/ \| Events Lviv$/, "")} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:image" content={abs(url(image))} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content={lang === "uk" ? "uk_UA" : "en_US"} />
+    <meta property="og:locale:alternate" content={lang === "uk" ? "en_US" : "uk_UA"} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" set:html={JSON.stringify(ld).replace(/</g, "\\u003c")} />
     <link rel="icon" type="image/svg+xml" href={url("favicon.svg")} />
     {/* the phone's status bar takes this colour; it follows the site theme, not only the system one */}
     <meta name="theme-color" content="#0b0b0e" />

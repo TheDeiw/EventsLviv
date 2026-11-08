@@ -1,0 +1,51 @@
+---
+import { content, href, SEASONS } from "../lib/site";
+import { langOf, t, type Key } from "../i18n/ui";
+
+// Links to every topic and season page: they give search engines a way in and people a shortcut.
+// `current` is the path of the page we're on ("topics/music/"), so its chip is marked.
+const { current } = Astro.props as { current?: string };
+const lang = langOf(Astro);
+const T = t(lang);
+const { topics } = content(lang);
+const groups = [
+  { title: T("land.byTopic"), items: topics.map((x) => ({ path: `topics/${x.id}/`, name: x.name, color: x.color })) },
+  { title: T("land.bySeason"), items: Object.keys(SEASONS).map((s) => ({ path: `seasons/${s}/`, name: T(`season.${s}` as Key), color: "var(--muted)" })) },
+];
+---
+
+<nav class="browse-links" aria-label={T("land.browse")}>
+  <h2>{T("land.browse")}</h2>
+  {groups.map((g) => (
+    <div class="group">
+      <h3>{g.title}</h3>
+      <ul>
+        {g.items.map((i) => (
+          <li><a href={href(lang, i.path)} style={`--tc:${i.color}`} aria-current={i.path === current ? "page" : undefined}>{i.name}</a></li>
+        ))}
+      </ul>
+    </div>
+  ))}
+</nav>
+
+<style>
+  .browse-links { max-width: 1280px; margin: 0 auto; padding: 8px 32px 56px; }
+  h2 { margin: 0 0 16px; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .group { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 16px; margin-bottom: 12px; }
+  h3 { flex: none; width: 120px; margin: 0; font-size: 14px; font-weight: 500; }
+  ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+  a {
+    display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; font-size: 14px; text-decoration: none; color: var(--text);
+    background: var(--surface); border: 1px solid var(--line); border-radius: 999px;
+    transition: background-color 150ms ease, border-color 150ms ease;
+  }
+  a::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--tc); }
+  a[aria-current] { border-color: color-mix(in srgb, var(--tc) 60%, var(--line)); background: color-mix(in srgb, var(--tc) 14%, var(--surface)); }
+  @media (hover: hover) and (pointer: fine) {
+    a:hover { border-color: color-mix(in srgb, var(--tc) 50%, var(--line)); }
+  }
+  @media (max-width: 600px) {
+    .browse-links { padding: 4px 16px 40px; }
+    h3 { width: 100%; }
+  }
+</style>

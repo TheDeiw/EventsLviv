@@ -55,11 +55,11 @@ function build(lang: Lang) {
 export const content = (lang: Lang) => cache.get(lang) ?? (cache.set(lang, build(lang)), cache.get(lang)!);
 
 // "вер–жов", "бер–тра, вер–лис" / "Sep–Oct"; a run may wrap over the new year ("лис–лют")
-export function when(e: { yearRound: boolean; months: number[] }, lang: Lang) {
+// `names` swaps the short month names for others, e.g. MONTH for "вересень–жовтень" in page titles
+export function when(e: { yearRound: boolean; months: number[] }, lang: Lang, names = MON[lang]) {
   const T = t(lang);
   if (e.yearRound) return T("when.year");
   if (!e.months.length) return T("when.tbd");
-  const names = MON[lang];
   const s = new Set(e.months);
   const runs: string[] = [];
   for (let m = 1; m <= 12; m++) {
@@ -75,3 +75,17 @@ export const entryLabel = (lang: Lang, entry: string) => t(lang)(`entry.${entry}
 // brand names stay as they are, only "site" needs translating
 export const linkLabel = (lang: Lang, type: string) =>
   type === "site" ? t(lang)("link.site") : ({ instagram: "Instagram", facebook: "Facebook", linkedin: "LinkedIn", telegram: "Telegram", youtube: "YouTube" } as Record<string, string>)[type];
+
+// meta descriptions: search shows ~160 characters, so cut at a word and say there is more
+export const clip = (text: string, n = 160) => (text.length <= n ? text : text.slice(0, text.lastIndexOf(" ", n - 1)).replace(/[\s,.;:—–-]+$/, "") + "…");
+
+// seasons by month, for the season pages; an event belongs to every season its months touch
+export const SEASONS = { winter: [12, 1, 2], spring: [3, 4, 5], summer: [6, 7, 8], autumn: [9, 10, 11] } as const;
+export type Season = keyof typeof SEASONS;
+export const inSeason = (e: Event, s: Season) => !e.yearRound && e.months.some((m) => (SEASONS[s] as readonly number[]).includes(m));
+
+// schema.org breadcrumbs ("Home > Events > IT Arena") for search results; items are [name, site path]
+export const crumbs = (site: URL | undefined, items: [string, string][]) => ({
+  "@type": "BreadcrumbList",
+  itemListElement: items.map(([name, path], i) => ({ "@type": "ListItem", position: i + 1, name, item: site ? new URL(path, site).href : path })),
+});

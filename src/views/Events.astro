@@ -4,6 +4,7 @@ import EventCard from "../components/EventCard.astro";
 import Filters from "../components/Filters.astro";
 import MiniHero from "../components/MiniHero.astro";
 import Icon from "../components/Icon.astro";
+import Browse from "../components/Browse.astro";
 import { content } from "../lib/site";
 import { langOf, t, fill, eventsWord } from "../i18n/ui";
 
@@ -91,6 +92,7 @@ const countTpl = T("events.count");
       </div>
     </dialog>
   </main>
+  <Browse />
 </Base>
 
 <script>

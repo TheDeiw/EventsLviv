@@ -1,0 +1,12 @@
+---
+import View from "../../../views/Landing.astro";
+import { SEASONS } from "../../../lib/site";
+
+export function getStaticPaths() {
+  return Object.keys(SEASONS).map((id) => ({ params: { id }, props: { id } }));
+}
+
+const { id } = Astro.props;
+---
+
+<View kind="season" id={id} />
