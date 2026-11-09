@@ -24,7 +24,7 @@ Festivals · conferences · forums · initiatives
 
 A list of Lviv's annual events for anyone who wants to know what happens in the city over the year. Every event follows the same template: description, audience, place, time, entry terms, links and photos. Events by the same organization are collected on its page.
 
-The project is run by volunteers and updated irregularly. New events and corrections can be suggested on [Instagram](https://www.instagram.com/the_deiw_/).
+The project is run by volunteers and updated irregularly. New events can be suggested through a [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdYSg3Y2WS3jxV_jY-fuJ0z0XnHdDDCicnnY9MC9fZ7rSekkg/viewform), mistakes reported on the site's feedback page.
 
 ## Features
 
@@ -32,11 +32,12 @@ The project is run by volunteers and updated irregularly. New events and correct
 - **Calendar** (`/calendar/`): explains that the site is an overview and links to listings, IT calendars, university events and Telegram channels where the exact dates are.
 - **A page for every event** (`/events/<id>/`) with a photo gallery and viewer and links with service logos; **organization pages** (`/organizations/<id>/`) with a description and their events. The organization list is grouped by type.
 - **Home page** with a hero and a text about the project.
+- **Feedback page** (`/feedback/`): a form for reporting mistakes that arrives as an email through [Web3Forms](https://web3forms.com) (the access key in `src/views/Feedback.astro` is public by design). Every event and organization page links to it with its own address filled in. The footer also links to the Google Form for suggesting events (`SUGGEST_FORM` in `src/lib/site.ts`).
 - **Topic and season pages** (`/topics/<id>/`, `/seasons/<id>/`): the same events as the filters, but at their own addresses that search engines can find ("music festivals in Lviv", "Lviv in summer"). Tags on an event page lead to its topic page.
 - **Two languages:** Ukrainian (`/`) and English (`/en/`). The "UA / EN" switch in the header opens the same page in the other language.
 - **Light and dark theme** with no flash on load; the choice is remembered.
 - **Ticket-style cards** in the colours of the five spires of the Lviv logo. Covers are shown whole, without cropping or blur: the matte takes its colour from the picture itself, transparent logos sit on a light or dark tile.
-- **No client-side framework.** Every page is built to static HTML; JavaScript is only needed for the filters, the photo viewer and the theme switch.
+- **No client-side framework.** Every page is built to static HTML; JavaScript is only needed for the filters, the photo viewer, the feedback form and the theme switch.
 - The hero parallax runs on CSS (`animation-timeline: scroll()`) and is turned off with `prefers-reduced-motion`.
 
 ## Quick start
@@ -84,7 +85,7 @@ src/
   layouts/     Base: header, language switch, footer, theme, meta tags
   lib/site.ts  data in the right language, links that respect base and language, helpers
   pages/       routes: thin files, Ukrainian at the root, English in en/; og/ makes share previews
-  views/       pages (Home, Events, Event, Orgs, Org, Calendar, Landing for topics and seasons), shared by both languages
+  views/       pages (Home, Events, Event, Orgs, Org, Calendar, Feedback, Landing for topics and seasons), shared by both languages
   scripts/     filter.ts: filter logic
   styles/      global.css: theme variables and shared styles
 ```

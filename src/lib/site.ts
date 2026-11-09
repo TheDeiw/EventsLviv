@@ -11,6 +11,10 @@ import { DEFAULT_LANG, MON, type Lang, type Key, t } from "../i18n/ui";
 export const url = (p: string) => `${import.meta.env.BASE_URL.replace(/\/$/, "")}/${p.replace(/^\//, "")}`;
 // URL of a page in a language: Ukrainian lives at the root, English under /en/
 export const href = (lang: Lang, p = "") => url(lang === DEFAULT_LANG ? p : `en/${p}`);
+// the Google Form for suggesting a new event
+export const SUGGEST_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSdYSg3Y2WS3jxV_jY-fuJ0z0XnHdDDCicnnY9MC9fZ7rSekkg/viewform";
+// "Found a mistake?" on a page: the feedback form with that page's address filled in
+export const reportHref = (lang: Lang, p: string) => `${href(lang, "feedback/")}?page=${encodeURIComponent(href(lang, p))}`;
 
 // Attributes for a .cover frame. The matte colour comes from data/cover-bg.json (npm run covers); `override` is an optional "coverBg" on the event.
 export const coverAttrs = (path: string, override?: string) => {

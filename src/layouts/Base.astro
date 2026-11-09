@@ -1,7 +1,7 @@
 ---
 import "@fontsource-variable/geologica/wght.css";
 import "../styles/global.css";
-import { url, href } from "../lib/site";
+import { url, href, SUGGEST_FORM } from "../lib/site";
 import { LOCALES, langOf, t } from "../i18n/ui";
 
 const lang = langOf(Astro);
@@ -104,7 +104,10 @@ const NAV = [
         <div>
           <h2>{T("foot.missingTitle")}</h2>
           <p>{T("foot.missingText")}</p>
-          <a class="foot-cta" href="https://www.instagram.com/the_deiw_/" target="_blank" rel="noopener">{T("cta.instagram")}</a>
+          <div class="foot-ctas">
+            <a class="foot-cta" href={SUGGEST_FORM} target="_blank" rel="noopener">{T("cta.suggest")}</a>
+            <a class="foot-cta" href={href(lang, "feedback/")}>{T("cta.report")}</a>
+          </div>
         </div>
       </div>
       <div class="foot-bottom">

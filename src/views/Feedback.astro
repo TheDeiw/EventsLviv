@@ -1,0 +1,131 @@
+---
+import Base from "../layouts/Base.astro";
+import MiniHero from "../components/MiniHero.astro";
+import { SUGGEST_FORM } from "../lib/site";
+import { langOf, t } from "../i18n/ui";
+
+// Reports of mistakes on the site. Web3Forms turns the form into an email to the author; the access key is public by
+// design (it can only send to the address it was made for). Without JS the form still posts and Web3Forms shows its own page.
+const lang = langOf(Astro);
+const T = t(lang);
+---
+
+<Base title={T("fb.metaTitle")} description={T("fb.lead")} current="" path="feedback/" noindex>
+  <MiniHero title={T("fb.title")} />
+  <main class="fb">
+    <p class="lead">{T("fb.lead")}</p>
+
+    <form id="fb" action="https://api.web3forms.com/submit" method="POST" data-sending={T("fb.sending")} data-error={T("fb.error")}>
+      <input type="hidden" name="access_key" value="95319b99-df86-4e61-8da7-2c684cd70a73" />
+      <input type="hidden" name="subject" value={T("fb.subject")} />
+      <input type="hidden" name="from_name" value="Events Lviv" />
+      <input type="hidden" name="language" value={lang} />
+      {/* bots tick every box; Web3Forms drops anything with this one ticked */}
+      <input type="checkbox" name="botcheck" class="bot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+      <label for="fb-message">{T("fb.message")}</label>
+      <textarea id="fb-message" name="message" rows="6" maxlength="4000" required placeholder={T("fb.messageHint")}></textarea>
+
+      <label for="fb-page">{T("fb.page")}</label>
+      <input id="fb-page" name="page" type="text" maxlength="500" placeholder={T("fb.pageHint")} autocomplete="off" />
+
+      <label for="fb-email">{T("fb.email")}</label>
+      <input id="fb-email" name="email" type="email" maxlength="200" autocomplete="email" autocapitalize="none" spellcheck="false" aria-describedby="fb-email-note" />
+      <small id="fb-email-note">{T("fb.emailNote")}</small>
+
+      <button type="submit">{T("fb.send")}</button>
+      <p class="error" role="alert" hidden></p>
+    </form>
+
+    <div class="done" id="fb-done" tabindex="-1" hidden>
+      <p>{T("fb.sent")}</p>
+      <button type="button" id="fb-again">{T("fb.again")}</button>
+    </div>
+
+    <p class="suggest">{T("fb.suggest")} <a href={SUGGEST_FORM} target="_blank" rel="noopener">{T("fb.suggestLink")}</a>.</p>
+  </main>
+</Base>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>("#fb")!;
+  const done = document.querySelector<HTMLElement>("#fb-done")!;
+  const error = form.querySelector<HTMLElement>(".error")!;
+  const button = form.querySelector<HTMLButtonElement>("button[type=submit]")!;
+  const label = button.textContent;
+
+  // "?page=/events/it-arena/" from the "Found a mistake?" links: the page the visitor came from, as a full address
+  const page = new URLSearchParams(location.search).get("page");
+  if (page?.startsWith("/") && !page.startsWith("//")) form.querySelector<HTMLInputElement>("#fb-page")!.value = location.origin + page;
+
+  form.addEventListener("submit", async (ev) => {
+    ev.preventDefault();
+    error.hidden = true;
+    button.disabled = true;
+    button.textContent = form.dataset.sending!;
+    try {
+      const res = await fetch(form.action, { method: "POST", headers: { Accept: "application/json" }, body: new FormData(form) });
+      const data = await res.json();
+      if (!data.success) throw new Error(data.message);
+      form.reset();
+      form.hidden = true;
+      done.hidden = false;
+      done.focus();
+    } catch {
+      error.textContent = form.dataset.error!;
+      error.hidden = false;
+    } finally {
+      button.disabled = false;
+      button.textContent = label;
+    }
+  });
+
+  document.querySelector("#fb-again")!.addEventListener("click", () => {
+    done.hidden = true;
+    form.hidden = false;
+    form.querySelector<HTMLTextAreaElement>("#fb-message")!.focus();
+  });
+</script>
+
+<style>
+  .fb { max-width: 680px; margin: 0 auto; padding: 32px 32px 64px; }
+  .lead { margin: 0 0 28px; font-size: 18px; line-height: 1.6; text-wrap: pretty; }
+  form { display: grid; }
+  form[hidden], .done[hidden] { display: none; }
+  label { margin: 18px 0 8px; font-weight: 500; }
+  label:first-of-type { margin-top: 0; }
+  textarea, input:not([type="hidden"]):not(.bot) {
+    width: 100%; padding: 13px 16px; font: inherit; font-size: 16px; color: var(--text);
+    background: var(--surface); border: 1px solid var(--field-line); border-radius: 14px;
+    transition: border-color 150ms ease;
+  }
+  textarea { min-height: 150px; resize: vertical; line-height: 1.5; }
+  ::placeholder { color: var(--muted); }
+  textarea:focus-visible, input:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+  small { margin-top: 6px; color: var(--muted); font-size: 13px; }
+  .bot { position: absolute; left: -9999px; }
+  button {
+    justify-self: start; margin-top: 24px; padding: 12px 26px; cursor: pointer; font: inherit; font-weight: 600;
+    color: var(--bg); background: var(--text); border: 0; border-radius: 99px;
+    transition: opacity 150ms ease, transform 160ms var(--ease-out);
+  }
+  button:active { transform: scale(0.97); }
+  button:disabled { opacity: 0.6; cursor: progress; }
+  .error { margin: 14px 0 0; color: #f87171; }
+  :global([data-theme="light"]) .error { color: #b91c1c; }
+  .done { padding: 28px 24px; text-align: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
+  .done p { margin: 0; font-size: 18px; }
+  .done button { justify-self: center; margin-top: 18px; color: var(--text); background: transparent; border: 1px solid var(--line); }
+  .suggest { margin: 36px 0 0; color: var(--muted); }
+  .suggest a { color: var(--text); text-underline-offset: 3px; }
+  @media (hover: hover) and (pointer: fine) {
+    textarea:hover, input:not(.bot):hover { border-color: var(--muted); }
+    button:not(:disabled):hover { opacity: 0.88; }
+  }
+  @media (max-width: 600px) {
+    .fb { padding: 20px 16px 48px; }
+    .lead { font-size: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    button:active { transform: none; }
+  }
+</style>
