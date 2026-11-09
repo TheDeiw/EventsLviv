@@ -29,6 +29,8 @@ const NAV = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {/* Google Search Console ownership check for https://events-lviv.vercel.app/ */}
+    <meta name="google-site-verification" content="HnW95rNOxaTVfZutqlzEixuJ6WrAydV_5nV5eqtpVuo" />
     {/* canonical, hreflang and share tags need absolute URLs, so they come from `site` in astro.config.mjs */}
     {noindex ? <meta name="robots" content="noindex" /> : (
       <>
