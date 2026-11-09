@@ -1,148 +1,116 @@
 <div align="center">
 
-<img src="public/hero/disc.webp" width="150" alt="Логотип Events Lviv">
+<img src="public/hero/disc.webp" width="150" alt="Events Lviv logo">
 
 # Events Lviv
 
-**Щорічні події у Львові в одному місці**<br>
-Фестивалі · конференції · форуми · ініціативи
+**Annual events in Lviv, all in one place**<br>
+Festivals · conferences · forums · initiatives
 
 ![Astro](https://img.shields.io/badge/Astro-7-ff5d01?logo=astro&logoColor=white)
-![Статичний сайт](https://img.shields.io/badge/сайт-статичний-34a853)
-![Мова](https://img.shields.io/badge/мова-українська-e9c53b)
+![Static site](https://img.shields.io/badge/site-static-34a853)
+![Languages](https://img.shields.io/badge/languages-uk%20%7C%20en-e9c53b)
 
 </div>
 
 <table>
   <tr>
-    <td><img src="docs/screenshot-home.jpg" alt="Головна сторінка"></td>
-    <td><img src="docs/screenshot-events.jpg" alt="Список подій з фільтрами"></td>
+    <td><img src="docs/screenshot-home.jpg" alt="Home page"></td>
+    <td><img src="docs/screenshot-events.jpg" alt="Event list with filters"></td>
   </tr>
 </table>
 
-## Що це
+## What it is
 
-Список щорічних подій Львова для тих, хто хоче знати, що відбувається в місті протягом року. Кожна подія розписана за однаковим шаблоном: опис, для кого, де, коли, умови входу, посилання й фотографії. Події однієї організації зібрані на її сторінці.
+A list of Lviv's annual events for anyone who wants to know what happens in the city over the year. Every event follows the same template: description, audience, place, time, entry terms, links and photos. Events by the same organization are collected on its page.
 
-Проєкт волонтерський і розвивається нерегулярно. Нову подію чи виправлення можна запропонувати автору в [Instagram](https://www.instagram.com/the_deiw_/).
+The project is run by volunteers and updated irregularly. New events and corrections can be suggested on [Instagram](https://www.instagram.com/the_deiw_/).
 
-## Що вміє сайт
+## Features
 
-- **Список подій** (`/events/`): великий пошук за назвою чи організатором (клавіша «/») і фільтри, які діють разом: тематика, організатор, вхід (безкоштовно / платно), пора року. Першими йдуть події поточної пори року, далі наступних; цілорічні події розкидані між ними й перемішуються щосезону (рахується в браузері, тож порядок змінюється без перезбирання).
-- **Календар** (`/calendar/`): пояснення, що сайт ознайомчий, і посилання на афіші, IT-календарі, університетські події й телеграм-канали, де шукати точні дати.
-- **Сторінка кожної події** (`/events/<id>/`) з галереєю й переглядачем фото та посиланнями з логотипами, **сторінки організацій** (`/organizations/<id>/`) з описом і їхніми подіями. Список організацій згруповано за типом.
-- **Головна** з героєм і текстом про проєкт.
-- **Добірки за темою й порою року** (`/topics/<id>/`, `/seasons/<id>/`): ті самі події, що й у фільтрах, але на окремих адресах, які знаходить пошук («музичні фестивалі Львова», «Львів влітку»). Теги на сторінці події ведуть на сторінку теми.
-- **Дві мови:** українська (`/`) і англійська (`/en/`). Перемикач «UA / EN» у шапці веде на ту саму сторінку іншою мовою.
-- **Світла й темна тема** без блимання при завантаженні, вибір пам'ятається.
-- **Картки-квитки** в кольорах п'яти шпилів львівського логотипа. Обкладинки показуються повністю, без обрізання й розмиття: поля беруться з кольору самої картинки, прозорі логотипи стоять на світлій або темній плитці.
-- **Без клієнтського фреймворку.** Усі сторінки збираються в статичний HTML, JavaScript потрібен лише для фільтрів і перемикача теми.
-- Паралакс у героєві працює на CSS (`animation-timeline: scroll()`), а при `prefers-reduced-motion` вимикається.
+- **Event list** (`/events/`): a large search by name or organizer (the `/` key) and filters that work together: topic, organizer, entry (free / paid), season. Events of the current season come first, then the following seasons; year-round events are spread between them and reshuffled every season (worked out in the browser, so the order changes without a rebuild).
+- **Calendar** (`/calendar/`): explains that the site is an overview and links to listings, IT calendars, university events and Telegram channels where the exact dates are.
+- **A page for every event** (`/events/<id>/`) with a photo gallery and viewer and links with service logos; **organization pages** (`/organizations/<id>/`) with a description and their events. The organization list is grouped by type.
+- **Home page** with a hero and a text about the project.
+- **Topic and season pages** (`/topics/<id>/`, `/seasons/<id>/`): the same events as the filters, but at their own addresses that search engines can find ("music festivals in Lviv", "Lviv in summer"). Tags on an event page lead to its topic page.
+- **Two languages:** Ukrainian (`/`) and English (`/en/`). The "UA / EN" switch in the header opens the same page in the other language.
+- **Light and dark theme** with no flash on load; the choice is remembered.
+- **Ticket-style cards** in the colours of the five spires of the Lviv logo. Covers are shown whole, without cropping or blur: the matte takes its colour from the picture itself, transparent logos sit on a light or dark tile.
+- **No client-side framework.** Every page is built to static HTML; JavaScript is only needed for the filters, the photo viewer and the theme switch.
+- The hero parallax runs on CSS (`animation-timeline: scroll()`) and is turned off with `prefers-reduced-motion`.
 
-## Швидкий старт
+## Quick start
 
-Потрібен [Node.js](https://nodejs.org) 22.22 або новіший.
+Requires [Node.js](https://nodejs.org) 22.22 or newer.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Сайт відкриється на <http://localhost:4321>.
+The site opens at <http://localhost:4321>.
 
-| Команда | Що робить |
+| Command | What it does |
 |---|---|
-| `npm run dev` | локальний сервер із живим перезавантаженням |
-| `npm run build` | збирає статичний сайт у `dist/` |
-| `npm run preview` | показує зібраний `dist/` |
-| `npm run covers` | перераховує кольори полів навколо обкладинок (після додавання чи заміни картинок) |
-| `node scripts/refresh-link-titles.mjs` | оновлює заголовки посилань із роком, номером випуску чи датами («IT Arena 2025») з самих сторінок; `--dry` лише показує зміни. Щопонеділка це робить GitHub Action `.github/workflows/link-titles.yml` і комітить зміни в `main` |
+| `npm run dev` | local server with live reload |
+| `npm run build` | builds the static site into `dist/` |
+| `npm run preview` | serves the built `dist/` |
+| `npm run covers` | recomputes the matte colours around covers (after adding or replacing pictures) |
+| `node scripts/refresh-link-titles.mjs` | refreshes link titles that carry a year, edition number or dates ("IT Arena 2025") from the pages themselves; `--dry` only shows the changes. Every Monday the GitHub Action `.github/workflows/link-titles.yml` does this and commits to `main` |
 
-## Дані
+## Data
 
-Усе, що бачить відвідувач, лежить у `data/`. Це **джерело правди**: список колись був імпортований з Notion, тепер його редагують тут.
+Everything a visitor sees lives in `data/`. It is the **source of truth**: the list was once imported from Notion and is now edited here.
 
-| Файл | Вміст |
+| File | Contents |
 |---|---|
-| `data/events.json` | події |
-| `data/organizations.json` | організації (тип, опис, посилання, логотип, простори). `type` обов'язковий: `ngo`, `organizer` або `it`, інакше збірка зупиниться з помилкою |
-| `data/topics.json` | тематики та їхні кольори |
-| `data/cover-bg.json` | кольори полів навколо обкладинок, генерується `npm run covers` |
-| `data/en/events.json`, `organizations.json`, `topics.json` | англійський переклад: лише перекладені поля за тим самим `id`, решта береться з українських файлів |
+| `data/events.json` | events |
+| `data/organizations.json` | organizations (type, description, links, logo, venues). `type` is required: `ngo`, `organizer` or `it`, otherwise the build stops with an error |
+| `data/topics.json` | topics and their colours |
+| `data/cover-bg.json` | matte colours around covers, generated by `npm run covers` |
+| `data/en/events.json`, `organizations.json`, `topics.json` | English translation: only the translated fields under the same `id`; everything else comes from the Ukrainian files. `links` is a list of translated link titles in the same order |
 
-### Як додати подію
-
-1. Додайте картинки в `public/images/<id-події>/` (обкладинка `cover.webp`, фото `1.webp`, `2.webp`…; галерея розрахована на 4–6 фото).
-2. Додайте запис у `data/events.json`:
-
-```jsonc
-{
-  "id": "molodvizh",                  // стає адресою /events/molodvizh/
-  "name": "#Молодвіж",
-  "organizationId": "tvory",          // id з organizations.json, або без поля
-  "topics": ["community"],                // tech, business, career, education, culture, music, food, markets, community, family
-  "description": ["Абзац опису…"],
-  "audience": "Для кого",
-  "place": "Де проходить",
-  "whenText": "Щорічно, перша субота вересня.",
-  "months": [9],                      // 1–12, потрібні лише для фільтра «пора року»
-  "yearRound": false,                 // true: подія триває цілий рік
-  "entry": "free",                    // free | paid | mixed
-  "priceText": "Участь безкоштовна",
-  "links": [{ "title": "Instagram", "url": "https://…", "type": "instagram" }],
-  "cover": "images/molodvizh/cover.webp",
-  "gallery": ["images/molodvizh/1.webp"]
-}
-```
-
-3. Запустіть `npm run covers`, щоб порахувати колір полів для нової обкладинки. Для однієї події його можна задати вручну: `"coverBg": "#ffcc00"`.
-4. Додайте переклад у `data/en/events.json` під тим самим `id`: `name` (лише якщо назву треба перекласти чи транслітерувати), `description`, `audience`, `place`, `whenText`, `priceText` і `links` (список перекладених назв посилань у тому ж порядку). Без цього англійська сторінка покаже українські тексти цієї події.
-
-## Структура
+## Structure
 
 ```
-data/          події, організації, тематики; data/en/ їхній англійський переклад
-design/        DESIGN.md (рішення щодо дизайну), вихідні картинки, порівняння обкладинок
-docs/          скриншоти для цього README
-public/        favicon, hero-стрічки, картинки подій і організацій
-scripts/       cover-colors.mjs: кольори полів навколо обкладинок; refresh-link-titles.mjs: свіжі заголовки посилань
+data/          events, organizations, topics; data/en/ holds their English translation
+design/        DESIGN.md (design decisions), source pictures, cover comparisons
+docs/          screenshots for this README
+public/        favicon, hero ribbons, event and organization pictures, Calendar logo masks
+scripts/       cover-colors.mjs: matte colours around covers; refresh-link-titles.mjs: fresh link titles
 src/
-  components/  EventCard, Filters, MiniHero, LinkList, Gallery, Browse (посилання на добірки)
-  i18n/ui.ts   увесь текст інтерфейсу українською й англійською
-  layouts/     Base: шапка, перемикач мови, футер, тема
-  lib/site.ts  дані потрібною мовою, посилання з урахуванням base і мови, хелпери
-  pages/       маршрути: тонкі файли, українські в корені, англійські в en/
-  views/       сторінки (Home, Events, Event, Orgs, Org, Calendar, Landing для тем і сезонів), спільні для обох мов
-  scripts/     filter.ts: логіка фільтрів
-  styles/      global.css: змінні тем і спільні стилі
+  components/  EventCard, Filters, MiniHero, LinkList, Gallery, Browse (links to topic and season pages)
+  i18n/ui.ts   all interface text in Ukrainian and English
+  layouts/     Base: header, language switch, footer, theme, meta tags
+  lib/site.ts  data in the right language, links that respect base and language, helpers
+  pages/       routes: thin files, Ukrainian at the root, English in en/; og/ makes share previews
+  views/       pages (Home, Events, Event, Orgs, Org, Calendar, Landing for topics and seasons), shared by both languages
+  scripts/     filter.ts: filter logic
+  styles/      global.css: theme variables and shared styles
 ```
 
-Дизайн-рішення (палітра, картка, шапка, hero, обкладинки) описані в [`design/DESIGN.md`](design/DESIGN.md).
+Design decisions (palette, card, header, hero, covers) are described in [`design/DESIGN.md`](design/DESIGN.md).
 
-## Мови
+## Languages and SEO
 
-Українська основна й лежить у корені (`/events/`), англійська під `/en/` (`/en/events/`). Мову визначає адреса, тож кожна сторінка має власне посилання, яке можна індексувати й ділитися.
+Ukrainian is the main language and lives at the root (`/events/`); English is under `/en/` (`/en/events/`). The language comes from the address, so every page has its own link that can be indexed and shared.
 
-- **Текст інтерфейсу:** `src/i18n/ui.ts`, обидві мови поруч. Якщо англійського рядка немає, показується український.
-- **Події, організації, тематики:** українські тексти в `data/*.json`, переклад у `data/en/*.json` за тим самим `id`. Неперекладене поле лишається українським.
-- **Сторінки:** код один, у `src/views/`. Файли в `src/pages/` і `src/pages/en/` лише підключають потрібний вигляд.
-- **Пошук** знаходить подію за назвою й організатором в обох мовах.
-- **Автоматичного перенаправлення за мовою браузера немає** свідомо: воно заважає індексації та діленню посиланнями.
-- **SEO-розмітка:** кожна сторінка має `canonical` і `hreflang` для обох мов, є `/sitemap.xml` (усі сторінки з парами мов) і `/robots.txt`. Усе будується з `site` в `astro.config.mjs`: змінюйте його разом із доменом.
-- **Прев'ю для соцмереж:** Open Graph і картка X на кожній сторінці. Картинки 1200×630 JPG робить під час збірки `src/pages/og/[name].jpg.ts` з обкладинок (для тем, сезонів і головної це колаж із шести).
-- **Структуровані дані (JSON-LD):** `WebSite` на кожній сторінці, `Organization` на сторінках організацій, хлібні крихти на сторінках подій, організацій і добірок. Розмітки `Event` немає свідомо: Google вимагає точну дату, а в нас лише місяці.
-- **Для AI-асистентів:** `/llms.txt` — короткий текстовий опис сайту з усіма подіями й організаціями, будується з тих самих даних.
-- **404:** двомовна сторінка з `noindex`. Адреси без слеша наприкінці Vercel перенаправляє на адресу зі слешем (`trailingSlash` у `vercel.json`).
-- Картинки афіш мають свою мову на самому зображенні, її сайт не змінює.
+- **Interface text:** `src/i18n/ui.ts`, both languages side by side. A missing English string falls back to Ukrainian.
+- **Events, organizations, topics:** Ukrainian text in `data/*.json`, the translation in `data/en/*.json` under the same `id`. An untranslated field stays Ukrainian.
+- **Pages:** one codebase in `src/views/`. Files in `src/pages/` and `src/pages/en/` only plug in the right view.
+- **Search** finds an event by name and organizer in both languages.
+- **No automatic redirect by browser language**, on purpose: it gets in the way of indexing and sharing links.
+- **SEO markup:** every page has `canonical` and `hreflang` for both languages; there is a `/sitemap.xml` (all pages with their language pairs) and `/robots.txt`. All of it is built from `site` in `astro.config.mjs`: change it together with the domain.
+- **Share previews:** Open Graph and an X card on every page. The 1200×630 JPG images are made at build time by `src/pages/og/[name].jpg.ts` from the covers (a collage of six for topics, seasons and the home page).
+- **Structured data (JSON-LD):** `WebSite` on every page, `Organization` on organization pages, breadcrumbs on event, organization, topic and season pages. There is no `Event` markup on purpose: Google requires an exact date, and we only have months.
+- **For AI assistants:** `/llms.txt`, a short text description of the site with all events and organizations, built from the same data.
+- **404:** a bilingual page with `noindex`. Vercel redirects addresses without a trailing slash to the address with one (`trailingSlash` in `vercel.json`).
+- Posters keep the language printed on them; the site doesn't change it.
 
-## Розгортання
+## Deployment
 
-`npm run build` дає звичайні статичні файли в `dist/`, їх можна викласти на будь-який статичний хостинг. Якщо сайт буде жити в підкаталозі (наприклад `/EventsLviv/` на GitHub Pages), додайте `site` і `base` в `astro.config.mjs`. Усі посилання вже будуються через `url()` з `src/lib/site.ts`.
+`npm run build` produces plain static files in `dist/` that can go on any static host. If the site lives in a subfolder (for example `/EventsLviv/` on GitHub Pages), set `site` and `base` in `astro.config.mjs`. All links are already built through `url()` from `src/lib/site.ts`.
 
-## Автор
+## Copyright
 
-[TheDeiw](https://github.com/TheDeiw), Львів · [Instagram](https://www.instagram.com/the_deiw_/) · [LinkedIn](https://www.linkedin.com/in/dmytro-chekhovskyi-81baba291/) · [Портфоліо](https://thedeiw.github.io/TheDeiwPortfolio/)
-
-## Про авторські права
-
-Афіші, логотипи й фотографії подій належать їхнім організаторам і показані з інформаційною метою. Якщо ви організатор і хочете змінити чи прибрати матеріали, напишіть автору. Окремої ліцензії на код поки немає.
+Posters, logos and event photos belong to their organizers and are shown for information. Organizers who want materials changed or removed can get in touch on [Instagram](https://www.instagram.com/the_deiw_/). There is no separate licence for the code yet.
