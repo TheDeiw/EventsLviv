@@ -113,4 +113,4 @@ Ukrainian is the main language and lives at the root (`/events/`); English is un
 
 ## Copyright
 
-Posters, logos and event photos belong to their organizers and are shown for information. Organizers who want materials changed or removed can get in touch on [Instagram](https://www.instagram.com/the_deiw_/). There is no separate licence for the code yet.
+Posters, logos and event photos belong to their organizers and are shown for information. Organizers who want materials changed or removed can get in touch on [Instagram](https://www.instagram.com/the_deiw_/). The code is under the [MIT License](LICENSE); it doesn't cover these materials.
