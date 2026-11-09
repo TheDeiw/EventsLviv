@@ -36,7 +36,7 @@
   "mat": null
  },
  "images/festyval-pampukha-i-hlintveinu/cover.webp": {
-  "mat": null
+  "mat": "#20225a"
  },
  "images/forum-451e/cover.webp": {
   "mat": null
@@ -80,6 +80,9 @@
  "images/lviv-bookforum/cover.webp": {
   "mat": null
  },
+ "images/lviv-build-forum/cover.webp": {
+  "mat": "#080909"
+ },
  "images/lviv-design-day/cover.webp": {
   "mat": null
  },
@@ -112,7 +115,7 @@
   "logo": true
  },
  "images/lvivskyi-yarmarok-smaku/cover.webp": {
-  "mat": null
+  "mat": "#ffffff"
  },
  "images/molodvizh/cover.webp": {
   "mat": "#0157ff"
@@ -185,7 +188,7 @@
   "mat": "#fdd525"
  },
  "images/pokolinnya/cover.webp": {
-  "mat": null
+  "mat": "#7b00fd"
  },
  "images/proggy-buggy/cover.webp": {
   "mat": "#7757a7"
@@ -208,11 +211,14 @@
  "images/sunday-bazaarr/cover.webp": {
   "mat": "#f7530b"
  },
+ "images/urban-mobility-forum/cover.webp": {
+  "mat": null
+ },
  "images/vchyteli-maibutnoho/cover.webp": {
   "mat": "#f8af16"
  },
  "images/virtuozy/cover.webp": {
-  "mat": "#1e1511"
+  "mat": null
  },
  "images/wine-and-cheese-festival/cover.webp": {
   "mat": "#024241"

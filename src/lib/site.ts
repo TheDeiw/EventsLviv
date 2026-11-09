@@ -54,7 +54,7 @@ function build(lang: Lang) {
 // Events, organizations and topics with their text in the requested language
 export const content = (lang: Lang) => cache.get(lang) ?? (cache.set(lang, build(lang)), cache.get(lang)!);
 
-// "вер–жов", "бер–тра, вер–лис" / "Sep–Oct"; a run may wrap over the new year ("лис–лют")
+// "Вер–Жов", "Бер–Тра, Вер–Лис" / "Sep–Oct"; a run may wrap over the new year ("Лис–Лют")
 // `names` swaps the short month names for others, e.g. MONTH for "вересень–жовтень" in page titles
 export function when(e: { yearRound: boolean; months: number[] }, lang: Lang, names = MON[lang]) {
   const T = t(lang);

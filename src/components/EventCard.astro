@@ -14,6 +14,8 @@ const q = [e.name, other.events.find((x) => x.id === e.id)?.name, e.organization
   .join(" ")
   .toLowerCase();
 const titleId = `t-${e.id}`;
+// "Вер–Жов", "Протягом року": starts with a capital like the month names do
+const whenText = when(e, lang).replace(/^./, (c) => c.toUpperCase());
 ---
 
 <article
@@ -47,7 +49,7 @@ const titleId = `t-${e.id}`;
         )}
         <li>
           <Icon name="calendar" />
-          <span><span class="sr">{T("card.when")}</span>{when(e, lang)}</span>
+          <span><span class="sr">{T("card.when")}</span>{whenText}</span>
         </li>
         <li class={`price ${e.entry}`}>
           <Icon name="ticket" />

@@ -22,7 +22,7 @@
     ],
     "audience": "Designers (graphic, interior, web, landscape), architects, illustrators, decorators, brand managers, as well as students of related fields and anyone working in the creative industries.",
     "place": "Usually held at large venues, most often !FESTrepublic.",
-    "whenText": "Annually. Dates may change, usually spring or autumn.",
+    "whenText": "Annually in October.",
     "priceText": "Paid entry.",
     "links": [
       "Dysarium",
@@ -93,7 +93,7 @@
     ],
     "audience": "Active young people (students, recent graduates) who want to influence social processes, as well as representatives of companies, government bodies and civil society organizations interested in working with young leaders.",
     "place": "The forum takes place in different cities of Ukraine (including Lviv), often at leading universities or online, which makes it possible to involve participants from across the country.",
-    "whenText": "Held periodically, usually once or several times a year.",
+    "whenText": "Annually in October.",
     "priceText": "Participation is usually free, but always requires advance registration and selection.",
     "links": [
       "AIESEC in Ukraine | Youth Speak Forum 2025"
@@ -322,7 +322,7 @@
     ],
     "audience": "Filmmakers, directors, producers, film critics, film school students and all fans of auteur and independent cinema.",
     "place": "Festival events take place at several venues, usually cinemas and art centers in Lviv.",
-    "whenText": "Annually. Dates may change, so follow the announcements.",
+    "whenText": "Year-round: festival screenings and events happen in different months, so follow the announcements.",
     "priceText": "Paid entry. You can buy either a pass for the whole festival or tickets for individual screenings.",
     "links": [
       "Wiz-Art Lviv International Short Film Festival",
@@ -441,7 +441,7 @@
     ],
     "audience": "QA engineers (manual and automation), testers, QA leads and managers, and all specialists involved in testing and quality assurance of IT products.",
     "place": "The format may change. Events have been held both offline in Lviv and online. When offline, they take place in the offices of various IT companies.",
-    "whenText": "Held several times a year. Follow the official website for announcements of specific dates.",
+    "whenText": "Annually in spring, from March to May. Specific dates are announced on the official website.",
     "priceText": "Paid entry. The price changes depending on the purchase date.",
     "links": [
       "Events"
@@ -495,7 +495,7 @@
     ],
     "audience": "Students of technical and related fields: programmers, QA engineers, UI/UX designers, analysts, and all young enthusiasts interested in technology.",
     "place": "Usually held at Lviv Polytechnic National University or in the offices of partner companies (it has always been one of the SoftServe offices).",
-    "whenText": "Annually. Dates are announced on the organization's official pages.",
+    "whenText": "Annually in March–April. Dates are announced on the organization's official pages.",
     "priceText": "Free to participate, but requires advance registration and selection."
   },
   "best-engineering-competition": {
@@ -514,7 +514,7 @@
     ],
     "audience": "“Ethical” hackers, cybersecurity specialists (from beginners to professionals), system administrators, developers and students interested in information security.",
     "place": "Often held at Lviv Polytechnic National University, in the offices of IT companies or entirely online.",
-    "whenText": "Held periodically throughout the year by different organizers. There is no fixed annual date, so follow the announcements.",
+    "whenText": "Annually in September. Exact dates appear in the organizers' announcements.",
     "priceText": "Participation is usually free but requires advance registration."
   },
   "leadership-program": {
@@ -722,5 +722,33 @@
     "place": "Streets of central Lviv; some streets are closed during the race.",
     "whenText": "Annually, in spring, usually in May.",
     "priceText": "Participation requires an entry fee that depends on the distance and goes to charity; cheering is free."
+  },
+  "urban-mobility-forum": {
+    "description": [
+      "Urban Mobility Forum is a national urban mobility forum organized by Lviv City Council and the CIVINET Ukraine network. It covers public transport, road safety, accessibility, electric transport and how Ukrainian cities can join the European transport space.",
+      "The forum has run every year since 2023, mostly in Lviv; in 2025 it was hosted by Uzhhorod. The fourth forum, in September 2026, brought about 500 people to LEM Station: ministry and city officials, international organizations, business and experts. Besides the discussions, the programme includes site visits, such as to the new tram depot, and hands-on workshops."
+    ],
+    "audience": "City council and government staff, transport planners, urbanists, transport operators, NGOs and anyone interested in how transport in Ukrainian cities is changing.",
+    "place": "In 2026, LEM Station, a creative space in a former tram depot. In 2025 the forum was held in Uzhhorod.",
+    "whenText": "Every September: 16–18 September in 2024, 7–9 September in 2026. The first forum, in 2023, took place in April.",
+    "priceText": "Participation by application, which the organizers must confirm. The cost has not been announced separately, so check the announcements.",
+    "links": [
+      "CIVINET Ukraine",
+      "CIVINET Ukraine",
+      "Urban Mobility Forum 2026: Lviv City Council news"
+    ]
+  },
+  "lviv-build-forum": {
+    "description": [
+      "Lviv Build Forum is a professional forum for the construction industry that brings together developers, architects, investors, construction companies and urbanists. It is organized by Andriy Yevtukh, co-founder of CORE Business Club.",
+      "The programme is a day of talks and panel discussions on development, architecture, investment and the quality of the urban environment, an expo zone with new technologies, and networking. The first forum took place in September 2025, the second in March 2026 under the theme \"Architects of Risk\", and the third, \"Cities for People\", in September 2026."
+    ],
+    "audience": "Developers, architects, investors, construction companies, contractors, financial institutions and urbanists.",
+    "place": "Barvy Event Hall, 18 Melnyka St.",
+    "whenText": "Twice a year: in spring (13 March in 2026) and in September (25 September 2025, 10 September 2026).",
+    "priceText": "Paid: in March 2026 tickets cost from 1,500 to 25,000 UAH depending on the package.",
+    "links": [
+      "Lviv Build Forum"
+    ]
   }
 }
