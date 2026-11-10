@@ -1,6 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
-import { content, href, url } from "../lib/site";
+import { content, href, url, SUGGEST_FORM } from "../lib/site";
 import { langOf, t } from "../i18n/ui";
 
 const lang = langOf(Astro);
@@ -111,7 +111,7 @@ const ME = [
           <h2>{T("join.title")}</h2>
           <p>{T("join.text")}</p>
         </div>
-        <a class="cta" href="https://www.instagram.com/the_deiw_/" target="_blank" rel="noopener">{T("cta.instagram")}</a>
+        <a class="cta" href={SUGGEST_FORM} target="_blank" rel="noopener">{T("cta.suggest")}</a>
       </section>
     </div>
   </main>

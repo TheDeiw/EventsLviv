@@ -75,11 +75,12 @@ button { font: inherit; }
 @media (prefers-reduced-transparency: reduce) {
   .top { background: var(--bg); -webkit-backdrop-filter: none; backdrop-filter: none; }
 }
-/* the Lviv mark plus EVENTS in Six Caps, its capitals as tall as the mark; --h sets the size */
+/* the Lviv mark plus EVENTS in Six Caps, its capitals a little shorter than the mark (at full height they look taller); --h sets the size */
 a.logo { --h: 36px; justify-self: start; display: flex; align-items: flex-end; gap: calc(var(--h) * 0.2); color: var(--text); text-decoration: none; }
 a.logo .mark { flex: none; height: var(--h); aspect-ratio: 162 / 192; background: currentColor; mask: var(--logo) center / contain no-repeat; }
-/* Six Caps capitals are about 0.845em tall; text-box trims the line to them so they line up with the mark */
-.logo-text { font-family: "Six Caps", sans-serif; font-size: calc(var(--h) / 0.845); font-weight: 400; line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; text-box: trim-both cap alphabetic; }
+/* Six Caps capitals are about 0.845em tall; text-box trims the line to them so they sit on the mark's baseline.
+   Six Caps has one weight; squeezing it sideways thins its upright strokes, which are almost all of it */
+.logo-text { transform: scaleX(0.82); transform-origin: left bottom; font-family: "Six Caps", sans-serif; font-size: calc(var(--h) * 0.88 / 0.845); font-weight: 400; line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; text-box: trim-both cap alphabetic; }
 .top nav { display: flex; gap: 4px; }
 .top nav a {
   padding: 6px 14px; border-radius: 99px; color: var(--muted); font-size: 14px; text-decoration: none;

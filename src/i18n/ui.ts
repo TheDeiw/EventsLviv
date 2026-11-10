@@ -22,7 +22,6 @@ const uk = {
   "foot.sectionsAria": "Розділи сайту",
   "foot.missingTitle": "Знаєте подію, якої тут немає?",
   "foot.missingText": "Заповніть коротку форму, і її додадуть до списку.",
-  "cta.instagram": "Написати в Instagram",
   "cta.suggest": "Запропонувати подію",
   "cta.report": "Повідомити про помилку",
 
@@ -78,7 +77,7 @@ const uk = {
     "Привіт! Мене звати TheDeiw. Я живу у Львові й обожнюю його ритм. Мені завжди бракувало єдиного місця, де були б зібрані всі круті періодичні події міста, тому я вирішив створити його сам. Цей список — мій особистий проєкт, створений з любов’ю до Львова та його людей.",
   "join.title": "Нумо разом створимо найкращий гід по івентах Львова!",
   "join.text":
-    "Цей проєкт почався з моєї ініціативи, але я вірю, що кращим він стане лише завдяки вам. Найкращим способом буде зв’язатись через Instagram.",
+    "Цей проєкт почався з моєї ініціативи, але я вірю, що кращим він стане лише завдяки вам. Знаєте подію, якої тут немає? Запропонуйте її через коротку форму.",
 
   "events.title": "Події",
   "events.metaTitle": "Щорічні події у Львові: фестивалі, форуми, конференції | Events Lviv",
@@ -206,7 +205,6 @@ const en: Record<keyof typeof uk, string> = {
   "foot.sectionsAria": "Site sections",
   "foot.missingTitle": "Know an event that's missing?",
   "foot.missingText": "Fill in a short form and it will be added to the list.",
-  "cta.instagram": "Message on Instagram",
   "cta.suggest": "Suggest an event",
   "cta.report": "Report a mistake",
 
@@ -262,7 +260,7 @@ const en: Record<keyof typeof uk, string> = {
     "Hi! My name is TheDeiw. I live in Lviv and love its rhythm. I always missed a single place where all the cool recurring events of the city were gathered, so I decided to build it myself. This list is my personal project, made with love for Lviv and its people.",
   "join.title": "Let's build the best guide to Lviv events together!",
   "join.text":
-    "This project started with my initiative, but I believe it will only get better thanks to you. The best way to reach me is through Instagram.",
+    "This project started with my initiative, but I believe it will only get better thanks to you. Know an event that's missing? Suggest it through a short form.",
 
   "events.title": "Events",
   "events.metaTitle": "Annual events in Lviv: festivals, forums, conferences | Events Lviv",
