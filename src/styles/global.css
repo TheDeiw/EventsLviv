@@ -75,14 +75,11 @@ button { font: inherit; }
 @media (prefers-reduced-transparency: reduce) {
   .top { background: var(--bg); -webkit-backdrop-filter: none; backdrop-filter: none; }
 }
-.logo { justify-self: start; display: flex; align-items: flex-end; gap: 10px; font-weight: 700; font-size: 19px; letter-spacing: -0.02em; text-decoration: none; }
-.spires { display: flex; align-items: flex-end; gap: 2px; }
-.spires i { width: 5px; border-radius: 1px; }
-.spires i:nth-child(1) { height: 15px; background: var(--spire-1); }
-.spires i:nth-child(2) { height: 20px; background: var(--spire-2); }
-.spires i:nth-child(3) { height: 24px; background: var(--spire-3); }
-.spires i:nth-child(4) { height: 18px; background: var(--spire-4); }
-.spires i:nth-child(5) { height: 16px; background: var(--spire-5); }
+/* the Lviv mark plus EVENTS in Six Caps, its capitals as tall as the mark; --h sets the size */
+a.logo { --h: 36px; justify-self: start; display: flex; align-items: flex-end; gap: calc(var(--h) * 0.2); color: var(--text); text-decoration: none; }
+a.logo .mark { flex: none; height: var(--h); aspect-ratio: 162 / 192; background: currentColor; mask: var(--logo) center / contain no-repeat; }
+/* Six Caps capitals are about 0.845em tall; text-box trims the line to them so they line up with the mark */
+.logo-text { font-family: "Six Caps", sans-serif; font-size: calc(var(--h) / 0.845); font-weight: 400; line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; text-box: trim-both cap alphabetic; }
 .top nav { display: flex; gap: 4px; }
 .top nav a {
   padding: 6px 14px; border-radius: 99px; color: var(--muted); font-size: 14px; text-decoration: none;
@@ -110,10 +107,11 @@ button { font: inherit; }
   .top nav a:hover, .lang a:hover { color: var(--text); }
   .theme-toggle:hover { background: var(--surface-2); }
 }
-/* phones: one row. The logo shrinks to its spires and stands in for "Home", the language switch shows only the other language */
+/* phones: one row. The Lviv mark alone stands in for "Home" (EVENTS would push the links off the bar), the language switch shows only the other language */
 @media (max-width: 720px) {
   .top { grid-template-columns: auto minmax(0, 1fr) auto; gap: 4px; height: 54px; margin: 8px 8px 0; padding: 0 7px 0 11px; border-radius: 18px; }
-  .top .logo-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .top .logo { --h: 34px; }
+  .top .logo-text { display: none; }
   .top .main-nav { justify-content: safe center; gap: 0; overflow-x: auto; scrollbar-width: none; }
   .top .main-nav::-webkit-scrollbar { display: none; }
   .top .main-nav .to-home { display: none; }
@@ -168,7 +166,7 @@ html.glow body { background: radial-gradient(120% 70% at 50% -10%, var(--glow), 
 .foot-stripe i:nth-child(4) { background: var(--spire-4); }
 .foot-stripe i:nth-child(5) { background: var(--spire-5); }
 .foot-inner { display: grid; grid-template-columns: 1.4fr 1fr 1.2fr; gap: 40px; max-width: 1360px; margin: 0 auto; padding: 48px 32px 32px; }
-.foot .logo { color: var(--text); }
+.foot .logo { --h: 48px; }
 .foot p { margin: 12px 0 0; max-width: 36ch; }
 .foot h2 { margin: 0 0 12px; color: var(--text); font-size: 14px; font-weight: 600; letter-spacing: 0; }
 .foot ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }

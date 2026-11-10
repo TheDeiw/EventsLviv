@@ -1,5 +1,6 @@
 ---
 import "@fontsource-variable/geologica/wght.css";
+import "@fontsource/six-caps/latin-400.css";
 import "../styles/global.css";
 import { url, href, SUGGEST_FORM } from "../lib/site";
 import { LOCALES, langOf, t } from "../i18n/ui";
@@ -14,6 +15,8 @@ const abs = (p: string) => (Astro.site ? new URL(p, Astro.site).href : p);
 const pageUrl = abs(href(lang, path));
 // every page says what site it belongs to; pages add their own items (breadcrumbs, organization)
 const ld = { "@context": "https://schema.org", "@graph": [{ "@type": "WebSite", name: "Events Lviv", url: abs(href(lang)), inLanguage: lang }, ...[jsonld].flat()] };
+// the Lviv mark is a white-on-transparent mask, so it takes the text colour of either theme
+const logoMask = `--logo:url(${url("brand/logo.webp")})`;
 const NAV = [
   { to: "", label: T("nav.home"), id: "home" },
   { to: "events/", label: T("nav.events"), id: "events" },
@@ -52,7 +55,7 @@ const NAV = [
     <meta property="og:locale:alternate" content={lang === "uk" ? "en_US" : "uk_UA"} />
     <meta name="twitter:card" content="summary_large_image" />
     <script type="application/ld+json" set:html={JSON.stringify(ld).replace(/</g, "\\u003c")} />
-    <link rel="icon" type="image/svg+xml" href={url("favicon.svg")} />
+    <link rel="icon" type="image/png" href={url("favicon.png")} />
     {/* the phone's status bar takes this colour; it follows the site theme, not only the system one */}
     <meta name="theme-color" content="#0b0b0e" />
     <script is:inline>
@@ -66,7 +69,7 @@ const NAV = [
   </head>
   <body id="top">
     <header class="top">
-      <a class="logo" href={href(lang)}><span class="spires" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span class="logo-text">Events Lviv</span></a>
+      <a class="logo" href={href(lang)} aria-label="Events Lviv"><span class="mark" style={logoMask} aria-hidden="true"></span><span class="logo-text" aria-hidden="true">Events</span></a>
       <nav class="main-nav" aria-label={T("nav.aria")}>
         {NAV.map((n) => <a class={`to-${n.id}`} href={href(lang, n.to)} aria-current={current === n.id ? "page" : undefined}>{n.label}</a>)}
       </nav>
@@ -94,7 +97,7 @@ const NAV = [
       <div class="foot-stripe" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
       <div class="foot-inner">
         <div>
-          <a class="logo" href={href(lang)}><span class="spires" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>Events Lviv</a>
+          <a class="logo" href={href(lang)} aria-label="Events Lviv"><span class="mark" style={logoMask} aria-hidden="true"></span><span class="logo-text" aria-hidden="true">Events</span></a>
           <p>{T("foot.about")}</p>
         </div>
         <nav aria-label={T("foot.sectionsAria")}>

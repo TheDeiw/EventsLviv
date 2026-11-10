@@ -77,7 +77,7 @@ Everything a visitor sees lives in `data/`. It is the **source of truth**: the l
 data/          events, organizations, topics; data/en/ holds their English translation
 design/        DESIGN.md (design decisions), source pictures, cover comparisons
 docs/          screenshots for this README
-public/        favicon, hero ribbons, event and organization pictures, Calendar logo masks
+public/        favicon, brand/logo.webp (the Lviv mark, used as a mask), hero ribbons, event and organization pictures, Calendar logo masks
 scripts/       cover-colors.mjs: matte colours around covers; refresh-link-titles.mjs: fresh link titles
 src/
   components/  EventCard, Filters, MiniHero, LinkList, Gallery, Browse (links to topic and season pages)
