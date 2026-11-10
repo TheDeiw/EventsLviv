@@ -32,6 +32,9 @@
  "images/dyzarium/cover.webp": {
   "mat": null
  },
+ "images/event-industry-forum/cover.webp": {
+  "mat": "#020b0c"
+ },
  "images/faine-misto/cover.webp": {
   "mat": null
  },
@@ -41,6 +44,11 @@
  "images/forum-451e/cover.webp": {
   "mat": null
  },
+ "images/founders-summit-lviv/cover.webp": {
+  "mat": "#1c1c20",
+  "logo": true,
+  "mono": true
+ },
  "images/games-gathering-lviv/cover.webp": {
   "mat": "#1d1e26"
  },
@@ -49,6 +57,9 @@
  },
  "images/hacktoberfest/cover.webp": {
   "mat": "#1f2045"
+ },
+ "images/industry-forum-lviv/cover.webp": {
+  "mat": "#0402fd"
  },
  "images/iron-demo/cover.webp": {
   "mat": "#060c0a"
@@ -81,7 +92,7 @@
   "mat": null
  },
  "images/lviv-build-forum/cover.webp": {
-  "mat": "#080909"
+  "mat": "#ffffff"
  },
  "images/lviv-design-day/cover.webp": {
   "mat": null
@@ -106,6 +117,9 @@
  },
  "images/lviv-media-forum/cover.webp": {
   "mat": "#000000"
+ },
+ "images/lviv-medical-forum/cover.webp": {
+  "mat": "#0f5d9e"
  },
  "images/lviv-pet-fest/cover.webp": {
   "mat": "#81b7f1"
@@ -141,6 +155,9 @@
  },
  "images/organizations/festrepublic.webp": {
   "mat": "#e8e8e8"
+ },
+ "images/organizations/forma-events.webp": {
+  "mat": "#ffffff"
  },
  "images/organizations/games-gathering.webp": {
   "mat": "#221b17"
@@ -218,6 +235,9 @@
   "mat": "#f8af16"
  },
  "images/virtuozy/cover.webp": {
+  "mat": null
+ },
+ "images/wellness-forum/cover.webp": {
   "mat": null
  },
  "images/wine-and-cheese-festival/cover.webp": {

@@ -18,8 +18,8 @@ export const reportHref = (lang: Lang, p: string) => `${href(lang, "feedback/")}
 
 // Attributes for a .cover frame. The matte colour comes from data/cover-bg.json (npm run covers); `override` is an optional "coverBg" on the event.
 export const coverAttrs = (path: string, override?: string) => {
-  const c = (coverBg as Record<string, { mat: string | null; logo?: boolean }>)[path];
-  return { class: c?.logo ? "cover logo" : "cover", style: `--mat:${override ?? c?.mat ?? "var(--neutral)"}` };
+  const c = (coverBg as Record<string, { mat: string | null; logo?: boolean; mono?: boolean }>)[path];
+  return { class: ["cover", c?.logo && "logo", c?.mono && "mono"].filter(Boolean).join(" "), style: `--mat:${override ?? c?.mat ?? "var(--neutral)"}` };
 };
 
 export type Event = (typeof eventsUk)[number] & { coverBg?: string };

@@ -36,7 +36,7 @@ The project is run by volunteers and updated irregularly. New events can be sugg
 - **Topic and season pages** (`/topics/<id>/`, `/seasons/<id>/`): the same events as the filters, but at their own addresses that search engines can find ("music festivals in Lviv", "Lviv in summer"). Tags on an event page lead to its topic page.
 - **Two languages:** Ukrainian (`/`) and English (`/en/`). The "UA / EN" switch in the header opens the same page in the other language.
 - **Light and dark theme** with no flash on load; the choice is remembered.
-- **Ticket-style cards** in the colours of the five spires of the Lviv logo. Covers are shown whole, without cropping or blur: the matte takes its colour from the picture itself, transparent logos sit on a light or dark tile.
+- **Ticket-style cards** in the colours of the five spires of the Lviv logo. Covers are shown whole, without cropping or blur: the matte takes its colour from the picture itself, transparent logos sit on a light or dark tile, and plain white logos turn dark on a pale tile in the light theme, like the site logo.
 - **No client-side framework.** Every page is built to static HTML; JavaScript is only needed for the filters, the photo viewer, the feedback form and the theme switch.
 - The hero parallax runs on CSS (`animation-timeline: scroll()`) and is turned off with `prefers-reduced-motion`.
 

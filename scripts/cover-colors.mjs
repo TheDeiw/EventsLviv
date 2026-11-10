@@ -1,6 +1,7 @@
 // Picks the matte colour that sits around each cover, so every image can be shown whole (no crop, no blur).
 // Run after adding or replacing images:  npm run covers   (sharp comes with Astro)
 //   - transparent logo   -> pale tile for dark logos, dark tile for light ones, drawn with padding ("logo": true)
+//   - plain white logo   -> also "mono": true, so in the light theme it turns dark on a pale tile, like the site logo
 //   - flat edges         -> the edge colour, so a banner continues into the frame without a seam
 //   - busy edges (photo) -> null, the page falls back to the neutral theme colour
 // To override one event, set "coverBg": "#rrggbb" on it in data/events.json.
@@ -25,16 +26,18 @@ for (const path of [...paths].sort()) {
   const { data, info } = await sharp(fileURLToPath(new URL(`../public/${path}`, import.meta.url))).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
   const { width: w, height: h } = info;
   const ring = Math.max(2, Math.floor(Math.min(w, h) / 40));
-  let clear = 0, lumSum = 0, lumN = 0;
+  let clear = 0, lumSum = 0, lumN = 0, tinted = 0;
   for (let i = 0; i < data.length; i += 4) {
     if (data[i + 3] < 250) clear++;
     if (data[i + 3] > 40) {
       lumSum += 0.2126 * data[i] + 0.7152 * data[i + 1] + 0.0722 * data[i + 2];
       lumN++;
+      if (Math.max(data[i], data[i + 1], data[i + 2]) - Math.min(data[i], data[i + 1], data[i + 2]) > 24) tinted++;
     }
   }
   if (clear / (w * h) > 0.15) {
-    out[path] = { mat: lumN && lumSum / lumN < 100 ? LIGHT_TILE : DARK_TILE, logo: true };
+    const lum = lumN ? lumSum / lumN : 0;
+    out[path] = { mat: lum < 100 ? LIGHT_TILE : DARK_TILE, logo: true, ...(lum > 235 && tinted / lumN < 0.01 && { mono: true }) };
     continue;
   }
   const edge = [];
@@ -53,4 +56,4 @@ for (const path of [...paths].sort()) {
 
 writeFileSync(new URL("../data/cover-bg.json", import.meta.url), JSON.stringify(out, null, 1) + "\n");
 const n = Object.values(out);
-console.log(`${n.length} images: ${n.filter((c) => c.logo).length} logos, ${n.filter((c) => !c.logo && c.mat).length} matched to their edges, ${n.filter((c) => !c.logo && !c.mat).length} neutral`);
+console.log(`${n.length} images: ${n.filter((c) => c.logo).length} logos (${n.filter((c) => c.mono).length} plain white), ${n.filter((c) => !c.logo && c.mat).length} matched to their edges, ${n.filter((c) => !c.logo && !c.mat).length} neutral`);

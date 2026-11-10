@@ -740,7 +740,7 @@
   },
   "lviv-build-forum": {
     "description": [
-      "Lviv Build Forum is a professional forum for the construction industry that brings together developers, architects, investors, construction companies and urbanists. It is organized by Andriy Yevtukh, co-founder of CORE Business Club.",
+      "Lviv Build Forum is a professional forum for the construction industry that brings together developers, architects, investors, construction companies and urbanists. It is organized by FORMA Events, run by Andriy Yevtukh, co-founder of CORE Business Club.",
       "The programme is a day of talks and panel discussions on development, architecture, investment and the quality of the urban environment, an expo zone with new technologies, and networking. The first forum took place in September 2025, the second in March 2026 under the theme \"Architects of Risk\", and the third, \"Cities for People\", in September 2026."
     ],
     "audience": "Developers, architects, investors, construction companies, contractors, financial institutions and urbanists.",
@@ -748,7 +748,82 @@
     "whenText": "Twice a year: in spring (13 March in 2026) and in September (25 September 2025, 10 September 2026).",
     "priceText": "Paid: in March 2026 tickets cost from 1,500 to 25,000 UAH depending on the package.",
     "links": [
+      "Lviv Build Forum",
+      "Instagram (@lviv.build.forum)",
       "Lviv Build Forum"
+    ]
+  },
+  "founders-summit-lviv": {
+    "description": [
+      "Founders Summit Lviv is a strategic business forum for founders, company owners, CEOs and investors about focus, risk and diversification: where to put resources, when to scale and how to make the decisions that shape a company's future.",
+      "The programme combines candid talks with founders (Founders Talks), discussions between entrepreneurs and investors, and a hands-on block with real business cases (Founders Lab). Off stage there is networking, an Expo Zone with services for business, and an afterparty. The first summit took place on 11 December 2025, the second, \"The Weight of Decisions\", on 10 December 2026."
+    ],
+    "audience": "Founders and business owners, CEOs and top managers, serial entrepreneurs, investors, heads of development, finance and operations.",
+    "place": "Barvy Event Hall, 18 Melnyka St.",
+    "whenText": "Every December (11 December 2025, 10 December 2026).",
+    "priceText": "Paid: in 2026 tickets at the start of sales cost from 3,500 to 8,500 UAH depending on the package, the online stream from 1,000 UAH. Prices go up closer to the date.",
+    "links": [
+      "Founders Summit Lviv",
+      "Instagram (@founders.summit)",
+      "Founders Summit Lviv"
+    ]
+  },
+  "wellness-forum": {
+    "description": [
+      "Wellness Forum \"Energy as Capital\" is a strategic forum about energy, health and clarity of mind for entrepreneurs, CEOs and investors. Health is treated here not as an everyday topic but as a strategic asset that decides the quality of decisions and staying power over the long run.",
+      "The programme has four blocks: biological capital (sleep, metabolism, hormonal balance), cognitive and mental capital (focus, stress, emotional regulation), longevity as a strategy, and wellness as a market: private medicine, wellness tourism, investment. Speakers at the first forum in 2026 included heart surgeon Borys Todurov, Forbes Ukraine editor-in-chief Borys Davydenko and Superhumans Center CEO Olha Rudnieva. Part of the programme is a charity auction in support of Ukraine's defenders."
+    ],
+    "audience": "Entrepreneurs and business owners, CEOs and top managers, investors, HR directors, experts from the wellness, beauty and health industry.",
+    "place": "Held at different spa hotels. In 2026, Edem Resort Medical & SPA near Lviv.",
+    "whenText": "In summer, in June (the first forum was on 11 June 2026).",
+    "priceText": "Paid: in 2026 tickets cost from 4,400 to 80,000 UAH depending on the package and when you bought them, the online stream from 2,000 UAH. Teams of three or more get 25–35% off.",
+    "links": [
+      "Wellness Forum",
+      "Instagram (@wellness.forum.ua)"
+    ]
+  },
+  "lviv-medical-forum": {
+    "description": [
+      "Lviv Medical Forum is a strategic forum about the economics and future of Ukrainian healthcare. It brings together clinic owners, doctors with their own practice, CEOs, investors, pharma and medtech to talk about medicine as a business: a clinic's unit economics, financial resilience and scaling.",
+      "The themes are economics and management, technology and AI, new models of medical business, and brand and patient trust; there is also a Biohacking Stage and a medical expo zone. In 2026 the forum drew about 1,400 participants and more than 25 speakers, among them heart surgeon Borys Todurov, Fedoriv Group founder Andriy Fedoriv and Orest Chemerys, rector of Lviv National Medical University."
+    ],
+    "audience": "Clinic owners and founders, CEOs and managers of medical facilities, doctors with their own practice, investors, pharmaceutical and medtech companies.",
+    "place": "LEM Station, a creative space in a former tram depot.",
+    "whenText": "In autumn, at the end of October (30 October in 2026).",
+    "priceText": "Paid: in 2026 tickets cost from 7,900 to 17,500 UAH depending on the package, a separate Biohacking Stage ticket 4,000 UAH.",
+    "links": [
+      "Lviv Medical Forum",
+      "Instagram (@lviv.medical.forum)"
+    ]
+  },
+  "industry-forum-lviv": {
+    "description": [
+      "Industry Forum Lviv is an industrial forum and trade show for manufacturing businesses, the only event of its kind in western Ukraine. It covers four industries, metalworking, woodworking, energy and packaging, and brings together manufacturers, equipment suppliers and company managers. It is organized by Gal-EXPO.",
+      "Three days at Arena Lviv combine an equipment show with live machine demonstrations and a business programme: panel discussions on new industrialization, grants for manufacturers and exports, workshops on LEAN and AI for business. The forum also hosts the Work in Industry job fair, the International Forest Industry Forum and the Lviv Export Forum."
+    ],
+    "audience": "Company managers, engineers, technologists, production specialists, small and medium businesses, investors and anyone working in industry.",
+    "place": "Arena Lviv, 199 Stryiska St.",
+    "whenText": "Every June, for three days (10–12 June 2026; the next forum is in June 2027).",
+    "priceText": "Free for visitors with registration in advance. Exhibitors pay depending on the format and stand size.",
+    "links": [
+      "Industry Forum Lviv",
+      "Instagram (@industryforumlviv)",
+      "Industry Forum Lviv"
+    ]
+  },
+  "event-industry-forum": {
+    "description": [
+      "Event Industry Forum (EIF) is the professional forum of Ukraine's event industry for event organizers, agencies, wedding planners, technical contractors, venues and artists. It was founded by Denys Rynskyi, CEO of the Global Events agency. The first EIF took place in February 2018; until 2021 it was held every year with up to 1,400 participants, and in 2026 it returned after a five-year break.",
+      "The programme runs on several stages and tracks: a Main Stage on industry trends, technical, wedding and show business tracks, working with venues and suppliers, and a hands-on Eventology Room. Next to it is the Event Expo, a show of lighting, sound, staging, catering, decor, ticketing services and AI tools for events, and the day ends with an afterparty."
+    ],
+    "audience": "Event managers and agencies, wedding organizers, technical contractors, venues and suppliers, artists and their managers, marketers.",
+    "place": "Emily Resort (in 2027).",
+    "whenText": "Every year at the end of February (the next forum is on 25 February 2027).",
+    "priceText": "Paid: tickets for EIF 2027 cost from 2,990 to 8,590 UAH depending on the package and when you buy them, online access from 890 UAH.",
+    "links": [
+      "Event Industry Forum",
+      "Instagram (@eventindustryforum)",
+      "Event Industry Forum"
     ]
   }
 }

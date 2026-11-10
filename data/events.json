@@ -903,12 +903,12 @@
   {
     "id": "lviv-build-forum",
     "name": "Lviv Build Forum",
-    "organizationId": null,
+    "organizationId": "forma-events",
     "topics": [
       "business"
     ],
     "description": [
-      "Lviv Build Forum — професійний форум будівельної галузі, який збирає девелоперів, архітекторів, інвесторів, будівельні компанії та урбаністів. Його організовує Андрій Євтух, співзасновник CORE Business Club.",
+      "Lviv Build Forum — професійний форум будівельної галузі, який збирає девелоперів, архітекторів, інвесторів, будівельні компанії та урбаністів. Його організовує FORMA Events Андрія Євтуха, співзасновника CORE Business Club.",
       "Програма — це день виступів і панельних дискусій про девелопмент, архітектуру, інвестиції та якість міського середовища, виставкова зона з новими технологіями й нетворкінг. Перший форум відбувся у вересні 2025 року, другий — у березні 2026-го під темою «Архітектори ризику», третій, «Міста людей», — у вересні 2026-го."
     ],
     "audience": "Девелопери, архітектори, інвестори, будівельні компанії, підрядники, фінансові установи та урбаністи.",
@@ -927,11 +927,249 @@
         "title": "Lviv Build Forum",
         "url": "https://www.lvivbuildforum.com.ua/",
         "type": "site"
+      },
+      {
+        "title": "Instagram (@lviv.build.forum)",
+        "url": "https://www.instagram.com/lviv.build.forum/",
+        "type": "instagram"
+      },
+      {
+        "title": "Lviv Build Forum",
+        "url": "https://www.facebook.com/profile.php?id=61579493602862",
+        "type": "facebook"
       }
     ],
     "cover": "images/lviv-build-forum/cover.webp",
     "gallery": [
-      "images/lviv-build-forum/1.webp"
+      "images/lviv-build-forum/1.webp",
+      "images/lviv-build-forum/2.webp",
+      "images/lviv-build-forum/3.webp",
+      "images/lviv-build-forum/4.webp",
+      "images/lviv-build-forum/5.webp",
+      "images/lviv-build-forum/6.webp"
+    ]
+  },
+  {
+    "id": "founders-summit-lviv",
+    "name": "Founders Summit Lviv",
+    "organizationId": "forma-events",
+    "topics": [
+      "business"
+    ],
+    "description": [
+      "Founders Summit Lviv — стратегічний бізнес-форум для засновників, власників компаній, CEO та інвесторів про фокус, ризики й диверсифікацію: на чому концентрувати ресурси, коли масштабуватися і як ухвалювати рішення, що визначають майбутнє бізнесу.",
+      "Програма складається з відвертих розмов із засновниками (Founders Talks), дискусій підприємців та інвесторів і практичного блоку з реальними бізнес-кейсами (Founders Lab). Поза сценою — нетворкінг, Expo Zone із сервісами для бізнесу та afterparty. Перший саміт відбувся 11 грудня 2025 року, другий, «Вага рішень», — 10 грудня 2026-го."
+    ],
+    "audience": "Засновники й власники бізнесу, CEO та топменеджери, серійні підприємці, інвестори, керівники з розвитку, фінансів і операцій.",
+    "place": "Barvy Event Hall, вул. Мельника, 18.",
+    "whenText": "Щорічно у грудні (11 грудня 2025 року, 10 грудня 2026-го).",
+    "months": [
+      12
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Платно: у 2026 році квитки на старті продажів коштували від 3500 до 8500 грн залежно від пакета, онлайн-трансляція — від 1000 грн. Ближче до дати ціна зростає.",
+    "links": [
+      {
+        "title": "Founders Summit Lviv",
+        "url": "https://founders.com.ua/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@founders.summit)",
+        "url": "https://www.instagram.com/founders.summit/",
+        "type": "instagram"
+      },
+      {
+        "title": "Founders Summit Lviv",
+        "url": "https://www.facebook.com/profile.php?id=61582926995595",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/founders-summit-lviv/cover.webp",
+    "gallery": [
+      "images/founders-summit-lviv/1.webp",
+      "images/founders-summit-lviv/2.webp",
+      "images/founders-summit-lviv/3.webp",
+      "images/founders-summit-lviv/4.webp",
+      "images/founders-summit-lviv/5.webp"
+    ]
+  },
+  {
+    "id": "wellness-forum",
+    "name": "Wellness Forum",
+    "organizationId": "forma-events",
+    "topics": [
+      "business"
+    ],
+    "description": [
+      "Wellness Forum «Енергія як капітал» — стратегічний форум про енергію, здоров’я та ясність мислення для підприємців, CEO й інвесторів. Здоров’я тут розглядають не як побутову тему, а як стратегічний актив, від якого залежать якість рішень і робота на довгій дистанції.",
+      "Програма складається з чотирьох блоків: біологічний капітал (сон, метаболізм, гормональний баланс), когнітивний і ментальний капітал (фокус, стрес, емоційна регуляція), довголіття як стратегія та wellness як ринок — приватна медицина, wellness-туризм, інвестиції. Серед спікерів першого форуму 2026 року — кардіохірург Борис Тодуров, головний редактор Forbes Ukraine Борис Давиденко та CEO Superhumans Center Ольга Руднєва. Частина програми — благодійний аукціон на підтримку захисників."
+    ],
+    "audience": "Підприємці та власники бізнесу, CEO й топменеджери, інвестори, HR-директори, експерти індустрії wellness, краси та здоров’я.",
+    "place": "Проводиться в різних спа-готелях. У 2026 році — Edem Resort Medical & SPA під Львовом.",
+    "whenText": "Влітку, у червні (перший форум — 11 червня 2026 року).",
+    "months": [
+      6
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Платно: у 2026 році квитки коштували від 4400 до 80 000 грн залежно від пакета й дати купівлі, онлайн-трансляція — від 2000 грн. Для команд від трьох людей — знижка 25–35%.",
+    "links": [
+      {
+        "title": "Wellness Forum",
+        "url": "https://www.wellnessforum.com.ua/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@wellness.forum.ua)",
+        "url": "https://www.instagram.com/wellness.forum.ua/",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/wellness-forum/cover.webp",
+    "gallery": [
+      "images/wellness-forum/1.webp",
+      "images/wellness-forum/2.webp",
+      "images/wellness-forum/3.webp"
+    ]
+  },
+  {
+    "id": "lviv-medical-forum",
+    "name": "Lviv Medical Forum",
+    "organizationId": "forma-events",
+    "topics": [
+      "business"
+    ],
+    "description": [
+      "Lviv Medical Forum — стратегічний форум про економіку та майбутнє медичної галузі України. Він збирає власників клінік, лікарів із власною практикою, CEO, інвесторів, представників фарми й medtech, щоб говорити про медицину як про бізнес: юніт-економіку клініки, фінансову стійкість і масштабування.",
+      "Тематичні блоки — економіка та управління, технології та AI, нові моделі медичного бізнесу, бренд і довіра пацієнта; окремо працюють Biohacking Stage і зона medical expo. У 2026 році форум зібрав близько 1400 учасників і понад 25 спікерів, серед них кардіохірург Борис Тодуров, засновник Fedoriv Group Андрій Федорів і ректор Львівського медичного університету Орест Чемерис."
+    ],
+    "audience": "Власники та засновники клінік, CEO й менеджмент медичних закладів, лікарі з власною практикою, інвестори, представники фармацевтичних і medtech-компаній.",
+    "place": "LEM Station, креативний простір у колишньому трамвайному депо.",
+    "whenText": "Восени, наприкінці жовтня (у 2026 році — 30 жовтня).",
+    "months": [
+      10
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Платно: у 2026 році квитки коштували від 7900 до 17 500 грн залежно від пакета, окремий квиток на Biohacking Stage — 4000 грн.",
+    "links": [
+      {
+        "title": "Lviv Medical Forum",
+        "url": "https://lvivmedforum.com/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@lviv.medical.forum)",
+        "url": "https://www.instagram.com/lviv.medical.forum/",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/lviv-medical-forum/cover.webp",
+    "gallery": [
+      "images/lviv-medical-forum/1.webp",
+      "images/lviv-medical-forum/2.webp",
+      "images/lviv-medical-forum/3.webp",
+      "images/lviv-medical-forum/4.webp",
+      "images/lviv-medical-forum/5.webp",
+      "images/lviv-medical-forum/6.webp"
+    ]
+  },
+  {
+    "id": "industry-forum-lviv",
+    "name": "Industry Forum Lviv",
+    "organizationId": null,
+    "topics": [
+      "business"
+    ],
+    "description": [
+      "Industry Forum Lviv — індустріальний форум і виставка для виробничого бізнесу, єдина така подія на заході України. Вона об’єднує чотири галузі — металообробку, деревообробку, енергетику та пакування — і збирає виробників, постачальників обладнання та керівників підприємств. Організатор — ПрАТ «Гал-Експо».",
+      "Три дні на «Арені Львів» поєднують виставку обладнання з демонстраціями техніки в роботі та ділову програму: панельні дискусії про нову індустріалізацію, гранти для виробників і експорт, практикуми з LEAN та AI для бізнесу. У межах форуму проходять ярмарок вакансій Work in Industry, Міжнародний лісопромисловий форум і Львівський експортний форум."
+    ],
+    "audience": "Керівники підприємств, інженери, технологи, виробничі фахівці, малий і середній бізнес, інвестори та всі, хто працює в промисловості.",
+    "place": "«Арена Львів», вул. Стрийська, 199.",
+    "whenText": "Щорічно в червні, три дні (10–12 червня 2026 року; наступний форум — у червні 2027-го).",
+    "months": [
+      6
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "free",
+    "priceText": "Для відвідувачів вхід вільний за попередньою реєстрацією. Участь експонентів платна й залежить від формату та площі стенду.",
+    "links": [
+      {
+        "title": "Industry Forum Lviv",
+        "url": "https://industryforum.com.ua/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@industryforumlviv)",
+        "url": "https://www.instagram.com/industryforumlviv/",
+        "type": "instagram"
+      },
+      {
+        "title": "Industry Forum Lviv",
+        "url": "https://www.facebook.com/IndustryForumLviv/",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/industry-forum-lviv/cover.webp",
+    "gallery": [
+      "images/industry-forum-lviv/1.webp",
+      "images/industry-forum-lviv/2.webp",
+      "images/industry-forum-lviv/3.webp"
+    ]
+  },
+  {
+    "id": "event-industry-forum",
+    "name": "Event Industry Forum",
+    "organizationId": null,
+    "topics": [
+      "business"
+    ],
+    "description": [
+      "Event Industry Forum (EIF) — професійний форум української івент-індустрії для організаторів подій, агенцій, весільних планерів, технічних підрядників, локацій і артистів. Його заснував Денис Ринський, CEO агенції Global Events. Перший EIF відбувся у лютому 2018 року; до 2021-го форум проходив щороку й збирав до 1400 учасників, а у 2026-му повернувся після п’ятирічної паузи.",
+      "Програма — кілька тематичних сцен і треків: Main Stage про тренди галузі, технічний, весільний і шоу-бізнес треки, взаємодія з локаціями й постачальниками, практична Eventology Room. Поруч працює Event Expo — виставка світла, звуку, сценічних рішень, кейтерингу, декору, квиткових сервісів і AI-рішень для подій, а завершує день afterparty."
+    ],
+    "audience": "Івент-менеджери та агенції, весільні організатори, технічні підрядники, локації й постачальники, артисти та їхні менеджери, маркетологи.",
+    "place": "Emily Resort (у 2027 році).",
+    "whenText": "Щорічно наприкінці лютого (наступний форум — 25 лютого 2027 року).",
+    "months": [
+      2
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Платно: на EIF 2027 квитки коштують від 2990 до 8590 грн залежно від пакета й дати купівлі, онлайн-доступ — від 890 грн.",
+    "links": [
+      {
+        "title": "Event Industry Forum",
+        "url": "https://eif.com.ua/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@eventindustryforum)",
+        "url": "https://www.instagram.com/eventindustryforum/",
+        "type": "instagram"
+      },
+      {
+        "title": "Event Industry Forum",
+        "url": "https://www.facebook.com/eventindustryforum/",
+        "type": "facebook"
+      }
+    ],
+    "cover": "images/event-industry-forum/cover.webp",
+    "gallery": [
+      "images/event-industry-forum/1.webp",
+      "images/event-industry-forum/2.webp",
+      "images/event-industry-forum/3.webp",
+      "images/event-industry-forum/4.webp",
+      "images/event-industry-forum/5.webp",
+      "images/event-industry-forum/6.webp"
     ]
   },
   {
