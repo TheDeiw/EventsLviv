@@ -18,7 +18,7 @@
   "logo": true
  },
  "images/coffee-books-vintage-festival/cover.webp": {
-  "mat": null
+  "mat": "#005771"
  },
  "images/craft-beer-and-vinyl-music-festival/cover.webp": {
   "mat": "#ffffff"
@@ -74,10 +74,10 @@
   "mat": null
  },
  "images/khvostyk-fest/cover.webp": {
-  "mat": "#f4f0ed"
+  "mat": "#f3efec"
  },
  "images/king-kross-fest/cover.webp": {
-  "mat": null
+  "mat": "#fefffe"
  },
  "images/kontrasty/cover.webp": {
   "mat": null
@@ -101,7 +101,7 @@
   "mat": "#65529b"
  },
  "images/lviv-fashion-week/cover.webp": {
-  "mat": "#dff7fe"
+  "mat": "#ffffff"
  },
  "images/lviv-half-marathon/cover.webp": {
   "mat": null
@@ -208,7 +208,8 @@
   "mat": "#7b00fd"
  },
  "images/proggy-buggy/cover.webp": {
-  "mat": "#7757a7"
+  "mat": "#efece6",
+  "logo": true
  },
  "images/re-farm/cover.webp": {
   "mat": null
@@ -253,6 +254,7 @@
   "mat": "#2e4e85"
  },
  "images/zolotyi-lev/cover.webp": {
-  "mat": null
+  "mat": "#1c1c20",
+  "logo": true
  }
 }
