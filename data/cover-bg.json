@@ -42,7 +42,7 @@
   "mat": "#20225a"
  },
  "images/forum-451e/cover.webp": {
-  "mat": null
+  "mat": "#000000"
  },
  "images/founders-summit-lviv/cover.webp": {
   "mat": "#1c1c20",
@@ -65,7 +65,7 @@
   "mat": "#060c0a"
  },
  "images/it-arena/cover.webp": {
-  "mat": null
+  "mat": "#263059"
  },
  "images/it-future-fest/cover.webp": {
   "mat": null
@@ -95,7 +95,8 @@
   "mat": "#ffffff"
  },
  "images/lviv-design-day/cover.webp": {
-  "mat": null
+  "mat": "#efece6",
+  "logo": true
  },
  "images/lviv-direction-qaday/cover.webp": {
   "mat": "#65529b"
@@ -230,7 +231,8 @@
   "mat": "#f7530b"
  },
  "images/urban-mobility-forum/cover.webp": {
-  "mat": null
+  "mat": "#1c1c20",
+  "logo": true
  },
  "images/vchyteli-maibutnoho/cover.webp": {
   "mat": "#f8af16"

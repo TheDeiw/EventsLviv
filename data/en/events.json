@@ -83,7 +83,8 @@
     "links": [
       "IT Arena 2026",
       "Instagram (@itarena.ua)",
-      "IT Arena | Lviv"
+      "IT Arena | Lviv",
+      "IT Arena"
     ]
   },
   "youth-speak-forum": {
@@ -381,7 +382,7 @@
     ],
     "audience": "A very wide audience: mall visitors, families with children, young people and everyone who wants to take part in charity and have fun.",
     "place": "At the King Cross Leopolis shopping and entertainment center (30 Stryiska St., Sokilnyky village).",
-    "whenText": "Usually held in autumn (for example, in September), but it is worth following the announcements.",
+    "whenText": "Usually held in August, but it is worth following the announcements.",
     "priceText": "Free entry. Funds are raised through activities at the fair, donations and participation in workshops.",
     "links": [
       "King Cross Leopolis",
@@ -567,7 +568,9 @@
     "whenText": "Annually, in autumn (September–October).",
     "priceText": "Paid entry, with several ticket categories.",
     "links": [
-      "Lviv Design Day on Lviv.travel"
+      "Lviv Design Day on Lviv.travel",
+      "Instagram (@lvivdesignday_official)",
+      "Lviv Design Day"
     ]
   },
   "zemlya-poetiv": {
@@ -579,7 +582,12 @@
     "audience": "Poetry and literature lovers, readers, writers, students and everyone who cares about the Ukrainian word.",
     "place": "!FESTrepublic.",
     "whenText": "Annually, in early November (since 2024).",
-    "priceText": "Entry by ticket."
+    "priceText": "Entry by ticket.",
+    "links": [
+      "Land of Poets",
+      "Instagram (@zemlia.poetiv.fest)",
+      "Land of Poets"
+    ]
   },
   "bestsellerfest": {
     "description": [
@@ -589,7 +597,12 @@
     "audience": "Readers and book lovers, families with children, writers, publishers and everyone who follows new books.",
     "place": "!FESTrepublic.",
     "whenText": "Annually, in August (since 2025).",
-    "priceText": "Entry is mostly paid: in 2025 the first day was free, then a ticket cost 300 UAH, and children under 12 entered free."
+    "priceText": "Entry is mostly paid: in 2025 the first day was free, then a ticket cost 300 UAH, and children under 12 entered free.",
+    "links": [
+      "BestsellerFest",
+      "Instagram (@bestsellerfest)",
+      "BestsellerFest"
+    ]
   },
   "proggy-buggy": {
     "description": [
@@ -663,6 +676,8 @@
     "whenText": "Annually, in late September or early October.",
     "priceText": "Entry by ticket; in 2025 military personnel attended for free.",
     "links": [
+      "Golden Lion",
+      "Instagram (@teatr_voskresinnia)",
       "Voskresinnia Theatre"
     ]
   },
@@ -676,6 +691,8 @@
     "whenText": "Twice a year: in May and in October.",
     "priceText": "Access to shows and lectures by charitable donation (“invitation by donation”).",
     "links": [
+      "Lviv Fashion Week",
+      "Instagram (@lvivfw)",
       "Lviv Fashion Week"
     ]
   },
@@ -733,9 +750,9 @@
     "whenText": "Every September: 16–18 September in 2024, 7–9 September in 2026. The first forum, in 2023, took place in April.",
     "priceText": "Participation by application, which the organizers must confirm. The cost has not been announced separately, so check the announcements.",
     "links": [
-      "CIVINET Ukraine",
-      "CIVINET Ukraine",
-      "Urban Mobility Forum 2026: Lviv City Council news"
+      "Urban Mobility Forum",
+      "Urban Mobility Forum",
+      "CIVINET Ukraine"
     ]
   },
   "lviv-build-forum": {

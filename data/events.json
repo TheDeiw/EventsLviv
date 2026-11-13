@@ -242,13 +242,21 @@
         "title": "ІТ Arena | Lviv",
         "url": "https://www.facebook.com/itarena.ua/",
         "type": "facebook"
+      },
+      {
+        "title": "IT Arena",
+        "url": "https://www.linkedin.com/company/itarena/posts/",
+        "type": "linkedin"
       }
     ],
     "cover": "images/it-arena/cover.webp",
     "gallery": [
       "images/it-arena/1.webp",
       "images/it-arena/2.webp",
-      "images/it-arena/3.webp"
+      "images/it-arena/3.webp",
+      "images/it-arena/4.webp",
+      "images/it-arena/5.webp",
+      "images/it-arena/6.webp"
     ]
   },
   {
@@ -459,7 +467,9 @@
     "gallery": [
       "images/craft-beer-and-vinyl-music-festival/1.webp",
       "images/craft-beer-and-vinyl-music-festival/2.webp",
-      "images/craft-beer-and-vinyl-music-festival/3.webp"
+      "images/craft-beer-and-vinyl-music-festival/3.webp",
+      "images/craft-beer-and-vinyl-music-festival/4.webp",
+      "images/craft-beer-and-vinyl-music-festival/5.webp"
     ]
   },
   {
@@ -636,7 +646,9 @@
     "gallery": [
       "images/coffee-books-vintage-festival/1.webp",
       "images/coffee-books-vintage-festival/2.webp",
-      "images/coffee-books-vintage-festival/3.webp"
+      "images/coffee-books-vintage-festival/3.webp",
+      "images/coffee-books-vintage-festival/4.webp",
+      "images/coffee-books-vintage-festival/5.webp"
     ]
   },
   {
@@ -788,18 +800,18 @@
     "priceText": "Участь за попередньою заявкою, яку мають підтвердити організатори. Про вартість окремо не повідомляли, тож умови варто уточнювати в анонсах.",
     "links": [
       {
-        "title": "CIVINET Ukraine",
-        "url": "https://civitas.eu/civinets/civinet-ukraine",
+        "title": "Urban Mobility Forum",
+        "url": "https://mobilityforum.com.ua/",
         "type": "site"
       },
       {
-        "title": "CIVINET Ukraine",
-        "url": "https://www.linkedin.com/company/civinet-ukraine/",
-        "type": "linkedin"
+        "title": "Urban Mobility Forum",
+        "url": "https://www.facebook.com/mobilitylviv",
+        "type": "facebook"
       },
       {
-        "title": "Urban Mobility Forum 2026: новина ЛМР",
-        "url": "https://city-adm.lviv.ua/news/city/transport/u-lvovi-startuvav-iv-urban-mobility-forum-pivtysiachi-uchasnykiv-obhovoriuiut-maibutnie-mobilnosti-ukrainy/",
+        "title": "CIVINET Ukraine",
+        "url": "https://civitas.eu/civinet-ukraine-ukrainian",
         "type": "site"
       }
     ],
@@ -1418,11 +1430,9 @@
     ],
     "audience": "Дуже широка аудиторія: відвідувачі торгового центру, сім'ї з дітьми, молодь та всі, хто хоче долучитися до благодійності та весело провести час.",
     "place": "На території торгово-розважального центру King Cross Leopolis (с. Сокільники, вул. Стрийська, 30).",
-    "whenText": "Зазвичай проходить восени (наприклад, у вересні), але варто слідкувати за анонсами.",
+    "whenText": "Зазвичай проходить у серпні, але варто слідкувати за анонсами.",
     "months": [
-      9,
-      10,
-      11
+      8
     ],
     "yearRound": false,
     "nextDate": null,
@@ -1649,7 +1659,10 @@
     "cover": "images/forum-451e/cover.webp",
     "gallery": [
       "images/forum-451e/1.webp",
-      "images/forum-451e/2.webp"
+      "images/forum-451e/2.webp",
+      "images/forum-451e/3.webp",
+      "images/forum-451e/4.webp",
+      "images/forum-451e/5.webp"
     ]
   },
   {
@@ -1947,10 +1960,27 @@
         "title": "Lviv Design Day на Lviv.travel",
         "url": "https://lviv.travel/en/events/lviv-design-day",
         "type": "site"
+      },
+      {
+        "title": "Instagram (@lvivdesignday_official)",
+        "url": "https://www.instagram.com/lvivdesignday_official/",
+        "type": "instagram"
+      },
+      {
+        "title": "Lviv Design Day",
+        "url": "https://www.facebook.com/profile.php?id=61583657221477",
+        "type": "facebook"
       }
     ],
     "cover": "images/lviv-design-day/cover.webp",
-    "gallery": []
+    "gallery": [
+      "images/lviv-design-day/1.webp",
+      "images/lviv-design-day/2.webp",
+      "images/lviv-design-day/3.webp",
+      "images/lviv-design-day/4.webp",
+      "images/lviv-design-day/5.webp",
+      "images/lviv-design-day/6.webp"
+    ]
   },
   {
     "id": "zemlya-poetiv",
@@ -1973,14 +2003,37 @@
     "nextDate": null,
     "entry": "paid",
     "priceText": "Вхід за квитками.",
-    "links": [],
+    "links": [
+      {
+        "title": "Земля Поетів",
+        "url": "https://poetry.fest.lviv.ua/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@zemlia.poetiv.fest)",
+        "url": "https://www.instagram.com/zemlia.poetiv.fest/",
+        "type": "instagram"
+      },
+      {
+        "title": "Земля Поетів",
+        "url": "https://www.facebook.com/zemlia.poetiv.fest/",
+        "type": "facebook"
+      }
+    ],
     "cover": "images/zemlya-poetiv/cover.webp",
-    "gallery": []
+    "gallery": [
+      "images/zemlya-poetiv/1.webp",
+      "images/zemlya-poetiv/2.webp",
+      "images/zemlya-poetiv/3.webp",
+      "images/zemlya-poetiv/4.webp",
+      "images/zemlya-poetiv/5.webp",
+      "images/zemlya-poetiv/6.webp"
+    ]
   },
   {
     "id": "bestsellerfest",
     "name": "BestsellerFest",
-    "organizationId": null,
+    "organizationId": "festrepublic",
     "topics": [
       "culture",
       "markets"
@@ -1999,9 +2052,32 @@
     "nextDate": null,
     "entry": "mixed",
     "priceText": "Вхід переважно платний: у 2025 році перший день був безкоштовним, далі квиток коштував 300 гривень, діти до 12 років проходили безплатно.",
-    "links": [],
+    "links": [
+      {
+        "title": "BestsellerFest",
+        "url": "https://bestseller.fest.lviv.ua/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@bestsellerfest)",
+        "url": "https://www.instagram.com/bestsellerfest/",
+        "type": "instagram"
+      },
+      {
+        "title": "BestsellerFest",
+        "url": "https://www.facebook.com/bestsellerfest/",
+        "type": "facebook"
+      }
+    ],
     "cover": "images/bestsellerfest/cover.webp",
-    "gallery": []
+    "gallery": [
+      "images/bestsellerfest/1.webp",
+      "images/bestsellerfest/2.webp",
+      "images/bestsellerfest/3.webp",
+      "images/bestsellerfest/4.webp",
+      "images/bestsellerfest/5.webp",
+      "images/bestsellerfest/6.webp"
+    ]
   },
   {
     "id": "proggy-buggy",
@@ -2126,7 +2202,11 @@
       }
     ],
     "cover": "images/virtuozy/cover.webp",
-    "gallery": []
+    "gallery": [
+      "images/virtuozy/1.webp",
+      "images/virtuozy/2.webp",
+      "images/virtuozy/3.webp"
+    ]
   },
   {
     "id": "kontrasty",
@@ -2159,7 +2239,11 @@
       }
     ],
     "cover": "images/kontrasty/cover.webp",
-    "gallery": []
+    "gallery": [
+      "images/kontrasty/1.webp",
+      "images/kontrasty/2.webp",
+      "images/kontrasty/3.webp"
+    ]
   },
   {
     "id": "zolotyi-lev",
@@ -2184,13 +2268,29 @@
     "priceText": "Вхід за квитками; у 2025 році військові відвідували вистави безкоштовно.",
     "links": [
       {
+        "title": "Золотий лев",
+        "url": "https://golden-lion.com.ua/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@teatr_voskresinnia)",
+        "url": "https://www.instagram.com/teatr_voskresinnia/",
+        "type": "instagram"
+      },
+      {
         "title": "Театр «Воскресіння»",
         "url": "https://www.facebook.com/teatrvoskresinnia/",
         "type": "facebook"
       }
     ],
     "cover": "images/zolotyi-lev/cover.webp",
-    "gallery": []
+    "gallery": [
+      "images/zolotyi-lev/1.webp",
+      "images/zolotyi-lev/2.webp",
+      "images/zolotyi-lev/3.webp",
+      "images/zolotyi-lev/4.webp",
+      "images/zolotyi-lev/5.webp"
+    ]
   },
   {
     "id": "lviv-fashion-week",
@@ -2219,10 +2319,26 @@
         "title": "Lviv Fashion Week",
         "url": "https://lvivfashionweek.com/",
         "type": "site"
+      },
+      {
+        "title": "Instagram (@lvivfw)",
+        "url": "https://www.instagram.com/lvivfw/",
+        "type": "instagram"
+      },
+      {
+        "title": "Lviv Fashion Week",
+        "url": "https://www.facebook.com/lvivfashionweek",
+        "type": "facebook"
       }
     ],
     "cover": "images/lviv-fashion-week/cover.webp",
-    "gallery": []
+    "gallery": [
+      "images/lviv-fashion-week/1.webp",
+      "images/lviv-fashion-week/2.webp",
+      "images/lviv-fashion-week/3.webp",
+      "images/lviv-fashion-week/4.webp",
+      "images/lviv-fashion-week/5.webp"
+    ]
   },
   {
     "id": "rizdvianyi-yarmarok",
