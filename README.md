@@ -28,7 +28,7 @@ The project is run by volunteers and updated irregularly. New events can be sugg
 
 ## Features
 
-- **Event list** (`/events/`): a large search by name or organizer (the `/` key) and filters that work together: topic, organizer, entry (free / paid), season. Events of the current season come first, then the following seasons; year-round events are spread between them and reshuffled every season (worked out in the browser, so the order changes without a rebuild).
+- **Event list** (`/events/`): a large search by name or organizer (the `/` key) and filters that work together: topic, organizer, entry (free / paid), season. Events of the current month come first, then the following months; year-round events are spread between them and reshuffled every month (worked out in the browser, so the order changes without a rebuild).
 - **Calendar** (`/calendar/`): explains that the site is an overview and links to listings, IT calendars, university events and Telegram channels where the exact dates are.
 - **A page for every event** (`/events/<id>/`) with a photo gallery and viewer and links with service logos; **organization pages** (`/organizations/<id>/`) with a description and their events. The organization list is grouped by type.
 - **Home page** with a hero and a text about the project.

@@ -366,7 +366,7 @@
     ],
     "audience": "Responsible pet owners, people dreaming of a pet, pet business representatives and everyone who wants to spend time in an animal-friendly atmosphere.",
     "place": "The event takes place in the Park of Culture.",
-    "whenText": "2025 is the first year of this fest, but most likely it will be held once a year.",
+    "whenText": "Held in July (in 2026: July 18–19, Culture Park).",
     "priceText": "Paid entry. The price depends on the ticket.",
     "links": [
       "Khvostyk Fest 2026: dog festival in Lviv | 18–19 July, Culture Park",
@@ -415,7 +415,7 @@
     ],
     "audience": "Game developers, game designers, 2D/3D artists, animators, sound engineers, publishers, as well as students of related fields and anyone who wants to start a career in game dev.",
     "place": "Premier Hotel Dnister",
-    "whenText": "Usually annually, at different times of year",
+    "whenText": "Usually in April, but it may take place on other dates too.",
     "priceText": "Paid entry. The price depends on the ticket type (for example, Standard, Premium) and the time of purchase.",
     "links": [
       "Home"
@@ -429,7 +429,7 @@
     ],
     "audience": "Investors, venture fund representatives, business angels, heads of manufacturing companies, engineers, hardware developers, as well as media representatives covering technology and innovation.",
     "place": "Locations may change, but usually these are modern innovation centers or event spaces in Lviv that fit the technological theme of the event.",
-    "whenText": "Held annually. Follow the cluster's official pages for announcements.",
+    "whenText": "Held annually, in August. Follow the cluster's official pages for announcements.",
     "priceText": "The participation format may vary. For participating startups it is usually free (after selection); visiting investors may need to register or buy a ticket.",
     "links": [
       "IRON DEMO 2025"
@@ -545,7 +545,8 @@
     "priceText": "Usually free, registration required.",
     "links": [
       "Stairs on the GDG Lviv page",
-      "GDG Lviv on Meetup"
+      "GDG Lviv",
+      "GDG Lviv"
     ]
   },
   "re-farm": {
@@ -612,7 +613,11 @@
     "audience": "Students, high school students, developers of any level and anyone who enjoys algorithmic problems.",
     "place": "Online, plus DataArt offices and partner hubs, including in Lviv.",
     "whenText": "Annually, usually in May–June; some years in autumn.",
-    "priceText": "Free to participate, registration required."
+    "priceText": "Free to participate, registration required.",
+    "links": [
+      "Proggy-Buggy Contest",
+      "Proggy-Buggy Contest"
+    ]
   },
   "dataart-it-camp": {
     "description": [
@@ -716,7 +721,11 @@
     "audience": "Families with children, people with a sweet tooth, locals and visitors who want to celebrate Christmas together.",
     "place": "Lviv Palace of Arts (17 Kopernyka St).",
     "whenText": "Annually, in late December, during the Christmas days (December 25–28 in 2025).",
-    "priceText": "Entry by ticket; those who bought tickets in advance got a mug or a glass as a gift."
+    "priceText": "Entry by ticket; those who bought tickets in advance got a mug or a glass as a gift.",
+    "links": [
+      "Pampukh and Mulled Wine Festival",
+      "Instagram (@pampukh_and_mulled_wine_fest)"
+    ]
   },
   "lvivskyi-yarmarok-smaku": {
     "name": "Lviv Taste Fair",

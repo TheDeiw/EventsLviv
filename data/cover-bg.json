@@ -133,7 +133,7 @@
   "mat": "#ffffff"
  },
  "images/molodvizh/cover.webp": {
-  "mat": null
+  "mat": "#000000"
  },
  "images/ol-science-tech-fest/cover.webp": {
   "mat": null
@@ -200,7 +200,7 @@
   "mat": "#feffc6"
  },
  "images/organizations/tvory.webp": {
-  "mat": "#ffffff"
+  "mat": "#101010"
  },
  "images/organizations/ukrainski-studenty-za-svobodu.webp": {
   "mat": "#fdd525"

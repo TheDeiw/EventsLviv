@@ -37,7 +37,10 @@
     "gallery": [
       "images/molodvizh/1.webp",
       "images/molodvizh/2.webp",
-      "images/molodvizh/3.webp"
+      "images/molodvizh/3.webp",
+      "images/molodvizh/4.webp",
+      "images/molodvizh/5.webp",
+      "images/molodvizh/6.webp"
     ]
   },
   {
@@ -1390,8 +1393,10 @@
     ],
     "audience": "Відповідальні власники тварин, люди, що мріють про домашнього улюбленця, представники зообізнесу та всі, хто хоче провести час у дружній до тварин атмосфері.",
     "place": "Подія проходить на території Парку культури.",
-    "whenText": "Поки 2025 є першим роком проведення цього фесту, але скоріше за все це буде раз на рік.",
-    "months": [],
+    "whenText": "Проходить у липні (у 2026 році — 18–19 липня, Парк культури).",
+    "months": [
+      7
+    ],
     "yearRound": false,
     "nextDate": null,
     "entry": "paid",
@@ -1527,8 +1532,10 @@
     ],
     "audience": "Розробники ігор, гейм-дизайнери, 2D/3D художники, аніматори, звукорежисери, видавці, а також студенти профільних напрямків та всі, хто прагне почати кар'єру в геймдеві.",
     "place": "Premier Hotel Dnister",
-    "whenText": "Зазвичай щорічно, у різну пору",
-    "months": [],
+    "whenText": "Зазвичай у квітні, але може проходити й в інші дати.",
+    "months": [
+      4
+    ],
     "yearRound": false,
     "nextDate": null,
     "entry": "paid",
@@ -1562,8 +1569,10 @@
     ],
     "audience": "Інвестори, представники венчурних фондів, бізнес-ангели, керівники виробничих підприємств, інженери, hardware-розробники, а також представники ЗМІ, що висвітлюють теми технологій та інновацій.",
     "place": "Локації можуть змінюватись, але зазвичай це сучасні інноваційні центри або івент-простори у Львові, що відповідають технологічній тематиці заходу.",
-    "whenText": "Проводиться щорічно. За анонсами потрібно слідкувати на офіційних сторінках кластера.",
-    "months": [],
+    "whenText": "Проводиться щорічно, у серпні. За анонсами потрібно слідкувати на офіційних сторінках кластера.",
+    "months": [
+      8
+    ],
     "yearRound": false,
     "nextDate": null,
     "entry": "mixed",
@@ -1898,13 +1907,24 @@
         "type": "site"
       },
       {
-        "title": "GDG Lviv на Meetup",
-        "url": "https://www.meetup.com/gdg-lviv/",
-        "type": "site"
+        "title": "GDG Lviv",
+        "url": "https://t.me/gdg_lviv",
+        "type": "telegram"
+      },
+      {
+        "title": "GDG Lviv",
+        "url": "https://www.linkedin.com/company/google-developers-group-lviv/posts/",
+        "type": "linkedin"
       }
     ],
     "cover": "images/gdg-stairs/cover.webp",
-    "gallery": []
+    "gallery": [
+      "images/gdg-stairs/1.webp",
+      "images/gdg-stairs/2.webp",
+      "images/gdg-stairs/3.webp",
+      "images/gdg-stairs/4.webp",
+      "images/gdg-stairs/5.webp"
+    ]
   },
   {
     "id": "re-farm",
@@ -2108,10 +2128,19 @@
         "title": "Proggy-Buggy Contest",
         "url": "https://proggy-buggy.com/",
         "type": "site"
+      },
+      {
+        "title": "Proggy-Buggy Contest",
+        "url": "https://www.facebook.com/profile.php?id=100088838944014",
+        "type": "facebook"
       }
     ],
     "cover": "images/proggy-buggy/cover.webp",
-    "gallery": []
+    "gallery": [
+      "images/proggy-buggy/1.webp",
+      "images/proggy-buggy/2.webp",
+      "images/proggy-buggy/3.webp"
+    ]
   },
   {
     "id": "dataart-it-camp",
@@ -2364,7 +2393,11 @@
     "priceText": "Вхід вільний.",
     "links": [],
     "cover": "images/rizdvianyi-yarmarok/cover.webp",
-    "gallery": []
+    "gallery": [
+      "images/rizdvianyi-yarmarok/1.webp",
+      "images/rizdvianyi-yarmarok/2.webp",
+      "images/rizdvianyi-yarmarok/3.webp"
+    ]
   },
   {
     "id": "festyval-pampukha-i-hlintveinu",
@@ -2387,9 +2420,26 @@
     "nextDate": null,
     "entry": "paid",
     "priceText": "Вхід за квитками; ті, хто купував квиток заздалегідь, отримували в подарунок горнятко або келих.",
-    "links": [],
+    "links": [
+      {
+        "title": "Фестиваль Пампуха і Глінтвейну",
+        "url": "https://www.facebook.com/PampuhGluhweinFest",
+        "type": "facebook"
+      },
+      {
+        "title": "Instagram (@pampukh_and_mulled_wine_fest)",
+        "url": "https://www.instagram.com/pampukh_and_mulled_wine_fest/",
+        "type": "instagram"
+      }
+    ],
     "cover": "images/festyval-pampukha-i-hlintveinu/cover.webp",
-    "gallery": []
+    "gallery": [
+      "images/festyval-pampukha-i-hlintveinu/1.webp",
+      "images/festyval-pampukha-i-hlintveinu/2.webp",
+      "images/festyval-pampukha-i-hlintveinu/3.webp",
+      "images/festyval-pampukha-i-hlintveinu/4.webp",
+      "images/festyval-pampukha-i-hlintveinu/5.webp"
+    ]
   },
   {
     "id": "lvivskyi-yarmarok-smaku",

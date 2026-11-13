@@ -12,6 +12,26 @@
     ],
     "links": [
       {
+        "title": "ТВОРИ",
+        "url": "https://www.tvory.net/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@tvory.lviv)",
+        "url": "https://www.instagram.com/tvory.lviv/",
+        "type": "instagram"
+      },
+      {
+        "title": "ТВОРИ",
+        "url": "https://www.facebook.com/tvorylviv/",
+        "type": "facebook"
+      },
+      {
+        "title": "ТВОРИ",
+        "url": "https://www.linkedin.com/company/youth-organization-tvory/posts/",
+        "type": "linkedin"
+      },
+      {
         "title": "Молодіжна столиця Європи 2025",
         "url": "https://www.instagram.com/lviveyc2025/",
         "type": "instagram"
@@ -351,6 +371,16 @@
         "title": "GDG Lviv на Meetup",
         "url": "https://www.meetup.com/gdg-lviv/",
         "type": "site"
+      },
+      {
+        "title": "GDG Lviv",
+        "url": "https://t.me/gdg_lviv",
+        "type": "telegram"
+      },
+      {
+        "title": "GDG Lviv",
+        "url": "https://www.linkedin.com/company/google-developers-group-lviv/posts/",
+        "type": "linkedin"
       }
     ],
     "logo": "images/organizations/gdg-lviv.webp"

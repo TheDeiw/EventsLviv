@@ -50,14 +50,13 @@ const countTpl = T("events.count");
         <div class="grid" id="grid">
           {sorted.map((e) => <EventCard event={e} />)}
         </div>
-        {/* runs before the first paint, so the cards never jump: the current season first, then the next ones in order;
-            year-round events get a random spot that is the same all season and changes when the season does */}
+        {/* runs before the first paint, so the cards never jump: the current month first, then the next ones in order;
+            year-round events get a random spot that is the same all month and changes when the month does */}
         <script is:inline>
           (() => {
             const now = new Date();
-            const m = now.getMonth() + 1;
-            const start = [12, 3, 6, 9][Math.floor((m % 12) / 3)]; // first month of this season
-            const seed = `${m === 12 ? now.getFullYear() + 1 : now.getFullYear()}-${start}`;
+            const start = now.getMonth() + 1; // this month
+            const seed = `${now.getFullYear()}-${start}`;
             const rand = (s) => {
               let h = 2166136261;
               for (let i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 16777619);
