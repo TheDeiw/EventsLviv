@@ -247,7 +247,7 @@ const ME = [
   .nots li::before { content: "✕"; flex: none; color: var(--c); font-size: 12px; }
 
   .author { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 28px 44px; align-items: center; }
-  .author .me { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; }
+  .author .me { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; box-sizing: border-box; border: 1px solid var(--line); border-radius: var(--r); }
   .author p:not(.eyebrow) { margin: 0 0 20px; max-width: 60ch; color: var(--muted); text-wrap: pretty; }
   .author h2 { margin-bottom: 12px; font-size: 28px; }
   /* torn-out prints in one row, each lying a little on the next; the white ragged rim is part of the files */
@@ -275,9 +275,9 @@ const ME = [
     .about { gap: 48px; padding: 16px 16px 8px; }
     .panels { grid-template-columns: 1fr; grid-auto-rows: auto; }
     .panel { padding: 22px; }
-    /* phones: the round photo stays at the side with the text wrapping it; the prints make two overlapping rows */
+    /* phones: the square photo stays at the side with the text wrapping it; the prints make two overlapping rows */
     .author { display: block; }
-    .author .me { float: left; width: 36%; max-width: 140px; margin: 0 14px 6px 0; shape-outside: circle(50%); }
+    .author .me { float: left; width: 36%; max-width: 140px; margin: 0 14px 6px 0; shape-outside: margin-box; }
     .pile { clear: both; flex-wrap: wrap; padding-top: 20px; }
     .pile img { width: 34%; margin: -1% -2%; }
     .pile img:first-child { margin-left: -2%; }
