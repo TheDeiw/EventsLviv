@@ -103,13 +103,13 @@ const ME = [
           <ul class="links">
             {ME.map((l) => <li><a href={l.href} target="_blank" rel="noopener">{l.title}</a></li>)}
           </ul>
-          <img class="badges" src={url("images/about/badges.webp")} alt={T("author.p2")} width="1000" height="564" loading="lazy" />
-          <p class="vol">{T("author.vol")}</p>
+          <p>{T("author.vol")}</p>
           <div class="pile">
             <img class="p1" src={url("images/about/molodvizh-team.webp")} alt={T("author.p1")} width="860" height="574" loading="lazy" />
             <img class="p2" src={url("images/about/talk.webp")} alt={T("author.p5")} width="860" height="484" loading="lazy" />
             <img class="p3" src={url("images/about/battery-expo.webp")} alt={T("author.p4")} width="940" height="759" loading="lazy" />
             <img class="p4" src={url("images/about/it-arena.webp")} alt={T("author.p3")} width="860" height="484" loading="lazy" />
+            <img class="p5" src={url("images/about/badges.webp")} alt={T("author.p2")} width="1000" height="564" loading="lazy" />
           </div>
         </div>
       </section>
@@ -252,21 +252,19 @@ const ME = [
   .author img { display: block; width: 100%; height: auto; }
   .author p:not(.eyebrow) { margin: 0 0 12px; max-width: 60ch; color: var(--muted); text-wrap: pretty; }
   /* the pictures lie on top of each other like torn-out prints; the white rim is part of the files */
-  .me { position: sticky; top: 96px; }
-  .badges, .pile img { filter: drop-shadow(0 8px 16px rgb(0 0 0 / 0.4)); transition: rotate 220ms var(--ease-out), translate 220ms var(--ease-out); }
-  .author .badges { max-width: 620px; margin-top: 28px; rotate: -1.5deg; }
-  .author .vol { margin-top: 32px; }
-  .pile { position: relative; max-width: 640px; aspect-ratio: 1 / 0.8; margin-top: 36px; }
-  .pile img { position: absolute; width: var(--w); }
-  .pile .p1 { --w: 58%; left: 0; top: 0; rotate: -3deg; }
-  .pile .p2 { --w: 54%; right: 0; top: 7%; rotate: 3deg; }
-  .pile .p3 { --w: 54%; left: 0; bottom: 0; rotate: -2deg; }
-  .pile .p4 { --w: 54%; right: 0; bottom: 0; rotate: 3.5deg; }
+  /* one small collage, the badges in the middle on top of the rest */
+  .pile { position: relative; max-width: 440px; aspect-ratio: 1 / 0.74; margin-top: 28px; }
+  .pile img { position: absolute; width: var(--w); filter: drop-shadow(0 6px 12px rgb(0 0 0 / 0.4)); transition: rotate 220ms var(--ease-out), translate 220ms var(--ease-out); }
+  .pile .p1 { --w: 42%; left: 0; top: 0; rotate: -3deg; }
+  .pile .p2 { --w: 40%; right: 0; top: 0; rotate: 3deg; }
+  .pile .p3 { --w: 40%; left: 0; bottom: 0; rotate: -2deg; }
+  .pile .p4 { --w: 40%; right: 0; bottom: 0; rotate: 3.5deg; }
+  .pile .p5 { --w: 58%; left: 21%; top: 16%; rotate: -1.5deg; z-index: 1; }
   @media (hover: hover) and (pointer: fine) {
-    .pile img:hover, .badges:hover { rotate: 0deg; translate: 0 -6px; z-index: 4; }
+    .pile img:hover { rotate: 0deg; translate: 0 -4px; z-index: 4; }
   }
   .author h2 { margin-bottom: 12px; font-size: 28px; }
-  .links { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 20px; padding: 0; list-style: none; }
   .links a {
     display: inline-block; padding: 6px 14px; font-size: 14px; text-decoration: none;
     border: 1px solid var(--line); border-radius: 99px;
@@ -291,8 +289,8 @@ const ME = [
     .panel { padding: 22px; }
     /* phones: the photo stays at the side and the text wraps around its outline, instead of a tall picture on top */
     .author { display: block; }
-    .author .me { float: left; position: static; width: 38%; max-width: 160px; margin: 0 14px 6px -6px; shape-outside: var(--shape); shape-image-threshold: 0.4; shape-margin: 4px; }
-    .author .badges { clear: both; margin-top: 24px; }
+    .author .me { float: left; width: 38%; max-width: 160px; margin: 0 14px 6px -6px; shape-outside: var(--shape); shape-image-threshold: 0.4; shape-margin: 4px; }
+    .pile { clear: both; }
     .join { padding: 24px 22px; }
   }
 </style>
