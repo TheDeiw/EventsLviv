@@ -74,8 +74,6 @@ const uk = {
   "vol.text":
     "Список оновлюється нерегулярно, але автор старається підтримувати його додаванням нових подій та підтримуванням достовірності інформації. Відкритий для скарг та пропозицій. Ми всі люди і помилки можуть бути. Поставтесь, будь ласка, з розумінням.",
   "author.alt": "Діма, автор сайту",
-  "author.vol":
-    "Я активний волонтер: був у командах Molodvizh, Games Gathering, IT Arena, Lviv Urban Forum, !FESTrepublic, QADay та інших міських подій, тож знаю, як вони виглядають зсередини.",
   "author.p1": "Команда волонтерів Molodvizh на сцені",
   "author.p2": "Бейджі волонтера та учасника з різних подій",
   "author.p3": "Діма на IT Arena",
@@ -266,8 +264,6 @@ const en: Record<keyof typeof uk, string> = {
   "vol.text":
     "The list is updated irregularly, but the author does their best to keep it going by adding new events and keeping the information accurate. Open to complaints and suggestions. We are all human and mistakes can happen. Please be understanding.",
   "author.alt": "Dima, the author of the site",
-  "author.vol":
-    "I'm an active volunteer: I have been on the teams at Molodvizh, Games Gathering, IT Arena, Lviv Urban Forum, !FESTrepublic, QADay and other city events, so I know how they look from the inside.",
   "author.p1": "The Molodvizh volunteer team on stage",
   "author.p2": "Volunteer and participant badges from different events",
   "author.p3": "Dima at IT Arena",

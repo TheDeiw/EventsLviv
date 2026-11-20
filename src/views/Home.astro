@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import LinkList from "../components/LinkList.astro";
 import { content, href, url, SUGGEST_FORM } from "../lib/site";
 import { langOf, t } from "../i18n/ui";
 
@@ -23,9 +24,9 @@ const STATS = [
 ];
 const NOT = [T("not.1"), T("not.2"), T("not.3"), T("not.4"), T("not.5")];
 const ME = [
-  { title: "TheDeiw Portfolio", href: "https://thedeiw.github.io/TheDeiwPortfolio/" },
-  { title: "Instagram", href: "https://www.instagram.com/the_deiw_/" },
-  { title: "LinkedIn", href: "https://www.linkedin.com/in/dmytro-chekhovskyi-81baba291/" },
+  { title: "TheDeiw Portfolio", url: "https://thedeiw.github.io/TheDeiwPortfolio/", type: "site" },
+  { title: "Instagram", url: "https://www.instagram.com/the_deiw_/", type: "instagram" },
+  { title: "LinkedIn", url: "https://www.linkedin.com/in/dmytro-chekhovskyi-81baba291/", type: "linkedin" },
 ];
 ---
 
@@ -95,22 +96,19 @@ const ME = [
 
       <section class="author" aria-labelledby="author-title">
         <div class="deco deco-green" aria-hidden="true"><img src={url("hero/ribbon-green.webp")} width="1000" height="392" alt="" loading="lazy" /></div>
-        <img class="me" src={url("images/about/me.webp")} style={`--shape:url(${url("images/about/me.webp")})`} alt={T("author.alt")} width="760" height="1387" loading="lazy" />
+        <img class="me" src={url("images/about/avatar.webp")} alt={T("author.alt")} width="560" height="560" loading="lazy" />
         <div>
           <p class="eyebrow">{T("author.eyebrow")}</p>
           <h2 id="author-title">TheDeiw</h2>
           <p>{T("author.text")}</p>
-          <ul class="links">
-            {ME.map((l) => <li><a href={l.href} target="_blank" rel="noopener">{l.title}</a></li>)}
-          </ul>
-          <p>{T("author.vol")}</p>
-          <div class="pile">
-            <img class="p1" src={url("images/about/molodvizh-team.webp")} alt={T("author.p1")} width="860" height="574" loading="lazy" />
-            <img class="p2" src={url("images/about/talk.webp")} alt={T("author.p5")} width="860" height="484" loading="lazy" />
-            <img class="p3" src={url("images/about/battery-expo.webp")} alt={T("author.p4")} width="940" height="759" loading="lazy" />
-            <img class="p4" src={url("images/about/it-arena.webp")} alt={T("author.p3")} width="860" height="484" loading="lazy" />
-            <img class="p5" src={url("images/about/badges.webp")} alt={T("author.p2")} width="1000" height="564" loading="lazy" />
-          </div>
+          <LinkList links={ME} />
+        </div>
+        <div class="pile">
+          <img class="p1" src={url("images/about/molodvizh-team.webp")} alt={T("author.p1")} width="640" height="427" loading="lazy" />
+          <img class="p2" src={url("images/about/talk.webp")} alt={T("author.p5")} width="640" height="360" loading="lazy" />
+          <img class="p3" src={url("images/about/badges.webp")} alt={T("author.p2")} width="640" height="361" loading="lazy" />
+          <img class="p4" src={url("images/about/battery-expo.webp")} alt={T("author.p4")} width="740" height="599" loading="lazy" />
+          <img class="p5" src={url("images/about/it-arena.webp")} alt={T("author.p3")} width="640" height="360" loading="lazy" />
         </div>
       </section>
 
@@ -248,29 +246,22 @@ const ME = [
   .nots li { display: flex; gap: 12px; align-items: baseline; }
   .nots li::before { content: "✕"; flex: none; color: var(--c); font-size: 12px; }
 
-  .author { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 48px; align-items: start; }
-  .author img { display: block; width: 100%; height: auto; }
-  .author p:not(.eyebrow) { margin: 0 0 12px; max-width: 60ch; color: var(--muted); text-wrap: pretty; }
-  /* the pictures lie on top of each other like torn-out prints; the white rim is part of the files */
-  /* one small collage, the badges in the middle on top of the rest */
-  .pile { position: relative; max-width: 440px; aspect-ratio: 1 / 0.74; margin-top: 28px; }
-  .pile img { position: absolute; width: var(--w); filter: drop-shadow(0 6px 12px rgb(0 0 0 / 0.4)); transition: rotate 220ms var(--ease-out), translate 220ms var(--ease-out); }
-  .pile .p1 { --w: 42%; left: 0; top: 0; rotate: -3deg; }
-  .pile .p2 { --w: 40%; right: 0; top: 0; rotate: 3deg; }
-  .pile .p3 { --w: 40%; left: 0; bottom: 0; rotate: -2deg; }
-  .pile .p4 { --w: 40%; right: 0; bottom: 0; rotate: 3.5deg; }
-  .pile .p5 { --w: 58%; left: 21%; top: 16%; rotate: -1.5deg; z-index: 1; }
-  @media (hover: hover) and (pointer: fine) {
-    .pile img:hover { rotate: 0deg; translate: 0 -4px; z-index: 4; }
-  }
+  .author { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 28px 44px; align-items: center; }
+  .author .me { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; }
+  .author p:not(.eyebrow) { margin: 0 0 20px; max-width: 60ch; color: var(--muted); text-wrap: pretty; }
   .author h2 { margin-bottom: 12px; font-size: 28px; }
-  .links { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 20px; padding: 0; list-style: none; }
-  .links a {
-    display: inline-block; padding: 6px 14px; font-size: 14px; text-decoration: none;
-    border: 1px solid var(--line); border-radius: 99px;
-    transition: background-color 150ms ease, transform 160ms var(--ease-out);
+  /* torn-out prints in one row, each lying a little on the next; the white ragged rim is part of the files */
+  .pile { grid-column: 1 / -1; display: flex; justify-content: center; align-items: center; padding: 8px 0; }
+  .pile img { flex: none; width: 21%; height: auto; margin-left: -2.5%; filter: drop-shadow(0 6px 12px rgb(0 0 0 / 0.4)); transition: rotate 220ms var(--ease-out), translate 220ms var(--ease-out); }
+  .pile img:first-child { margin-left: 0; }
+  .pile .p1 { rotate: -3deg; }
+  .pile .p2 { rotate: 2.5deg; }
+  .pile .p3 { rotate: -1.5deg; }
+  .pile .p4 { rotate: 3deg; }
+  .pile .p5 { rotate: -3.5deg; }
+  @media (hover: hover) and (pointer: fine) {
+    .pile img:hover { rotate: 0deg; translate: 0 -6px; z-index: 4; }
   }
-  .links a:active { transform: scale(0.97); }
 
   .join {
     display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 32px;
@@ -280,17 +271,16 @@ const ME = [
   .join p { margin: 0; max-width: 56ch; color: var(--muted); text-wrap: pretty; }
   .join .cta { margin: 0; }
 
-  @media (hover: hover) and (pointer: fine) {
-    .links a:hover { background: var(--surface-2); }
-  }
   @media (max-width: 900px) {
     .about { gap: 48px; padding: 16px 16px 8px; }
     .panels { grid-template-columns: 1fr; grid-auto-rows: auto; }
     .panel { padding: 22px; }
-    /* phones: the photo stays at the side and the text wraps around its outline, instead of a tall picture on top */
+    /* phones: the round photo stays at the side with the text wrapping it; the prints make two overlapping rows */
     .author { display: block; }
-    .author .me { float: left; width: 38%; max-width: 160px; margin: 0 14px 6px -6px; shape-outside: var(--shape); shape-image-threshold: 0.4; shape-margin: 4px; }
-    .pile { clear: both; }
+    .author .me { float: left; width: 36%; max-width: 140px; margin: 0 14px 6px 0; shape-outside: circle(50%); }
+    .pile { clear: both; flex-wrap: wrap; padding-top: 20px; }
+    .pile img { width: 34%; margin: -1% -2%; }
+    .pile img:first-child { margin-left: -2%; }
     .join { padding: 24px 22px; }
   }
 </style>
