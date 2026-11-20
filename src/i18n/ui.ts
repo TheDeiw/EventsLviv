@@ -79,6 +79,8 @@ const uk = {
   "author.p1": "Команда волонтерів Molodvizh на сцені",
   "author.p2": "Бейджі волонтера та учасника з різних подій",
   "author.p3": "Діма на IT Arena",
+  "author.p4": "Діма біля стенда Battery Tech Expo",
+  "author.p5": "Діма з залом на доповіді",
   "author.eyebrow": "Про автора",
   "author.text":
     "Привіт! Мене звати Діма, а в мережі — TheDeiw. Я живу у Львові й обожнюю його ритм. Мені завжди бракувало єдиного місця, де були б зібрані всі круті періодичні події міста, тому я вирішив створити його сам. Цей список — мій особистий проєкт, створений з любов’ю до Львова та його людей.",
@@ -269,6 +271,8 @@ const en: Record<keyof typeof uk, string> = {
   "author.p1": "The Molodvizh volunteer team on stage",
   "author.p2": "Volunteer and participant badges from different events",
   "author.p3": "Dima at IT Arena",
+  "author.p4": "Dima next to the Battery Tech Expo banner",
+  "author.p5": "Dima with the audience at a talk",
   "author.eyebrow": "About the author",
   "author.text":
     "Hi! My name is Dima, or TheDeiw online. I live in Lviv and love its rhythm. I always missed a single place where all the cool recurring events of the city were gathered, so I decided to build it myself. This list is my personal project, made with love for Lviv and its people.",
