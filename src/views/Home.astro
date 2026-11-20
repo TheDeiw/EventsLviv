@@ -247,14 +247,15 @@ const ME = [
   .author .me { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; box-sizing: border-box; border: 1px solid var(--line); border-radius: var(--r); }
   .author p:not(.eyebrow) { margin: 0 0 20px; max-width: 60ch; color: var(--muted); text-wrap: pretty; }
   .author h2 { margin-bottom: 12px; font-size: 28px; }
-  /* torn-out prints: the badges big in the middle, the other four at its corners; the ragged rim is part of the files */
-  .pile { grid-column: 1 / -1; position: relative; width: 100%; max-width: 740px; aspect-ratio: 1 / 0.66; margin: 0 auto; }
-  .pile img { position: absolute; width: var(--w); height: auto; filter: drop-shadow(0 6px 12px rgb(0 0 0 / 0.4)); transition: rotate 220ms var(--ease-out), translate 220ms var(--ease-out); }
-  .pile .p1 { --w: 34%; left: 0; top: 0; rotate: -3deg; }
-  .pile .p2 { --w: 34%; right: 0; top: 0; rotate: 3deg; }
-  .pile .p3 { --w: 60%; left: 20%; top: 17%; rotate: -1deg; z-index: 1; }
-  .pile .p4 { --w: 30%; left: 1%; bottom: 0; rotate: -2.5deg; }
-  .pile .p5 { --w: 34%; right: 0; bottom: 0; rotate: 3.5deg; }
+  /* torn-out prints in one row, each lying a little on the next: the badges biggest in the middle, smaller towards the edges */
+  .pile { grid-column: 1 / -1; display: flex; justify-content: center; align-items: center; padding: 8px 0; }
+  .pile img { flex: none; width: var(--w); height: auto; margin-left: -2.5%; filter: drop-shadow(0 6px 12px rgb(0 0 0 / 0.4)); transition: rotate 220ms var(--ease-out), translate 220ms var(--ease-out); }
+  .pile img:first-child { margin-left: 0; }
+  .pile .p1 { --w: 17%; rotate: -3deg; }
+  .pile .p2 { --w: 22%; rotate: 2.5deg; }
+  .pile .p3 { --w: 30%; rotate: -1deg; z-index: 1; }
+  .pile .p4 { --w: 22%; rotate: 3deg; }
+  .pile .p5 { --w: 17%; rotate: -3.5deg; }
   @media (hover: hover) and (pointer: fine) {
     .pile img:hover { rotate: 0deg; translate: 0 -6px; z-index: 4; }
   }
@@ -275,6 +276,10 @@ const ME = [
     .author { display: block; }
     .author .me { float: left; width: 36%; max-width: 140px; margin: 0 14px 6px 0; shape-outside: margin-box; }
     .pile { clear: both; margin-top: 24px; }
+    .pile img { margin-left: -7%; }
+    .pile .p1, .pile .p5 { --w: 22%; }
+    .pile .p2, .pile .p4 { --w: 26%; }
+    .pile .p3 { --w: 32%; }
     .join { padding: 24px 22px; }
   }
 </style>
