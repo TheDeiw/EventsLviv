@@ -95,14 +95,20 @@ const ME = [
 
       <section class="author" aria-labelledby="author-title">
         <div class="deco deco-green" aria-hidden="true"><img src={url("hero/ribbon-green.webp")} width="1000" height="392" alt="" loading="lazy" /></div>
-        <img src={url("images/about/author.webp")} alt="" width="140" height="134" loading="lazy" />
+        <img class="me" src={url("images/about/me.webp")} alt={T("author.alt")} width="728" height="1355" loading="lazy" />
         <div>
           <p class="eyebrow">{T("author.eyebrow")}</p>
           <h2 id="author-title">TheDeiw</h2>
           <p>{T("author.text")}</p>
+          <p>{T("author.vol")}</p>
           <ul class="links">
             {ME.map((l) => <li><a href={l.href} target="_blank" rel="noopener">{l.title}</a></li>)}
           </ul>
+          <div class="pile">
+            <img class="p1" src={url("images/about/molodvizh-team.webp")} alt={T("author.p1")} width="860" height="574" loading="lazy" />
+            <img class="p2" src={url("images/about/badges.webp")} alt={T("author.p2")} width="860" height="485" loading="lazy" />
+            <img class="p3" src={url("images/about/it-arena.webp")} alt={T("author.p3")} width="860" height="484" loading="lazy" />
+          </div>
         </div>
       </section>
 
@@ -240,9 +246,18 @@ const ME = [
   .nots li { display: flex; gap: 12px; align-items: baseline; }
   .nots li::before { content: "✕"; flex: none; color: var(--c); font-size: 12px; }
 
-  .author { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 36px; align-items: center; }
+  .author { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 48px; align-items: start; }
   .author img { display: block; width: 100%; height: auto; }
-  .author p:not(.eyebrow) { margin: 0; max-width: 60ch; color: var(--muted); text-wrap: pretty; }
+  .author p:not(.eyebrow) { margin: 0 0 12px; max-width: 60ch; color: var(--muted); text-wrap: pretty; }
+  /* the pictures lie on top of each other like torn-out prints; the white rim is part of the files */
+  .pile { position: relative; max-width: 640px; aspect-ratio: 16 / 11; margin-top: 28px; }
+  .pile img { position: absolute; width: var(--w); filter: drop-shadow(0 8px 16px rgb(0 0 0 / 0.4)); transition: rotate 220ms var(--ease-out), translate 220ms var(--ease-out); }
+  .pile .p1 { --w: 62%; left: 0; top: 0; rotate: -3deg; }
+  .pile .p2 { --w: 56%; right: 0; top: 14%; rotate: 4deg; }
+  .pile .p3 { --w: 54%; left: 20%; bottom: 0; rotate: -2deg; }
+  @media (hover: hover) and (pointer: fine) {
+    .pile img:hover { rotate: 0deg; translate: 0 -6px; z-index: 4; }
+  }
   .author h2 { margin-bottom: 12px; font-size: 28px; }
   .links { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
   .links a {
@@ -268,7 +283,7 @@ const ME = [
     .panels { grid-template-columns: 1fr; grid-auto-rows: auto; }
     .panel { padding: 22px; }
     .author { grid-template-columns: 1fr; gap: 20px; }
-    .author img { width: 110px; }
+    .author .me { width: 200px; }
     .join { padding: 24px 22px; }
   }
 </style>

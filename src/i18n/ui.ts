@@ -73,9 +73,15 @@ const uk = {
   "vol.title": "Проєкт створений лише на волонтерських засадах",
   "vol.text":
     "Список оновлюється нерегулярно, але автор старається підтримувати його додаванням нових подій та підтримуванням достовірності інформації. Відкритий для скарг та пропозицій. Ми всі люди і помилки можуть бути. Поставтесь, будь ласка, з розумінням.",
+  "author.alt": "Діма, автор сайту",
+  "author.vol":
+    "Я активний волонтер: був у командах Molodvizh, Games Gathering, IT Arena, Lviv Urban Forum, !FESTrepublic, QADay та інших міських подій, тож знаю, як вони виглядають зсередини.",
+  "author.p1": "Команда волонтерів Molodvizh на сцені",
+  "author.p2": "Бейджі волонтера та учасника з різних подій",
+  "author.p3": "Діма на IT Arena",
   "author.eyebrow": "Про автора",
   "author.text":
-    "Привіт! Мене звати TheDeiw. Я живу у Львові й обожнюю його ритм. Мені завжди бракувало єдиного місця, де були б зібрані всі круті періодичні події міста, тому я вирішив створити його сам. Цей список — мій особистий проєкт, створений з любов’ю до Львова та його людей.",
+    "Привіт! Мене звати Діма, а в мережі — TheDeiw. Я живу у Львові й обожнюю його ритм. Мені завжди бракувало єдиного місця, де були б зібрані всі круті періодичні події міста, тому я вирішив створити його сам. Цей список — мій особистий проєкт, створений з любов’ю до Львова та його людей.",
   "join.title": "Нумо разом створимо найкращий гід по івентах Львова!",
   "join.text":
     "Цей проєкт почався з моєї ініціативи, але я вірю, що кращим він стане лише завдяки вам. Знаєте подію, якої тут немає? Запропонуйте її через коротку форму.",
@@ -257,9 +263,15 @@ const en: Record<keyof typeof uk, string> = {
   "vol.title": "The project is run on a volunteer basis only",
   "vol.text":
     "The list is updated irregularly, but the author does their best to keep it going by adding new events and keeping the information accurate. Open to complaints and suggestions. We are all human and mistakes can happen. Please be understanding.",
+  "author.alt": "Dima, the author of the site",
+  "author.vol":
+    "I'm an active volunteer: I have been on the teams at Molodvizh, Games Gathering, IT Arena, Lviv Urban Forum, !FESTrepublic, QADay and other city events, so I know how they look from the inside.",
+  "author.p1": "The Molodvizh volunteer team on stage",
+  "author.p2": "Volunteer and participant badges from different events",
+  "author.p3": "Dima at IT Arena",
   "author.eyebrow": "About the author",
   "author.text":
-    "Hi! My name is TheDeiw. I live in Lviv and love its rhythm. I always missed a single place where all the cool recurring events of the city were gathered, so I decided to build it myself. This list is my personal project, made with love for Lviv and its people.",
+    "Hi! My name is Dima, or TheDeiw online. I live in Lviv and love its rhythm. I always missed a single place where all the cool recurring events of the city were gathered, so I decided to build it myself. This list is my personal project, made with love for Lviv and its people.",
   "join.title": "Let's build the best guide to Lviv events together!",
   "join.text":
     "This project started with my initiative, but I believe it will only get better thanks to you. Know an event that's missing? Suggest it through a short form.",
