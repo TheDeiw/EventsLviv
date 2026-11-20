@@ -18,7 +18,7 @@ const groups = TYPES.map((type) => ({ type, label: T(`orgType.${type}` as Key), 
 
 <Base title={T("orgs.metaTitle")} description={T("orgs.metaDesc")} current="organizations" path="organizations/">
   <MiniHero title={T("orgs.title")} />
-  <main class="groups">
+  <main class="groups" id="main">
     {groups.map((g) => (
       <section class="group" aria-labelledby={`g-${g.type}`}>
         <h2 class="group-title" id={`g-${g.type}`}>{g.label}</h2>

@@ -13,6 +13,7 @@ const uk = {
   "nav.orgs": "Організації",
   "nav.calendar": "Календар",
   "nav.aria": "Основна навігація",
+  "nav.skip": "Перейти до змісту",
   "theme.toggle": "Світла тема",
   "lang.aria": "Мова",
 
@@ -90,7 +91,7 @@ const uk = {
   "events.closeFilters": "Закрити фільтри",
   "events.empty": "За цими фільтрами нічого не знайшлося.",
   "events.listAria": "Список подій",
-  "events.search": "Пошук подій чи організаторів",
+  "events.search": "Пошук подій чи організаторів…",
   "events.clear": "Очистити пошук",
 
   "f.searchAria": "Пошук за назвою або організатором",
@@ -196,6 +197,7 @@ const en: Record<keyof typeof uk, string> = {
   "nav.orgs": "Organizations",
   "nav.calendar": "Calendar",
   "nav.aria": "Main navigation",
+  "nav.skip": "Skip to content",
   "theme.toggle": "Light theme",
   "lang.aria": "Language",
 
@@ -273,7 +275,7 @@ const en: Record<keyof typeof uk, string> = {
   "events.closeFilters": "Close filters",
   "events.empty": "Nothing found for these filters.",
   "events.listAria": "List of events",
-  "events.search": "Search events or organizers",
+  "events.search": "Search events or organizers…",
   "events.clear": "Clear search",
 
   "f.searchAria": "Search by name or organizer",

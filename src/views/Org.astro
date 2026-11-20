@@ -29,6 +29,7 @@ const ld = [
 ---
 
 <Base title={fill(T("org.metaTitle"), { name: o.name })} description={clip(o.description[0])} current="organizations" path={`organizations/${o.id}/`} image={`og/org-${o.id}.jpg`} jsonld={ld}>
+  <main id="main">
   <div class="org">
     <a class="back" href={href(lang, "organizations/")}>{T("orgs.back")}</a>
 
@@ -60,8 +61,9 @@ const ld = [
 
     <h2>{T("org.events")}</h2>
   </div>
-  <main class="grid" id="grid">
+  <div class="grid" id="grid">
     {events.map((e) => <EventCard event={e} />)}
+  </div>
   </main>
 </Base>
 

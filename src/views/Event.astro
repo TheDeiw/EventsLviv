@@ -18,7 +18,7 @@ const ld = crumbs(Astro.site, [[T("nav.home"), href(lang)], [T("nav.events"), hr
 ---
 
 <Base title={title} description={clip(e.description[0])} path={`events/${e.id}/`} image={`og/event-${e.id}.jpg`} jsonld={ld}>
-  <article class="event">
+  <main class="event" id="main">
     <a class="back" href={href(lang, "events/")}>{T("ev.back")}</a>
 
     <div {...coverAttrs(e.cover, e.coverBg)}>
@@ -68,7 +68,7 @@ const ld = crumbs(Astro.site, [[T("nav.home"), href(lang)], [T("nav.events"), hr
         <a class="report" href={reportHref(lang, `events/${e.id}/`)}>{T("fb.report")}</a>
       </aside>
     </div>
-  </article>
+  </main>
 </Base>
 
 <style>

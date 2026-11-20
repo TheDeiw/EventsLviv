@@ -24,6 +24,15 @@ export function initFilters(cards: HTMLElement[], after: (shown: number) => void
       shown += c.hidden ? 0 : 1;
     }
     after(shown);
+    // the choice lives in the address (?topic=music&when=summer&q=...): a refresh or "Back" keeps it and the view can be shared
+    const q = new URLSearchParams();
+    for (const [k, v] of Object.entries(state)) if (v) q.set(k, v);
+    if (org.value) q.set("org", org.value);
+    if (search.value.trim()) q.set("q", search.value.trim());
+    const qs = q.toString();
+    try {
+      history.replaceState(null, "", location.pathname + (qs ? `?${qs}` : "") + location.hash);
+    } catch {} // Safari throws after too many calls in a short time; the filters still work
   };
 
   root.addEventListener("click", (e) => {
@@ -36,6 +45,18 @@ export function initFilters(cards: HTMLElement[], after: (shown: number) => void
   });
   search.addEventListener("input", apply);
   org.addEventListener("change", apply);
+
+  // restore what the address says; a value that matches no button or option is simply ignored
+  if (location.search) {
+    const saved = new URLSearchParams(location.search);
+    for (const group of Object.keys(state)) {
+      const v = saved.get(group);
+      if (v) [...root.querySelectorAll<HTMLButtonElement>(`button[data-filter="${group}"]`)].find((b) => b.dataset.value === v)?.click();
+    }
+    org.value = saved.get("org") ?? "";
+    search.value = saved.get("q") ?? "";
+    apply();
+  }
 
   return () => {
     search.value = "";

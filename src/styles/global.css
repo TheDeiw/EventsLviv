@@ -45,7 +45,7 @@
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 /* phones: no grey flash on tap (every control has its own :active), no font inflation in landscape */
-html { -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; }
+html { -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; scroll-padding-top: 88px; /* the sticky header must not cover what gets focus */ }
 /* taps fire at once instead of waiting to see if it is a double-tap zoom */
 a, button, select, label, summary { touch-action: manipulation; }
 body {
@@ -60,6 +60,9 @@ h1, h2, h3 { letter-spacing: -0.015em; }
 a { color: inherit; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+/* "skip to content": hidden above the page until it gets keyboard focus */
+.skip { position: absolute; left: 12px; top: -64px; z-index: 30; padding: 10px 18px; border-radius: 99px; color: var(--bg); background: var(--text); text-decoration: none; }
+.skip:focus { top: 12px; }
 button { font: inherit; }
 
 /* ---------- header: translucent bar, content scrolls under it ---------- */

@@ -38,7 +38,7 @@ const ld = crumbs(Astro.site, [[T("nav.home"), href(lang)], [T("nav.events"), hr
 
 <Base title={metaTitle} description={clip(intro)} path={path} image={`og/${kind}-${id}.jpg`} jsonld={ld}>
   <MiniHero title={heading} />
-  <main>
+  <main id="main">
     <p class="lead">{intro}</p>
     {groups.map((g) => (
       <section>

@@ -47,7 +47,7 @@ const SECTIONS = [
 
 <Base title={T("cal.metaTitle")} description={T("cal.metaDesc")} current="calendar" path="calendar/">
   <MiniHero title={T("cal.title")} />
-  <main class="cal">
+  <main class="cal" id="main">
     <p class="lead">{T("cal.lead")}</p>
     {SECTIONS.map((s) => (
       <section>

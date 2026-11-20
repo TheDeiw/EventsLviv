@@ -16,10 +16,11 @@ const countTpl = T("events.count");
 ---
 
 <Base title={T("events.metaTitle")} description={T("events.metaDesc")} current="events" path="events/">
-  <main>
+  <main id="main">
     <MiniHero title={T("events.title")} />
     <div class="browse" id="events">
       <aside class="side">
+        <h2 class="sr">{T("events.filters")}</h2>
         <button class="filters-toggle" type="button" aria-haspopup="dialog" aria-controls="filters-sheet">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"></path><circle cx="16" cy="6" r="2"></circle><circle cx="10" cy="12" r="2"></circle><circle cx="18" cy="18" r="2"></circle></svg>
           {T("events.filters")}
@@ -42,7 +43,8 @@ const countTpl = T("events.count");
         <p class="sr" id="count" data-tpl={countTpl} aria-live="polite">{fill(countTpl, { n: events.length, total: events.length })}</p>
       </div>
 
-      <section class="results" aria-label={T("events.listAria")}>
+      <section class="results" aria-labelledby="results-title">
+        <h2 class="sr" id="results-title">{T("events.listAria")}</h2>
         <div class="empty" id="empty" hidden>
           <p>{T("events.empty")}</p>
           <button type="button" data-reset>{T("events.reset")}</button>
@@ -121,6 +123,7 @@ const countTpl = T("events.count");
     search,
   );
   const syncClear = () => (clear.hidden = !search.value);
+  syncClear(); // a search restored from the address (?q=) shows its clear button
   const clearSearch = () => {
     search.value = "";
     search.dispatchEvent(new Event("input"));
