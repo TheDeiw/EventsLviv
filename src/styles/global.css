@@ -97,44 +97,47 @@ a.logo .mark { flex: none; height: var(--h); aspect-ratio: 162 / 192; background
   transition: color 150ms ease, background-color 150ms ease;
 }
 .lang a[aria-current] { color: var(--text); background: var(--surface-2); }
-.theme-toggle {
+.theme-toggle, .menu-toggle {
   display: grid; place-items: center; width: 38px; height: 38px; padding: 0; cursor: pointer;
   color: var(--text); background: transparent; border: 1px solid var(--line); border-radius: 50%;
   transition: background-color 150ms ease, transform 160ms var(--ease-out);
 }
-.theme-toggle:active { transform: scale(0.94); }
+.theme-toggle:active, .menu-toggle:active { transform: scale(0.94); }
 .top nav a:active, .lang a:active { background: var(--surface-2); }
-.theme-toggle svg { width: 18px; height: 18px; }
+.theme-toggle svg, .menu-toggle svg { width: 18px; height: 18px; }
 :root[data-theme="light"] .theme-toggle .sun,
 :root:not([data-theme="light"]) .theme-toggle .moon { display: none; }
+.menu-toggle { display: none; }
+.menu-toggle[aria-expanded="true"] .bars, .menu-toggle[aria-expanded="false"] .close { display: none; }
 @media (hover: hover) and (pointer: fine) {
   .top nav a:hover, .lang a:hover { color: var(--text); }
-  .theme-toggle:hover { background: var(--surface-2); }
+  .theme-toggle:hover, .menu-toggle:hover { background: var(--surface-2); }
 }
-/* phones: one row. The Lviv mark alone stands in for "Home" (EVENTS would push the links off the bar), the language switch shows only the other language */
+/* phones: the bar keeps the mark, the other language, the theme and a menu button; the sections drop down as a panel under it */
 @media (max-width: 720px) {
-  .top { grid-template-columns: auto minmax(0, 1fr) auto; gap: 4px; height: 54px; margin: 8px 8px 0; padding: 0 7px 0 11px; border-radius: 18px; }
+  .top { grid-template-columns: minmax(0, 1fr) auto; gap: 4px; height: 54px; margin: 8px 8px 0; padding: 0 7px 0 11px; border-radius: 18px; }
   .top .logo { --h: 34px; }
   .top .logo-text { display: none; }
-  .top .main-nav { justify-content: safe center; gap: 0; overflow-x: auto; scrollbar-width: none; }
-  .top .main-nav::-webkit-scrollbar { display: none; }
-  .top .main-nav .to-home { display: none; }
-  .top .main-nav a { padding: 6px 7px; font-size: 13px; white-space: nowrap; }
-  .tools { gap: 4px; }
+  .tools { gap: 6px; }
   .top .lang { padding: 0; border: 0; }
   .top .lang a[aria-current] { display: none; }
   .top .lang a { display: grid; place-items: center; width: 34px; height: 34px; padding: 0; color: var(--text); border: 1px solid var(--line); border-radius: 50%; }
-  .theme-toggle { width: 34px; height: 34px; }
+  .theme-toggle, .menu-toggle { width: 34px; height: 34px; }
+  .menu-toggle { display: grid; }
+  .top .main-nav {
+    position: absolute; top: calc(100% + 8px); left: 0; right: 0; flex-direction: column; gap: 2px; padding: 8px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--header-shadow);
+    opacity: 0; visibility: hidden; translate: 0 -6px;
+    transition: opacity 160ms ease, translate 160ms var(--ease-out), visibility 0s 160ms;
+  }
+  .top.open .main-nav { opacity: 1; visibility: visible; translate: 0 0; transition: opacity 160ms ease, translate 160ms var(--ease-out), visibility 0s; }
+  .top .main-nav a { padding: 12px 14px; border-radius: 12px; font-size: 16px; }
   /* the header slides away while scrolling down and returns on the first scroll up (Base.astro) */
   .top { transition: transform 280ms var(--ease-out); }
   .top.away { transform: translateY(calc(-100% - 48px)); }
 }
-/* small phones: tighter still; below ~350px the links scroll sideways inside the bar */
-@media (max-width: 380px) {
-  .top .main-nav a { padding: 6px 5px; font-size: 12.5px; }
-}
 @media (max-width: 720px) and (prefers-reduced-motion: reduce) {
-  .top { transition: none; }
+  .top, .top .main-nav, .top.open .main-nav { transition: none; }
 }
 
 /* ---------- shared bits ---------- */

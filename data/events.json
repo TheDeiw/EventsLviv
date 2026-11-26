@@ -2492,5 +2492,85 @@
     "links": [],
     "cover": "images/lviv-half-marathon/cover.webp",
     "gallery": []
+  },
+  {
+    "id": "level",
+    "name": "ЛЕВЕЛ",
+    "organizationId": null,
+    "topics": [
+      "community"
+    ],
+    "description": [
+      "ЛЕВЕЛ — молодіжний християнський рух у Львові. Він збирає молодь на тематичні зустрічі зі спікерами, живою музикою та продуманою атмосферою, від дрес-коду до локації.",
+      "Головна подія року — Різдвяний LEVEL. У 2026 році він відбувся втретє: тема «Повернення Короля», спікер — пастор Олександр Орищин, а музику створював оркестр Ffortissimo з вокалістами та міні-хором."
+    ],
+    "audience": "Молодь, яка шукає спільноту та розмову про віру й життя. Приходити можна з друзями: місця в залі обирають одразу на компанію.",
+    "place": "Локації змінюються. Різдвяний LEVEL 2026 — LEM Station (вул. Дмитра Вітовського, 57).",
+    "whenText": "Головна подія — Різдвяний LEVEL на початку грудня (у 2026 році — 5 грудня о 13:00). Анонси інших зустрічей з'являються в Instagram.",
+    "months": [
+      12
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Платно, ціна залежить від зони залу: на Різдвяний LEVEL 2026 квитки коштували від 800 до 1100 грн. Реєстрація та вибір місця — на сайті level.town.",
+    "links": [
+      {
+        "title": "ЛЕВЕЛ",
+        "url": "https://level.town/",
+        "type": "site"
+      },
+      {
+        "title": "Instagram (@level.gnr)",
+        "url": "https://www.instagram.com/level.gnr/",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/level/cover.svg",
+    "gallery": []
+  },
+  {
+    "id": "zhyvyi-rukh",
+    "name": "Живий рух",
+    "organizationId": null,
+    "topics": [
+      "community",
+      "education"
+    ],
+    "description": [
+      "«Живий рух» — ресурсна конференція для молодих служителів та волонтерів України, яка щороку збирає у Львові сотні учасників.",
+      "Два дні виступів спікерів, спільного прославлення наживо та знайомства з партнерськими служіннями й ініціативами. Тема 2025 року — «Зв'язки»."
+    ],
+    "audience": "Молоді служителі церков, лідери молодіжних служінь і волонтери з усієї України.",
+    "place": "Львів; локацію оголошують перед конференцією.",
+    "whenText": "Щороку в жовтні, два дні (у 2025 році — 3–4 жовтня). Для тих, хто не може приїхати, була онлайн-трансляція.",
+    "months": [
+      10
+    ],
+    "yearRound": false,
+    "nextDate": null,
+    "entry": "paid",
+    "priceText": "Участь платна, за попередньою реєстрацією з онлайн-оплатою. Реєстрація закривається за кілька днів до конференції.",
+    "links": [
+      {
+        "title": "Живий рух",
+        "url": "https://www.facebook.com/lmconference/",
+        "type": "facebook"
+      },
+      {
+        "title": "Instagram (@livemovement.ua)",
+        "url": "https://www.instagram.com/livemovement.ua/",
+        "type": "instagram"
+      }
+    ],
+    "cover": "images/zhyvyi-rukh/cover.webp",
+    "gallery": [
+      "images/zhyvyi-rukh/1.webp",
+      "images/zhyvyi-rukh/2.webp",
+      "images/zhyvyi-rukh/3.webp",
+      "images/zhyvyi-rukh/4.webp",
+      "images/zhyvyi-rukh/5.webp",
+      "images/zhyvyi-rukh/6.webp"
+    ]
   }
 ]

@@ -85,6 +85,10 @@
  "images/leadership-program/cover.webp": {
   "mat": "#fad409"
  },
+ "images/level/cover.svg": {
+  "mat": "#efece6",
+  "logo": true
+ },
  "images/lviv-art-and-wine-festival/cover.webp": {
   "mat": null
  },
@@ -254,6 +258,9 @@
  },
  "images/zemlya-poetiv/cover.webp": {
   "mat": "#2e4e85"
+ },
+ "images/zhyvyi-rukh/cover.webp": {
+  "mat": "#ffffff"
  },
  "images/zolotyi-lev/cover.webp": {
   "mat": "#1c1c20",

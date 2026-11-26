@@ -29,7 +29,7 @@ The project is run by volunteers and updated irregularly. New events can be sugg
 ## Features
 
 - **Event list** (`/events/`): a large search by name or organizer (the `/` key) and filters that work together: topic, organizer, entry (free / paid), season. Events of the current month come first, then the following months; year-round events are spread between them and reshuffled every month (worked out in the browser, so the order changes without a rebuild).
-- **Calendar** (`/calendar/`): explains that the site is an overview and links to listings, IT calendars, university events and Telegram channels where the exact dates are.
+- **Listings** (`/calendar/`): explains that the site is an overview and links to listings, IT calendars, university events and Telegram channels where the exact dates are.
 - **A page for every event** (`/events/<id>/`) with a photo gallery and viewer and links with service logos; **organization pages** (`/organizations/<id>/`) with a description and their events. The organization list is grouped by type.
 - **Home page** with a hero and a text about the project.
 - **Feedback page** (`/feedback/`): a form for reporting mistakes that arrives as an email through [Web3Forms](https://web3forms.com) (the access key in `src/views/Feedback.astro` is public by design). Every event and organization page links to it with its own address filled in. The footer also links to the Google Form for suggesting events (`SUGGEST_FORM` in `src/lib/site.ts`).

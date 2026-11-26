@@ -851,5 +851,35 @@
       "Instagram (@eventindustryforum)",
       "Event Industry Forum"
     ]
+  },
+  "level": {
+    "name": "LEVEL",
+    "description": [
+      "LEVEL is a youth Christian movement in Lviv. It brings young people together for themed gatherings with speakers, live music and a carefully planned atmosphere, from the dress code to the venue.",
+      "The main event of the year is the Christmas LEVEL. In 2026 it took place for the third time: the theme was “The Return of the King”, the speaker was pastor Oleksandr Oryshchyn, and the music came from the Ffortissimo orchestra with vocalists and a small choir."
+    ],
+    "audience": "Young people looking for a community and a conversation about faith and life. You can come with friends: seats in the hall are chosen for the whole group at once.",
+    "place": "Venues change. The Christmas LEVEL 2026 was at LEM Station (57 Dmytra Vitovskoho St).",
+    "whenText": "The main event is the Christmas LEVEL in early December (in 2026, December 5 at 13:00). Other gatherings are announced on Instagram.",
+    "priceText": "Paid; the price depends on the zone of the hall: tickets for the Christmas LEVEL 2026 cost 800 to 1100 UAH. Registration and seat choice on level.town.",
+    "links": [
+      "LEVEL",
+      "Instagram (@level.gnr)"
+    ]
+  },
+  "zhyvyi-rukh": {
+    "name": "Live Movement",
+    "description": [
+      "“Live Movement” (Zhyvyi Rukh) is a resource conference for young ministers and volunteers of Ukraine that brings hundreds of participants to Lviv every year.",
+      "Two days of talks, live worship together and meeting partner ministries and initiatives. The 2025 theme was “Connections”."
+    ],
+    "audience": "Young church ministers, youth ministry leaders and volunteers from all over Ukraine.",
+    "place": "Lviv; the venue is announced before the conference.",
+    "whenText": "Every year in October, over two days (in 2025, October 3–4). There was an online stream for those who could not come.",
+    "priceText": "Paid, with advance registration and online payment. Registration closes a few days before the conference.",
+    "links": [
+      "Live Movement",
+      "Instagram (@livemovement.ua)"
+    ]
   }
 }
